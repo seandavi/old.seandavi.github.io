@@ -12,31 +12,49 @@ weight = 1
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Data Science",
+    "Computational Biology",
+    "Biomedical Informatics",
+    "Cancer Research",
+    "Software Development"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "Pediatric Heme/Onc Fellowship"
+  institution = "Johns Hopkins University and National Cancer Institute"
+  year = 2005
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "Pediatric Residency"
+  institution = "University of Washington"
+  year = 2002
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
- 
+  course = "MD"
+  institution = "University of Pittsburgh, School of Medicine"
+  year = 1999
+
+[[education.courses]]
+  course = "PhD, Human Genetics"
+  institution = "University of Pittsburgh, School of Public Health"
+  year = 1999
+  
+[[education.courses]]
+  course = "PhD, Human Genetics"
+  institution = "University of Pittsburgh, School of Public Health"
+  year = 1993
+
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+Sean Davis is a pediatric oncologist at the National Cancer Institute
+at the National Institutes of Health. His research and collaborations
+span biomedical and genomic data science, open data approaches in
+cancer research, software development and engineering. He also has a
+strong interest in the interplay between data science, data
+engineering, data management, and IT infrastructure and technology and
+has been involved with numerous cloud-based data commons
+efforts. Finally, he has a passion for education and has taught numerous
+courses in data science, programming, and genomics.
