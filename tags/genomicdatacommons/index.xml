@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Genomicdatacommons on Sean Davis</title>
-    <link>/tags/genomicdatacommons/index.xml</link>
+    <link>https://seandavi.github.io/tags/genomicdatacommons/index.xml</link>
     <description>Recent content in Genomicdatacommons on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
