@@ -1,0 +1,101 @@
+---
+title: Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package
+author: Sean Davis
+date: '2017-03-04'
+categories:
+  - Software
+  - Tutorial
+tags:
+  - Bioconductor
+  - GenomicDataCommons
+  - Software
+  - Data Science
+  - API
+  - R
+---
+
+The NCI Genomic Data Commons ([GDC](https://gdc.nci.nih.gov)) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a [Bioconductor](https://bioconductor.org) package that interfaces with the [GDC API](https://gdc-api.nci.nih.gov) to provide search and data retrieval from within R. 
+
+In the first of what will likely be a set of use cases for the [GenomicDataCommons](https://github.com/Bioconductor/GenomicDataCommons), I am going to address a question that came up on twitter from [\@sleight82](https://twitter.com/sleight82)
+
+> [Asking for a non-tweeter: can you find matched control samples?](https://twitter.com/sleight82/status/837898737540198400)
+
+`r htmltools::HTML('{{ tweet 837898737540198400 }}')`
+
+The answer is, "Yes." I am going to assume that what the "non-tweeter" friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:
+
+> Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?
+
+```{r}
+library(GenomicDataCommons)
+```
+
+The GDC API puts some constraints on what can be done directly. But, since we are working in R, we have a toolbox that allows us to build a solution out of component parts. The strategy that I am going to employ is a three-step approach
+
+1. Find RNA-Seq gene expression files derived from "Solid Tissue Normal"
+2. Find RNA-Seq gene expression files derived from "Primary Tumor"
+3. Limit cases from #1 and #2 that have gene expression results from both normal and tumor.
+
+In this code block, find all "HTSeq - Counts" files that are derived from "Solid Tissue Normal" in the project "TCGA-BRCA". I used a combination of `files() %>% select(available_fields('files') %>% results()` to get an overview of the data available in the `files()` endpoint, followed by `grep_fields()` and `available_values()` to determine how to build filters. 
+
+```{r}
+nl_ge_files = files() %>%
+    filter(~   cases.samples.sample_type=='Solid Tissue Normal' &
+               cases.project.project_id == 'TCGA-BRCA' &
+               analysis.workflow_type == "HTSeq - Counts") %>%
+    GenomicDataCommons::select(c(default_fields('files'),
+                                 'cases.case_id',
+                                 'cases.samples.sample_type')) %>%
+    results_all() %>%
+    as.data.frame()
+```
+
+And do the same, but now looking for gene expression from tumors.
+
+```{r}
+tm_ge_files = files() %>%
+    filter(~   cases.samples.sample_type=='Primary Tumor' &
+               cases.project.project_id == 'TCGA-BRCA' &
+               analysis.workflow_type == "HTSeq - Counts") %>%
+    GenomicDataCommons::select(c(default_fields('files'),
+                                 'cases.case_id',
+                                 'cases.samples.sample_type')) %>%
+    results_all() %>%
+    as.data.frame()
+```
+
+Now, we have two data frames describing the normal- and tumor-derived TCGA-BRCA gene expression files. Note that I asked the GDC to provide `cases.case_id` as part of the record using `select()`. By looking for the intersection of cases between these two sets of files, we can find cases that contain files derived from both tumor and normal tissue.
+
+```{r}
+matchedcases = intersect(tm_ge_files$cases.case_id,
+                         nl_ge_files$cases.case_id)
+# how many matched cases?
+length(matchedcases)
+```
+
+We can now create a `data.frame` that contains file information for only the matched samples:
+
+```{r}
+matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
+                                subset(tm_ge_files,cases.case_id %in% matchedcases))
+```
+
+Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.
+
+```{r eval=FALSE}
+library(BiocParallel)
+register(MulticoreParam())
+destdir = tempdir() # use a temp directory for example, change for yourself
+fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
+                  function(file_id) {
+                      gdcdata(file_id, progress = FALSE,
+                              destination_dir = destdir,
+                              overwrite = TRUE)
+                  })
+```
+
+Now, `fnames` should be a list of file names that can be read into and processed with R.
+
+```{r sessionInfo}
+sessionInfo()
+```

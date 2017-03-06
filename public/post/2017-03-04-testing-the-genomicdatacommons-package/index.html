@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.18.1" />
+  <meta name="author" content="Sean Davis">
+  
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Sean Davis">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Sean Davis">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="/post/2017-03-04-testing-the-genomicdatacommons-package/">
+
+  
+
+  <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package | Sean Davis</title>
+
+
+
+
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Sean Davis</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications_selected">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Posts</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Teaching</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+  <div class="article-container">
+    <h1 itemprop="name">Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-03-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sat, Mar 4, 2017
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/software">Software</a
+    >, 
+    
+    <a href="/categories/tutorial">Tutorial</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/bioconductor">Bioconductor</a
+    >, 
+    
+    <a href="/tags/genomicdatacommons">GenomicDataCommons</a
+    >, 
+    
+    <a href="/tags/software">Software</a
+    >, 
+    
+    <a href="/tags/data-science">Data Science</a
+    >, 
+    
+    <a href="/tags/api">API</a
+    >, 
+    
+    <a href="/tags/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2f2017-03-04-testing-the-genomicdatacommons-package%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Matched%20tumor%2fnormal%20pairs--a%20use%20case%20for%20the%20GenomicDataCommons%20Bioconductor%20package&amp;url=%2fpost%2f2017-03-04-testing-the-genomicdatacommons-package%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2017-03-04-testing-the-genomicdatacommons-package%2f&amp;title=Matched%20tumor%2fnormal%20pairs--a%20use%20case%20for%20the%20GenomicDataCommons%20Bioconductor%20package"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2017-03-04-testing-the-genomicdatacommons-package%2f&amp;title=Matched%20tumor%2fnormal%20pairs--a%20use%20case%20for%20the%20GenomicDataCommons%20Bioconductor%20package"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Matched%20tumor%2fnormal%20pairs--a%20use%20case%20for%20the%20GenomicDataCommons%20Bioconductor%20package&amp;body=%2fpost%2f2017-03-04-testing-the-genomicdatacommons-package%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+
+
+<p>The NCI Genomic Data Commons (<a href="https://gdc.nci.nih.gov">GDC</a>) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a <a href="https://bioconductor.org">Bioconductor</a> package that interfaces with the <a href="https://gdc-api.nci.nih.gov">GDC API</a> to provide search and data retrieval from within R.</p>
+<p>In the first of what will likely be a set of use cases for the <a href="https://github.com/Bioconductor/GenomicDataCommons">GenomicDataCommons</a>, I am going to address a question that came up on twitter from <a href="https://twitter.com/sleight82">@sleight82</a></p>
+<blockquote>
+<p><a href="https://twitter.com/sleight82/status/837898737540198400">Asking for a non-tweeter: can you find matched control samples?</a></p>
+</blockquote>
+{{ tweet 837898737540198400 }}
+<p>The answer is, “Yes.” I am going to assume that what the “non-tweeter” friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:</p>
+<blockquote>
+<p>Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?</p>
+</blockquote>
+<pre class="r"><code>library(GenomicDataCommons)</code></pre>
+<pre><code>## Loading required package: magrittr</code></pre>
+<pre><code>## 
+## Attaching package: &#39;GenomicDataCommons&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<p>The GDC API puts some constraints on what can be done directly. But, since we are working in R, we have a toolbox that allows us to build a solution out of component parts. The strategy that I am going to employ is a three-step approach</p>
+<ol style="list-style-type: decimal">
+<li>Find RNA-Seq gene expression files derived from “Solid Tissue Normal”</li>
+<li>Find RNA-Seq gene expression files derived from “Primary Tumor”</li>
+<li>Limit cases from #1 and #2 that have gene expression results from both normal and tumor.</li>
+</ol>
+<p>In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of <code>files() %&gt;% select(available_fields('files') %&gt;% results()</code> to get an overview of the data available in the <code>files()</code> endpoint, followed by <code>grep_fields()</code> and <code>available_values()</code> to determine how to build filters.</p>
+<pre class="r"><code>nl_ge_files = files() %&gt;%
+    filter(~   cases.samples.sample_type==&#39;Solid Tissue Normal&#39; &amp;
+               cases.project.project_id == &#39;TCGA-BRCA&#39; &amp;
+               analysis.workflow_type == &quot;HTSeq - Counts&quot;) %&gt;%
+    GenomicDataCommons::select(c(default_fields(&#39;files&#39;),
+                                 &#39;cases.case_id&#39;,
+                                 &#39;cases.samples.sample_type&#39;)) %&gt;%
+    results_all() %&gt;%
+    as.data.frame()</code></pre>
+<p>And do the same, but now looking for gene expression from tumors.</p>
+<pre class="r"><code>tm_ge_files = files() %&gt;%
+    filter(~   cases.samples.sample_type==&#39;Primary Tumor&#39; &amp;
+               cases.project.project_id == &#39;TCGA-BRCA&#39; &amp;
+               analysis.workflow_type == &quot;HTSeq - Counts&quot;) %&gt;%
+    GenomicDataCommons::select(c(default_fields(&#39;files&#39;),
+                                 &#39;cases.case_id&#39;,
+                                 &#39;cases.samples.sample_type&#39;)) %&gt;%
+    results_all() %&gt;%
+    as.data.frame()</code></pre>
+<p>Now, we have two data frames describing the normal- and tumor-derived TCGA-BRCA gene expression files. Note that I asked the GDC to provide <code>cases.case_id</code> as part of the record using <code>select()</code>. By looking for the intersection of cases between these two sets of files, we can find cases that contain files derived from both tumor and normal tissue.</p>
+<pre class="r"><code>matchedcases = intersect(tm_ge_files$cases.case_id,
+                         nl_ge_files$cases.case_id)
+# how many matched cases?
+length(matchedcases)</code></pre>
+<pre><code>## [1] 112</code></pre>
+<p>We can now create a <code>data.frame</code> that contains file information for only the matched samples:</p>
+<pre class="r"><code>matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
+                                subset(tm_ge_files,cases.case_id %in% matchedcases))</code></pre>
+<p>Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.</p>
+<pre class="r"><code>library(BiocParallel)
+register(MulticoreParam())
+destdir = tempdir() # use a temp directory for example, change for yourself
+fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
+                  function(file_id) {
+                      gdcdata(file_id, progress = FALSE,
+                              destination_dir = destdir,
+                              overwrite = TRUE)
+                  })</code></pre>
+<p>Now, <code>fnames</code> should be a list of file names that can be read into and processed with R.</p>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R Under development (unstable) (2016-10-26 r71594)
+## Platform: x86_64-apple-darwin13.4.0 (64-bit)
+## Running under: macOS Sierra 10.12.3
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] GenomicDataCommons_0.99.8 magrittr_1.5             
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.9       xml2_1.1.1        knitr_1.15.1     
+##  [4] xtable_1.8-2      R6_2.2.0          stringr_1.2.0    
+##  [7] httr_1.2.1        tools_3.4.0       data.table_1.10.4
+## [10] miniUI_0.1.1      htmltools_0.3.5   assertthat_0.1   
+## [13] yaml_2.1.14       lazyeval_0.2.0    rprojroot_1.2    
+## [16] digest_0.6.12     tibble_1.2        bookdown_0.3     
+## [19] shiny_1.0.0       readr_1.0.0       curl_2.3         
+## [22] evaluate_0.10     mime_0.5          rmarkdown_1.3    
+## [25] blogdown_0.0.18   stringi_1.1.2     methods_3.4.0    
+## [28] backports_1.0.5   jsonlite_1.3      httpuv_1.3.3</code></pre>
+
+
+
+    </div>
+  </div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="/post/2015-07-23-r-rmarkdown/"><span
+      aria-hidden="true">&larr;</span> Hello R Markdown</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'seandavi';
+    var disqus_identifier = '\/post\/2017-03-04-testing-the-genomicdatacommons-package\/';
+    var disqus_title = 'Matched tumor\/normal pairs--a use case for the GenomicDataCommons Bioconductor package';
+    var disqus_url = '\/post\/2017-03-04-testing-the-genomicdatacommons-package\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Sean Davis &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-93043521-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
