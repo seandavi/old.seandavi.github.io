@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on Sean Davis</title>
+    <link>/tags/api/index.xml</link>
+    <description>Recent content in Api on Sean Davis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <atom:link href="/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
+      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;The NCI Genomic Data Commons (&lt;a href=&#34;https://gdc.nci.nih.gov&#34;&gt;GDC&lt;/a&gt;) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a &lt;a href=&#34;https://bioconductor.org&#34;&gt;Bioconductor&lt;/a&gt; package that interfaces with the &lt;a href=&#34;https://gdc-api.nci.nih.gov&#34;&gt;GDC API&lt;/a&gt; to provide search and data retrieval from within R.&lt;/p&gt;
+&lt;p&gt;In the first of what will likely be a set of use cases for the &lt;a href=&#34;https://github.com/Bioconductor/GenomicDataCommons&#34;&gt;GenomicDataCommons&lt;/a&gt;, I am going to address a question that came up on twitter from &lt;a href=&#34;https://twitter.com/sleight82&#34;&gt;@sleight82&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;Asking for a non-tweeter: can you find matched control samples?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+{{ tweet 837898737540198400 }}
+&lt;p&gt;The answer is, “Yes.” I am going to assume that what the “non-tweeter” friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(GenomicDataCommons)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: magrittr&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;GenomicDataCommons&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The GDC API puts some constraints on what can be done directly. But, since we are working in R, we have a toolbox that allows us to build a solution out of component parts. The strategy that I am going to employ is a three-step approach&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Find RNA-Seq gene expression files derived from “Solid Tissue Normal”&lt;/li&gt;
+&lt;li&gt;Find RNA-Seq gene expression files derived from “Primary Tumor”&lt;/li&gt;
+&lt;li&gt;Limit cases from #1 and #2 that have gene expression results from both normal and tumor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of &lt;code&gt;files() %&amp;gt;% select(available_fields(&#39;files&#39;) %&amp;gt;% results()&lt;/code&gt; to get an overview of the data available in the &lt;code&gt;files()&lt;/code&gt; endpoint, followed by &lt;code&gt;grep_fields()&lt;/code&gt; and &lt;code&gt;available_values()&lt;/code&gt; to determine how to build filters.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nl_ge_files = files() %&amp;gt;%
+    filter(~   cases.samples.sample_type==&amp;#39;Solid Tissue Normal&amp;#39; &amp;amp;
+               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
+               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
+    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
+                                 &amp;#39;cases.case_id&amp;#39;,
+                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
+    results_all() %&amp;gt;%
+    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And do the same, but now looking for gene expression from tumors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_ge_files = files() %&amp;gt;%
+    filter(~   cases.samples.sample_type==&amp;#39;Primary Tumor&amp;#39; &amp;amp;
+               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
+               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
+    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
+                                 &amp;#39;cases.case_id&amp;#39;,
+                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
+    results_all() %&amp;gt;%
+    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we have two data frames describing the normal- and tumor-derived TCGA-BRCA gene expression files. Note that I asked the GDC to provide &lt;code&gt;cases.case_id&lt;/code&gt; as part of the record using &lt;code&gt;select()&lt;/code&gt;. By looking for the intersection of cases between these two sets of files, we can find cases that contain files derived from both tumor and normal tissue.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matchedcases = intersect(tm_ge_files$cases.case_id,
+                         nl_ge_files$cases.case_id)
+# how many matched cases?
+length(matchedcases)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 112&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now create a &lt;code&gt;data.frame&lt;/code&gt; that contains file information for only the matched samples:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
+                                subset(tm_ge_files,cases.case_id %in% matchedcases))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(BiocParallel)
+register(MulticoreParam())
+destdir = tempdir() # use a temp directory for example, change for yourself
+fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
+                  function(file_id) {
+                      gdcdata(file_id, progress = FALSE,
+                              destination_dir = destdir,
+                              overwrite = TRUE)
+                  })&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, &lt;code&gt;fnames&lt;/code&gt; should be a list of file names that can be read into and processed with R.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R Under development (unstable) (2016-10-26 r71594)
+## Platform: x86_64-apple-darwin13.4.0 (64-bit)
+## Running under: macOS Sierra 10.12.3
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] GenomicDataCommons_0.99.8 magrittr_1.5             
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.9       xml2_1.1.1        knitr_1.15.1     
+##  [4] xtable_1.8-2      R6_2.2.0          stringr_1.2.0    
+##  [7] httr_1.2.1        tools_3.4.0       data.table_1.10.4
+## [10] miniUI_0.1.1      htmltools_0.3.5   assertthat_0.1   
+## [13] yaml_2.1.14       lazyeval_0.2.0    rprojroot_1.2    
+## [16] digest_0.6.12     tibble_1.2        bookdown_0.3     
+## [19] shiny_1.0.0       readr_1.0.0       curl_2.3         
+## [22] evaluate_0.10     mime_0.5          rmarkdown_1.3    
+## [25] blogdown_0.0.18   stringi_1.1.2     methods_3.4.0    
+## [28] backports_1.0.5   jsonlite_1.3      httpuv_1.3.3&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
