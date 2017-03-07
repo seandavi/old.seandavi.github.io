@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on Sean Davis</title>
-    <link>/talk/index.xml</link>
+    <link>https://seandavi.github.io/talk/index.xml</link>
     <description>Recent content in Recent &amp; Upcoming Talks on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,30 +12,30 @@
     
     <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>/talk/example-talk/</link>
+      <link>https://seandavi.github.io/talk/example-talk/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
+      <guid>https://seandavi.github.io/talk/example-talk/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>/talk/DFCI_CBCB/</link>
+      <link>https://seandavi.github.io/talk/DFCI_CBCB/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>/talk/DFCI_CBCB/</guid>
+      <guid>https://seandavi.github.io/talk/DFCI_CBCB/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/1aknqkvCKalCWwXiOmUUN8B-2rvafSEBBx58NSqRyfe4/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>/talk/2016_07_16_hour_of_code/</link>
+      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>/talk/2016_07_16_hour_of_code/</guid>
+      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
       <description></description>
     </item>
     
