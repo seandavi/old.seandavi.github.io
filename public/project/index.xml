@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sean Davis</title>
-    <link>https://seandavi.github.io/project/index.xml</link>
+    <link>/project/index.xml</link>
     <description>Recent content in Projects on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
+      <link>/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
+      <guid>/project/genomicdatacommons/</guid>
       <description>&lt;p&gt;The National Cancer Institute (NCI) has established
 the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
 provides the cancer research community with an open and unified
@@ -33,10 +33,10 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     
     <item>
       <title>External Project</title>
-      <link>https://seandavi.github.io/project/example-external-project/</link>
+      <link>/project/example-external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/example-external-project/</guid>
+      <guid>/project/example-external-project/</guid>
       <description></description>
     </item>
     

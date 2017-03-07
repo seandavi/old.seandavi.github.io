@@ -20,7 +20,7 @@ In the first of what will likely be a set of use cases for the [GenomicDataCommo
 
 > [Asking for a non-tweeter: can you find matched control samples?](https://twitter.com/sleight82/status/837898737540198400)
 
-`r htmltools::HTML('{{ tweet 837898737540198400 }}')`
+{{ tweet 837898737540198400 }}
 
 The answer is, "Yes." I am going to assume that what the "non-tweeter" friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:
 
@@ -75,9 +75,10 @@ length(matchedcases)
 
 We can now create a `data.frame` that contains file information for only the matched samples:
 
-```{r}
+```{r }
 matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
                                 subset(tm_ge_files,cases.case_id %in% matchedcases))
+head(matched_tn_ge_file_info)
 ```
 
 Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.
