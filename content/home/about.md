@@ -49,12 +49,11 @@ weight = 1
 
 # Biography
 
-Sean Davis is a pediatric oncologist at the National Cancer Institute
-at the National Institutes of Health. His research and collaborations
-span biomedical and genomic data science, open data approaches in
-cancer research, software development and engineering. He also has a
-strong interest in the interplay between data science, data
-engineering, data management, and IT infrastructure and technology and
-has been involved with numerous cloud-based data commons
-efforts. Finally, he has a passion for education and has taught numerous
-courses in data science, programming, and genomics.
+I am a pediatric oncologist in the National Cancer Institute at the
+National Institutes of Health. My research and collaborations span
+biomedical and genomic data science, open data approaches in cancer
+research, and software development and engineering. My interest in the
+interplay among data science, data engineering, and big data
+approaches in science has lead to my involvement in cloud-based data
+commons efforts. Finally, I have organized and taught several courses
+and tutorials in data science, programming, and genomics.
