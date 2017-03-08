@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sean Davis on Sean Davis</title>
-    <link>https://seandavi.github.io/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content in Sean Davis on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -178,10 +178,10 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
+      <link>/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
+      <guid>/project/genomicdatacommons/</guid>
       <description>&lt;p&gt;The National Cancer Institute (NCI) has established
 the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
 provides the cancer research community with an open and unified
@@ -202,40 +202,103 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     </item>
     
     <item>
+      <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
+      <link>/publication/28114280/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/28114280/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>https://seandavi.github.io/talk/example-talk/</link>
+      <link>/talk/example-talk/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/example-talk/</guid>
+      <guid>/talk/example-talk/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>https://seandavi.github.io/talk/DFCI_CBCB/</link>
+      <link>/talk/DFCI_CBCB/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/DFCI_CBCB/</guid>
+      <guid>/talk/DFCI_CBCB/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/1aknqkvCKalCWwXiOmUUN8B-2rvafSEBBx58NSqRyfe4/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
+      <link>/talk/2016_07_16_hour_of_code/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
+      <guid>/talk/2016_07_16_hour_of_code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upregulation of IFN-Inducible and Damage-Response Pathways in Chronic Graft-versus-Host Disease.</title>
+      <link>/publication/27694491/</link>
+      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/27694491/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Selective Packaging of Genomic RNA by HIV-1.</title>
+      <link>/publication/27626441/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/27626441/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Point Mutations in Exon 1B of APC Reveal Gastric Adenocarcinoma and Proximal Polyposis of the Stomach as a Familial Adenomatous Polyposis Variant.</title>
+      <link>/publication/27087319/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/27087319/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
+      <link>/publication/27005934/</link>
+      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/27005934/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
+      <link>/publication/26962861/</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/26962861/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
+      <link>/publication/26463000/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/26463000/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>https://seandavi.github.io/post/2015-07-23-r-rmarkdown/</link>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://seandavi.github.io/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -273,7 +336,7 @@ pie(
   init.angle = -50, border = NA
 )&lt;/code&gt;&lt;/pre&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://seandavi.github.io/post/2015-07-23-r-rmarkdown/figures/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;img src=&#34;#####content/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: A fancy pie chart.
 &lt;/p&gt;
@@ -291,11 +354,20 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
-      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor</title>
-      <link>https://seandavi.github.io/publication/geoquery/</link>
-      <pubDate>Sun, 15 Jul 2007 00:00:00 +0000</pubDate>
+      <title>A Genome-Wide Scan Identifies Variants in NFIB Associated with Metastasis in Patients with Osteosarcoma.</title>
+      <link>/publication/26084801/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/publication/geoquery/</guid>
+      <guid>/publication/26084801/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inhibition of Survivin with YM155 Induces Durable Tumor Response in Anaplastic Thyroid Cancer.</title>
+      <link>/publication/25944801/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/25944801/</guid>
       <description></description>
     </item>
     
