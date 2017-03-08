@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Sean Davis</title>
-    <link>/categories/tutorial/index.xml</link>
+    <link>https://seandavi.github.io/categories/tutorial/index.xml</link>
     <description>Recent content in Tutorial on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -24,7 +24,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;Asking for a non-tweeter: can you find matched control samples?&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;{{ tweet 837898737540198400 }}&lt;/p&gt;
 &lt;p&gt;The answer is, “Yes.” I am going to assume that what the “non-tweeter” friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?&lt;/p&gt;
@@ -42,7 +41,7 @@
 &lt;li&gt;Find RNA-Seq gene expression files derived from “Primary Tumor”&lt;/li&gt;
 &lt;li&gt;Limit cases from #1 and #2 that have gene expression results from both normal and tumor.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of &lt;code&gt;files() %&amp;gt;% select(available_fields(&#39;files&#39;) %&amp;gt;% results()&lt;/code&gt; to get an overview of the data available in the &lt;code&gt;files()&lt;/code&gt; endpoint, followed by &lt;code&gt;grep_fields()&lt;/code&gt; and &lt;code&gt;available_values()&lt;/code&gt; to determine how to build filters.&lt;/p&gt;
+&lt;p&gt;In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of &lt;code&gt;files() %&amp;gt;% select(available_fields(&#39;files&#39;)) %&amp;gt;% results()&lt;/code&gt; to get an overview of the data available in the &lt;code&gt;files()&lt;/code&gt; endpoint, followed by &lt;code&gt;grep_fields()&lt;/code&gt; and &lt;code&gt;available_values()&lt;/code&gt; to determine how to build filters.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nl_ge_files = files() %&amp;gt;%
     filter(~   cases.samples.sample_type==&amp;#39;Solid Tissue Normal&amp;#39; &amp;amp;
                cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
