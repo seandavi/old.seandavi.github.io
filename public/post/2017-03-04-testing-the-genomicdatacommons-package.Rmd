@@ -20,7 +20,6 @@ In the first of what will likely be a set of use cases for the [GenomicDataCommo
 
 > [Asking for a non-tweeter: can you find matched control samples?](https://twitter.com/sleight82/status/837898737540198400)
 
-{{ tweet 837898737540198400 }}
 
 The answer is, "Yes." I am going to assume that what the "non-tweeter" friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:
 
@@ -36,7 +35,7 @@ The GDC API puts some constraints on what can be done directly. But, since we ar
 2. Find RNA-Seq gene expression files derived from "Primary Tumor"
 3. Limit cases from #1 and #2 that have gene expression results from both normal and tumor.
 
-In this code block, find all "HTSeq - Counts" files that are derived from "Solid Tissue Normal" in the project "TCGA-BRCA". I used a combination of `files() %>% select(available_fields('files') %>% results()` to get an overview of the data available in the `files()` endpoint, followed by `grep_fields()` and `available_values()` to determine how to build filters. 
+In this code block, find all "HTSeq - Counts" files that are derived from "Solid Tissue Normal" in the project "TCGA-BRCA". I used a combination of `files() %>% select(available_fields('files')) %>% results()` to get an overview of the data available in the `files()` endpoint, followed by `grep_fields()` and `available_values()` to determine how to build filters. 
 
 ```{r}
 nl_ge_files = files() %>%
