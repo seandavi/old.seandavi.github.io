@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Sean Davis</title>
-    <link>https://seandavi.github.io/publication/index.xml</link>
+    <link>/publication/index.xml</link>
     <description>Recent content in Publications on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,137 +11,11 @@
     <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
-      <link>https://seandavi.github.io/publication/28114280/</link>
-      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor</title>
+      <link>/publication/geoquery/</link>
+      <pubDate>Sun, 15 Jul 2007 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/publication/28114280/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Upregulation of IFN-Inducible and Damage-Response Pathways in Chronic Graft-versus-Host Disease.</title>
-      <link>https://seandavi.github.io/publication/27694491/</link>
-      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/27694491/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On the Selective Packaging of Genomic RNA by HIV-1.</title>
-      <link>https://seandavi.github.io/publication/27626441/</link>
-      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/27626441/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Point Mutations in Exon 1B of APC Reveal Gastric Adenocarcinoma and Proximal Polyposis of the Stomach as a Familial Adenomatous Polyposis Variant.</title>
-      <link>https://seandavi.github.io/publication/27087319/</link>
-      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/27087319/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
-      <link>https://seandavi.github.io/publication/27005934/</link>
-      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/27005934/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
-      <link>https://seandavi.github.io/publication/26962861/</link>
-      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/26962861/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
-      <link>https://seandavi.github.io/publication/26463000/</link>
-      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/26463000/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Genome-Wide Scan Identifies Variants in NFIB Associated with Metastasis in Patients with Osteosarcoma.</title>
-      <link>https://seandavi.github.io/publication/26084801/</link>
-      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/26084801/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inhibition of Survivin with YM155 Induces Durable Tumor Response in Anaplastic Thyroid Cancer.</title>
-      <link>https://seandavi.github.io/publication/25944801/</link>
-      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25944801/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
-      <link>https://seandavi.github.io/publication/25940539/</link>
-      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25940539/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
-      <link>https://seandavi.github.io/publication/25929339/</link>
-      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25929339/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Integrated analysis of DNA methylation, immunohistochemistry and mRNA expression, data identifies a methylation expression index (MEI) robustly associated with survival of ER-positive breast cancer patients.</title>
-      <link>https://seandavi.github.io/publication/25773928/</link>
-      <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25773928/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Characterization of genomic alterations in radiation-associated breast cancer among childhood cancer survivors, using comparative genomic hybridization (CGH) arrays.</title>
-      <link>https://seandavi.github.io/publication/25764003/</link>
-      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25764003/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Super-enhancers delineate disease-associated regulatory nodes in T cells.</title>
-      <link>https://seandavi.github.io/publication/25686607/</link>
-      <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25686607/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Orchestrating high-throughput genomic analysis with Bioconductor.</title>
-      <link>https://seandavi.github.io/publication/25633503/</link>
-      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25633503/</guid>
+      <guid>/publication/geoquery/</guid>
       <description></description>
     </item>
     
