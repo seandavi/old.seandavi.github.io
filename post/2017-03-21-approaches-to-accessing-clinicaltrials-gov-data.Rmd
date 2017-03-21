@@ -1,0 +1,50 @@
+---
+title: Approaches to accessing ClinicalTrials.gov data
+author: Sean Davis
+date: '2017-03-21'
+categories:
+  - data science
+  - R
+tags:
+  - clinicaltrials.gov
+  - medical informatics
+  - open data
+---
+
+I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of [ClinicalTrials.gov](https://clinicaltrials.gov) as a resource for enhancing patient engagement, trial recruitment, and results reporting. One of the original reasons for me to attend was to help run a hackathon centered around the newest incarnation of API to access ClinicalTrials.gov data. The details of the API are described in text at the [API endpoint](https://clinicaltrialsapi.cancer.gov). [Node.js](https://nodejs.org)-based code for the server side is available at the [GitHub repository](https://github.com/NCIP/clinical-trials-search). In preparation for the workshop discussion, I prepared a [client package using R, the ClinicalTrialsAPI package](https://github.com/seandavi/ClinicalTrialsAPI). The RESTful API is very simple, so a quick code runthrough using the ClinicalTrialsAPI package will give a sense of the capabilities.
+
+The package is available on GitHub and is MIT-licensed. 
+
+```{r installationandload,message=FALSE,warning=FALSE}
+devtools::install_github('seandavi/ClinicalTrialsAPI')
+library('ClinicalTrialsAPI')
+```
+
+After installing and loading the package, we can get a sense of the data available using a simple query. In the next code block, we are not 
+
+```{r}
+res = ct_search()
+trialresults = res$trials
+str(trialresults[1],list.len=10)
+```
+
+Filtering results is pretty straightforward, as only limited comparators are available (see [docs](https://clinicaltrialsapi.cancer.gov) for details). The `fields()` function returns all fields and their types as a named character vector.
+
+```{r}
+head(fields())
+```
+
+Finally, the API has a term mapping functionality, useful for type-ahead functionality or mapping text to terms. The client returns a `data.frame` when called with a text to match.
+
+```{r}
+lookup_term("panc")
+```
+
+Some more advanced queries are available [at the ClinicalTrialsAPI github repo](https://github.com/seandavi/ClinicalTrialsAPI).
+
+```{r sessionInfo}
+sessionInfo()
+```
+
+
+

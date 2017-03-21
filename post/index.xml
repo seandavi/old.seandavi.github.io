@@ -11,6 +11,101 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Approaches to accessing ClinicalTrials.gov data</title>
+      <link>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of &lt;a href=&#34;https://clinicaltrials.gov&#34;&gt;ClinicalTrials.gov&lt;/a&gt; as a resource for enhancing patient engagement, trial recruitment, and results reporting. One of the original reasons for me to attend was to help run a hackathon centered around the newest incarnation of API to access ClinicalTrials.gov data. The details of the API are described in text at the &lt;a href=&#34;https://clinicaltrialsapi.cancer.gov&#34;&gt;API endpoint&lt;/a&gt;. &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt;-based code for the server side is available at the &lt;a href=&#34;https://github.com/NCIP/clinical-trials-search&#34;&gt;GitHub repository&lt;/a&gt;. In preparation for the workshop discussion, I prepared a &lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34;&gt;client package using R, the ClinicalTrialsAPI package&lt;/a&gt;. The RESTful API is very simple, so a quick code runthrough using the ClinicalTrialsAPI package will give a sense of the capabilities.&lt;/p&gt;
+&lt;p&gt;The package is available on GitHub and is MIT-licensed.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;devtools::install_github(&amp;#39;seandavi/ClinicalTrialsAPI&amp;#39;)
+library(&amp;#39;ClinicalTrialsAPI&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;After installing and loading the package, we can get a sense of the data available using a simple query. In the next code block, we are not&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;res = ct_search()
+trialresults = res$trials
+str(trialresults[1],list.len=10)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## List of 1
+##  $ :List of 47
+##   ..$ nci_id                              : chr &amp;quot;NCI-2014-01508&amp;quot;
+##   ..$ nct_id                              : chr &amp;quot;NCT02193282&amp;quot;
+##   ..$ protocol_id                         : chr &amp;quot;A081105&amp;quot;
+##   ..$ ccr_id                              : NULL
+##   ..$ ctep_id                             : chr &amp;quot;A081105&amp;quot;
+##   ..$ dcp_id                              : NULL
+##   ..$ other_ids                           :List of 1
+##   .. ..$ :List of 2
+##   .. .. ..$ name : chr &amp;quot;Study Protocol Other Identifier&amp;quot;
+##   .. .. ..$ value: chr &amp;quot;CALGB A081105&amp;quot;
+##   ..$ associated_studies                  :List of 1
+##   .. ..$ :List of 2
+##   .. .. ..$ study_id     : chr &amp;quot;NCI-2014-01509&amp;quot;
+##   .. .. ..$ study_id_type: chr &amp;quot;NCI&amp;quot;
+##   ..$ amendment_date                      : chr &amp;quot;2015-12-11T00:00:00&amp;quot;
+##   ..$ current_trial_status                : chr &amp;quot;Active&amp;quot;
+##   .. [list output truncated]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Filtering results is pretty straightforward, as only limited comparators are available (see &lt;a href=&#34;https://clinicaltrialsapi.cancer.gov&#34;&gt;docs&lt;/a&gt; for details). The &lt;code&gt;fields()&lt;/code&gt; function returns all fields and their types as a named character vector.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(fields())&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## accepts_healthy_volunteers_indicator                              acronym 
+##                             &amp;quot;string&amp;quot;                             &amp;quot;string&amp;quot; 
+##                       amendment_date                       anatomic_sites 
+##                               &amp;quot;date&amp;quot;                             &amp;quot;string&amp;quot; 
+##                 arms.arm_description                        arms.arm_name 
+##                             &amp;quot;string&amp;quot;                             &amp;quot;string&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, the API has a term mapping functionality, useful for type-ahead functionality or mapping text to terms. The client returns a &lt;code&gt;data.frame&lt;/code&gt; when called with a text to match.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;lookup_term(&amp;quot;panc&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                      term_key                        term term_type count
+## 1        pancreatic_carcinoma        Pancreatic Carcinoma _diseases   314
+## 2           pancreatic_cancer           Pancreatic Cancer _diseases   314
+## 3   pancreatic_adenocarcinoma   Pancreatic Adenocarcinoma _diseases   213
+## 4  stage_iv_pancreatic_cancer  Stage IV Pancreatic Cancer _diseases   160
+## 5 stage_iii_pancreatic_cancer Stage III Pancreatic Cancer _diseases   154
+##   count_normalized codes      score
+## 1       0.12093690 C3850 0.06781202
+## 2       0.12093690 C3850 0.06781202
+## 3       0.08313159 C8294 0.04661374
+## 4       0.06288961 C5711 0.02821089
+## 5       0.06058007 C7787 0.02717488&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Some more advanced queries are available &lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34;&gt;at the ClinicalTrialsAPI github repo&lt;/a&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R Under development (unstable) (2016-10-26 r71594)
+## Platform: x86_64-apple-darwin13.4.0 (64-bit)
+## Running under: macOS Sierra 10.12.3
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] ClinicalTrialsAPI_0.1.0 magrittr_1.5           
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.9          bookdown_0.3         withr_1.0.2         
+##  [4] digest_0.6.12        rprojroot_1.2        R6_2.2.0            
+##  [7] jsonlite_1.3         backports_1.0.5      git2r_0.18.0        
+## [10] evaluate_0.10        httr_1.2.1           blogdown_0.0.18     
+## [13] stringi_1.1.2        curl_2.3             rmarkdown_1.3       
+## [16] devtools_1.12.0.9000 tools_3.4.0          stringr_1.2.0       
+## [19] purrr_0.2.2          pkgload_0.0.0.9000   yaml_2.1.14         
+## [22] pkgbuild_0.0.0.9000  memoise_1.0.0        htmltools_0.3.5     
+## [25] knitr_1.15.1         methods_3.4.0&lt;/code&gt;&lt;/pre&gt;
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
       <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>

@@ -4,6 +4,14 @@
     
     
     <url>
+      <loc>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>/post/2017-03-04-testing-the-genomicdatacommons-package/</loc>
       <lastmod>2017-03-04T00:00:00+00:00</lastmod>
     </url>
@@ -135,8 +143,26 @@
     
     
     <url>
+      <loc>/tags/clinicaltrials/index.gov/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>/tags/data-science/</loc>
       <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/categories/data-science/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -151,6 +177,24 @@
     
   
     
+    
+  
+    
+    
+    <url>
+      <loc>/tags/medical-informatics/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+      <loc>/tags/open-data/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
     
   
     
@@ -182,8 +226,8 @@
     
     
     <url>
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2017-03-04T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -191,8 +235,8 @@
     
     
     <url>
-      <loc>/tags/r/</loc>
-      <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+      <loc>/categories/r/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -227,7 +271,7 @@
     
     
     <url>
-      <loc>/categories/software/</loc>
+      <loc>/tags/software/</loc>
       <lastmod>2017-03-04T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -236,7 +280,7 @@
     
     
     <url>
-      <loc>/tags/software/</loc>
+      <loc>/categories/software/</loc>
       <lastmod>2017-03-04T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
