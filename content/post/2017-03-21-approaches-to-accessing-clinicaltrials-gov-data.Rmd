@@ -11,12 +11,25 @@ tags:
   - open data
 ---
 
-I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of [ClinicalTrials.gov](https://clinicaltrials.gov) as a resource for enhancing patient engagement, trial recruitment, and results reporting. One of the original reasons for me to attend was to help run a hackathon centered around the newest incarnation of API to access ClinicalTrials.gov data. The details of the API are described in text at the [API endpoint](https://clinicaltrialsapi.cancer.gov). [Node.js](https://nodejs.org)-based code for the server side is available at the [GitHub repository](https://github.com/NCIP/clinical-trials-search). In preparation for the workshop discussion, I prepared a [client package using R, the ClinicalTrialsAPI package](https://github.com/seandavi/ClinicalTrialsAPI). The RESTful API is very simple, so a quick code runthrough using the ClinicalTrialsAPI package will give a sense of the capabilities.
+```{r include=FALSE,results="hide"}
+options(repos= c('https://cloud.r-project.org'))
+```
+
+I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of [ClinicalTrials.gov](https://clinicaltrials.gov) as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
+
+1. The [CTRP RESTful API](https://clinicaltrialsapi.cancer.gov).
+2. The [ClinicalTrials.gov API](https://clinicaltrials.gov/ct2/info/linking).
+3. The [Access to Aggregate Content of ClinicalTrials.gov (AACT) database](http://aact.ctti-clinicaltrials.org/).
+4. The [OpenTrials](https://opentrials.net/) API.
+
+## The CTRP RESTful API
+
+One of the original reasons for me to attend was to help run a hackathon centered around the newest incarnation of API to access ClinicalTrials.gov data. The details of the API are described in text at the [API endpoint](https://clinicaltrialsapi.cancer.gov). [Node.js](https://nodejs.org)-based code for the server side is available at the [GitHub repository](https://github.com/NCIP/clinical-trials-search). In preparation for the workshop discussion, I prepared a [client package using R, the ClinicalTrialsAPI package](https://github.com/seandavi/ClinicalTrialsAPI). The RESTful API is very simple, so a quick code runthrough using the ClinicalTrialsAPI package will give a sense of the capabilities.
 
 The package is available on GitHub and is MIT-licensed. 
 
 ```{r installationandload,message=FALSE,warning=FALSE}
-devtools::install_github('seandavi/ClinicalTrialsAPI')
+# devtools::install_github('seandavi/ClinicalTrialsAPI')
 library('ClinicalTrialsAPI')
 ```
 
@@ -42,9 +55,98 @@ lookup_term("panc")
 
 Some more advanced queries are available [at the ClinicalTrialsAPI github repo](https://github.com/seandavi/ClinicalTrialsAPI).
 
+## The ClinicalTrials.gov API
+
+Described [](), this xml-based API is queriable using the [rclinicaltrials R package](https://github.com/sachsmc/rclinicaltrials).
+
+```{r installrclinicaltrials}
+# install.packages('rclinicaltrials')
+library('rclinicaltrials')
+```
+
+As a simple example query:
+
+```{r rctquery10}
+z <- clinicaltrials_search(query = 'lime+disease')
+str(z)
+```
+
+Counting records is a useful way to see the "scope" of a term in the ClinicalTrials.gov dtabase.
+
+```{r rctcount10}
+clinicaltrials_count(query = "myeloma")
+```
+
+Terms can be combined either using `AND`, `OR`, and `NOT` in the text query. A character vector of search terms is also supported.
+
+```{r rctcount20}
+clinicaltrials_count(query = c("type=Intr", "cond=cancer"))
+```
+
+Getting bulk data from the API is possible using the `clinicaltrials_download` function.
+
+```{r rctdownload10}
+y <- clinicaltrials_download(query = 'myeloma', count = 10, include_results = TRUE)
+str(y,list.len=5)
+```
+
+As with any client that access complicated data via an API, dealing with returned results can be challenging. To quote the package documentation:
+
+> The data come from a relational database with lots of text fields, so it may take some effort to get the data into a flat format for analysis. For that reason, results come back from the clinicaltrials_download function as a list of dataframes. Each dataframe has a common key variable: nct_id. To merge dataframes, use this key. Otherwise, you can analyze the dataframes separately. They are organized into study information, locations, outcomes, interventions, results, and textblocks. Results, where available, is itself a list with three dataframes: participant flow, baseline data, and outcome data.
+
+## The AACT database
+
+The AACT database is a relationalized, open SQL database dump of the ClinicalTrials.gov dataset. The data are modeled as an [extended star schema](https://s3.amazonaws.com/aact-prod/documentation/aact_schema.png). An [online data dictionary](http://aact.ctti-clinicaltrials.org/data_dictionary) is also available.  Remarkably, the group who has developed this AACT database has exposed a public PostgreSQL database for the world to use. Of course, R speaks fluently to relational databases. A modern approach using R is to access such databases using the [`dplyr`](https://cran.r-project.org/package=dplyr).
+
+```{r warning=FALSE,message=FALSE}
+library(dplyr)
+library(RPostgreSQL)
+```
+
+Connect to the database. The [connection parameters below](http://aact.ctti-clinicaltrials.org/connect) should work, as this is a public instance.
+
+```{r}
+aact = src_postgres(dbname = 'aact',
+                    host = "aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com",
+                    user = 'aact',
+                    password = 'aact')
+show(aact)
+```
+
+Starting with the main table, `studies`, gives an example of the utility of SQL-based data dumps of complex datasets.
+
+```{r}
+study_tbl = tbl(src=aact, 'studies')
+head(study_tbl,3)
+```
+
+Find the available study types.
+
+```{r}
+study_tbl %>% select(study_type) %>%
+    group_by(study_type) %>% summarize(count = n()) %>%
+    collect()
+```
+
+Filter queries (SQL "LIKE" query) are straightforward.
+
+```{r}
+x  = study_tbl %>% filter(official_title %like% '%TP53%') %>% collect()
+dim(x)
+x$official_title[1:3]
+```
+
+## OpenTrials.net
+
+Rather than trying to address this one directly, I refer to an [available tutorial](https://bergant.github.io/OpenTrialsRDemo/).
+
+## Provenance
+
 ```{r sessionInfo}
 sessionInfo()
 ```
+
+
 
 
 
