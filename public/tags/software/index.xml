@@ -10,6 +10,18 @@
     <atom:link href="/tags/software/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>ClinicalTrialsAPI R package</title>
+      <link>/project/clinical-trials-gov/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/clinical-trials-gov/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
       <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>

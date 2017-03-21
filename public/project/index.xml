@@ -7,8 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Sat, 04 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ClinicalTrialsAPI R package</title>
+      <link>/project/clinical-trials-gov/</link>
+      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/project/clinical-trials-gov/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>The GenomicDataCommons Package</title>
