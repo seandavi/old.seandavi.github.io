@@ -1,0 +1,30 @@
++++
+abstract = "<%= AbstractText(ris) %>"
+abstract_short = "<%= AbstractText(ris) %>"
+authors = [ "<%= paste( apply(Author(ris)[[1]],1,function(x) paste(x[3],x[1],sep=' ')), collapse=', ') %>"  ] 
+date = "<%= sprintf('%d-%02d-%02d',YearPubmed(ris),MonthPubmed(ris),DayPubmed(ris)) %>"
+image_preview = ""
+math = true
+publication_types = ["2"] 
+publication = "<%= RefSource(ris) %>"
+publication_short = "<%= MedlineTA(ris) %>"
+selected = false
+title = "<%= ArticleTitle(ris) %>"
+url_code = ""
+url_dataset = ""
+url_pdf = ""
+url_project = ""
+url_slides = ""
+url_video = ""
+
+[[url_custom]]
+name = "Pubmed"
+url = "https://www.ncbi.nlm.nih.gov/pubmed/<%= PMID(ris) %>"
+
+# Optional featured image (relative to `static/img/` folder).
+[header]
+image = ""
+caption = ""
+
++++
+
