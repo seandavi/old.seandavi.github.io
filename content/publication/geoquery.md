@@ -23,8 +23,8 @@ url_video = ""
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/bubbles-wide.jpg"
-caption = "My caption :smile:"
+image = ""
+caption = ""
 
 +++
 
