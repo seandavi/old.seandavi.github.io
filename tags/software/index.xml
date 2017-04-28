@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software on Sean Davis</title>
-    <link>/tags/software/index.xml</link>
+    <link>https://seandavi.github.io/tags/software/index.xml</link>
     <description>Recent content in Software on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>ClinicalTrialsAPI R package</title>
-      <link>/project/clinical-trials-gov/</link>
+      <link>https://seandavi.github.io/project/clinical-trials-gov/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/clinical-trials-gov/</guid>
+      <guid>https://seandavi.github.io/project/clinical-trials-gov/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -189,10 +189,10 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>/project/genomicdatacommons/</link>
+      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/genomicdatacommons/</guid>
+      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
       <description>&lt;p&gt;The National Cancer Institute (NCI) has established
 the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
 provides the cancer research community with an open and unified
@@ -214,10 +214,10 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     
     <item>
       <title>The cRomwell R package</title>
-      <link>/project/cromwell/</link>
+      <link>https://seandavi.github.io/project/cromwell/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/cromwell/</guid>
+      <guid>https://seandavi.github.io/project/cromwell/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/cRomwell&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
