@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workflow on Sean Davis</title>
-    <link>/tags/workflow/index.xml</link>
+    <link>https://seandavi.github.io/tags/workflow/index.xml</link>
     <description>Recent content in Workflow on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,10 +11,10 @@
     
     <item>
       <title>The cRomwell R package</title>
-      <link>/project/cromwell/</link>
+      <link>https://seandavi.github.io/project/cromwell/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/cromwell/</guid>
+      <guid>https://seandavi.github.io/project/cromwell/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/cRomwell&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

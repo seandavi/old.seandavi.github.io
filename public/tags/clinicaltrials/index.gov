@@ -28,13 +28,13 @@
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
 
-  <link rel="alternate" href="/tags/clinicaltrials.gov/index.xml" type="application/rss+xml" title="Sean Davis">
-  <link rel="feed" href="/tags/clinicaltrials.gov/index.xml" type="application/rss+xml" title="Sean Davis">
+  <link rel="alternate" href="https://seandavi.github.io/tags/clinicaltrials.gov/index.xml" type="application/rss+xml" title="Sean Davis">
+  <link rel="feed" href="https://seandavi.github.io/tags/clinicaltrials.gov/index.xml" type="application/rss+xml" title="Sean Davis">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="/tags/clinicaltrials/index.gov/">
+  <link rel="canonical" href="https://seandavi.github.io/tags/clinicaltrials/index.gov/">
 
   
 
@@ -154,7 +154,7 @@
   
   
   <div>
-    <h2><a href="/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/">Approaches to accessing ClinicalTrials.gov data</a></h2>
+    <h2><a href="https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/">Approaches to accessing ClinicalTrials.gov data</a></h2>
     <div class="article-style">
       
       I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:

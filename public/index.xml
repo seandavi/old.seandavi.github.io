@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sean Davis on Sean Davis</title>
-    <link>/index.xml</link>
+    <link>https://seandavi.github.io/index.xml</link>
     <description>Recent content in Sean Davis on Sean Davis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
-      <link>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
+      <link>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</guid>
+      <guid>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -269,10 +269,10 @@ dim(x)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>ClinicalTrialsAPI R package</title>
-      <link>/project/clinical-trials-gov/</link>
+      <link>https://seandavi.github.io/project/clinical-trials-gov/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/clinical-trials-gov/</guid>
+      <guid>https://seandavi.github.io/project/clinical-trials-gov/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -281,10 +281,10 @@ dim(x)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -447,10 +447,10 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>/project/genomicdatacommons/</link>
+      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/genomicdatacommons/</guid>
+      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
       <description>&lt;p&gt;The National Cancer Institute (NCI) has established
 the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
 provides the cancer research community with an open and unified
@@ -472,10 +472,10 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     
     <item>
       <title>The cRomwell R package</title>
-      <link>/project/cromwell/</link>
+      <link>https://seandavi.github.io/project/cromwell/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/cromwell/</guid>
+      <guid>https://seandavi.github.io/project/cromwell/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/cRomwell&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -484,93 +484,93 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     
     <item>
       <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
-      <link>/publication/28114280/</link>
+      <link>https://seandavi.github.io/publication/28114280/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/28114280/</guid>
+      <guid>https://seandavi.github.io/publication/28114280/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>/talk/example-talk/</link>
+      <link>https://seandavi.github.io/talk/example-talk/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>/talk/example-talk/</guid>
+      <guid>https://seandavi.github.io/talk/example-talk/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>/talk/DFCI_CBCB/</link>
+      <link>https://seandavi.github.io/talk/DFCI_CBCB/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>/talk/DFCI_CBCB/</guid>
+      <guid>https://seandavi.github.io/talk/DFCI_CBCB/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/1aknqkvCKalCWwXiOmUUN8B-2rvafSEBBx58NSqRyfe4/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>/talk/2016_07_16_hour_of_code/</link>
+      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>/talk/2016_07_16_hour_of_code/</guid>
+      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Upregulation of IFN-Inducible and Damage-Response Pathways in Chronic Graft-versus-Host Disease.</title>
-      <link>/publication/27694491/</link>
+      <link>https://seandavi.github.io/publication/27694491/</link>
       <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27694491/</guid>
+      <guid>https://seandavi.github.io/publication/27694491/</guid>
       <description></description>
     </item>
     
     <item>
       <title>On the Selective Packaging of Genomic RNA by HIV-1.</title>
-      <link>/publication/27626441/</link>
+      <link>https://seandavi.github.io/publication/27626441/</link>
       <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27626441/</guid>
+      <guid>https://seandavi.github.io/publication/27626441/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Point Mutations in Exon 1B of APC Reveal Gastric Adenocarcinoma and Proximal Polyposis of the Stomach as a Familial Adenomatous Polyposis Variant.</title>
-      <link>/publication/27087319/</link>
+      <link>https://seandavi.github.io/publication/27087319/</link>
       <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27087319/</guid>
+      <guid>https://seandavi.github.io/publication/27087319/</guid>
       <description></description>
     </item>
     
     <item>
       <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
-      <link>/publication/27005934/</link>
+      <link>https://seandavi.github.io/publication/27005934/</link>
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27005934/</guid>
+      <guid>https://seandavi.github.io/publication/27005934/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
-      <link>/publication/26962861/</link>
+      <link>https://seandavi.github.io/publication/26962861/</link>
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/26962861/</guid>
+      <guid>https://seandavi.github.io/publication/26962861/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
-      <link>/publication/26463000/</link>
+      <link>https://seandavi.github.io/publication/26463000/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/26463000/</guid>
+      <guid>https://seandavi.github.io/publication/26463000/</guid>
       <description></description>
     </item>
     
