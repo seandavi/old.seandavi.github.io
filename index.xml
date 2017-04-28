@@ -11,6 +11,16 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
+      <link>https://seandavi.github.io/talk/UMD_FMO17/</link>
+      <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/UMD_FMO17/</guid>
+      <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/10WUmFcui3UwNRMDFbn3mdOHWb8Qy_78uNTFI21Yv7cs/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
       <link>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
@@ -562,15 +572,6 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/publication/26962861/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
-      <link>https://seandavi.github.io/publication/26463000/</link>
-      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/26463000/</guid>
       <description></description>
     </item>
     
