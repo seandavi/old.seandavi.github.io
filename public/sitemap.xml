@@ -4,6 +4,14 @@
     
     
     <url>
+      <loc>https://seandavi.github.io/talk/UMD_FMO17/</loc>
+      <lastmod>2017-04-27T16:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
       <loc>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</loc>
       <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     </url>
@@ -880,7 +888,7 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/categories/data-science/</loc>
+      <loc>https://seandavi.github.io/tags/data-science/</loc>
       <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -889,7 +897,7 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/tags/data-science/</loc>
+      <loc>https://seandavi.github.io/categories/data-science/</loc>
       <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -954,7 +962,7 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/categories/r/</loc>
+      <loc>https://seandavi.github.io/tags/r/</loc>
       <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -963,7 +971,7 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/tags/r/</loc>
+      <loc>https://seandavi.github.io/categories/r/</loc>
       <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -999,8 +1007,8 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/categories/software/</loc>
-      <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+      <loc>https://seandavi.github.io/tags/software/</loc>
+      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1008,8 +1016,8 @@
     
     
     <url>
-      <loc>https://seandavi.github.io/tags/software/</loc>
-      <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+      <loc>https://seandavi.github.io/categories/software/</loc>
+      <lastmod>2017-03-04T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
