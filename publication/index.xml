@@ -11,6 +11,15 @@
     <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>GenomicDataCommons: a Bioconductor Interface to the NCI Genomic Data Commons</title>
+      <link>https://seandavi.github.io/publication/GenomicDataCommons/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/GenomicDataCommons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
       <link>https://seandavi.github.io/publication/28114280/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
@@ -133,15 +142,6 @@
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/publication/25686607/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Orchestrating high-throughput genomic analysis with Bioconductor.</title>
-      <link>https://seandavi.github.io/publication/25633503/</link>
-      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/25633503/</guid>
       <description></description>
     </item>
     
