@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>GenomicDataCommons: a Bioconductor Interface to the NCI Genomic Data Commons</title>
+      <link>https://seandavi.github.io/publication/GenomicDataCommons/</link>
+      <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/GenomicDataCommons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
       <link>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
@@ -563,15 +572,6 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/publication/27005934/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
-      <link>https://seandavi.github.io/publication/26962861/</link>
-      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/26962861/</guid>
       <description></description>
     </item>
     
