@@ -11,7 +11,7 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
+      <title>Genomic Data Science with Bioconductor</title>
       <link>https://seandavi.github.io/talk/2017_05_02_CCR_Gottesman_BioconductorOverview/</link>
       <pubDate>Tue, 02 May 2017 14:15:00 +0000</pubDate>
       
