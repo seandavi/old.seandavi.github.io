@@ -12,6 +12,15 @@
     
     <item>
       <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
+      <link>https://seandavi.github.io/talk/2017_05_02_CCR_Gottesman_BioconductorOverview/</link>
+      <pubDate>Tue, 02 May 2017 14:15:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2017_05_02_CCR_Gottesman_BioconductorOverview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
       <link>https://seandavi.github.io/talk/UMD_FMO17/</link>
       <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
       
@@ -563,15 +572,6 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
       <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/publication/27087319/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
-      <link>https://seandavi.github.io/publication/27005934/</link>
-      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/publication/27005934/</guid>
       <description></description>
     </item>
     
