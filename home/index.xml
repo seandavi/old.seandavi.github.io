@@ -1,14 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Homes on Sean Davis</title>
-    <link>https://seandavi.github.io/home/index.xml</link>
-    <description>Recent content in Homes on Sean Davis</description>
+    <title>Homes on seandavi(s12)</title>
+    <link>/home/index.xml</link>
+    <description>Recent content in Homes on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title></title>
+      <link>/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
+
+&lt;p&gt;I am a pediatric oncologist in the National Cancer Institute at the
+National Institutes of Health. My research and collaborations span
+biomedical and genomic data science, open data approaches in cancer
+research, and software development and engineering. My interest in the
+interplay among data science, data engineering, and big data
+approaches in science has lead to my involvement in cloud-based data
+commons efforts. Finally, I have organized and taught several courses
+and tutorials in data science, programming, and genomics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/teaching/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://meetings.cshl.edu/courses.aspx?course=C-DATA&amp;amp;year=17&#34; target=&#34;_blank&#34;&gt;Cold Spring Harbor Laboratory, &lt;em&gt;Statistical Methods for Functional Genomics&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.seas.harvard.edu/news/2016/04/computing-that-goes-to-extremes&#34; target=&#34;_blank&#34;&gt;Harvard University, &lt;em&gt;Extreme Computing: Project-based High Performance Distributed and Parallel Systems&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

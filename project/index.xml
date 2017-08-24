@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Sean Davis</title>
-    <link>https://seandavi.github.io/project/index.xml</link>
-    <description>Recent content in Projects on Sean Davis</description>
+    <title>Projects on seandavi(s12)</title>
+    <link>/project/index.xml</link>
+    <description>Recent content in Projects on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Tue, 21 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>ClinicalTrialsAPI R package</title>
-      <link>https://seandavi.github.io/project/clinical-trials-gov/</link>
+      <link>/project/clinical-trials-gov/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/clinical-trials-gov/</guid>
+      <guid>/project/clinical-trials-gov/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -24,10 +23,10 @@
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
+      <link>/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
+      <guid>/project/genomicdatacommons/</guid>
       <description>&lt;p&gt;The National Cancer Institute (NCI) has established
 the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
 provides the cancer research community with an open and unified
@@ -49,10 +48,10 @@ bioinformatics methods available in Bioconductor.&lt;/p&gt;
     
     <item>
       <title>The cRomwell R package</title>
-      <link>https://seandavi.github.io/project/cromwell/</link>
+      <link>/project/cromwell/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/project/cromwell/</guid>
+      <guid>/project/cromwell/</guid>
       <description>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/cRomwell&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
