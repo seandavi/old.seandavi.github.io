@@ -1,0 +1,16 @@
+---
+title: "About me..."
+author: "Sean Davis"
+date: "8/24/2017"
+output: html_document
+---
+
+## Education
+
+- Pediatric Hematology and Oncoloogy, National Institutes of Health and Johns Hopkins University
+- Pediatric Residency, Childrens Hospital of Seattle
+- M.D., University of Pittsburgh, School of Medicine
+- Ph.D., University of Pittsburgh, School of Medicine
+- Bachelor of Science and Engineering, Princeton University
+
+
