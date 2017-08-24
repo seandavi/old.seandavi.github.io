@@ -1,8 +1,9 @@
-baseurl = "https://seandavi.github.io"
+baseurl = "https://seandavi.github.io/" # make sure to end in /
 title = "seandavi(s12)"
 copyright = "&copy; 2017 Sean Davis"
 theme = "blackburn"
 enableEmoji = true
+#canonifyurls = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
 # ignore blogdown files:
@@ -14,11 +15,6 @@ defaultContentLanguageInSubdir = false
 
 [blackfriday]
   hrefTargetBlank = true
-baseurl = "https://www.example.com/" # Make sure to end baseurl with a '/'
-title = "Your site title"
-author = "Your name"
-# Shown in the side menu
-copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
 paginate = 10
 
