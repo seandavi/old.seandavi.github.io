@@ -2,9 +2,9 @@
 title: Approaches to accessing ClinicalTrials.gov data
 author: Sean Davis
 date: '2017-03-21'
-categories:
-  - data science
+topics:
   - R
+  - software
 tags:
   - clinicaltrials.gov
   - medical informatics
@@ -12,6 +12,8 @@ tags:
 ---
 
 ```{r include=FALSE,results="hide"}
+library(knitr)
+opts_chunk$set(cache=TRUE)
 options(repos= c('https://cloud.r-project.org'))
 ```
 
@@ -47,11 +49,6 @@ Filtering results is pretty straightforward, as only limited comparators are ava
 head(fields())
 ```
 
-Finally, the API has a term mapping functionality, useful for type-ahead functionality or mapping text to terms. The client returns a `data.frame` when called with a text to match.
-
-```{r}
-lookup_term("panc")
-```
 
 Some more advanced queries are available [at the ClinicalTrialsAPI github repo](https://github.com/seandavi/ClinicalTrialsAPI).
 

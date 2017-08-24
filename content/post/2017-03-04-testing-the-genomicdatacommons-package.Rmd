@@ -2,7 +2,7 @@
 title: Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package
 author: Sean Davis
 date: '2017-03-04'
-categories:
+topics:
   - Software
   - Tutorial
 tags:
@@ -13,14 +13,18 @@ tags:
   - API
   - R
 ---
- 
+
+# Introduction
+
 The NCI Genomic Data Commons ([GDC](https://gdc.nci.nih.gov)) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a [Bioconductor](https://bioconductor.org) package that interfaces with the [GDC API](https://gdc-api.nci.nih.gov) to provide search and data retrieval from within R. 
+
+## testing
 
 In the first of what will likely be a set of use cases for the [GenomicDataCommons](https://github.com/Bioconductor/GenomicDataCommons), I am going to address a question that came up on twitter from [\@sleight82](https://twitter.com/sleight82)
 
 > [Asking for a non-tweeter: can you find matched control samples?](https://twitter.com/sleight82/status/837898737540198400)
 
-{{ tweet 837898737540198400 }}
+`r blogdown::shortcode("tweet", "837898737540198400")`
 
 The answer is, "Yes." I am going to assume that what the "non-tweeter" friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:
 
