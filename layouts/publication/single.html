@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+    <div class="header">
+      <h1 itemprop="name">{{ .Title }}</h1>
+    </div>
+
+<div class="content">
+  <div class="container">
+    
+    <span class="pub-authors" itemprop="author">
+      {{ with .Params.authors }}
+      {{ delimit . ", " | markdownify }}
+      {{ end }}
+    </span>
+    <div>
+      {{ .Date.Format "January 1, 2006" }}
+    </div>
+
+    <div class="abstract">
+      {{ .Params.abstract }}
+    </div>
+
+    {{ partial "disqus.html" . }}
+  </div>
+</div>
+
+{{ partial "footer.html" . }}
