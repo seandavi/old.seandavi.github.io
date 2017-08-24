@@ -1,4 +1,4 @@
-baseurl = "https://seandavi.github.io/" # make sure to end in /
+baseurl = "https://seandavi.github.io/"
 title = "seandavi(s12)"
 copyright = "&copy; 2017 Sean Davis"
 theme = "blackburn"
@@ -58,17 +58,22 @@ paginate = 10
     identifier = "talk"
     url = "/talk/"
   [[menu.main]]
+    name = "Projects"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1.5
+    identifier = "project"
+    url = "/project/"
+  [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
     weight = 2
     identifier = "about"
     url = "/about/"
   [[menu.main]]
-    name = "Contact"
+    name = "Tutorials"
     pre = "<i class='fa fa-phone fa-fw'></i>"
     weight = 3
-    url = "/contact/"
-
+    url = "/tags/tutorial/"
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
