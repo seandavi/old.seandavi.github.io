@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on seandavi(s12)</title>
+    <link>/topics/tutorial/index.xml</link>
+    <description>Recent content in Tutorial on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <atom:link href="/topics/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
+      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <description>&lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;The NCI Genomic Data Commons (&lt;a href=&#34;https://gdc.nci.nih.gov&#34;&gt;GDC&lt;/a&gt;) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a &lt;a href=&#34;https://bioconductor.org&#34;&gt;Bioconductor&lt;/a&gt; package that interfaces with the &lt;a href=&#34;https://gdc-api.nci.nih.gov&#34;&gt;GDC API&lt;/a&gt; to provide search and data retrieval from within R.&lt;/p&gt;
+&lt;div id=&#34;testing&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;testing&lt;/h2&gt;
+&lt;p&gt;In the first of what will likely be a set of use cases for the &lt;a href=&#34;https://github.com/Bioconductor/GenomicDataCommons&#34;&gt;GenomicDataCommons&lt;/a&gt;, I am going to address a question that came up on twitter from &lt;a href=&#34;https://twitter.com/sleight82&#34;&gt;@sleight82&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;Asking for a non-tweeter: can you find matched control samples?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;asking for a non-tweeter: can you find matched control samples?&lt;/p&gt;&amp;mdash; Kenneth Daily (@sleight82) &lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;March 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;p&gt;The answer is, “Yes.” I am going to assume that what the “non-tweeter” friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(GenomicDataCommons)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Loading required package: magrittr&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## 
+## Attaching package: &amp;#39;GenomicDataCommons&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
+## 
+##     filter&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The GDC API puts some constraints on what can be done directly. But, since we are working in R, we have a toolbox that allows us to build a solution out of component parts. The strategy that I am going to employ is a three-step approach&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Find RNA-Seq gene expression files derived from “Solid Tissue Normal”&lt;/li&gt;
+&lt;li&gt;Find RNA-Seq gene expression files derived from “Primary Tumor”&lt;/li&gt;
+&lt;li&gt;Limit cases from #1 and #2 that have gene expression results from both normal and tumor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of &lt;code&gt;files() %&amp;gt;% select(available_fields(&#39;files&#39;) %&amp;gt;% results()&lt;/code&gt; to get an overview of the data available in the &lt;code&gt;files()&lt;/code&gt; endpoint, followed by &lt;code&gt;grep_fields()&lt;/code&gt; and &lt;code&gt;available_values()&lt;/code&gt; to determine how to build filters.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nl_ge_files = files() %&amp;gt;%
+    filter(~   cases.samples.sample_type==&amp;#39;Solid Tissue Normal&amp;#39; &amp;amp;
+               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
+               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
+    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
+                                 &amp;#39;cases.case_id&amp;#39;,
+                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
+    results_all() %&amp;gt;%
+    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And do the same, but now looking for gene expression from tumors.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_ge_files = files() %&amp;gt;%
+    filter(~   cases.samples.sample_type==&amp;#39;Primary Tumor&amp;#39; &amp;amp;
+               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
+               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
+    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
+                                 &amp;#39;cases.case_id&amp;#39;,
+                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
+    results_all() %&amp;gt;%
+    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we have two data frames describing the normal- and tumor-derived TCGA-BRCA gene expression files. Note that I asked the GDC to provide &lt;code&gt;cases.case_id&lt;/code&gt; as part of the record using &lt;code&gt;select()&lt;/code&gt;. By looking for the intersection of cases between these two sets of files, we can find cases that contain files derived from both tumor and normal tissue.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matchedcases = intersect(tm_ge_files$cases.case_id,
+                         nl_ge_files$cases.case_id)
+# how many matched cases?
+length(matchedcases)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 112&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We can now create a &lt;code&gt;data.frame&lt;/code&gt; that contains file information for only the matched samples:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
+                                subset(tm_ge_files,cases.case_id %in% matchedcases))
+head(matched_tn_ge_file_info)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##                                file_id                      data_type
+## 1 0168550b-f361-49e2-832e-913e9e783240 Gene Expression Quantification
+## 2 0389c08d-927d-4254-8d7f-f44963594db3 Gene Expression Quantification
+## 3 06024e67-5afb-4bd7-98af-1a5ef7abd554 Gene Expression Quantification
+## 4 091a502c-544e-421b-8024-62a4807cccf5 Gene Expression Quantification
+## 5 0b1a91bc-78c2-4ca8-9067-cd18804a42a5 Gene Expression Quantification
+## 6 0bcdef87-7c2c-4c26-a30a-7cefee80d0ca Gene Expression Quantification
+##                   updated_datetime
+## 1 2017-03-04T16:39:14.644494-06:00
+## 2 2017-03-04T16:39:14.644494-06:00
+## 3 2017-03-04T16:39:14.644494-06:00
+## 4 2017-03-04T16:39:14.644494-06:00
+## 5 2017-03-04T16:39:14.644494-06:00
+## 6 2017-03-04T16:39:14.644494-06:00
+##                                              file_name
+## 1 2eeb46a1-0422-4a77-b58d-3b7d57d51b44.htseq.counts.gz
+## 2 2826bcb9-5ddb-49c5-96fd-a3dba5885e7a.htseq.counts.gz
+## 3 3a04fb30-378c-48a0-a02e-85cf81b31b43.htseq.counts.gz
+## 4 54a62dcd-c9a6-4a97-85c9-62e364766fca.htseq.counts.gz
+## 5 95c0cf0b-7077-4a93-9590-3948e55c6e31.htseq.counts.gz
+## 6 c3ed7c7a-b80a-4de2-8dfb-b60bcf336375.htseq.counts.gz
+##                                 submitter_id file_size
+## 1 2eeb46a1-0422-4a77-b58d-3b7d57d51b44_count    258320
+## 2 2826bcb9-5ddb-49c5-96fd-a3dba5885e7a_count    257186
+## 3 3a04fb30-378c-48a0-a02e-85cf81b31b43_count    255526
+## 4 54a62dcd-c9a6-4a97-85c9-62e364766fca_count    255703
+## 5 95c0cf0b-7077-4a93-9590-3948e55c6e31_count    257562
+## 6 c3ed7c7a-b80a-4de2-8dfb-b60bcf336375_count    254835
+##                                     id                 created_datetime
+## 1 0168550b-f361-49e2-832e-913e9e783240 2016-05-30T18:48:02.044327-05:00
+## 2 0389c08d-927d-4254-8d7f-f44963594db3 2016-05-29T11:14:20.886223-05:00
+## 3 06024e67-5afb-4bd7-98af-1a5ef7abd554 2016-05-29T10:24:00.271641-05:00
+## 4 091a502c-544e-421b-8024-62a4807cccf5 2016-05-30T18:35:58.038072-05:00
+## 5 0b1a91bc-78c2-4ca8-9067-cd18804a42a5 2016-05-30T18:31:01.014992-05:00
+## 6 0bcdef87-7c2c-4c26-a30a-7cefee80d0ca 2016-05-26T21:20:48.935001-05:00
+##                             md5sum data_format access state
+## 1 b11432b3e7e9ece3a8a31d84d7ddc693         TXT   open  live
+## 2 c4f5255f3e0d553ac2a2dbfd4eae8610         TXT   open  live
+## 3 bb66f1f847107d7d2ad310e6fa720712         TXT   open  live
+## 4 c4beca6838ff9edb43505a11e6547898         TXT   open  live
+## 5 7d2a48c37c4d834528c5de69695087ae         TXT   open  live
+## 6 2954040a9b69d1e8f5dd45e7a0db70e0         TXT   open  live
+##             data_category            type file_state experimental_strategy
+## 1 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+## 2 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+## 3 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+## 4 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+## 5 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+## 6 Transcriptome Profiling gene_expression  submitted               RNA-Seq
+##                          cases.case_id       cases.samples  acl
+## 1 cab38ea8-4555-413c-b81e-4621aac4ef85 Solid Tissue Normal open
+## 2 e666081b-caaf-4e8b-9446-807be71201a5 Solid Tissue Normal open
+## 3 4a032bad-e726-48f2-8f39-e3acc109cc91 Solid Tissue Normal open
+## 4 a32cb96a-78bf-456e-a6ab-2d47b2c67ad4 Solid Tissue Normal open
+## 5 994ca1f5-ad10-44ec-aa21-71fc2940653b Solid Tissue Normal open
+## 6 2021ed1f-dc75-4701-b8b8-1386466e4802 Solid Tissue Normal open&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(BiocParallel)
+register(MulticoreParam())
+destdir = tempdir() # use a temp directory for example, change for yourself
+fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
+                  function(file_id) {
+                      gdcdata(file_id, progress = FALSE,
+                              destination_dir = destdir,
+                              overwrite = TRUE)
+                  })&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, &lt;code&gt;fnames&lt;/code&gt; should be a list of file names that can be read into and processed with R.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R version 3.4.1 (2017-06-30)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS Sierra 10.12.4
+## 
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## 
+## other attached packages:
+## [1] GenomicDataCommons_1.1.3 magrittr_1.5            
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.12            xml2_1.1.1             
+##  [3] XVector_0.16.0          knitr_1.17             
+##  [5] hms_0.3                 zlibbioc_1.22.0        
+##  [7] GenomicRanges_1.28.4    BiocGenerics_0.22.0    
+##  [9] IRanges_2.10.2          R6_2.2.2               
+## [11] rlang_0.1.2             httr_1.2.1             
+## [13] stringr_1.2.0           GenomeInfoDb_1.12.2    
+## [15] tools_3.4.1             parallel_3.4.1         
+## [17] data.table_1.10.4       htmltools_0.3.6        
+## [19] lazyeval_0.2.0          yaml_2.1.14            
+## [21] rprojroot_1.2           digest_0.6.12          
+## [23] tibble_1.3.3            bookdown_0.5           
+## [25] GenomeInfoDbData_0.99.0 readr_1.1.1            
+## [27] S4Vectors_0.14.3        bitops_1.0-6           
+## [29] curl_2.8.1              RCurl_1.95-4.8         
+## [31] evaluate_0.10.1         rmarkdown_1.6          
+## [33] blogdown_0.0.72         stringi_1.1.5          
+## [35] compiler_3.4.1          backports_1.1.0        
+## [37] stats4_3.4.1            jsonlite_1.5&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

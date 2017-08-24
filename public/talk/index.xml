@@ -1,60 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks on Sean Davis</title>
-    <link>https://seandavi.github.io/talk/index.xml</link>
-    <description>Recent content in Recent &amp; Upcoming Talks on Sean Davis</description>
+    <title>Talks on seandavi(s12)</title>
+    <link>/talk/index.xml</link>
+    <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 27 Apr 2017 16:00:00 +0000</lastBuildDate>
     <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Genomic Data Science with Bioconductor</title>
-      <link>https://seandavi.github.io/talk/2017_05_02_CCR_Gottesman_BioconductorOverview/</link>
-      <pubDate>Tue, 02 May 2017 14:15:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/talk/2017_05_02_CCR_Gottesman_BioconductorOverview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
-      <link>https://seandavi.github.io/talk/UMD_FMO17/</link>
+      <link>/talk/UMD_FMO17/</link>
       <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/UMD_FMO17/</guid>
+      <guid>/talk/UMD_FMO17/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/10WUmFcui3UwNRMDFbn3mdOHWb8Qy_78uNTFI21Yv7cs/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>https://seandavi.github.io/talk/example-talk/</link>
+      <link>/talk/example-talk/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/example-talk/</guid>
+      <guid>/talk/example-talk/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>https://seandavi.github.io/talk/DFCI_CBCB/</link>
+      <link>/talk/DFCI_CBCB/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/DFCI_CBCB/</guid>
+      <guid>/talk/DFCI_CBCB/</guid>
       <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/1aknqkvCKalCWwXiOmUUN8B-2rvafSEBBx58NSqRyfe4/embed?start=false&amp;loop=false&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
+      <link>/talk/2016_07_16_hour_of_code/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
+      <guid>/talk/2016_07_16_hour_of_code/</guid>
       <description></description>
     </item>
     
