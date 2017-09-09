@@ -2,580 +2,1016 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>seandavi(s12)</title>
-    <link>/index.xml</link>
+    <link>https://seandavi.github.io/</link>
     <description>Recent content on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://seandavi.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title></title>
-      <link>/home/about/</link>
+      <link>https://seandavi.github.io/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;biography&#34;&gt;Biography&lt;/h1&gt;
-
-&lt;p&gt;I am a pediatric oncologist in the National Cancer Institute at the
-National Institutes of Health. My research and collaborations span
-biomedical and genomic data science, open data approaches in cancer
-research, and software development and engineering. My interest in the
-interplay among data science, data engineering, and big data
-approaches in science has lead to my involvement in cloud-based data
-commons efforts. Finally, I have organized and taught several courses
-and tutorials in data science, programming, and genomics.&lt;/p&gt;
-</description>
+      <guid>https://seandavi.github.io/home/about/</guid>
+      <description>Biography I am a pediatric oncologist in the National Cancer Institute at the National Institutes of Health. My research and collaborations span biomedical and genomic data science, open data approaches in cancer research, and software development and engineering. My interest in the interplay among data science, data engineering, and big data approaches in science has lead to my involvement in cloud-based data commons efforts. Finally, I have organized and taught several courses and tutorials in data science, programming, and genomics.</description>
     </item>
     
     <item>
       <title>Selected Publications</title>
-      <link>/home/publications_selected/</link>
+      <link>https://seandavi.github.io/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/publications_selected/</guid>
+      <guid>https://seandavi.github.io/home/publications_selected/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>/home/publications/</link>
+      <link>https://seandavi.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/publications/</guid>
+      <guid>https://seandavi.github.io/home/publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>/home/talks/</link>
+      <link>https://seandavi.github.io/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/talks/</guid>
+      <guid>https://seandavi.github.io/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent Posts</title>
-      <link>/home/posts/</link>
+      <link>https://seandavi.github.io/home/posts/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/posts/</guid>
+      <guid>https://seandavi.github.io/home/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>/home/projects/</link>
+      <link>https://seandavi.github.io/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/projects/</guid>
+      <guid>https://seandavi.github.io/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>/home/teaching/</link>
+      <link>https://seandavi.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/teaching/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://meetings.cshl.edu/courses.aspx?course=C-DATA&amp;amp;year=17&#34; target=&#34;_blank&#34;&gt;Cold Spring Harbor Laboratory, &lt;em&gt;Statistical Methods for Functional Genomics&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.seas.harvard.edu/news/2016/04/computing-that-goes-to-extremes&#34; target=&#34;_blank&#34;&gt;Harvard University, &lt;em&gt;Extreme Computing: Project-based High Performance Distributed and Parallel Systems&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://seandavi.github.io/home/teaching/</guid>
+      <description> Cold Spring Harbor Laboratory, Statistical Methods for Functional Genomics Harvard University, Extreme Computing: Project-based High Performance Distributed and Parallel Systems  </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>/home/contact/</link>
+      <link>https://seandavi.github.io/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/contact/</guid>
+      <guid>https://seandavi.github.io/home/contact/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
-      <link>/talk/UMD_FMO17/</link>
+      <link>https://seandavi.github.io/talk/umd_fmo17/</link>
       <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
       
-      <guid>/talk/UMD_FMO17/</guid>
-      <description>&lt;iframe src=&#34;https://docs.google.com/presentation/d/10WUmFcui3UwNRMDFbn3mdOHWb8Qy_78uNTFI21Yv7cs/embed?start=true&amp;loop=true&amp;delayms=3000&#34; frameborder=&#34;0&#34; width=&#34;960&#34; height=&#34;569&#34; allowfullscreen=&#34;true&#34; mozallowfullscreen=&#34;true&#34; webkitallowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;
-</description>
+      <guid>https://seandavi.github.io/talk/umd_fmo17/</guid>
+      <description> </description>
     </item>
     
     <item>
       <title>GenomicDataCommons: a Bioconductor Interface to the NCI Genomic Data Commons</title>
-      <link>/publication/GenomicDataCommons/</link>
+      <link>https://seandavi.github.io/publication/genomicdatacommons/</link>
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/GenomicDataCommons/</guid>
+      <guid>https://seandavi.github.io/publication/genomicdatacommons/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
-      <link>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
+      <link>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</guid>
-      <description>&lt;p&gt;I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of &lt;a href=&#34;https://clinicaltrials.gov&#34;&gt;ClinicalTrials.gov&lt;/a&gt; as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;The &lt;a href=&#34;https://clinicaltrialsapi.cancer.gov&#34;&gt;CTRP RESTful API&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;https://clinicaltrials.gov/ct2/info/linking&#34;&gt;ClinicalTrials.gov API&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;http://aact.ctti-clinicaltrials.org/&#34;&gt;Access to Aggregate Content of ClinicalTrials.gov (AACT) database&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;https://opentrials.net/&#34;&gt;OpenTrials&lt;/a&gt; API.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div id=&#34;the-ctrp-restful-api&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The CTRP RESTful API&lt;/h2&gt;
-&lt;p&gt;One of the original reasons for me to attend was to help run a hackathon centered around the newest incarnation of API to access ClinicalTrials.gov data. The details of the API are described in text at the &lt;a href=&#34;https://clinicaltrialsapi.cancer.gov&#34;&gt;API endpoint&lt;/a&gt;. &lt;a href=&#34;https://nodejs.org&#34;&gt;Node.js&lt;/a&gt;-based code for the server side is available at the &lt;a href=&#34;https://github.com/NCIP/clinical-trials-search&#34;&gt;GitHub repository&lt;/a&gt;. In preparation for the workshop discussion, I prepared a &lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34;&gt;client package using R, the ClinicalTrialsAPI package&lt;/a&gt;. The RESTful API is very simple, so a quick code runthrough using the ClinicalTrialsAPI package will give a sense of the capabilities.&lt;/p&gt;
-&lt;p&gt;The package is available on GitHub and is MIT-licensed.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# devtools::install_github(&amp;#39;seandavi/ClinicalTrialsAPI&amp;#39;)
-library(&amp;#39;ClinicalTrialsAPI&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;After installing and loading the package, we can get a sense of the data available using a simple query. In the next code block, we are not&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;res = ct_search()
-trialresults = res$trials
-str(trialresults[1],list.len=10)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## List of 1
-##  $ :List of 47
-##   ..$ nci_id                              : chr &amp;quot;NCI-2014-01507&amp;quot;
-##   ..$ nct_id                              : chr &amp;quot;NCT02201992&amp;quot;
-##   ..$ protocol_id                         : chr &amp;quot;E4512&amp;quot;
-##   ..$ ccr_id                              : NULL
-##   ..$ ctep_id                             : chr &amp;quot;E4512&amp;quot;
-##   ..$ dcp_id                              : NULL
-##   ..$ other_ids                           :List of 1
-##   .. ..$ :List of 2
-##   .. .. ..$ name : chr &amp;quot;Study Protocol Other Identifier&amp;quot;
-##   .. .. ..$ value: chr &amp;quot;E4512&amp;quot;
-##   ..$ associated_studies                  :List of 1
-##   .. ..$ :List of 2
-##   .. .. ..$ study_id     : chr &amp;quot;NCI-2014-01509&amp;quot;
-##   .. .. ..$ study_id_type: chr &amp;quot;NCI&amp;quot;
-##   ..$ amendment_date                      : chr &amp;quot;2017-02-08T00:00:00&amp;quot;
-##   ..$ current_trial_status                : chr &amp;quot;Active&amp;quot;
-##   .. [list output truncated]&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Filtering results is pretty straightforward, as only limited comparators are available (see &lt;a href=&#34;https://clinicaltrialsapi.cancer.gov&#34;&gt;docs&lt;/a&gt; for details). The &lt;code&gt;fields()&lt;/code&gt; function returns all fields and their types as a named character vector.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;head(fields())&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## accepts_healthy_volunteers_indicator                              acronym 
-##                             &amp;quot;string&amp;quot;                             &amp;quot;string&amp;quot; 
-##                       amendment_date                       anatomic_sites 
-##                               &amp;quot;date&amp;quot;                             &amp;quot;string&amp;quot; 
-##                 arms.arm_description                        arms.arm_name 
-##                             &amp;quot;string&amp;quot;                             &amp;quot;string&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Some more advanced queries are available &lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34;&gt;at the ClinicalTrialsAPI github repo&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-clinicaltrials.gov-api&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The ClinicalTrials.gov API&lt;/h2&gt;
-&lt;p&gt;Described &lt;a href=&#34;&#34;&gt;&lt;/a&gt;, this xml-based API is queriable using the &lt;a href=&#34;https://github.com/sachsmc/rclinicaltrials&#34;&gt;rclinicaltrials R package&lt;/a&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# install.packages(&amp;#39;rclinicaltrials&amp;#39;)
-library(&amp;#39;rclinicaltrials&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As a simple example query:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;z &amp;lt;- clinicaltrials_search(query = &amp;#39;lime+disease&amp;#39;)
-str(z)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## &amp;#39;data.frame&amp;#39;:    20 obs. of  8 variables:
-##  $ score               : chr  &amp;quot;0.021164&amp;quot; &amp;quot;0.020352&amp;quot; &amp;quot;0.016587&amp;quot; &amp;quot;0.007387&amp;quot; ...
-##  $ nct_id              : chr  &amp;quot;NCT01951924&amp;quot; &amp;quot;NCT01333202&amp;quot; &amp;quot;NCT03224416&amp;quot; &amp;quot;NCT01056133&amp;quot; ...
-##  $ url                 : chr  &amp;quot;https://ClinicalTrials.gov/show/NCT01951924&amp;quot; &amp;quot;https://ClinicalTrials.gov/show/NCT01333202&amp;quot; &amp;quot;https://ClinicalTrials.gov/show/NCT03224416&amp;quot; &amp;quot;https://ClinicalTrials.gov/show/NCT01056133&amp;quot; ...
-##  $ title               : chr  &amp;quot;LIME Study (LFB IVIg MMN Efficacy Study)&amp;quot; &amp;quot;Fresh Lime Alone for Smoking Cessation&amp;quot; &amp;quot;Individual and Contextual Factors That Influence Sexual Decisions&amp;quot; &amp;quot;Effect of Fish-oil on Non-alcoholic Steatohepatitis (NASH)&amp;quot; ...
-##  $ status.text         : chr  &amp;quot;Completed&amp;quot; &amp;quot;Completed&amp;quot; &amp;quot;Recruiting&amp;quot; &amp;quot;Completed&amp;quot; ...
-##  $ condition_summary   : chr  &amp;quot;Motor Neuron Disease&amp;quot; &amp;quot;Tobacco Use Disorder&amp;quot; &amp;quot;Binge Drinking; Unsafe Sex; HIV/AIDS; Sexually Transmitted Diseases&amp;quot; &amp;quot;Non-alcoholic Fatty Liver Disease; Non-alcoholic Steatohepatitis&amp;quot; ...
-##  $ intervention_summary: chr  &amp;quot;Drug: Biological : I10E (Human normal Immunoglobulin for intravenous administration 100mg/mL); Drug: Biological&amp;quot;| __truncated__ &amp;quot;Other: Fresh lime&amp;quot; &amp;quot;Other: Alcohol Administration; Other: Placebo Alcohol Administration; Other: No Alcohol Administration&amp;quot; &amp;quot;Other: Omega-3 capsules-Fish Oil&amp;quot; ...
-##  $ last_changed        : chr  &amp;quot;July 18, 2016&amp;quot; &amp;quot;April 8, 2011&amp;quot; &amp;quot;July 19, 2017&amp;quot; &amp;quot;May 10, 2016&amp;quot; ...&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Counting records is a useful way to see the “scope” of a term in the ClinicalTrials.gov dtabase.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;clinicaltrials_count(query = &amp;quot;myeloma&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 2333&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Terms can be combined either using &lt;code&gt;AND&lt;/code&gt;, &lt;code&gt;OR&lt;/code&gt;, and &lt;code&gt;NOT&lt;/code&gt; in the text query. A character vector of search terms is also supported.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;clinicaltrials_count(query = c(&amp;quot;type=Intr&amp;quot;, &amp;quot;cond=cancer&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 47780&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Getting bulk data from the API is possible using the &lt;code&gt;clinicaltrials_download&lt;/code&gt; function.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;y &amp;lt;- clinicaltrials_download(query = &amp;#39;myeloma&amp;#39;, count = 10, include_results = TRUE)
-str(y,list.len=5)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## List of 2
-##  $ study_information:List of 6
-##   ..$ study_info   :&amp;#39;data.frame&amp;#39;:    10 obs. of  41 variables:
-##   .. ..$ org_study_id                        : chr [1:10] &amp;quot;J0997&amp;quot; &amp;quot;MMRF-11-001&amp;quot; &amp;quot;101565&amp;quot; &amp;quot;IUCRO-0498&amp;quot; ...
-##   .. ..$ nct_id                              : chr [1:10] &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01454297&amp;quot; &amp;quot;NCT01410981&amp;quot; &amp;quot;NCT02212262&amp;quot; ...
-##   .. ..$ brief_title                         : chr [1:10] &amp;quot;Trial of Activated Marrow Infiltrating Lymphocytes Alone or in Conjunction With an Allogeneic Granulocyte Macro&amp;quot;| __truncated__ &amp;quot;Relating Clinical Outcomes in Multiple Myeloma to Personal Assessment of Genetic Profile&amp;quot; &amp;quot;Prognostic Potential of Cell Surface Markers and Pim Kinases in Multiple Myeloma&amp;quot; &amp;quot;Role of Osteocytes in Myeloma Bone Disease&amp;quot; ...
-##   .. ..$ official_title                      : chr [1:10] &amp;quot;Randomized Trial of Activated Marrow Infiltrating Lymphocytes Alone or in Conjunction With an Allogeneic GM-CSF&amp;quot;| __truncated__ &amp;quot;A Prospective, Longitudinal, Observational Study in Newly Diagnosed Multiple Myeloma (MM) Patients to Assess th&amp;quot;| __truncated__ &amp;quot;Prognostic Potential of Cell Surface Markers and Pim Kinases in Multiple Myeloma&amp;quot; &amp;quot;Role of Osteocytes in Myeloma Bone Disease&amp;quot; ...
-##   .. ..$ overall_status                      : chr [1:10] &amp;quot;Active, not recruiting&amp;quot; &amp;quot;Active, not recruiting&amp;quot; &amp;quot;Unknown status&amp;quot; &amp;quot;Recruiting&amp;quot; ...
-##   .. .. [list output truncated]
-##   ..$ locations    :&amp;#39;data.frame&amp;#39;:    81 obs. of  15 variables:
-##   .. ..$ name                    : chr [1:81] &amp;quot;Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins&amp;quot; &amp;quot;Mayo Clinic Campus in Scottsdale, AZ&amp;quot; &amp;quot;UC San Diego Moores Cancer Center&amp;quot; &amp;quot;Sharp Health Care&amp;quot; ...
-##   .. ..$ address.city            : chr [1:81] &amp;quot;Baltimore&amp;quot; &amp;quot;Scottsdale&amp;quot; &amp;quot;San Diego&amp;quot; &amp;quot;San Diego&amp;quot; ...
-##   .. ..$ address.state           : chr [1:81] &amp;quot;Maryland&amp;quot; &amp;quot;Arizona&amp;quot; &amp;quot;California&amp;quot; &amp;quot;California&amp;quot; ...
-##   .. ..$ address.zip             : chr [1:81] &amp;quot;21231&amp;quot; &amp;quot;85259&amp;quot; &amp;quot;92093&amp;quot; &amp;quot;92123&amp;quot; ...
-##   .. ..$ address.country         : chr [1:81] &amp;quot;United States&amp;quot; &amp;quot;United States&amp;quot; &amp;quot;United States&amp;quot; &amp;quot;United States&amp;quot; ...
-##   .. .. [list output truncated]
-##   ..$ arms         :&amp;#39;data.frame&amp;#39;:    14 obs. of  4 variables:
-##   .. ..$ arm_group_label: chr [1:14] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;Newly diagnosed Multiple Myeloma&amp;quot; &amp;quot;Multiple Myeloma subjects with bone marrow aspirate/biopsy&amp;quot; ...
-##   .. ..$ arm_group_type : chr [1:14] &amp;quot;Experimental&amp;quot; &amp;quot;Experimental&amp;quot; NA NA ...
-##   .. ..$ description    : chr [1:14] &amp;quot;aMILs&amp;quot; &amp;quot;aMILs + allogeneic myeloma vaccine&amp;quot; &amp;quot;This is a prospective observational study in patients with symptomatic multiple myeloma who have not yet initia&amp;quot;| __truncated__ &amp;quot;All patients seen at MUSC with a diagnosis of multiple myeloma or possible multiple myeloma who undergo bone ma&amp;quot;| __truncated__ ...
-##   .. ..$ nct_id         : chr [1:14] &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01454297&amp;quot; &amp;quot;NCT01410981&amp;quot; ...
-##   ..$ interventions:&amp;#39;data.frame&amp;#39;:    18 obs. of  8 variables:
-##   .. ..$ intervention_type: chr [1:18] &amp;quot;Biological&amp;quot; &amp;quot;Biological&amp;quot; &amp;quot;Other&amp;quot; &amp;quot;Drug&amp;quot; ...
-##   .. ..$ intervention_name: chr [1:18] &amp;quot;aMILs&amp;quot; &amp;quot;Allogeneic Myeloma Vaccine&amp;quot; &amp;quot;oligosecretary&amp;quot; &amp;quot;Lenalidomide&amp;quot; ...
-##   .. ..$ description      : chr [1:18] &amp;quot;Activated marrow infiltrating lymphocytes&amp;quot; &amp;quot;Allogeneic granulocyte macrophage colony-stimulating factor (GM-CSF)-based myeloma cellular vaccine&amp;quot; &amp;quot;not abvailable&amp;quot; &amp;quot;Dosage forms: 5, 10, 15 and 25 mg capsules. Patients will be continued on the same dose of lenalidomide as they&amp;quot;| __truncated__ ...
-##   .. ..$ arm_group_label  : chr [1:18] &amp;quot;1&amp;quot; &amp;quot;2&amp;quot; &amp;quot;oligosecretary&amp;quot; &amp;quot;Myeloma Vaccine, Prevnar-13 Vaccine, &amp;amp; Lenalidomide&amp;quot; ...
-##   .. ..$ arm_group_label.1: chr [1:18] &amp;quot;2&amp;quot; NA NA NA ...
-##   .. .. [list output truncated]
-##   ..$ outcomes     :&amp;#39;data.frame&amp;#39;:    34 obs. of  5 variables:
-##   .. ..$ measure    : chr [1:34] &amp;quot;Evaluate clinical efficacy of activated marrow infiltrating lymphocytes (aMILs) administered alone or in combin&amp;quot;| __truncated__ &amp;quot;Evaluate Progression-free Survival and Overall Survival&amp;quot; &amp;quot;Anti-tumor immune response&amp;quot; &amp;quot;The effect of aMILs on osteoclastogenesis&amp;quot; ...
-##   .. ..$ time_frame : chr [1:34] &amp;quot;Days 60, 180, and 360&amp;quot; &amp;quot;Days 60, 180, and 360&amp;quot; &amp;quot;Days 60, 180, and 360&amp;quot; &amp;quot;Days 60, 180, and 360&amp;quot; ...
-##   .. ..$ description: chr [1:34] &amp;quot;2.1.1 Evaluate Response Rates utilizing the Blade&amp;#39; criteria\nComplete Response (CR) rate\nNear Complete Respons&amp;quot;| __truncated__ &amp;quot;Patients will be monitored for progression/relapse on Days 60, 180, and 360, and as clinically indicated. Follo&amp;quot;| __truncated__ &amp;quot;Evaluate tumor specific responses in blood and bone marrow\nExamine T cell responses to DC-pulsed myeloma cell &amp;quot;| __truncated__ &amp;quot;Parameters of bone turnover that will include:\nRANKL/OPG ratio\nSerum C Telopeptide levels\nbAlkaline phosphat&amp;quot;| __truncated__ ...
-##   .. ..$ type       : chr [1:34] &amp;quot;primary_outcome&amp;quot; &amp;quot;secondary_outcome&amp;quot; &amp;quot;secondary_outcome&amp;quot; &amp;quot;secondary_outcome&amp;quot; ...
-##   .. ..$ nct_id     : chr [1:34] &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01045460&amp;quot; &amp;quot;NCT01045460&amp;quot; ...
-##   .. [list output truncated]
-##  $ study_results    :List of 3
-##   ..$ participant_flow: NULL
-##   ..$ baseline_data   : NULL
-##   ..$ outcome_data    : NULL&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As with any client that access complicated data via an API, dealing with returned results can be challenging. To quote the package documentation:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The data come from a relational database with lots of text fields, so it may take some effort to get the data into a flat format for analysis. For that reason, results come back from the clinicaltrials_download function as a list of dataframes. Each dataframe has a common key variable: nct_id. To merge dataframes, use this key. Otherwise, you can analyze the dataframes separately. They are organized into study information, locations, outcomes, interventions, results, and textblocks. Results, where available, is itself a list with three dataframes: participant flow, baseline data, and outcome data.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;div id=&#34;the-aact-database&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;The AACT database&lt;/h2&gt;
-&lt;p&gt;The AACT database is a relationalized, open SQL database dump of the ClinicalTrials.gov dataset. The data are modeled as an &lt;a href=&#34;https://s3.amazonaws.com/aact-prod/documentation/aact_schema.png&#34;&gt;extended star schema&lt;/a&gt;. An &lt;a href=&#34;http://aact.ctti-clinicaltrials.org/data_dictionary&#34;&gt;online data dictionary&lt;/a&gt; is also available. Remarkably, the group who has developed this AACT database has exposed a public PostgreSQL database for the world to use. Of course, R speaks fluently to relational databases. A modern approach using R is to access such databases using the &lt;a href=&#34;https://cran.r-project.org/package=dplyr&#34;&gt;&lt;code&gt;dplyr&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr)
-library(RPostgreSQL)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Connect to the database. The &lt;a href=&#34;http://aact.ctti-clinicaltrials.org/connect&#34;&gt;connection parameters below&lt;/a&gt; should work, as this is a public instance.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;aact = src_postgres(dbname = &amp;#39;aact&amp;#39;,
-                    host = &amp;quot;aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com&amp;quot;,
-                    user = &amp;#39;aact&amp;#39;,
-                    password = &amp;#39;aact&amp;#39;)
-show(aact)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## src:  postgres 9.5.4 [aact@aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com:5432/aact]
-## tbls: baseline_counts, baseline_measurements, brief_summaries,
-##   browse_conditions, browse_interventions, calculated_values,
-##   central_contacts, conditions, countries, design_group_interventions,
-##   design_groups, design_outcomes, designs, detailed_descriptions,
-##   drop_withdrawals, eligibilities, facilities, facility_contacts,
-##   facility_investigators, id_information, intervention_other_names,
-##   interventions, keywords, links, mesh_headings, mesh_terms, milestones,
-##   outcome_analyses, outcome_analysis_groups, outcome_counts,
-##   outcome_measurements, outcomes, overall_officials, participant_flows,
-##   reported_events, responsible_parties, result_agreements,
-##   result_contacts, result_groups, schema_migrations, sponsors, studies,
-##   study_references&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Starting with the main table, &lt;code&gt;studies&lt;/code&gt;, gives an example of the utility of SQL-based data dumps of complex datasets.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;study_tbl = tbl(src=aact, &amp;#39;studies&amp;#39;)
-head(study_tbl,3)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # Source:   lazy query [?? x 49]
-## # Database: postgres 9.5.4
-## #   [aact@aact-prod.cr4nrslb1lw7.us-east-1.rds.amazonaws.com:5432/aact]
-##        nct_id                           nlm_download_date_description
-##         &amp;lt;chr&amp;gt;                                                   &amp;lt;chr&amp;gt;
-## 1 NCT03228433 ClinicalTrials.gov processed this data on July 24, 2017
-## 2 NCT03228407 ClinicalTrials.gov processed this data on July 24, 2017
-## 3 NCT03228394 ClinicalTrials.gov processed this data on July 24, 2017
-## # ... with 47 more variables: first_received_date &amp;lt;date&amp;gt;,
-## #   last_changed_date &amp;lt;date&amp;gt;, first_received_results_date &amp;lt;date&amp;gt;,
-## #   received_results_disposit_date &amp;lt;date&amp;gt;, start_month_year &amp;lt;chr&amp;gt;,
-## #   start_date_type &amp;lt;chr&amp;gt;, start_date &amp;lt;date&amp;gt;,
-## #   verification_month_year &amp;lt;chr&amp;gt;, verification_date &amp;lt;date&amp;gt;,
-## #   completion_month_year &amp;lt;chr&amp;gt;, completion_date_type &amp;lt;chr&amp;gt;,
-## #   completion_date &amp;lt;date&amp;gt;, primary_completion_month_year &amp;lt;chr&amp;gt;,
-## #   primary_completion_date_type &amp;lt;chr&amp;gt;, primary_completion_date &amp;lt;date&amp;gt;,
-## #   target_duration &amp;lt;chr&amp;gt;, study_type &amp;lt;chr&amp;gt;, acronym &amp;lt;chr&amp;gt;,
-## #   baseline_population &amp;lt;chr&amp;gt;, brief_title &amp;lt;chr&amp;gt;, official_title &amp;lt;chr&amp;gt;,
-## #   overall_status &amp;lt;chr&amp;gt;, last_known_status &amp;lt;chr&amp;gt;, phase &amp;lt;chr&amp;gt;,
-## #   enrollment &amp;lt;int&amp;gt;, enrollment_type &amp;lt;chr&amp;gt;, source &amp;lt;chr&amp;gt;,
-## #   limitations_and_caveats &amp;lt;chr&amp;gt;, number_of_arms &amp;lt;int&amp;gt;,
-## #   number_of_groups &amp;lt;int&amp;gt;, why_stopped &amp;lt;chr&amp;gt;, has_expanded_access &amp;lt;lgl&amp;gt;,
-## #   expanded_access_type_individual &amp;lt;lgl&amp;gt;,
-## #   expanded_access_type_intermediate &amp;lt;lgl&amp;gt;,
-## #   expanded_access_type_treatment &amp;lt;lgl&amp;gt;, has_dmc &amp;lt;lgl&amp;gt;,
-## #   is_fda_regulated_drug &amp;lt;lgl&amp;gt;, is_fda_regulated_device &amp;lt;lgl&amp;gt;,
-## #   is_unapproved_device &amp;lt;lgl&amp;gt;, is_ppsd &amp;lt;lgl&amp;gt;, is_us_export &amp;lt;lgl&amp;gt;,
-## #   biospec_retention &amp;lt;chr&amp;gt;, biospec_description &amp;lt;chr&amp;gt;,
-## #   plan_to_share_ipd &amp;lt;chr&amp;gt;, plan_to_share_ipd_description &amp;lt;chr&amp;gt;,
-## #   created_at &amp;lt;dttm&amp;gt;, updated_at &amp;lt;dttm&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Find the available study types.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;study_tbl %&amp;gt;% select(study_type) %&amp;gt;%
-    group_by(study_type) %&amp;gt;% summarize(count = n()) %&amp;gt;%
-    collect()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 2
-##                         study_type  count
-## *                            &amp;lt;chr&amp;gt;  &amp;lt;dbl&amp;gt;
-## 1                              N/A    720
-## 2                   Interventional 201058
-## 3                    Observational  46138
-## 4 Observational [Patient Registry]   3169
-## 5                  Expanded Access    438&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Filter queries (SQL “LIKE” query) are straightforward.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x  = study_tbl %&amp;gt;% filter(official_title %like% &amp;#39;%TP53%&amp;#39;) %&amp;gt;% collect()
-dim(x)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 16 49&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x$official_title[1:3]&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;A Prospective, Multicenter, Phase-II Trial of Ibrutinib Plus Venetoclax in Patients With Creatinine Clearance &amp;gt;= 30 ml/Min Who Have Relapsed or Refractory Chronic Lymphocytic Leukemia (RR-CLL) With or Without TP53 Aberrations&amp;quot;
-## [2] &amp;quot;Treatment of Patients With Metastatic Colorectal Cancer Harboring TP53 Mutations With Dose-dense Cyclophosphamide - the p53 Colorectal Cancer Trial&amp;quot;                                                                              
-## [3] &amp;quot;A Phase 1b/2 Study to Evaluate the Safety and Efficacy of APR-246 in Combination With Azacitidine for the Treatment of TP53 Mutant Myeloid Neoplasms&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;opentrials.net&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;OpenTrials.net&lt;/h2&gt;
-&lt;p&gt;Rather than trying to address this one directly, I refer to an &lt;a href=&#34;https://bergant.github.io/OpenTrialsRDemo/&#34;&gt;available tutorial&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;provenance&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Provenance&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## R version 3.4.1 (2017-06-30)
-## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS Sierra 10.12.4
-## 
-## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
-## 
-## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
-## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
-## 
-## other attached packages:
-## [1] RPostgreSQL_0.6-2       DBI_0.7                 dplyr_0.7.2            
-## [4] rclinicaltrials_1.4.7   ClinicalTrialsAPI_0.1.0 magrittr_1.5           
-## [7] knitr_1.17             
-## 
-## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.12     bindr_0.1        R6_2.2.2         rlang_0.1.2     
-##  [5] stringr_1.2.0    httr_1.2.1       plyr_1.8.4       tools_3.4.1     
-##  [9] dbplyr_1.1.0     htmltools_0.3.6  yaml_2.1.14      rprojroot_1.2   
-## [13] digest_0.6.12    assertthat_0.2.0 tibble_1.3.3     bookdown_0.5    
-## [17] bindrcpp_0.2     codetools_0.2-15 curl_2.8.1       glue_1.1.1      
-## [21] evaluate_0.10.1  rmarkdown_1.6    blogdown_0.0.72  stringi_1.1.5   
-## [25] compiler_3.4.1   backports_1.1.0  XML_3.98-1.9     jsonlite_1.5    
-## [29] pkgconfig_2.0.1&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-</description>
+      <guid>https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/</guid>
+      <description>I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
+The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.</description>
     </item>
     
     <item>
       <title>ClinicalTrialsAPI R package</title>
-      <link>/project/clinical-trials-gov/</link>
+      <link>https://seandavi.github.io/project/clinical-trials-gov/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/clinical-trials-gov/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/ClinicalTrialsAPI&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://seandavi.github.io/project/clinical-trials-gov/</guid>
+      <description> [Project Site]  </description>
     </item>
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
+      <link>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
-      <description>&lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;The NCI Genomic Data Commons (&lt;a href=&#34;https://gdc.nci.nih.gov&#34;&gt;GDC&lt;/a&gt;) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a &lt;a href=&#34;https://bioconductor.org&#34;&gt;Bioconductor&lt;/a&gt; package that interfaces with the &lt;a href=&#34;https://gdc-api.nci.nih.gov&#34;&gt;GDC API&lt;/a&gt; to provide search and data retrieval from within R.&lt;/p&gt;
-&lt;div id=&#34;testing&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;testing&lt;/h2&gt;
-&lt;p&gt;In the first of what will likely be a set of use cases for the &lt;a href=&#34;https://github.com/Bioconductor/GenomicDataCommons&#34;&gt;GenomicDataCommons&lt;/a&gt;, I am going to address a question that came up on twitter from &lt;a href=&#34;https://twitter.com/sleight82&#34;&gt;@sleight82&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;Asking for a non-tweeter: can you find matched control samples?&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;asking for a non-tweeter: can you find matched control samples?&lt;/p&gt;&amp;mdash; Kenneth Daily (@sleight82) &lt;a href=&#34;https://twitter.com/sleight82/status/837898737540198400&#34;&gt;March 4, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
-&lt;p&gt;The answer is, “Yes.” I am going to assume that what the “non-tweeter” friend meant was that he or she was interested in finding matched tumor/normal data related to, for example, gene expression, and that the interest is in a specific disease category or TCGA. So, I am going to answer the more specific question:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Can you find matched primary tumor/solid tissue normal samples and associated RNA-Seq gene expression files from TCGA breast cancer cases?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(GenomicDataCommons)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Loading required package: magrittr&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## 
-## Attaching package: &amp;#39;GenomicDataCommons&amp;#39;&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## The following object is masked from &amp;#39;package:stats&amp;#39;:
-## 
-##     filter&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The GDC API puts some constraints on what can be done directly. But, since we are working in R, we have a toolbox that allows us to build a solution out of component parts. The strategy that I am going to employ is a three-step approach&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Find RNA-Seq gene expression files derived from “Solid Tissue Normal”&lt;/li&gt;
-&lt;li&gt;Find RNA-Seq gene expression files derived from “Primary Tumor”&lt;/li&gt;
-&lt;li&gt;Limit cases from #1 and #2 that have gene expression results from both normal and tumor.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In this code block, find all “HTSeq - Counts” files that are derived from “Solid Tissue Normal” in the project “TCGA-BRCA”. I used a combination of &lt;code&gt;files() %&amp;gt;% select(available_fields(&#39;files&#39;) %&amp;gt;% results()&lt;/code&gt; to get an overview of the data available in the &lt;code&gt;files()&lt;/code&gt; endpoint, followed by &lt;code&gt;grep_fields()&lt;/code&gt; and &lt;code&gt;available_values()&lt;/code&gt; to determine how to build filters.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;nl_ge_files = files() %&amp;gt;%
-    filter(~   cases.samples.sample_type==&amp;#39;Solid Tissue Normal&amp;#39; &amp;amp;
-               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
-               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
-    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
-                                 &amp;#39;cases.case_id&amp;#39;,
-                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
-    results_all() %&amp;gt;%
-    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And do the same, but now looking for gene expression from tumors.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tm_ge_files = files() %&amp;gt;%
-    filter(~   cases.samples.sample_type==&amp;#39;Primary Tumor&amp;#39; &amp;amp;
-               cases.project.project_id == &amp;#39;TCGA-BRCA&amp;#39; &amp;amp;
-               analysis.workflow_type == &amp;quot;HTSeq - Counts&amp;quot;) %&amp;gt;%
-    GenomicDataCommons::select(c(default_fields(&amp;#39;files&amp;#39;),
-                                 &amp;#39;cases.case_id&amp;#39;,
-                                 &amp;#39;cases.samples.sample_type&amp;#39;)) %&amp;gt;%
-    results_all() %&amp;gt;%
-    as.data.frame()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, we have two data frames describing the normal- and tumor-derived TCGA-BRCA gene expression files. Note that I asked the GDC to provide &lt;code&gt;cases.case_id&lt;/code&gt; as part of the record using &lt;code&gt;select()&lt;/code&gt;. By looking for the intersection of cases between these two sets of files, we can find cases that contain files derived from both tumor and normal tissue.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matchedcases = intersect(tm_ge_files$cases.case_id,
-                         nl_ge_files$cases.case_id)
-# how many matched cases?
-length(matchedcases)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 112&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We can now create a &lt;code&gt;data.frame&lt;/code&gt; that contains file information for only the matched samples:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;matched_tn_ge_file_info = rbind(subset(nl_ge_files,cases.case_id %in% matchedcases),
-                                subset(tm_ge_files,cases.case_id %in% matchedcases))
-head(matched_tn_ge_file_info)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;##                                file_id                      data_type
-## 1 0168550b-f361-49e2-832e-913e9e783240 Gene Expression Quantification
-## 2 0389c08d-927d-4254-8d7f-f44963594db3 Gene Expression Quantification
-## 3 06024e67-5afb-4bd7-98af-1a5ef7abd554 Gene Expression Quantification
-## 4 091a502c-544e-421b-8024-62a4807cccf5 Gene Expression Quantification
-## 5 0b1a91bc-78c2-4ca8-9067-cd18804a42a5 Gene Expression Quantification
-## 6 0bcdef87-7c2c-4c26-a30a-7cefee80d0ca Gene Expression Quantification
-##                   updated_datetime
-## 1 2017-03-04T16:39:14.644494-06:00
-## 2 2017-03-04T16:39:14.644494-06:00
-## 3 2017-03-04T16:39:14.644494-06:00
-## 4 2017-03-04T16:39:14.644494-06:00
-## 5 2017-03-04T16:39:14.644494-06:00
-## 6 2017-03-04T16:39:14.644494-06:00
-##                                              file_name
-## 1 2eeb46a1-0422-4a77-b58d-3b7d57d51b44.htseq.counts.gz
-## 2 2826bcb9-5ddb-49c5-96fd-a3dba5885e7a.htseq.counts.gz
-## 3 3a04fb30-378c-48a0-a02e-85cf81b31b43.htseq.counts.gz
-## 4 54a62dcd-c9a6-4a97-85c9-62e364766fca.htseq.counts.gz
-## 5 95c0cf0b-7077-4a93-9590-3948e55c6e31.htseq.counts.gz
-## 6 c3ed7c7a-b80a-4de2-8dfb-b60bcf336375.htseq.counts.gz
-##                                 submitter_id file_size
-## 1 2eeb46a1-0422-4a77-b58d-3b7d57d51b44_count    258320
-## 2 2826bcb9-5ddb-49c5-96fd-a3dba5885e7a_count    257186
-## 3 3a04fb30-378c-48a0-a02e-85cf81b31b43_count    255526
-## 4 54a62dcd-c9a6-4a97-85c9-62e364766fca_count    255703
-## 5 95c0cf0b-7077-4a93-9590-3948e55c6e31_count    257562
-## 6 c3ed7c7a-b80a-4de2-8dfb-b60bcf336375_count    254835
-##                                     id                 created_datetime
-## 1 0168550b-f361-49e2-832e-913e9e783240 2016-05-30T18:48:02.044327-05:00
-## 2 0389c08d-927d-4254-8d7f-f44963594db3 2016-05-29T11:14:20.886223-05:00
-## 3 06024e67-5afb-4bd7-98af-1a5ef7abd554 2016-05-29T10:24:00.271641-05:00
-## 4 091a502c-544e-421b-8024-62a4807cccf5 2016-05-30T18:35:58.038072-05:00
-## 5 0b1a91bc-78c2-4ca8-9067-cd18804a42a5 2016-05-30T18:31:01.014992-05:00
-## 6 0bcdef87-7c2c-4c26-a30a-7cefee80d0ca 2016-05-26T21:20:48.935001-05:00
-##                             md5sum data_format access state
-## 1 b11432b3e7e9ece3a8a31d84d7ddc693         TXT   open  live
-## 2 c4f5255f3e0d553ac2a2dbfd4eae8610         TXT   open  live
-## 3 bb66f1f847107d7d2ad310e6fa720712         TXT   open  live
-## 4 c4beca6838ff9edb43505a11e6547898         TXT   open  live
-## 5 7d2a48c37c4d834528c5de69695087ae         TXT   open  live
-## 6 2954040a9b69d1e8f5dd45e7a0db70e0         TXT   open  live
-##             data_category            type file_state experimental_strategy
-## 1 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-## 2 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-## 3 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-## 4 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-## 5 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-## 6 Transcriptome Profiling gene_expression  submitted               RNA-Seq
-##                          cases.case_id       cases.samples  acl
-## 1 cab38ea8-4555-413c-b81e-4621aac4ef85 Solid Tissue Normal open
-## 2 e666081b-caaf-4e8b-9446-807be71201a5 Solid Tissue Normal open
-## 3 4a032bad-e726-48f2-8f39-e3acc109cc91 Solid Tissue Normal open
-## 4 a32cb96a-78bf-456e-a6ab-2d47b2c67ad4 Solid Tissue Normal open
-## 5 994ca1f5-ad10-44ec-aa21-71fc2940653b Solid Tissue Normal open
-## 6 2021ed1f-dc75-4701-b8b8-1386466e4802 Solid Tissue Normal open&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Since the gene expression data are not that big, we can use the GDC API to download the data files directly. I use the BiocParallel package to facilitate parallel downloads.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(BiocParallel)
-register(MulticoreParam())
-destdir = tempdir() # use a temp directory for example, change for yourself
-fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
-                  function(file_id) {
-                      gdcdata(file_id, progress = FALSE,
-                              destination_dir = destdir,
-                              overwrite = TRUE)
-                  })&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now, &lt;code&gt;fnames&lt;/code&gt; should be a list of file names that can be read into and processed with R.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## R version 3.4.1 (2017-06-30)
-## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS Sierra 10.12.4
-## 
-## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.4/Resources/lib/libRlapack.dylib
-## 
-## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
-## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
-## 
-## other attached packages:
-## [1] GenomicDataCommons_1.1.3 magrittr_1.5            
-## 
-## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.12            xml2_1.1.1             
-##  [3] XVector_0.16.0          knitr_1.17             
-##  [5] hms_0.3                 zlibbioc_1.22.0        
-##  [7] GenomicRanges_1.28.4    BiocGenerics_0.22.0    
-##  [9] IRanges_2.10.2          R6_2.2.2               
-## [11] rlang_0.1.2             httr_1.2.1             
-## [13] stringr_1.2.0           GenomeInfoDb_1.12.2    
-## [15] tools_3.4.1             parallel_3.4.1         
-## [17] data.table_1.10.4       htmltools_0.3.6        
-## [19] lazyeval_0.2.0          yaml_2.1.14            
-## [21] rprojroot_1.2           digest_0.6.12          
-## [23] tibble_1.3.3            bookdown_0.5           
-## [25] GenomeInfoDbData_0.99.0 readr_1.1.1            
-## [27] S4Vectors_0.14.3        bitops_1.0-6           
-## [29] curl_2.8.1              RCurl_1.95-4.8         
-## [31] evaluate_0.10.1         rmarkdown_1.6          
-## [33] blogdown_0.0.72         stringi_1.1.5          
-## [35] compiler_3.4.1          backports_1.1.0        
-## [37] stats4_3.4.1            jsonlite_1.5&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <guid>https://seandavi.github.io/post/2017-03-04-testing-the-genomicdatacommons-package/</guid>
+      <description>Introduction The NCI Genomic Data Commons (GDC) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a Bioconductor package that interfaces with the GDC API to provide search and data retrieval from within R.
+testing In the first of what will likely be a set of use cases for the GenomicDataCommons, I am going to address a question that came up on twitter from @sleight82</description>
     </item>
     
     <item>
       <title>The GenomicDataCommons Package</title>
-      <link>/project/genomicdatacommons/</link>
+      <link>https://seandavi.github.io/project/genomicdatacommons/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/genomicdatacommons/</guid>
-      <description>&lt;p&gt;The National Cancer Institute (NCI) has established
-the &lt;a href=&#34;https://gdc.nci.nih.gov/&#34; target=&#34;_blank&#34;&gt;Genomic Data Commons&lt;/a&gt; (GDC). The GDC
-provides the cancer research community with an open and unified
-repository for sharing and accessing data across numerous cancer
-studies and projects via a high-performance data transfer and query
-infrastructure. The &lt;em&gt;GenomicDataCommons&lt;/em&gt; Bioconductor package provides
-basic infrastructure for querying, accessing, and mining genomic
-datasets available from the GDC. We expect that the Bioconductor
-developer and the larger bioinformatics communities will build on the
-&lt;em&gt;GenomicDataCommons&lt;/em&gt; package to add higher-level functionality and
-expose cancer genomics data to the plethora of state-of-the-art
-bioinformatics methods available in Bioconductor.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Bioconductor/GenomicDataCommons&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://seandavi.github.io/project/genomicdatacommons/</guid>
+      <description>The National Cancer Institute (NCI) has established the Genomic Data Commons (GDC). The GDC provides the cancer research community with an open and unified repository for sharing and accessing data across numerous cancer studies and projects via a high-performance data transfer and query infrastructure. The GenomicDataCommons Bioconductor package provides basic infrastructure for querying, accessing, and mining genomic datasets available from the GDC. We expect that the Bioconductor developer and the larger bioinformatics communities will build on the GenomicDataCommons package to add higher-level functionality and expose cancer genomics data to the plethora of state-of-the-art bioinformatics methods available in Bioconductor.</description>
     </item>
     
     <item>
       <title>The cRomwell R package</title>
-      <link>/project/cromwell/</link>
+      <link>https://seandavi.github.io/project/cromwell/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/cromwell/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/seandavi/cRomwell&#34; target=&#34;_blank&#34;&gt;[Project Site]&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://seandavi.github.io/project/cromwell/</guid>
+      <description> [Project Site]  </description>
+    </item>
+    
+    <item>
+      <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
+      <link>https://seandavi.github.io/publication/28114280/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/28114280/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Architectures and APIs for Big Data and R</title>
+      <link>https://seandavi.github.io/talk/example-talk/</link>
+      <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/example-talk/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
+      <link>https://seandavi.github.io/talk/dfci_cbcb/</link>
+      <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/dfci_cbcb/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>NIH Hour of Code--R</title>
+      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
+      <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upregulation of IFN-Inducible and Damage-Response Pathways in Chronic Graft-versus-Host Disease.</title>
+      <link>https://seandavi.github.io/publication/27694491/</link>
+      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/27694491/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Selective Packaging of Genomic RNA by HIV-1.</title>
+      <link>https://seandavi.github.io/publication/27626441/</link>
+      <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/27626441/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Point Mutations in Exon 1B of APC Reveal Gastric Adenocarcinoma and Proximal Polyposis of the Stomach as a Familial Adenomatous Polyposis Variant.</title>
+      <link>https://seandavi.github.io/publication/27087319/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/27087319/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
+      <link>https://seandavi.github.io/publication/27005934/</link>
+      <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/27005934/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
+      <link>https://seandavi.github.io/publication/26962861/</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/26962861/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
+      <link>https://seandavi.github.io/publication/26463000/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/26463000/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://seandavi.github.io/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>A Genome-Wide Scan Identifies Variants in NFIB Associated with Metastasis in Patients with Osteosarcoma.</title>
+      <link>https://seandavi.github.io/publication/26084801/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/26084801/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inhibition of Survivin with YM155 Induces Durable Tumor Response in Anaplastic Thyroid Cancer.</title>
+      <link>https://seandavi.github.io/publication/25944801/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25944801/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
+      <link>https://seandavi.github.io/publication/25940539/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25940539/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
+      <link>https://seandavi.github.io/publication/25929339/</link>
+      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25929339/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integrated analysis of DNA methylation, immunohistochemistry and mRNA expression, data identifies a methylation expression index (MEI) robustly associated with survival of ER-positive breast cancer patients.</title>
+      <link>https://seandavi.github.io/publication/25773928/</link>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25773928/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Characterization of genomic alterations in radiation-associated breast cancer among childhood cancer survivors, using comparative genomic hybridization (CGH) arrays.</title>
+      <link>https://seandavi.github.io/publication/25764003/</link>
+      <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25764003/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Super-enhancers delineate disease-associated regulatory nodes in T cells.</title>
+      <link>https://seandavi.github.io/publication/25686607/</link>
+      <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25686607/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestrating high-throughput genomic analysis with Bioconductor.</title>
+      <link>https://seandavi.github.io/publication/25633503/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25633503/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Antagonistic cross-regulation between Sox9 and Sox10 controls an anti-tumorigenic program in melanoma.</title>
+      <link>https://seandavi.github.io/publication/25629959/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25629959/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Bioconductor channel in F1000Research.</title>
+      <link>https://seandavi.github.io/publication/26998224/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/26998224/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>miR30a inhibits LOX expression and anaplastic thyroid cancer progression.</title>
+      <link>https://seandavi.github.io/publication/25488748/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25488748/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lineage of origin in rhabdomyosarcoma informs pharmacological response.</title>
+      <link>https://seandavi.github.io/publication/25030697/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25030697/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCI-60 whole exome sequencing and pharmacological CellMiner analyses.</title>
+      <link>https://seandavi.github.io/publication/25032700/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25032700/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide methylation patterns in papillary thyroid cancer are distinct based on histological subtype and tumor genotype.</title>
+      <link>https://seandavi.github.io/publication/24423287/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24423287/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Downregulation of IGFBP2 is associated with resistance to IGF1R therapy in rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/24292683/</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24292683/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rb1 loss modifies but does not initiate alveolar rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/24274149/</link>
+      <pubDate>Thu, 28 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24274149/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A polymorphism in IRF4 affects human pigmentation through a tyrosinase-dependent MITF/TFAP2A pathway.</title>
+      <link>https://seandavi.github.io/publication/24267888/</link>
+      <pubDate>Tue, 26 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24267888/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prohibitin expression is associated with high grade breast cancer but is not a driver of amplification at 17q21.33.</title>
+      <link>https://seandavi.github.io/publication/24247619/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24247619/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High prevalence of MAP2K1 mutations in variant and IGHV4-34-expressing hairy-cell leukemias.</title>
+      <link>https://seandavi.github.io/publication/24241536/</link>
+      <pubDate>Tue, 19 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24241536/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oncogenic ETS fusions deregulate E2F3 target genes in Ewing sarcoma and prostate cancer.</title>
+      <link>https://seandavi.github.io/publication/23940108/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23940108/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RCircos: an R package for Circos 2D track plots.</title>
+      <link>https://seandavi.github.io/publication/23937229/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23937229/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole-genome sequencing identifies a recurrent functional synonymous mutation in melanoma.</title>
+      <link>https://seandavi.github.io/publication/23901115/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23901115/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The exomes of the NCI-60 panel: a genomic resource for cancer biology and systems pharmacology.</title>
+      <link>https://seandavi.github.io/publication/23856246/</link>
+      <pubDate>Wed, 17 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23856246/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole genome and transcriptome sequencing of a B3 thymoma.</title>
+      <link>https://seandavi.github.io/publication/23577124/</link>
+      <pubDate>Fri, 12 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23577124/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SRAdb: query and use public next-generation sequencing data from within R.</title>
+      <link>https://seandavi.github.io/publication/23323543/</link>
+      <pubDate>Fri, 18 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23323543/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chromothripsis and focal copy number alterations determine poor outcome in malignant melanoma.</title>
+      <link>https://seandavi.github.io/publication/23271725/</link>
+      <pubDate>Sat, 29 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23271725/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCBI GEO: archive for functional genomics data sets--update.</title>
+      <link>https://seandavi.github.io/publication/23193258/</link>
+      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23193258/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparative exome sequencing of metastatic lesions provides insights into the mutational progression of melanoma.</title>
+      <link>https://seandavi.github.io/publication/23006843/</link>
+      <pubDate>Wed, 26 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23006843/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harnessing genomics to identify environmental determinants of heritable disease.</title>
+      <link>https://seandavi.github.io/publication/22935230/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22935230/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exclusion of the 750-kb genetically unstable region at Xq27 as a candidate locus for prostate malignancy in HPCX1-linked families.</title>
+      <link>https://seandavi.github.io/publication/22733720/</link>
+      <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22733720/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced bone formation in mice with a dominant-negative mutation in the thyroid hormone receptor β gene due to activation of Wnt/β-catenin protein signaling.</title>
+      <link>https://seandavi.github.io/publication/22442145/</link>
+      <pubDate>Sat, 24 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22442145/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In vivo role of alternative splicing and serine phosphorylation of the microphthalmia-associated transcription factor.</title>
+      <link>https://seandavi.github.io/publication/22367038/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22367038/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide methylation profiling in archival formalin-fixed paraffin-embedded tissue samples.</title>
+      <link>https://seandavi.github.io/publication/22081342/</link>
+      <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22081342/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide depletion of replication initiation events in highly transcribed regions.</title>
+      <link>https://seandavi.github.io/publication/21813623/</link>
+      <pubDate>Fri, 05 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21813623/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHEK2 genomic and proteomic analyses reveal genetic inactivation or endogenous activation across the 60 cell lines of the US National Cancer Institute.</title>
+      <link>https://seandavi.github.io/publication/21765476/</link>
+      <pubDate>Tue, 19 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21765476/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification of an inhibitor of the EWS-FLI1 oncogenic transcription factor by high-throughput screening.</title>
+      <link>https://seandavi.github.io/publication/21653923/</link>
+      <pubDate>Fri, 10 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21653923/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A methyl-deviator epigenotype of estrogen receptor-positive breast carcinoma is associated with malignant biology.</title>
+      <link>https://seandavi.github.io/publication/21641572/</link>
+      <pubDate>Tue, 07 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21641572/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preferential localization of human origins of DNA replication at the 5&#39;-ends of expressed genes and at evolutionarily conserved DNA sequences.</title>
+      <link>https://seandavi.github.io/publication/21602917/</link>
+      <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21602917/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exome sequencing identifies GRIN2A as frequently mutated in melanoma.</title>
+      <link>https://seandavi.github.io/publication/21499247/</link>
+      <pubDate>Tue, 19 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21499247/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evidence for an unanticipated relationship between undifferentiated pleomorphic sarcoma and embryonal rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/21316601/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21316601/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interferon-γ links ultraviolet radiation to melanomagenesis in mice.</title>
+      <link>https://seandavi.github.io/publication/21248750/</link>
+      <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21248750/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archival fine-needle aspiration cytopathology (FNAC) samples: untapped resource for clinical molecular profiling.</title>
+      <link>https://seandavi.github.io/publication/20959611/</link>
+      <pubDate>Thu, 21 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20959611/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High frequencies of leukemia stem cells in poor-outcome childhood precursor-B acute lymphoblastic leukemias.</title>
+      <link>https://seandavi.github.io/publication/20739953/</link>
+      <pubDate>Fri, 27 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20739953/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Epigenomic alterations and gene expression profiles in respiratory epithelia exposed to cigarette smoke condensate.</title>
+      <link>https://seandavi.github.io/publication/20440268/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20440268/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessment of automated image analysis of breast cancer tissue microarrays for epidemiologic studies.</title>
+      <link>https://seandavi.github.io/publication/20332278/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20332278/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemical analysis of four capsules containing the controlled substance analogues 4-methylmethcathinone, 2-fluoromethamphetamine, alpha-phthalimidopropiophenone and N-ethylcathinone.</title>
+      <link>https://seandavi.github.io/publication/20074881/</link>
+      <pubDate>Sat, 16 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20074881/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canine tumor cross-species genomics uncovers targets linked to osteosarcoma progression.</title>
+      <link>https://seandavi.github.io/publication/20028558/</link>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20028558/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vorinostat inhibits brain metastatic colonization in a model of triple-negative breast cancer and induces DNA double-strand breaks.</title>
+      <link>https://seandavi.github.io/publication/19789319/</link>
+      <pubDate>Thu, 01 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19789319/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyses of resected human brain metastases of breast cancer reveal the association between up-regulation of hexokinase 2 and poor prognosis.</title>
+      <link>https://seandavi.github.io/publication/19723875/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19723875/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A molecular function map of Ewing&#39;s sarcoma.</title>
+      <link>https://seandavi.github.io/publication/19404404/</link>
+      <pubDate>Fri, 01 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19404404/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of the matrix metalloproteinase family reveals that MMP8 is often mutated in melanoma.</title>
+      <link>https://seandavi.github.io/publication/19330028/</link>
+      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19330028/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large-scale profiling of archival lymph nodes reveals pervasive remodeling of the follicular lymphoma methylome.</title>
+      <link>https://seandavi.github.io/publication/19155300/</link>
+      <pubDate>Thu, 22 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19155300/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kinetic complexity of the global response to glucocorticoid receptor action.</title>
+      <link>https://seandavi.github.io/publication/19131569/</link>
+      <pubDate>Sat, 10 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19131569/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular grading of ductal carcinoma in situ of the breast.</title>
+      <link>https://seandavi.github.io/publication/19088042/</link>
+      <pubDate>Thu, 18 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19088042/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOmetadb: powerful alternative search engine for the Gene Expression Omnibus.</title>
+      <link>https://seandavi.github.io/publication/18842599/</link>
+      <pubDate>Fri, 10 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18842599/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rare structural variants disrupt multiple genes in neurodevelopmental pathways in schizophrenia.</title>
+      <link>https://seandavi.github.io/publication/18369103/</link>
+      <pubDate>Sat, 29 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18369103/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interaction of the glucocorticoid receptor with the chromatin landscape.</title>
+      <link>https://seandavi.github.io/publication/18342607/</link>
+      <pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18342607/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRAIL induces apoptosis in triple-negative breast cancer cells with a mesenchymal phenotype.</title>
+      <link>https://seandavi.github.io/publication/18266105/</link>
+      <pubDate>Wed, 13 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18266105/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-resolution mapping and characterization of open chromatin across the genome.</title>
+      <link>https://seandavi.github.io/publication/18243105/</link>
+      <pubDate>Tue, 05 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18243105/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suppressor role of activating transcription factor 2 (ATF2) in skin cancer.</title>
+      <link>https://seandavi.github.io/publication/18227516/</link>
+      <pubDate>Wed, 30 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18227516/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detection of novel amplicons in prostate cancer by comprehensive genomic profiling of prostate cancer cell lines using oligonucleotide-based arrayCGH.</title>
+      <link>https://seandavi.github.io/publication/17712417/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17712417/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constitutive Fms-like tyrosine kinase 3 activation results in specific changes in gene expression in myeloid leukaemic cells.</title>
+      <link>https://seandavi.github.io/publication/17686054/</link>
+      <pubDate>Fri, 10 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17686054/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor</title>
+      <link>https://seandavi.github.io/publication/geoquery/</link>
+      <pubDate>Sun, 15 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/geoquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification and analysis of functional elements in 1% of the human genome by the ENCODE pilot project.</title>
+      <link>https://seandavi.github.io/publication/17571346/</link>
+      <pubDate>Sat, 16 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17571346/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor.</title>
+      <link>https://seandavi.github.io/publication/17496320/</link>
+      <pubDate>Tue, 15 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17496320/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling synovial sarcoma: timing is everything.</title>
+      <link>https://seandavi.github.io/publication/17418406/</link>
+      <pubDate>Tue, 10 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17418406/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A single IGF1 allele is a major determinant of small size in dogs.</title>
+      <link>https://seandavi.github.io/publication/17412960/</link>
+      <pubDate>Sat, 07 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17412960/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zoom-in comparative genomic hybridisation arrays for the characterisation of variable breakpoint contiguous gene syndromes.</title>
+      <link>https://seandavi.github.io/publication/17098889/</link>
+      <pubDate>Tue, 14 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17098889/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics for ChIP-chip and DNase hypersensitivity experiments on NimbleGen arrays.</title>
+      <link>https://seandavi.github.io/publication/16939795/</link>
+      <pubDate>Thu, 31 Aug 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16939795/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNase-chip: a high-resolution method to identify DNase I hypersensitive sites using tiled microarrays.</title>
+      <link>https://seandavi.github.io/publication/16791207/</link>
+      <pubDate>Fri, 23 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16791207/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ewing&#39;s sarcoma: general insights from a rare model.</title>
+      <link>https://seandavi.github.io/publication/16697953/</link>
+      <pubDate>Tue, 16 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16697953/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide analysis of menin binding provides insights into MEN1 tumorigenesis.</title>
+      <link>https://seandavi.github.io/publication/16604156/</link>
+      <pubDate>Tue, 11 Apr 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16604156/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide mapping of DNase hypersensitive sites using massively parallel signature sequencing (MPSS).</title>
+      <link>https://seandavi.github.io/publication/16344561/</link>
+      <pubDate>Wed, 14 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16344561/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gene expression profiling of human sarcomas: insights into sarcoma biology.</title>
+      <link>https://seandavi.github.io/publication/16230383/</link>
+      <pubDate>Wed, 19 Oct 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16230383/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BioMart and Bioconductor: a powerful link between biological databases and microarray data analysis.</title>
+      <link>https://seandavi.github.io/publication/16082012/</link>
+      <pubDate>Sat, 06 Aug 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16082012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database of mRNA gene expression profiles of multiple human organs.</title>
+      <link>https://seandavi.github.io/publication/15741514/</link>
+      <pubDate>Thu, 03 Mar 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/15741514/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of overlapping recruitment on linkage analysis of complex disorders: simulation studies.</title>
+      <link>https://seandavi.github.io/publication/11304826/</link>
+      <pubDate>Tue, 17 Apr 2001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/11304826/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linkage and association between inflammatory bowel disease and a locus on chromosome 12.</title>
+      <link>https://seandavi.github.io/publication/9634527/</link>
+      <pubDate>Tue, 23 Jun 1998 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9634527/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of nonparametric statistics for detection of linkage in nuclear families: single-marker evaluation.</title>
+      <link>https://seandavi.github.io/publication/9399893/</link>
+      <pubDate>Thu, 18 Dec 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9399893/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic susceptibility for human familial essential hypertension in a region of homology with blood pressure linkage on rat chromosome 10.</title>
+      <link>https://seandavi.github.io/publication/9328471/</link>
+      <pubDate>Wed, 05 Nov 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9328471/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of a complex oligogenic disease.</title>
+      <link>https://seandavi.github.io/publication/9433591/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9433591/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of bipolar disorder using affected relatives.</title>
+      <link>https://seandavi.github.io/publication/9433550/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9433550/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric simulation based linkage statistics for general pedigrees.</title>
+      <link>https://seandavi.github.io/publication/9002040/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9002040/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric simulation-based statistics for detecting linkage in general pedigrees.</title>
+      <link>https://seandavi.github.io/publication/8644751/</link>
+      <pubDate>Mon, 01 Apr 1996 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/8644751/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About me...</title>
+      <link>https://seandavi.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/about/</guid>
+      <description>Education  Pediatric Hematology and Oncoloogy, National Institutes of Health and Johns Hopkins University Pediatric Residency, Childrens Hospital of Seattle M.D., University of Pittsburgh, School of Medicine Ph.D., University of Pittsburgh, School of Medicine Bachelor of Science and Engineering, Princeton University   </description>
     </item>
     
   </channel>
