@@ -63,6 +63,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/2017/07/08/rna-seq-basics/</loc>
+    <lastmod>2017-07-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</loc>
     <lastmod>2017-04-27T16:00:00+00:00</lastmod>
   </url>
@@ -648,13 +653,13 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/r/</loc>
+    <loc>https://seandavi.github.io/topics/r/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
+    <loc>https://seandavi.github.io/tags/r/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -672,13 +677,13 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/software/</loc>
+    <loc>https://seandavi.github.io/topics/software/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
+    <loc>https://seandavi.github.io/tags/software/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
