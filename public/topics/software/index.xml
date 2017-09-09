@@ -13,10 +13,10 @@
     
     <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
-      <link>https://seandavi.github.io/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</link>
+      <link>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
+      <guid>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
       <description>I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
 The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.</description>
     </item>

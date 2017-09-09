@@ -13,74 +13,74 @@
     
     <item>
       <title>What can I learn from my data using R?</title>
-      <link>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
+      <link>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
       <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
       
-      <guid>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
+      <guid>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
       <description>In this 1.5 hour session, I introduce R, basic data loading, manipulation, and plotting in an interactive, hands-on environment. There are no accompanying slides. Instead, the session was performed with live coding.
  Link to overview documentation Introduction to R Gitbook  </description>
     </item>
     
     <item>
       <title>Bioconductor 2017: Working with the Cloud</title>
-      <link>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</link>
+      <link>https://seandavi.github.io/talk/2017/07/26/bioconductor-2017-working-with-the-cloud/</link>
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/26/bioconductor-2017-working-with-the-cloud/</guid>
       <description> Link to GitHub Workflow   </description>
     </item>
     
     <item>
       <title>Machine Learning in Biomedicine</title>
-      <link>https://seandavi.github.io/2017/07/09/machine-learning-in-biomedicine/</link>
+      <link>https://seandavi.github.io/talk/2017/07/09/machine-learning-in-biomedicine/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/09/machine-learning-in-biomedicine/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/09/machine-learning-in-biomedicine/</guid>
       <description> Link to GitHub repo   </description>
     </item>
     
     <item>
       <title>RNA-seq Basics</title>
-      <link>https://seandavi.github.io/2017/07/08/rna-seq-basics/</link>
+      <link>https://seandavi.github.io/talk/2017/07/08/rna-seq-basics/</link>
       <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/08/rna-seq-basics/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/08/rna-seq-basics/</guid>
       <description>  Link to GitHub repo  </description>
     </item>
     
     <item>
       <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
-      <link>https://seandavi.github.io/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</link>
+      <link>https://seandavi.github.io/talk/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</link>
       <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</guid>
+      <guid>https://seandavi.github.io/talk/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>https://seandavi.github.io/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</link>
+      <link>https://seandavi.github.io/talk/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</guid>
+      <guid>https://seandavi.github.io/talk/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>https://seandavi.github.io/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</link>
+      <link>https://seandavi.github.io/talk/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</guid>
+      <guid>https://seandavi.github.io/talk/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>https://seandavi.github.io/2016/12/16/nih-hour-of-code--r/</link>
+      <link>https://seandavi.github.io/talk/2016/12/16/nih-hour-of-code--r/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2016/12/16/nih-hour-of-code--r/</guid>
+      <guid>https://seandavi.github.io/talk/2016/12/16/nih-hour-of-code--r/</guid>
       <description></description>
     </item>
     
