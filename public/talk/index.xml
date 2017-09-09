@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on seandavi(s12)</title>
+    <link>https://seandavi.github.io/talk/</link>
+    <description>Recent content in Talks on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Thu, 27 Apr 2017 16:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
+      <link>https://seandavi.github.io/talk/umd_fmo17/</link>
+      <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/umd_fmo17/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Service Architectures and APIs for Big Data and R</title>
+      <link>https://seandavi.github.io/talk/example-talk/</link>
+      <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/example-talk/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
+      <link>https://seandavi.github.io/talk/dfci_cbcb/</link>
+      <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/dfci_cbcb/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>NIH Hour of Code--R</title>
+      <link>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</link>
+      <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2016_07_16_hour_of_code/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
