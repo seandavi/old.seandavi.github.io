@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.26" />
 
-  <title>Topic 1 &middot; seandavi(s12)</title>
+  <title>Hello R Markdown &middot; seandavi(s12)</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="seandavi(s12)" href="https://seandavi.github.io/topics/topic-1/index.xml" />
   
 
   
@@ -118,10 +116,6 @@
     </li>
     
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://seandavi.github.io/topics/topic-1/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -237,34 +231,20 @@
 
 
 <div class="header">
-  <h1>Topic 1</h1>
+  <h1>Hello R Markdown</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://seandavi.github.io/post/cloud-datalab-intro/">Getting Started with Google Cloud Datalab</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>03 Sep 2017</time>
+    <time>23 Jul 2015</time>
   </div>
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    
-      <a class="post-taxonomy-topic" href="https://seandavi.github.io/topics/topic-1">topic 1</a>
-    
-  </div>
-  
   
 
   
@@ -273,15 +253,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/tensorflow">tensorflow</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/r-markdown">R Markdown</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/machine-learning">machine learning</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/plot">plot</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/deep-learning">deep learning</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cloud">cloud</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/data-science">Data Science</a>
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/regression">regression</a>
     
   </div>
   
@@ -289,82 +265,94 @@
 
 </div>
 
-  </header>
-
-  <p>
-  [Cloud DataLab]()  Install the gcloud command-line tool by installing Google Cloud SDK Install the datalab Cloud SDK component Obtain account access to Google Cloud Platform  gcloud auth login  To follow along, you&rsquo;ll need a Google Cloud Platform project that you own and which has the Google Compute Engine API enabled. You can see a list of your projects together with their project IDs by running:
-gcloud projects list   Configure the gcloud tool to use your selected project:  gcloud config set core/project project-id   Choose a zone  Select a zone for your Cloud Datalab instance (see Choosing a region and zone for details).
-  </p>
-
-  
-  <footer>
-    <a href="/post/cloud-datalab-intro/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://seandavi.github.io/post/first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example/">Distributed Machine Learning using Google Tensorflow: MNIST example</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>01 Sep 2017</time>
-  </div>
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    
-      <a class="post-taxonomy-topic" href="https://seandavi.github.io/topics/topic-1">topic 1</a>
-    
-  </div>
-  
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/tensorflow">tensorflow</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/machine-learning">machine learning</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/deep-learning">deep learning</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cloud">cloud</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/data-science">Data Science</a>
-    
-  </div>
-  
-  
-
+  <div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
 </div>
 
-  </header>
-
-  <p>
-  What is TensorFlow? TensorFlow is an open source library for machine learning, developed by researchers and engineers at Google. TensorFlow is designed to run on multiple computers to distribute the training workloads, and Google&rsquo;s Cloud Machine Learning Engine provides a managed service where you can run TensorFlow code in a distributed manner by using service APIs. TensorFlow often serves as a backend for other machine learning frameworks such as keras.
-  </p>
 
   
-  <footer>
-    <a href="/post/first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/">Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
 
   
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -387,3 +375,4 @@ gcloud projects list   Configure the gcloud tool to use your selected project:  
 
 </body>
 </html>
+

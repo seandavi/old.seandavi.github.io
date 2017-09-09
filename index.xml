@@ -94,47 +94,47 @@
     
     <item>
       <title>What can I learn from my data using R?</title>
-      <link>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
+      <link>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
       <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
       
-      <guid>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
+      <guid>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
       <description>In this 1.5 hour session, I introduce R, basic data loading, manipulation, and plotting in an interactive, hands-on environment. There are no accompanying slides. Instead, the session was performed with live coding.
  Link to overview documentation Introduction to R Gitbook  </description>
     </item>
     
     <item>
       <title>Bioconductor 2017: Working with the Cloud</title>
-      <link>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</link>
+      <link>https://seandavi.github.io/talk/2017/07/26/bioconductor-2017-working-with-the-cloud/</link>
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/26/bioconductor-2017-working-with-the-cloud/</guid>
       <description> Link to GitHub Workflow   </description>
     </item>
     
     <item>
       <title>Machine Learning in Biomedicine</title>
-      <link>https://seandavi.github.io/2017/07/09/machine-learning-in-biomedicine/</link>
+      <link>https://seandavi.github.io/talk/2017/07/09/machine-learning-in-biomedicine/</link>
       <pubDate>Sun, 09 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/09/machine-learning-in-biomedicine/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/09/machine-learning-in-biomedicine/</guid>
       <description> Link to GitHub repo   </description>
     </item>
     
     <item>
       <title>RNA-seq Basics</title>
-      <link>https://seandavi.github.io/2017/07/08/rna-seq-basics/</link>
+      <link>https://seandavi.github.io/talk/2017/07/08/rna-seq-basics/</link>
       <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/07/08/rna-seq-basics/</guid>
+      <guid>https://seandavi.github.io/talk/2017/07/08/rna-seq-basics/</guid>
       <description>  Link to GitHub repo  </description>
     </item>
     
     <item>
       <title>Distributed computing approaches for large-scale data engineering and data science in cancer research.</title>
-      <link>https://seandavi.github.io/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</link>
+      <link>https://seandavi.github.io/talk/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</link>
       <pubDate>Thu, 27 Apr 2017 16:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</guid>
+      <guid>https://seandavi.github.io/talk/2017/04/27/distributed-computing-approaches-for-large-scale-data-engineering-and-data-science-in-cancer-research./</guid>
       <description> </description>
     </item>
     
@@ -149,10 +149,10 @@
     
     <item>
       <title>Approaches to accessing ClinicalTrials.gov data</title>
-      <link>https://seandavi.github.io/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</link>
+      <link>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</link>
       <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
+      <guid>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
       <description>I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
 The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.</description>
     </item>
@@ -168,10 +168,10 @@ The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Conten
     
     <item>
       <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>https://seandavi.github.io/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</link>
+      <link>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</link>
       <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</guid>
+      <guid>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</guid>
       <description>Introduction The NCI Genomic Data Commons (GDC) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a Bioconductor package that interfaces with the GDC API to provide search and data retrieval from within R.
 testing In the first of what will likely be a set of use cases for the GenomicDataCommons, I am going to address a question that came up on twitter from @sleight82</description>
     </item>
@@ -205,28 +205,28 @@ testing In the first of what will likely be a set of use cases for the GenomicDa
     
     <item>
       <title>Service Architectures and APIs for Big Data and R</title>
-      <link>https://seandavi.github.io/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</link>
+      <link>https://seandavi.github.io/talk/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</link>
       <pubDate>Sun, 15 Jan 2017 17:30:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</guid>
+      <guid>https://seandavi.github.io/talk/2017/01/15/service-architectures-and-apis-for-big-data-and-r/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Enabling Cancer Data Science with Modern, Distributed Computational Infrastructure</title>
-      <link>https://seandavi.github.io/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</link>
+      <link>https://seandavi.github.io/talk/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</link>
       <pubDate>Sun, 15 Jan 2017 15:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</guid>
+      <guid>https://seandavi.github.io/talk/2017/01/15/enabling-cancer-data-science-with-modern-distributed-computational-infrastructure/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>NIH Hour of Code--R</title>
-      <link>https://seandavi.github.io/2016/12/16/nih-hour-of-code--r/</link>
+      <link>https://seandavi.github.io/talk/2016/12/16/nih-hour-of-code--r/</link>
       <pubDate>Fri, 16 Dec 2016 11:00:00 +0000</pubDate>
       
-      <guid>https://seandavi.github.io/2016/12/16/nih-hour-of-code--r/</guid>
+      <guid>https://seandavi.github.io/talk/2016/12/16/nih-hour-of-code--r/</guid>
       <description></description>
     </item>
     
@@ -286,10 +286,10 @@ testing In the first of what will likely be a set of use cases for the GenomicDa
     
     <item>
       <title>Hello R Markdown</title>
-      <link>https://seandavi.github.io/2015/07/hello-r-markdown/</link>
+      <link>https://seandavi.github.io/post/2015/07/hello-r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://seandavi.github.io/2015/07/hello-r-markdown/</guid>
+      <guid>https://seandavi.github.io/post/2015/07/hello-r-markdown/</guid>
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
