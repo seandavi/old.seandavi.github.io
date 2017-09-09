@@ -22,5 +22,5 @@ caption = "My caption :smile:"
 +++
 
 
-<iframe src="https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/11H2yl4aczMQcRTBYPbhHBqjxGQDA6q-B_mCWEvhkjl8/embed?start=true&loop=true&delayms=3000" frameborder="0" width="800" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

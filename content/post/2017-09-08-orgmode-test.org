@@ -1,0 +1,56 @@
+---
+title: 'org-test'
+author: Sean Davis
+date: '2017-09-08'
+slug: 2017-09-08-org-test
+categories:
+  - Data Science
+  - machine learning
+tags:
+  - tensorflow
+  - machine learning
+  - deep learning
+  - cloud
+  - Data Science
+  - testing1
+keywords:
+  - key
+  - words
+topics:
+  - topic 1
+type: post
+markup: org
+draft: true
+---
+
+* This is a test.
+
+this is a test
+
+#+BEGIN_SRC shell :results value code
+ls
+#+END_SRC
+
+#+RESULTS:
+#+BEGIN_SRC shell
+2015-07-23-r-rmarkdown.Rmd
+2015-07-23-r-rmarkdown.html
+2017-03-04-testing-the-genomicdatacommons-package.Rmd
+2017-03-04-testing-the-genomicdatacommons-package.html
+2017-03-21-approaches-to-accessing-clinicaltrials-gov-data.Rmd
+2017-03-21-approaches-to-accessing-clinicaltrials-gov-data.html
+2017-09-01-first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example.md
+2017-09-03-cloud-datalab-intro.md
+2017-09-08-orgmode-test.org
+_index.md
+#+END_SRC
+
+#+BEGIN_SRC r
+a = function(x) {
+  return(1)
+}
+print("hello")
+#+END_SRC
+
+#+RESULTS: value code
+: hello
