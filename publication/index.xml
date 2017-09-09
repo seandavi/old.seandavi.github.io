@@ -2,145 +2,840 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on seandavi(s12)</title>
-    <link>/publication/index.xml</link>
+    <link>https://seandavi.github.io/publication/</link>
     <description>Recent content in Publications on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://seandavi.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>GenomicDataCommons: a Bioconductor Interface to the NCI Genomic Data Commons</title>
-      <link>/publication/GenomicDataCommons/</link>
+      <link>https://seandavi.github.io/publication/genomicdatacommons/</link>
       <pubDate>Tue, 04 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/GenomicDataCommons/</guid>
+      <guid>https://seandavi.github.io/publication/genomicdatacommons/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RARRES2 functions as a tumor suppressor by promoting β-catenin phosphorylation/degradation and inhibiting p38 phosphorylation in adrenocortical carcinoma.</title>
-      <link>/publication/28114280/</link>
+      <link>https://seandavi.github.io/publication/28114280/</link>
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/28114280/</guid>
+      <guid>https://seandavi.github.io/publication/28114280/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Upregulation of IFN-Inducible and Damage-Response Pathways in Chronic Graft-versus-Host Disease.</title>
-      <link>/publication/27694491/</link>
+      <link>https://seandavi.github.io/publication/27694491/</link>
       <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27694491/</guid>
+      <guid>https://seandavi.github.io/publication/27694491/</guid>
       <description></description>
     </item>
     
     <item>
       <title>On the Selective Packaging of Genomic RNA by HIV-1.</title>
-      <link>/publication/27626441/</link>
+      <link>https://seandavi.github.io/publication/27626441/</link>
       <pubDate>Thu, 15 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27626441/</guid>
+      <guid>https://seandavi.github.io/publication/27626441/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Point Mutations in Exon 1B of APC Reveal Gastric Adenocarcinoma and Proximal Polyposis of the Stomach as a Familial Adenomatous Polyposis Variant.</title>
-      <link>/publication/27087319/</link>
+      <link>https://seandavi.github.io/publication/27087319/</link>
       <pubDate>Tue, 19 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27087319/</guid>
+      <guid>https://seandavi.github.io/publication/27087319/</guid>
       <description></description>
     </item>
     
     <item>
       <title>caOmicsV: an R package for visualizing multidimensional cancer genomic data.</title>
-      <link>/publication/27005934/</link>
+      <link>https://seandavi.github.io/publication/27005934/</link>
       <pubDate>Thu, 24 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/27005934/</guid>
+      <guid>https://seandavi.github.io/publication/27005934/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Whole Genome Sequencing of Newly Established Pancreatic Cancer Lines Identifies Novel Somatic Mutation (c.2587G&amp;gt;A) in Axon Guidance Receptor Plexin A1 as Enhancer of Proliferation and Invasion.</title>
-      <link>/publication/26962861/</link>
+      <link>https://seandavi.github.io/publication/26962861/</link>
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/26962861/</guid>
+      <guid>https://seandavi.github.io/publication/26962861/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Public data and open source tools for multi-assay genomic investigation of disease.</title>
-      <link>/publication/26463000/</link>
+      <link>https://seandavi.github.io/publication/26463000/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/26463000/</guid>
+      <guid>https://seandavi.github.io/publication/26463000/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Genome-Wide Scan Identifies Variants in NFIB Associated with Metastasis in Patients with Osteosarcoma.</title>
-      <link>/publication/26084801/</link>
+      <link>https://seandavi.github.io/publication/26084801/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/26084801/</guid>
+      <guid>https://seandavi.github.io/publication/26084801/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Inhibition of Survivin with YM155 Induces Durable Tumor Response in Anaplastic Thyroid Cancer.</title>
-      <link>/publication/25944801/</link>
+      <link>https://seandavi.github.io/publication/25944801/</link>
       <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25944801/</guid>
+      <guid>https://seandavi.github.io/publication/25944801/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
-      <link>/publication/25940539/</link>
+      <link>https://seandavi.github.io/publication/25940539/</link>
       <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25940539/</guid>
+      <guid>https://seandavi.github.io/publication/25940539/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dual inhibition of HDAC and EGFR signaling with CUDC-101 induces potent suppression of tumor growth and metastasis in anaplastic thyroid cancer.</title>
-      <link>/publication/25929339/</link>
+      <link>https://seandavi.github.io/publication/25929339/</link>
       <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25929339/</guid>
+      <guid>https://seandavi.github.io/publication/25929339/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Integrated analysis of DNA methylation, immunohistochemistry and mRNA expression, data identifies a methylation expression index (MEI) robustly associated with survival of ER-positive breast cancer patients.</title>
-      <link>/publication/25773928/</link>
+      <link>https://seandavi.github.io/publication/25773928/</link>
       <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25773928/</guid>
+      <guid>https://seandavi.github.io/publication/25773928/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Characterization of genomic alterations in radiation-associated breast cancer among childhood cancer survivors, using comparative genomic hybridization (CGH) arrays.</title>
-      <link>/publication/25764003/</link>
+      <link>https://seandavi.github.io/publication/25764003/</link>
       <pubDate>Fri, 13 Mar 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25764003/</guid>
+      <guid>https://seandavi.github.io/publication/25764003/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Super-enhancers delineate disease-associated regulatory nodes in T cells.</title>
-      <link>/publication/25686607/</link>
+      <link>https://seandavi.github.io/publication/25686607/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/25686607/</guid>
+      <guid>https://seandavi.github.io/publication/25686607/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Orchestrating high-throughput genomic analysis with Bioconductor.</title>
+      <link>https://seandavi.github.io/publication/25633503/</link>
+      <pubDate>Sat, 31 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25633503/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Antagonistic cross-regulation between Sox9 and Sox10 controls an anti-tumorigenic program in melanoma.</title>
+      <link>https://seandavi.github.io/publication/25629959/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25629959/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Bioconductor channel in F1000Research.</title>
+      <link>https://seandavi.github.io/publication/26998224/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/26998224/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>miR30a inhibits LOX expression and anaplastic thyroid cancer progression.</title>
+      <link>https://seandavi.github.io/publication/25488748/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25488748/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lineage of origin in rhabdomyosarcoma informs pharmacological response.</title>
+      <link>https://seandavi.github.io/publication/25030697/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25030697/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCI-60 whole exome sequencing and pharmacological CellMiner analyses.</title>
+      <link>https://seandavi.github.io/publication/25032700/</link>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/25032700/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide methylation patterns in papillary thyroid cancer are distinct based on histological subtype and tumor genotype.</title>
+      <link>https://seandavi.github.io/publication/24423287/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24423287/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Downregulation of IGFBP2 is associated with resistance to IGF1R therapy in rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/24292683/</link>
+      <pubDate>Tue, 03 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24292683/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rb1 loss modifies but does not initiate alveolar rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/24274149/</link>
+      <pubDate>Thu, 28 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24274149/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A polymorphism in IRF4 affects human pigmentation through a tyrosinase-dependent MITF/TFAP2A pathway.</title>
+      <link>https://seandavi.github.io/publication/24267888/</link>
+      <pubDate>Tue, 26 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24267888/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prohibitin expression is associated with high grade breast cancer but is not a driver of amplification at 17q21.33.</title>
+      <link>https://seandavi.github.io/publication/24247619/</link>
+      <pubDate>Wed, 20 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24247619/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High prevalence of MAP2K1 mutations in variant and IGHV4-34-expressing hairy-cell leukemias.</title>
+      <link>https://seandavi.github.io/publication/24241536/</link>
+      <pubDate>Tue, 19 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/24241536/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oncogenic ETS fusions deregulate E2F3 target genes in Ewing sarcoma and prostate cancer.</title>
+      <link>https://seandavi.github.io/publication/23940108/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23940108/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RCircos: an R package for Circos 2D track plots.</title>
+      <link>https://seandavi.github.io/publication/23937229/</link>
+      <pubDate>Wed, 14 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23937229/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole-genome sequencing identifies a recurrent functional synonymous mutation in melanoma.</title>
+      <link>https://seandavi.github.io/publication/23901115/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23901115/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The exomes of the NCI-60 panel: a genomic resource for cancer biology and systems pharmacology.</title>
+      <link>https://seandavi.github.io/publication/23856246/</link>
+      <pubDate>Wed, 17 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23856246/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Whole genome and transcriptome sequencing of a B3 thymoma.</title>
+      <link>https://seandavi.github.io/publication/23577124/</link>
+      <pubDate>Fri, 12 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23577124/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SRAdb: query and use public next-generation sequencing data from within R.</title>
+      <link>https://seandavi.github.io/publication/23323543/</link>
+      <pubDate>Fri, 18 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23323543/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chromothripsis and focal copy number alterations determine poor outcome in malignant melanoma.</title>
+      <link>https://seandavi.github.io/publication/23271725/</link>
+      <pubDate>Sat, 29 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23271725/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NCBI GEO: archive for functional genomics data sets--update.</title>
+      <link>https://seandavi.github.io/publication/23193258/</link>
+      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23193258/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparative exome sequencing of metastatic lesions provides insights into the mutational progression of melanoma.</title>
+      <link>https://seandavi.github.io/publication/23006843/</link>
+      <pubDate>Wed, 26 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/23006843/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harnessing genomics to identify environmental determinants of heritable disease.</title>
+      <link>https://seandavi.github.io/publication/22935230/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22935230/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exclusion of the 750-kb genetically unstable region at Xq27 as a candidate locus for prostate malignancy in HPCX1-linked families.</title>
+      <link>https://seandavi.github.io/publication/22733720/</link>
+      <pubDate>Wed, 27 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22733720/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced bone formation in mice with a dominant-negative mutation in the thyroid hormone receptor β gene due to activation of Wnt/β-catenin protein signaling.</title>
+      <link>https://seandavi.github.io/publication/22442145/</link>
+      <pubDate>Sat, 24 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22442145/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In vivo role of alternative splicing and serine phosphorylation of the microphthalmia-associated transcription factor.</title>
+      <link>https://seandavi.github.io/publication/22367038/</link>
+      <pubDate>Thu, 01 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22367038/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide methylation profiling in archival formalin-fixed paraffin-embedded tissue samples.</title>
+      <link>https://seandavi.github.io/publication/22081342/</link>
+      <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/22081342/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide depletion of replication initiation events in highly transcribed regions.</title>
+      <link>https://seandavi.github.io/publication/21813623/</link>
+      <pubDate>Fri, 05 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21813623/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHEK2 genomic and proteomic analyses reveal genetic inactivation or endogenous activation across the 60 cell lines of the US National Cancer Institute.</title>
+      <link>https://seandavi.github.io/publication/21765476/</link>
+      <pubDate>Tue, 19 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21765476/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification of an inhibitor of the EWS-FLI1 oncogenic transcription factor by high-throughput screening.</title>
+      <link>https://seandavi.github.io/publication/21653923/</link>
+      <pubDate>Fri, 10 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21653923/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A methyl-deviator epigenotype of estrogen receptor-positive breast carcinoma is associated with malignant biology.</title>
+      <link>https://seandavi.github.io/publication/21641572/</link>
+      <pubDate>Tue, 07 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21641572/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preferential localization of human origins of DNA replication at the 5&#39;-ends of expressed genes and at evolutionarily conserved DNA sequences.</title>
+      <link>https://seandavi.github.io/publication/21602917/</link>
+      <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21602917/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exome sequencing identifies GRIN2A as frequently mutated in melanoma.</title>
+      <link>https://seandavi.github.io/publication/21499247/</link>
+      <pubDate>Tue, 19 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21499247/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evidence for an unanticipated relationship between undifferentiated pleomorphic sarcoma and embryonal rhabdomyosarcoma.</title>
+      <link>https://seandavi.github.io/publication/21316601/</link>
+      <pubDate>Tue, 15 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21316601/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interferon-γ links ultraviolet radiation to melanomagenesis in mice.</title>
+      <link>https://seandavi.github.io/publication/21248750/</link>
+      <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/21248750/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Archival fine-needle aspiration cytopathology (FNAC) samples: untapped resource for clinical molecular profiling.</title>
+      <link>https://seandavi.github.io/publication/20959611/</link>
+      <pubDate>Thu, 21 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20959611/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High frequencies of leukemia stem cells in poor-outcome childhood precursor-B acute lymphoblastic leukemias.</title>
+      <link>https://seandavi.github.io/publication/20739953/</link>
+      <pubDate>Fri, 27 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20739953/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Epigenomic alterations and gene expression profiles in respiratory epithelia exposed to cigarette smoke condensate.</title>
+      <link>https://seandavi.github.io/publication/20440268/</link>
+      <pubDate>Wed, 05 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20440268/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessment of automated image analysis of breast cancer tissue microarrays for epidemiologic studies.</title>
+      <link>https://seandavi.github.io/publication/20332278/</link>
+      <pubDate>Thu, 25 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20332278/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chemical analysis of four capsules containing the controlled substance analogues 4-methylmethcathinone, 2-fluoromethamphetamine, alpha-phthalimidopropiophenone and N-ethylcathinone.</title>
+      <link>https://seandavi.github.io/publication/20074881/</link>
+      <pubDate>Sat, 16 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20074881/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canine tumor cross-species genomics uncovers targets linked to osteosarcoma progression.</title>
+      <link>https://seandavi.github.io/publication/20028558/</link>
+      <pubDate>Thu, 24 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/20028558/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vorinostat inhibits brain metastatic colonization in a model of triple-negative breast cancer and induces DNA double-strand breaks.</title>
+      <link>https://seandavi.github.io/publication/19789319/</link>
+      <pubDate>Thu, 01 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19789319/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analyses of resected human brain metastases of breast cancer reveal the association between up-regulation of hexokinase 2 and poor prognosis.</title>
+      <link>https://seandavi.github.io/publication/19723875/</link>
+      <pubDate>Thu, 03 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19723875/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A molecular function map of Ewing&#39;s sarcoma.</title>
+      <link>https://seandavi.github.io/publication/19404404/</link>
+      <pubDate>Fri, 01 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19404404/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of the matrix metalloproteinase family reveals that MMP8 is often mutated in melanoma.</title>
+      <link>https://seandavi.github.io/publication/19330028/</link>
+      <pubDate>Tue, 31 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19330028/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large-scale profiling of archival lymph nodes reveals pervasive remodeling of the follicular lymphoma methylome.</title>
+      <link>https://seandavi.github.io/publication/19155300/</link>
+      <pubDate>Thu, 22 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19155300/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kinetic complexity of the global response to glucocorticoid receptor action.</title>
+      <link>https://seandavi.github.io/publication/19131569/</link>
+      <pubDate>Sat, 10 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19131569/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Molecular grading of ductal carcinoma in situ of the breast.</title>
+      <link>https://seandavi.github.io/publication/19088042/</link>
+      <pubDate>Thu, 18 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/19088042/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOmetadb: powerful alternative search engine for the Gene Expression Omnibus.</title>
+      <link>https://seandavi.github.io/publication/18842599/</link>
+      <pubDate>Fri, 10 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18842599/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rare structural variants disrupt multiple genes in neurodevelopmental pathways in schizophrenia.</title>
+      <link>https://seandavi.github.io/publication/18369103/</link>
+      <pubDate>Sat, 29 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18369103/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interaction of the glucocorticoid receptor with the chromatin landscape.</title>
+      <link>https://seandavi.github.io/publication/18342607/</link>
+      <pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18342607/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TRAIL induces apoptosis in triple-negative breast cancer cells with a mesenchymal phenotype.</title>
+      <link>https://seandavi.github.io/publication/18266105/</link>
+      <pubDate>Wed, 13 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18266105/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-resolution mapping and characterization of open chromatin across the genome.</title>
+      <link>https://seandavi.github.io/publication/18243105/</link>
+      <pubDate>Tue, 05 Feb 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18243105/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suppressor role of activating transcription factor 2 (ATF2) in skin cancer.</title>
+      <link>https://seandavi.github.io/publication/18227516/</link>
+      <pubDate>Wed, 30 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/18227516/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detection of novel amplicons in prostate cancer by comprehensive genomic profiling of prostate cancer cell lines using oligonucleotide-based arrayCGH.</title>
+      <link>https://seandavi.github.io/publication/17712417/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17712417/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constitutive Fms-like tyrosine kinase 3 activation results in specific changes in gene expression in myeloid leukaemic cells.</title>
+      <link>https://seandavi.github.io/publication/17686054/</link>
+      <pubDate>Fri, 10 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17686054/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor</title>
+      <link>https://seandavi.github.io/publication/geoquery/</link>
+      <pubDate>Sun, 15 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/geoquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Identification and analysis of functional elements in 1% of the human genome by the ENCODE pilot project.</title>
+      <link>https://seandavi.github.io/publication/17571346/</link>
+      <pubDate>Sat, 16 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17571346/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GEOquery: a bridge between the Gene Expression Omnibus (GEO) and BioConductor.</title>
+      <link>https://seandavi.github.io/publication/17496320/</link>
+      <pubDate>Tue, 15 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17496320/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling synovial sarcoma: timing is everything.</title>
+      <link>https://seandavi.github.io/publication/17418406/</link>
+      <pubDate>Tue, 10 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17418406/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A single IGF1 allele is a major determinant of small size in dogs.</title>
+      <link>https://seandavi.github.io/publication/17412960/</link>
+      <pubDate>Sat, 07 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17412960/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zoom-in comparative genomic hybridisation arrays for the characterisation of variable breakpoint contiguous gene syndromes.</title>
+      <link>https://seandavi.github.io/publication/17098889/</link>
+      <pubDate>Tue, 14 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/17098889/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics for ChIP-chip and DNase hypersensitivity experiments on NimbleGen arrays.</title>
+      <link>https://seandavi.github.io/publication/16939795/</link>
+      <pubDate>Thu, 31 Aug 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16939795/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNase-chip: a high-resolution method to identify DNase I hypersensitive sites using tiled microarrays.</title>
+      <link>https://seandavi.github.io/publication/16791207/</link>
+      <pubDate>Fri, 23 Jun 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16791207/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ewing&#39;s sarcoma: general insights from a rare model.</title>
+      <link>https://seandavi.github.io/publication/16697953/</link>
+      <pubDate>Tue, 16 May 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16697953/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide analysis of menin binding provides insights into MEN1 tumorigenesis.</title>
+      <link>https://seandavi.github.io/publication/16604156/</link>
+      <pubDate>Tue, 11 Apr 2006 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16604156/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genome-wide mapping of DNase hypersensitive sites using massively parallel signature sequencing (MPSS).</title>
+      <link>https://seandavi.github.io/publication/16344561/</link>
+      <pubDate>Wed, 14 Dec 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16344561/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gene expression profiling of human sarcomas: insights into sarcoma biology.</title>
+      <link>https://seandavi.github.io/publication/16230383/</link>
+      <pubDate>Wed, 19 Oct 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16230383/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BioMart and Bioconductor: a powerful link between biological databases and microarray data analysis.</title>
+      <link>https://seandavi.github.io/publication/16082012/</link>
+      <pubDate>Sat, 06 Aug 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/16082012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Database of mRNA gene expression profiles of multiple human organs.</title>
+      <link>https://seandavi.github.io/publication/15741514/</link>
+      <pubDate>Thu, 03 Mar 2005 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/15741514/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Impact of overlapping recruitment on linkage analysis of complex disorders: simulation studies.</title>
+      <link>https://seandavi.github.io/publication/11304826/</link>
+      <pubDate>Tue, 17 Apr 2001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/11304826/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linkage and association between inflammatory bowel disease and a locus on chromosome 12.</title>
+      <link>https://seandavi.github.io/publication/9634527/</link>
+      <pubDate>Tue, 23 Jun 1998 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9634527/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of nonparametric statistics for detection of linkage in nuclear families: single-marker evaluation.</title>
+      <link>https://seandavi.github.io/publication/9399893/</link>
+      <pubDate>Thu, 18 Dec 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9399893/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genetic susceptibility for human familial essential hypertension in a region of homology with blood pressure linkage on rat chromosome 10.</title>
+      <link>https://seandavi.github.io/publication/9328471/</link>
+      <pubDate>Wed, 05 Nov 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9328471/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of a complex oligogenic disease.</title>
+      <link>https://seandavi.github.io/publication/9433591/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9433591/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of bipolar disorder using affected relatives.</title>
+      <link>https://seandavi.github.io/publication/9433550/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9433550/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric simulation based linkage statistics for general pedigrees.</title>
+      <link>https://seandavi.github.io/publication/9002040/</link>
+      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/9002040/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nonparametric simulation-based statistics for detecting linkage in general pedigrees.</title>
+      <link>https://seandavi.github.io/publication/8644751/</link>
+      <pubDate>Mon, 01 Apr 1996 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/publication/8644751/</guid>
       <description></description>
     </item>
     

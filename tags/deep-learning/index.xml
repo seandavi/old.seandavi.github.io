@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/deep-learning/</link>
+    <description>Recent content in Deep Learning on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Sun, 03 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started with Google Cloud Datalab</title>
+      <link>https://seandavi.github.io/post/cloud-datalab-intro/</link>
+      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/cloud-datalab-intro/</guid>
+      <description>[Cloud DataLab]()  Install the gcloud command-line tool by installing Google Cloud SDK Install the datalab Cloud SDK component Obtain account access to Google Cloud Platform  gcloud auth login  To follow along, you&amp;rsquo;ll need a Google Cloud Platform project that you own and which has the Google Compute Engine API enabled. You can see a list of your projects together with their project IDs by running:
+gcloud projects list   Configure the gcloud tool to use your selected project:  gcloud config set core/project project-id   Choose a zone  Select a zone for your Cloud Datalab instance (see Choosing a region and zone for details).</description>
+    </item>
+    
+    <item>
+      <title>Distributed Machine Learning using Google Tensorflow: MNIST example</title>
+      <link>https://seandavi.github.io/post/first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example/</guid>
+      <description>What is TensorFlow? TensorFlow is an open source library for machine learning, developed by researchers and engineers at Google. TensorFlow is designed to run on multiple computers to distribute the training workloads, and Google&amp;rsquo;s Cloud Machine Learning Engine provides a managed service where you can run TensorFlow code in a distributed manner by using service APIs. TensorFlow often serves as a backend for other machine learning frameworks such as keras.</description>
+    </item>
+    
+  </channel>
+</rss>

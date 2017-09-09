@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.18.1" />
+  <meta name="generator" content="Hugo 0.26" />
 
   <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package &middot; seandavi(s12)</title>
 
@@ -39,15 +39,17 @@
   
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/androidstudio.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
   
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -74,12 +76,6 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
-      
-        </li>
-      
-      
-        <li class="pure-menu-item">
           <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
@@ -99,6 +95,12 @@
       
         <li class="pure-menu-item">
           <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
@@ -238,23 +240,11 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>04 Mar 2017, 00:00</time>
+    <time>04 Mar 2017</time>
   </div>
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
-    
-      <a class="post-taxonomy-topic" href="/topics/software">Software</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-topic" href="/topics/tutorial">Tutorial</a>
-    
-  </div>
-  
   
 
   
@@ -263,17 +253,17 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="/tags/bioconductor">Bioconductor</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/bioconductor">Bioconductor</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/genomicdatacommons">GenomicDataCommons</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/genomicdatacommons">GenomicDataCommons</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/software">Software</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/software">Software</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/data-science">Data Science</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/data-science">Data Science</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/api">API</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/api">API</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="/tags/r">R</a>
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/r">R</a>
     
   </div>
   
@@ -436,7 +426,7 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
 ## [17] data.table_1.10.4       htmltools_0.3.6        
 ## [19] lazyeval_0.2.0          yaml_2.1.14            
 ## [21] rprojroot_1.2           digest_0.6.12          
-## [23] tibble_1.3.3            bookdown_0.5           
+## [23] tibble_1.3.4            bookdown_0.5           
 ## [25] GenomeInfoDbData_0.99.0 readr_1.1.1            
 ## [27] S4Vectors_0.14.3        bitops_1.0-6           
 ## [29] curl_2.8.1              RCurl_1.95-4.8         
@@ -452,13 +442,13 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://seandavi.github.io/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
+      <a href="https://seandavi.github.io/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
     </nav>
     
   </div>
@@ -468,13 +458,13 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/">Approaches to accessing ClinicalTrials.gov data</a>
+      <a href="https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/">Approaches to accessing ClinicalTrials.gov data</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://seandavi.github.io/post/2017-03-21-approaches-to-accessing-clinicaltrials-gov-data/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
@@ -505,7 +495,7 @@ fnames = bplapply(as.character(matched_tn_ge_file_info$file_id),
 
 </div>
 </div>
-<script src="/js/ui.js"></script>
+<script src="https://seandavi.github.io/js/ui.js"></script>
 
 
 <script>
