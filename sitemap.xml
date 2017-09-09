@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</loc>
+    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</loc>
     <lastmod>2017-07-26T00:00:00+00:00</lastmod>
   </url>
@@ -643,13 +648,13 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
+    <loc>https://seandavi.github.io/tags/r/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/r/</loc>
+    <loc>https://seandavi.github.io/topics/r/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -667,13 +672,13 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
+    <loc>https://seandavi.github.io/tags/software/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/software/</loc>
+    <loc>https://seandavi.github.io/topics/software/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -686,7 +691,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/</loc>
-    <lastmod>2017-07-26T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   

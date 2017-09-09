@@ -93,6 +93,16 @@
     </item>
     
     <item>
+      <title>What can I learn from my data using R?</title>
+      <link>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://seandavi.github.io/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
+      <description>In this 1.5 hour session, I introduce R, basic data loading, manipulation, and plotting in an interactive, hands-on environment. There are no accompanying slides. Instead, the session was performed with live coding.
+ Link to overview documentation Introduction to R Gitbook  </description>
+    </item>
+    
+    <item>
       <title>Bioconductor 2017: Working with the Cloud</title>
       <link>https://seandavi.github.io/2017/07/26/bioconductor-2017-working-with-the-cloud/</link>
       <pubDate>Wed, 26 Jul 2017 00:00:00 +0000</pubDate>
