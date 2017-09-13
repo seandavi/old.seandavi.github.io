@@ -13,10 +13,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 
+[permalinks]
+  post = "post/:year/:month/:title/"
+  talk = "talk/:year/:month/:day/:title/"      
+
 [blackfriday]
   hrefTargetBlank = true
-canonifyurls = true
-paginate = 10
+  canonifyurls = true
+  paginate = 10
 
 [indexes]
   tag = "tags"
@@ -29,9 +33,10 @@ paginate = 10
   googleAnalytics = "UA-93043521-1"
   disqus = "seandavi-github-io"
   # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  highlightjs_extra_languages = ["yaml"]
-  dateFormat = "02 Jan 2006, 15:04"
+  #highlightjs = "androidstudio"
+  highlightjs = "zenburn"
+  highlightjs_extra_languages = ["yaml","r"]
+  dateFormat = "02 Jan 2006"
   # Include any custom CSS and/or JS files
   # (relative to /static folder)
   # custom_css = ["css/my.css"]
@@ -53,27 +58,35 @@ paginate = 10
     url = "/post/"
   [[menu.main]]
     name = "Talks"
-    pre = "<i class='fa fa-list fa-fw'></i>"
+    pre = "<i class='fa fa-microphone fa-fw'></i>"
     weight = 1.5
     identifier = "talk"
     url = "/talk/"
+
   [[menu.main]]
-    name = "Projects"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1.5
-    identifier = "project"
-    url = "/project/"
+    name = "Publications"
+    pre = "<i class='fa fa-file-text fa-fw'></i>"
+    weight = 5
+    identifier = "publication"
+    url = "/publication/"
+    
+#  [[menu.main]]
+#    name = "Projects"
+#    pre = "<i class='fa fa-list fa-fw'></i>"
+#    weight = 1.5
+#    identifier = "project"
+#    url = "/project/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
     weight = 2
     identifier = "about"
     url = "/about/"
-  [[menu.main]]
-    name = "Tutorials"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
-    url = "/tags/tutorial/"
+#  [[menu.main]]
+#    name = "Tutorials"
+#    pre = "<i class='fa fa-book fa-fw'></i>"
+#    weight = 3
+#    url = "/category/tutorial/"
 [social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
@@ -114,6 +127,9 @@ paginate = 10
   # Gaming
   # steam = "*"
   # mobygames = "*"
+
+  # Scholar
+  googlescholar = "hLFc29kAAAAJ"
 
   # Music
   # lastfm = "*"
