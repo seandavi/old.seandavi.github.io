@@ -6,10 +6,20 @@
     <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Thu, 10 Aug 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 12 Sep 2017 12:00:00 -0400</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Data Visualization Per Karl Broman and Rafa Irizzary</title>
+      <link>https://seandavi.github.io/talk/2017/09/12/data-visualization-per-karl-broman-and-rafa-irizzary/</link>
+      <pubDate>Tue, 12 Sep 2017 12:00:00 -0400</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2017/09/12/data-visualization-per-karl-broman-and-rafa-irizzary/</guid>
+      <description>Link to slideshow
+ </description>
+    </item>
     
     <item>
       <title>What can I learn from my data using R?</title>
