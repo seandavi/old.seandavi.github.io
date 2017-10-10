@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing1 on seandavi(s12)</title>
+    <link>/tags/testing1/</link>
+    <description>Recent content in Testing1 on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Fri, 08 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/testing1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>org-test</title>
+      <link>/post/2017/09/org-test/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2017/09/org-test/</guid>
+      <description>This is a test. this is a test
+ls  2015-07-23-r-rmarkdown.Rmd 2015-07-23-r-rmarkdown.html 2017-03-04-testing-the-genomicdatacommons-package.Rmd 2017-03-04-testing-the-genomicdatacommons-package.html 2017-03-21-approaches-to-accessing-clinicaltrials-gov-data.Rmd 2017-03-21-approaches-to-accessing-clinicaltrials-gov-data.html 2017-09-01-first-foray-into-google-cloud-machine-learning-distribute-tensorflow-example.md 2017-09-03-cloud-datalab-intro.md 2017-09-08-orgmode-test.org _index.md  a = function(x) { return(1) } print(&amp;quot;hello&amp;quot;)  hello  </description>
+    </item>
+    
+  </channel>
+</rss>
