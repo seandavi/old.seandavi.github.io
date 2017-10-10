@@ -99,7 +99,7 @@
       <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/about/</guid>
-      <description>Education  Pediatric Hematology and Oncoloogy, National Institutes of Health and Johns Hopkins University Pediatric Residency, Childrens Hospital of Seattle M.D., University of Pittsburgh, School of Medicine Ph.D., University of Pittsburgh, School of Medicine Bachelor of Science and Engineering, Princeton University   </description>
+      <description>Education  Pediatric Hematology and Oncoloogy, National Institutes of Health and Johns Hopkins University Pediatric Residency, Childrens Hospital of Seattle M.D., University of Pittsburgh, School of Medicine Ph.D., University of Pittsburgh, School of Medicine Bachelor of Science and Engineering, Princeton University   Curriculum Vita  My CV   </description>
     </item>
     
     <item>
@@ -1068,6 +1068,16 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>https://seandavi.github.io/publication/8644751/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://seandavi.github.io/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/untitled/</guid>
+      <description>testing This is some test text to see how things look.
+import os os.environ[&#39;PYSPARK_SUBMIT_ARGS&#39;] = &#39;--jars /tmp/spark-xml/target/scala-2.11/spark-xml_2.11-0.4.1.jar pyspark-shell&#39; import pyspark  sc = pyspark.SparkContext()  from pyspark.sql import SQLContext sqlContext = SQLContext(sc) df = sqlContext.read.format(&#39;com.databricks.spark.xml&#39;).options(rowTag=&#39;RUN&#39;).load(&#39;/tmp/NCBI_SRA_Metadata_Full_20170902/SRA00001*/*.run.xml&#39;)  df.cache()  DataFrame[EXPERIMENT_REF: struct&amp;lt;IDENTIFIERS:struct&amp;lt;PRIMARY_ID:string,SUBMITTER_ID:struct&amp;lt;_VALUE:string,_namespace:string&amp;gt;&amp;gt;,_accession:string,_refname:string&amp;gt;, IDENTIFIERS: struct&amp;lt;PRIMARY_ID:string,SUBMITTER_ID:struct&amp;lt;_VALUE:string,_namespace:string&amp;gt;&amp;gt;, RUN_ATTRIBUTES: struct&amp;lt;RUN_ATTRIBUTE:array&amp;lt;struct&amp;lt;TAG:string,VALUE:string&amp;gt;&amp;gt;&amp;gt;, SPOT_DESCRIPTOR: struct&amp;lt;SPOT_DECODE_SPEC:struct&amp;lt;READ_SPEC:array&amp;lt;struct&amp;lt;BASE_COORD:bigint,EXPECTED_BASECALL_TABLE:struct&amp;lt;BASECALL:string&amp;gt;,READ_CLASS:string,READ_INDEX:bigint,READ_TYPE:string&amp;gt;&amp;gt;&amp;gt;&amp;gt;, _accession: string, _alias: string, _center_name: string, _run_center: string, _run_date: string]  df.show()  +--------------------+--------------------+--------------------+--------------------+----------+-------+------------+-----------+--------------------+ | EXPERIMENT_REF| IDENTIFIERS| RUN_ATTRIBUTES| SPOT_DESCRIPTOR|_accession| _alias|_center_name|_run_center| _run_date| +--------------------+--------------------+--------------------+--------------------+----------+-------+------------+-----------+--------------------+ |[[SRX000072,[4WG_...|[SRR000300,[D7GOF...|[WrappedArray([fl...|[[WrappedArray([1...| SRR000300|D7GOF0U| BCM| BCM|2006-07-24T11:02:00Z| |[[SRX000074,[4WG_.</description>
     </item>
     
   </channel>
