@@ -6,10 +6,19 @@
     <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Tue, 12 Sep 2017 12:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Thoughts on an Agricultural Data Ecosystem</title>
+      <link>https://seandavi.github.io/talk/2017/11/15/thoughts-on-an-agricultural-data-ecosystem/</link>
+      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2017/11/15/thoughts-on-an-agricultural-data-ecosystem/</guid>
+      <description> </description>
+    </item>
     
     <item>
       <title>Data Visualization Per Karl Broman and Rafa Irizzary</title>
