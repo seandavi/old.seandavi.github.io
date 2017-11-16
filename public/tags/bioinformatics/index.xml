@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bioinformatics on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/bioinformatics/</link>
+    <description>Recent content in Bioinformatics on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/tags/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Agricultural genomics can benefit from human genomic data and software engineering</title>
+      <link>https://seandavi.github.io/post/2017/11/agricultural-genomics-can-benefit-from-human-genomic-data-and-software-engineering/</link>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/11/agricultural-genomics-can-benefit-from-human-genomic-data-and-software-engineering/</guid>
+      <description>As a government employee, I have been given some fantastic opportunities to interact with other government employees and agencies doing really important in service to the country. Over the past couple of days, I have been attending a great symposium to provide an updated Blueprint for animal genetics and genomics. Discussion was wide-ranging, but largely focused on genomics, informatics, and translation to and from phenotypes. High-throughput phenotyping (think wearables for plants and cows and drone videos of cattle herds) seems like a growth area.</description>
+    </item>
+    
+  </channel>
+</rss>
