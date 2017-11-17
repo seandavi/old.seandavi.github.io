@@ -84,6 +84,16 @@
     </item>
     
     <item>
+      <title>A computable Bioconductor build report</title>
+      <link>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</guid>
+      <description>Bioconductor spends a substantial amount of effort to build its catalog of software each day. Reporting of these results is critical for developers, users, and project leaders to understand the software “health” of the project.
+The Bioconductor build reports are generally available as html pages that are navigable with bookmarks and link out to detailed reports of errors, etc. However, the build reports are not readily computable, so mining the reports, automated processing by developers, and learning about failure modes automatically is challenging.</description>
+    </item>
+    
+    <item>
       <title>Agricultural genomics may benefit from human genomic data and software engineering</title>
       <link>https://seandavi.github.io/post/2017/11/agricultural-genomics-may-benefit-from-human-genomic-data-and-software-engineering/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
