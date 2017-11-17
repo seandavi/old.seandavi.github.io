@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/post/2017/11/agricultural-genomics-may-benefit-from-human-genomic-data-and-software-engineering/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
   </url>
@@ -624,7 +629,13 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/bioconductor/</loc>
-    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/tags/biocpkgtools/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -683,14 +694,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/r/</loc>
+    <loc>https://seandavi.github.io/topics/r/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/r/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -707,14 +718,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/software/</loc>
+    <loc>https://seandavi.github.io/topics/software/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/software/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
