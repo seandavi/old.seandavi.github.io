@@ -1,0 +1,366 @@
+
+@ARTICLE{Steinbaugh2017-mt,
+  title    = "{bcbioRNASeq}: {R} package for bcbio {RNA-seq} analysis",
+  author   = "Steinbaugh, Michael J and Pantano, Lorena and Kirchner, Rory D
+              and Barrera, Victor and Chapman, Brad A and Piper, Mary E and
+              Mistry, Meeta and Khetani, Radhika S and Rutherford, Kayleigh D
+              and Hofmann, Oliver and Hutchinson, John N and Sui, Shannan Ho",
+  abstract = "RNA-seq analysis involves multiple steps from processing raw
+              sequencing data to identifying, organizing, annotating, and
+              reporting differentially expressed genes. bcbio is an open
+              source, community-maintained framework providing automated and
+              scalable RNA-seq methods for identifying gene abundance counts.
+              We have developed bcbioRNASeq, a Bioconductor package that
+              provides ready-to-render templates and wrapper functions to
+              post-process bcbio output data. bcbioRNASeq automates the
+              generation of high-level RNA-seq reports, including
+              identification of differentially expressed genes, functional
+              enrichment analysis and quality control analysis.",
+  journal  = "F1000Research",
+  volume   =  6,
+  month    =  nov,
+  year     =  2017,
+  url      = "https://f1000research.com/articles/6-1976/v1/pdf",
+  file     = "All Papers/S/Steinbaugh et al. 2017 - bcbioRNASeq - R package for bcbio RNA-seq analysis.pdf",
+  doi      = "10.12688/f1000research.12093.1"
+}
+
+
+@ARTICLE{Jurtz2017-pu,
+  title       = "An introduction to deep learning on biological sequence data:
+                 examples and solutions",
+  author      = "Jurtz, Vanessa Isabell and Johansen, Alexander Rosenberg and
+                 Nielsen, Morten and Almagro Armenteros, Jose Juan and Nielsen,
+                 Henrik and S{\o}nderby, Casper Kaae and Winther, Ole and
+                 S{\o}nderby, S{\o}ren Kaae",
+  affiliation = "Department of Bio and Health Informatics. Department of
+                 Applied Mathematics and Computer Science, Technical University
+                 of Denmark, Lyngby, Denmark. Instituto de Investigaciones
+                 Biotecnol{\'o}gicas, Universidad Nacional de San Mart{\'\i}n,
+                 Buenos Aires, Argentina. Department of Biology, University of
+                 Copenhagen, Copenhagen, Denmark.",
+  abstract    = "Motivation: Deep neural network architectures such as
+                 convolutional and long short-term memory networks have become
+                 increasingly popular as machine learning tools during the
+                 recent years. The availability of greater computational
+                 resources, more data, new algorithms for training deep models
+                 and easy to use libraries for implementation and training of
+                 neural networks are the drivers of this development. The use
+                 of deep learning has been especially successful in image
+                 recognition; and the development of tools, applications and
+                 code examples are in most cases centered within this field
+                 rather than within biology. Results: Here, we aim to further
+                 the development of deep learning methods within biology by
+                 providing application examples and ready to apply and adapt
+                 code templates. Given such examples, we illustrate how
+                 architectures consisting of convolutional and long short-term
+                 memory neural networks can relatively easily be designed and
+                 trained to state-of-the-art performance on three biological
+                 sequence problems: prediction of subcellular localization,
+                 protein secondary structure and the binding of peptides to MHC
+                 Class II molecules. Availability and implementation: All
+                 implementations and datasets are available online to the
+                 scientific community at
+                 https://github.com/vanessajurtz/lasagne4bio. Contact:
+                 skaaesonderby@gmail.com. Supplementary information:
+                 Supplementary data are available at Bioinformatics online.",
+  journal     = "Bioinformatics",
+  volume      =  33,
+  number      =  22,
+  pages       = "3685--3690",
+  month       =  nov,
+  year        =  2017,
+  url         = "http://dx.doi.org/10.1093/bioinformatics/btx531",
+  language    = "en",
+  issn        = "1367-4803, 1367-4811",
+  pmid        = "28961695",
+  doi         = "10.1093/bioinformatics/btx531"
+}
+
+
+@ARTICLE{Hicks2017-mx,
+  title       = "Missing data and technical variability in single-cell
+                 {RNA-sequencing} experiments",
+  author      = "Hicks, Stephanie C and Townes, F William and Teng, Mingxiang
+                 and Irizarry, Rafael A",
+  affiliation = "Department of Biostatistics, Harvard T. H. Chan School of
+                 Public Health, Boston, MA, USA and Department of Biostatistics
+                 and Computational Biology, Dana-Farber Cancer Institute,
+                 Boston, MA, USA. Department of Biostatistics, Harvard T.H.
+                 Chan School of Public Health, Boston, MA, USA. Department of
+                 Biostatistics, Harvard T.H. Chan School of Public Health,
+                 Boston, MA, USA and Department of Biostatistics and
+                 Computational Biology, Dana-Farber Cancer Institute, Boston,
+                 MA, USA.",
+  abstract    = "Until recently, high-throughput gene expression technology,
+                 such as RNA-Sequencing (RNA-seq) required hundreds of
+                 thousands of cells to produce reliable measurements. Recent
+                 technical advances permit genome-wide gene expression
+                 measurement at the single-cell level. Single-cell RNA-Seq
+                 (scRNA-seq) is the most widely used and numerous publications
+                 are based on data produced with this technology. However,
+                 RNA-seq and scRNA-seq data are markedly different. In
+                 particular, unlike RNA-seq, the majority of reported
+                 expression levels in scRNA-seq are zeros, which could be
+                 either biologically-driven, genes not expressing RNA at the
+                 time of measurement, or technically-driven, genes expressing
+                 RNA, but not at a sufficient level to be detected by
+                 sequencing technology. Another difference is that the
+                 proportion of genes reporting the expression level to be zero
+                 varies substantially across single cells compared to RNA-seq
+                 samples. However, it remains unclear to what extent this
+                 cell-to-cell variation is being driven by technical rather
+                 than biological variation. Furthermore, while systematic
+                 errors, including batch effects, have been widely reported as
+                 a major challenge in high-throughput technologies, these
+                 issues have received minimal attention in published studies
+                 based on scRNA-seq technology. Here, we use an assessment
+                 experiment to examine data from published studies and
+                 demonstrate that systematic errors can explain a substantial
+                 percentage of observed cell-to-cell expression variability.
+                 Specifically, we present evidence that some of these reported
+                 zeros are driven by technical variation by demonstrating that
+                 scRNA-seq produces more zeros than expected and that this bias
+                 is greater for lower expressed genes. In addition, this
+                 missing data problem is exacerbated by the fact that this
+                 technical variation varies cell-to-cell. Then, we show how
+                 this technical cell-to-cell variability can be confused with
+                 novel biological results. Finally, we demonstrate and discuss
+                 how batch-effects and confounded experiments can intensify the
+                 problem.",
+  journal     = "Biostatistics",
+  month       =  nov,
+  year        =  2017,
+  url         = "http://dx.doi.org/10.1093/biostatistics/kxx053",
+  file        = "All Papers/H/Hicks et al. 2017 - Missing data and technical variability in single-cell RNA-sequencing experiments.pdf",
+  keywords    = "Censoring; Confounding; Genomics; Missing not at random
+                 (MNAR); Single-cell RNA-Sequencing; Sparsity",
+  language    = "en",
+  issn        = "1465-4644, 1468-4357",
+  pmid        = "29121214",
+  doi         = "10.1093/biostatistics/kxx053"
+}
+
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@ARTICLE{Huang2017-mr,
+  title       = "{mSignatureDB}: a database for deciphering mutational
+                 signatures in human cancers",
+  author      = "Huang, Po-Jung and Chiu, Ling-Ya and Lee, Chi-Ching and Yeh,
+                 Yuan-Ming and Huang, Kuo-Yang and Chiu, Cheng-Hsun and Tang,
+                 Petrus",
+  affiliation = "Department of Biomedical Sciences, Chang Gung University,
+                 Taoyuan, Taiwan. Genomic Medicine Research Core Laboratory,
+                 Chang Gung Memorial Hospital, Linkou, Taiwan. Molecular
+                 Medicine Research Center, Chang Gung University, Taoyuan,
+                 Taiwan. Department and Graduate Institute of Computer Science
+                 and Information Engineering, Chang Gung University, Taoyuan,
+                 Taiwan. Graduate Institute of Pathology and Parasitology,
+                 National Defense Medical Center, Taipei, Taiwan. Molecular
+                 Infectious Disease Research Center, Chang Gung Memorial
+                 Hospital, Linkou, Taiwan.",
+  abstract    = "Cancer is a genetic disease caused by somatic mutations;
+                 however, the understanding of the causative biological
+                 processes generating these mutations is limited. A cancer
+                 genome bears the cumulative effects of mutational processes
+                 during tumor development. Deciphering mutational signatures in
+                 cancer is a new topic in cancer research. The Wellcome Trust
+                 Sanger Institute (WTSI) has categorized 30 reference
+                 signatures in the COSMIC database based on the analyses of ∼10
+                 000 sequencing datasets from TCGA and ICGC. Large cohorts and
+                 bioinformatics skills are required to perform the same
+                 analysis as WTSI. The quantification of known signatures in
+                 custom cohorts is not possible under the current framework of
+                 the COSMIC database, which motivates us to construct a
+                 database for mutational signatures in cancers and make such
+                 analyses more accessible to general researchers. mSignatureDB
+                 (http://tardis.cgu.edu.tw/msignaturedb) integrates R packages
+                 and in-house scripts to determine the contributions of the
+                 published signatures in 15 780 individual tumors from 73
+                 TCGA/ICGC cancer projects, making comparison of signature
+                 patterns within and between projects become possible.
+                 mSignatureDB also allows users to perform signature analysis
+                 on their own datasets, quantifying contributions of signatures
+                 at sample resolution, which is a unique feature of
+                 mSignatureDB not available in other related databases.",
+  journal     = "Nucleic acids research",
+  month       =  nov,
+  year        =  2017,
+  url         = "http://dx.doi.org/10.1093/nar/gkx1133",
+  file        = "All Papers/H/Huang et al. 2017 - mSignatureDB - a database for deciphering mutational signatures in human cancers.pdf",
+  language    = "en",
+  issn        = "0305-1048, 1362-4962",
+  pmid        = "29145625",
+  doi         = "10.1093/nar/gkx1133"
+}
+
+@UNPUBLISHED{Cui2017-fy,
+  title    = "Boosting Gene Expression Clustering with {System-Wide} Biological
+              Information: A Robust Autoencoder Approach",
+  author   = "Cui, Hongzhu and Zhou, Chong and Dai, Xinyu and Liang, Yuting and
+              Paffenroth, Randy and Korkin, Dmitry",
+  abstract = "Gene expression analysis provides genome-wide insights into the
+              transcriptional activity of a cell. One of the first
+              computational steps in exploration and analysis of the gene
+              expression data is clustering. With a number of standard
+              clustering methods routinely used, most of the methods do not
+              take prior biological information into account. In this paper, we
+              propose a new approach for gene expression clustering analysis.
+              The approach benefits from a new deep learning architecture,
+              Robust Autoencoder, which provides a more accurate high-level
+              representation of the feature sets, and from incorporating prior
+              biological information into the clustering process. We tested our
+              approach on two distinct gene expression datasets and compared
+              the performance with two widely used clustering methods,
+              hierarchical clustering and k-means, as well as with a recent
+              deep learning clustering approach. As a result, our approach
+              outperformed all other clustering methods on the labeled yeast
+              gene expression dataset. Furthermore we showed that it is better
+              in identifying the functionally common clusters than k-means on
+              the unlabeled human gene expression dataset. The results
+              demonstrate that our new deep learning architecture could
+              generalize well the specific properties of gene expression
+              profiles. Furthermore, the results confirm our hypothesis that
+              the prior biological network knowledge could be helpful in the
+              gene expression clustering task.",
+  journal  = "bioRxiv",
+  pages    = "214122",
+  month    =  nov,
+  year     =  2017,
+  url      = "https://www.biorxiv.org/content/early/2017/11/05/214122?%3Fcollection=",
+  file     = "All Papers/C/Cui et al. 2017 - Boosting Gene Expression Clustering with System-Wide Biological Information - A Robust Autoencoder Approach.pdf",
+  language = "en",
+  doi      = "10.1101/214122"
+}
+
+@UNPUBLISHED{Spill2017-xz,
+  title    = "Binless normalization of {Hi-C} data provides significant
+              interaction and difference detection independently of resolution",
+  author   = "Spill, Yannick G and Castillo, David and Marti-Renom, Marc A",
+  abstract = "3C-like experiments, such as 4C or Hi-C, have been fundamental in
+              understanding genome organization. Thanks to these technologies,
+              it is now known, for example, that Topologically Associating
+              Domains (TADs) and chromatin loops are implicated in the dynamic
+              interplay of gene activation and repression, and their disruption
+              can have dramatic effects on embryonic development. To make their
+              detection easier, scientists have endeavored into deeper
+              sequencing to mechanically increase the chances to detect weaker
+              signals such as chromatin loops. Part of this mindset can be
+              attributed to the limitations of existing software: the analysis
+              of Hi-C experiments is both statistically and computationally
+              demanding. Here, we devise a new way to represent Hi-C data,
+              which leads to a more detailed classification of paired-end reads
+              and, ultimately, to a new normalization and interaction detection
+              method. Unlike any other, Binless is resolution-agnostic, and
+              adapts to the quality and quantity of available data. We
+              demonstrate its capacities to call interactions and differences
+              and make the software freely available.",
+  journal  = "bioRxiv",
+  pages    = "214403",
+  month    =  nov,
+  year     =  2017,
+  url      = "https://www.biorxiv.org/content/early/2017/11/05/214403?%3Fcollection=",
+  file     = "All Papers/S/Spill et al. 2017 - Binless normalization of Hi-C data provides significant interaction and difference detection independently of resolution.pdf",
+  language = "en",
+  doi      = "10.1101/214403"
+}
+
+@ARTICLE{Newton2017-rg,
+  title       = "{TumorMap}: Exploring the Molecular Similarities of Cancer
+                 Samples in an Interactive Portal",
+  author      = "Newton, Yulia and Novak, Adam M and Swatloski, Teresa and
+                 McColl, Duncan C and Chopra, Sahil and Graim, Kiley and
+                 Weinstein, Alana S and Baertsch, Robert and Salama, Sofie R
+                 and Ellrott, Kyle and Chopra, Manu and Goldstein, Theodore C
+                 and Haussler, David and Morozova, Olena and Stuart, Joshua M",
+  affiliation = "Department of Biomolecular Engineering and Bioinformatics,
+                 University of California, Santa Cruz, California. Stanford
+                 University, Stanford, California. Oregon Health and Science
+                 University, Portland, Oregon. Pacific Collegiate School, Santa
+                 Cruz, California. Hematology-oncology Department, University
+                 of California, San Francisco, California. Department of
+                 Biomolecular Engineering and Bioinformatics, University of
+                 California, Santa Cruz, California. jstuart@ucsc.edu.",
+  abstract    = "Vast amounts of molecular data are being collected on tumor
+                 samples, which provide unique opportunities for discovering
+                 trends within and between cancer subtypes. Such cross-cancer
+                 analyses require computational methods that enable intuitive
+                 and interactive browsing of thousands of samples based on
+                 their molecular similarity. We created a portal called
+                 TumorMap to assist in exploration and statistical
+                 interrogation of high-dimensional complex ``omics'' data in an
+                 interactive and easily interpretable way. In the TumorMap,
+                 samples are arranged on a hexagonal grid based on their
+                 similarity to one another in the original genomic space and
+                 are rendered with Google's Map technology. While the important
+                 feature of this public portal is the ability for the users to
+                 build maps from their own data, we pre-built genomic maps from
+                 several previously published projects. We demonstrate the
+                 utility of this portal by presenting results obtained from The
+                 Cancer Genome Atlas project data. Cancer Res; 77(21); e111-4.
+                 \copyright{}2017 AACR.",
+  journal     = "Cancer research",
+  volume      =  77,
+  number      =  21,
+  pages       = "e111--e114",
+  month       =  nov,
+  year        =  2017,
+  url         = "http://dx.doi.org/10.1158/0008-5472.CAN-17-0580",
+  file        = "All Papers/N/Newton et al. 2017 - TumorMap - Exploring the Molecular Similarities of Cancer Samples in an Interactive Portal.pdf",
+  language    = "en",
+  issn        = "0008-5472, 1538-7445",
+  pmid        = "29092953",
+  doi         = "10.1158/0008-5472.CAN-17-0580"
+}
+
+@ARTICLE{Hu2017-jo,
+  title       = "{TumorFusions}: an integrative resource for cancer-associated
+                 transcript fusions",
+  author      = "Hu, Xin and Wang, Qianghu and Tang, Ming and Barthel, Floris
+                 and Amin, Samirkumar and Yoshihara, Kosuke and Lang, Frederick
+                 M and Martinez-Ledesma, Emmanuel and Lee, Soo Hyun and Zheng,
+                 Siyuan and Verhaak, Roel G W",
+  affiliation = "Department of Genomic Medicine, The University of Texas MD
+                 Anderson Cancer Center, Houston, TX 77030, USA. Program in
+                 Bioinformatics and Biostatistics, The University of Texas
+                 Graduate School of Biomedical Sciences, Houston, TX 77030,
+                 USA. Department of Bioinformatics and Computational Biology,
+                 The University of Texas MD Anderson Cancer Center, Houston, TX
+                 77030, USA. The Jackson Laboratory for Genomic Medicine,
+                 Farmington, CT 06032, USA. Department of Obstetrics and
+                 Gynecology, Niigata University Graduate School of Medical and
+                 Dental Sciences, Niigata, 951-8510, Japan. Department of
+                 Neuro-Oncology, The University of Texas MD Anderson Cancer
+                 Center, Houston, TX 77030, USA.",
+  abstract    = "Gene fusion represents a class of molecular aberrations in
+                 cancer and has been exploited for therapeutic purposes. In
+                 this paper we describe TumorFusions, a data portal that
+                 catalogues 20 731 gene fusions detected in 9966 well
+                 characterized cancer samples and 648 normal specimens from The
+                 Cancer Genome Atlas (TCGA). The portal spans 33 cancer types
+                 in TCGA. Fusion transcripts were identified via a uniform
+                 pipeline, including filtering against a list of 3838
+                 transcript fusions detected in a panel of 648 non-neoplastic
+                 samples. Fusions were mapped to somatic DNA rearrangements
+                 identified using whole genome sequencing data from 561 cancer
+                 samples as a means of validation. We observed that 65\% of
+                 transcript fusions were associated with a chromosomal
+                 alteration, which is annotated in the portal. Other features
+                 of the portal include links to SNP array-based copy number
+                 levels and mutational patterns, exon and transcript level
+                 expressions of the partner genes, and a network-based
+                 centrality score for prioritizing functional fusions. Our
+                 portal aims to be a broadly applicable and user friendly
+                 resource for cancer gene annotation and is publicly available
+                 at http://www.tumorfusions.org.",
+  journal     = "Nucleic acids research",
+  month       =  nov,
+  year        =  2017,
+  url         = "http://dx.doi.org/10.1093/nar/gkx1018",
+  file        = "All Papers/H/Hu et al. 2017 - TumorFusions - an integrative resource for cancer-associated transcript fusions.pdf",
+  language    = "en",
+  issn        = "0305-1048, 1362-4962",
+  pmid        = "29099951",
+  doi         = "10.1093/nar/gkx1018"
+}

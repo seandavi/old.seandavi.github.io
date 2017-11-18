@@ -1,0 +1,53 @@
+---
+title: "November Bioinformatics and Data Science Papers"
+date: 2017-11-18T10:29:06-05:00
+abstract : ""
+abstract_short : ""
+categories:
+  - Bioinformatics
+  - Data Science
+tags:
+  - lists
+  - manuscripts
+draft: false
+---
+
+```{r init, echo=FALSE}
+library(knitr)
+library(RefManageR)
+library(brew)
+opts_chunk$set(echo=FALSE, message=FALSE)
+```
+I am starting to make a short list of papers that interested me
+for the month. In creating this list, I make no claims about these
+being the "best" papers, the most interesting, or even that they
+are "good" papers. The list simply serves as an external brain for 
+me and may include some papers that are of interest to others. 
+
+Besides the usual single manuscripts, November publications included a complete issue of 
+[Cancer Research](http://cancerres.aacrjournals.org/CompRes) 
+focused on computational resources. 
+
+
+## [Cancer Research Computational Resources Issue](http://cancerres.aacrjournals.org/CompRes) 
+
+The overview of the article collection as given on the Cancer Research website is:
+
+> The accelerating progress in cancer research has been driven by rapid developments in technology, and with it, an associated influx of data, emphasizing the growing importance of computing, machine learning, and data analysis in biomedicine. The collected works below, published online-only in the November 1, 2017 issue of Cancer Research, introduce computing tools and resources that non-bioinformaticists can incorporate into their work. These articles are freely available thanks to support from the NCI. We intend for this collection to be the beginning of many more computational resource papers that will be published and highlighted in future issues of Cancer Research.
+
+## Additional Papers
+
+```{r results='asis'}
+bib = ReadBib('november-2017-bibliography.bib')
+brewtmpl = "### [<%= b$title %>](<%= b$url %>)
+
+<%= paste(b$author,collapse = ', ') %>. <%= b$journal %>.
+
+<%= b$abstract %>\n\n"
+for(b in bib) {
+    brew(text = brewtmpl)
+}
+```
+
+
+    
