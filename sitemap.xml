@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</loc>
+    <lastmod>2017-11-18T10:29:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</loc>
     <lastmod>2017-11-17T00:00:00+00:00</lastmod>
   </url>
@@ -110,11 +115,6 @@
   <url>
     <loc>https://seandavi.github.io/project/clinical-trials-gov/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</loc>
-    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -618,16 +618,6 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/untitled/</loc>
-  </url>
-  
-  <url>
-    <loc>https://seandavi.github.io/tags/api/</loc>
-    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seandavi.github.io/tags/bioconductor/</loc>
     <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -658,14 +648,20 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
-    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/home/</loc>
+    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/home/</loc>
-    <lastmod>2016-04-20T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/lists/</loc>
+    <lastmod>2017-11-18T10:29:06-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/tags/manuscripts/</loc>
+    <lastmod>2017-11-18T10:29:06-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -694,14 +690,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/r/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/r/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/r/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -718,14 +714,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/software/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/software/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/software/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
