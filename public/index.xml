@@ -84,6 +84,16 @@
     </item>
     
     <item>
+      <title>November Bioinformatics and Data Science Papers</title>
+      <link>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</link>
+      <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</guid>
+      <description>I am starting to make a short list of papers that interested me for the month. In creating this list, I make no claims about these being the “best” papers, the most interesting, or even that they are “good” papers. The list simply serves as an external brain for me and may include some papers that are of interest to others.
+Besides the usual single manuscripts, November publications included a complete issue of Cancer Research focused on computational resources.</description>
+    </item>
+    
+    <item>
       <title>A computable Bioconductor build report</title>
       <link>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
@@ -211,16 +221,6 @@ The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Conten
       
       <guid>https://seandavi.github.io/project/clinical-trials-gov/</guid>
       <description> [Project Site]  </description>
-    </item>
-    
-    <item>
-      <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</link>
-      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</guid>
-      <description>Introduction The NCI Genomic Data Commons (GDC) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a Bioconductor package that interfaces with the GDC API to provide search and data retrieval from within R.
-testing In the first of what will likely be a set of use cases for the GenomicDataCommons, I am going to address a question that came up on twitter from @sleight82</description>
     </item>
     
     <item>
@@ -1096,16 +1096,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>https://seandavi.github.io/publication/8644751/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://seandavi.github.io/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/untitled/</guid>
-      <description>testing This is some test text to see how things look.
-import os os.environ[&#39;PYSPARK_SUBMIT_ARGS&#39;] = &#39;--jars /tmp/spark-xml/target/scala-2.11/spark-xml_2.11-0.4.1.jar pyspark-shell&#39; import pyspark  sc = pyspark.SparkContext()  from pyspark.sql import SQLContext sqlContext = SQLContext(sc) df = sqlContext.read.format(&#39;com.databricks.spark.xml&#39;).options(rowTag=&#39;RUN&#39;).load(&#39;/tmp/NCBI_SRA_Metadata_Full_20170902/SRA00001*/*.run.xml&#39;)  df.cache()  DataFrame[EXPERIMENT_REF: struct&amp;lt;IDENTIFIERS:struct&amp;lt;PRIMARY_ID:string,SUBMITTER_ID:struct&amp;lt;_VALUE:string,_namespace:string&amp;gt;&amp;gt;,_accession:string,_refname:string&amp;gt;, IDENTIFIERS: struct&amp;lt;PRIMARY_ID:string,SUBMITTER_ID:struct&amp;lt;_VALUE:string,_namespace:string&amp;gt;&amp;gt;, RUN_ATTRIBUTES: struct&amp;lt;RUN_ATTRIBUTE:array&amp;lt;struct&amp;lt;TAG:string,VALUE:string&amp;gt;&amp;gt;&amp;gt;, SPOT_DESCRIPTOR: struct&amp;lt;SPOT_DECODE_SPEC:struct&amp;lt;READ_SPEC:array&amp;lt;struct&amp;lt;BASE_COORD:bigint,EXPECTED_BASECALL_TABLE:struct&amp;lt;BASECALL:string&amp;gt;,READ_CLASS:string,READ_INDEX:bigint,READ_TYPE:string&amp;gt;&amp;gt;&amp;gt;&amp;gt;, _accession: string, _alias: string, _center_name: string, _run_center: string, _run_date: string]  df.show()  +--------------------+--------------------+--------------------+--------------------+----------+-------+------------+-----------+--------------------+ | EXPERIMENT_REF| IDENTIFIERS| RUN_ATTRIBUTES| SPOT_DESCRIPTOR|_accession| _alias|_center_name|_run_center| _run_date| +--------------------+--------------------+--------------------+--------------------+----------+-------+------------+-----------+--------------------+ |[[SRX000072,[4WG_...|[SRR000300,[D7GOF...|[WrappedArray([fl...|[[WrappedArray([1...| SRR000300|D7GOF0U| BCM| BCM|2006-07-24T11:02:00Z| |[[SRX000074,[4WG_.</description>
     </item>
     
   </channel>

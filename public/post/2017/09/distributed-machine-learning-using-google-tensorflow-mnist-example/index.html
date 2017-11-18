@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="description">
+  <meta name="generator" content="Hugo 0.27.1" />
+
+  <title>Distributed Machine Learning using Google Tensorflow: MNIST example &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Distributed Machine Learning using Google Tensorflow: MNIST example</h1>
+  <h2>description</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>01 Sep 2017</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="/topics/topic-1">topic 1</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/tensorflow">tensorflow</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/machine-learning">machine learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/deep-learning">deep learning</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/cloud">cloud</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/data-science">Data Science</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h1 id="what-is-tensorflow">What is TensorFlow?</h1>
+
+<p>TensorFlow is an open source library for machine learning, developed
+by researchers and engineers at Google. TensorFlow is designed to run
+on multiple computers to distribute the training workloads, and
+Google&rsquo;s Cloud Machine Learning Engine provides a managed service
+where you can run TensorFlow code in a distributed manner by using
+service APIs. TensorFlow often serves as a backend for other machine
+learning frameworks such as keras. Finally, TensorFlow code can take
+advantage of advanced CPU coprocessors and GPUs to speed computations,
+sometimes by orders-of-magnitude relative to standard CPUs.</p>
+
+<h1 id="machine-learning-as-a-service">Machine learning as a service</h1>
+
+<p>The Google Machine Learning engine is a a set of APIs that provide
+access to managed services for machine learning. In particular, we can
+write code in python using the tensorflow library and that code can
+then run on the Google Machine Learning engine. By changing parameters
+in the API calls, we can use more compute power to accomplish the
+machine learning task more quickly. In addition, the service that
+Google offers is both highly optimized and highly integrated with
+other Google services such as Cloud Storage and DataFlow. Perhaps the
+coolest aspect of using Google&rsquo;s machine learning service is that
+trained models can be hosted as a managed service for prediction at
+nearly arbitrary scale (for a price).</p>
+
+<h1 id="the-task-and-the-tutorial">The task and the tutorial</h1>
+
+<p>This tutorial shows you how to use a distributed configuration of
+TensorFlow code in Python on Google Cloud Machine Learning Engine to
+train a convolutional neural network model by using the MNIST
+dataset. You use TensorBoard to visualize the training process and
+Google Cloud Datalab to test the predictions.</p>
+
+<p>The MNIST dataset enables handwritten digit recognition, and is widely
+used in machine learning as a training set for image recognition.</p>
+
+<p>In this tutorial, the term node refers to an application container
+that runs parallel computations during training.</p>
+
+<h1 id="understanding-neural-networks">Understanding neural networks</h1>
+
+<p>In computer programming, humans instruct a computer to solve a problem
+by specifying each step using many lines of code. With machine
+learning and neural networks, you instead get the computer to solve
+the problem through examples.</p>
+
+<p>A neural network is a mathematical function that can learn the
+expected output for a given input from training datasets. The
+following figure illustrates a neural network that has been trained to
+output &ldquo;cat&rdquo; from a cat image.</p>
+
+<p>A neural network model is a function that can be trained through
+examples.</p>
+
+<p>You can see that a neural network model consists of multiple layers of
+calculation units, in which each layer has configurable
+parameters. The goal of training the model is to optimize the
+parameters to get results with the highest accuracy. The training
+algorithm makes adjustments as it processes batches of training
+77777777777777777777777777777datasets through the model. If you distribute the training process to
+multiple computational nodes, you need a way to keep track of the
+changing parameters to be shared by all nodes.</p>
+
+<h1 id="architecture-of-the-distributed-training">Architecture of the distributed training</h1>
+
+<p>There are three basic strategies to train a model with multiple nodes:</p>
+
+<ul>
+<li>Data-parallel training with synchronous updates.</li>
+<li>Data-parallel training with asynchronous updates.</li>
+<li>Model-parallel training.</li>
+</ul>
+
+<p>The example code in this tutorial uses data-parallel training with
+asynchronous updates on Cloud ML Engine. In this case, a training job
+is executed using the following types of nodes:</p>
+
+<ul>
+<li><p>Parameter server node</p>
+
+<dl>
+<dd>Update parameters with gradient vectors from worker and chief work nodes.</dd>
+</dl></li>
+
+<li><p>Worker node</p>
+
+<dl>
+<dd>Calculate a gradient vector from the training dataset.</dd>
+</dl></li>
+
+<li><p>Chief worker node</p>
+
+<dl>
+<dd>Coordinate the operations of multiple workers, in addition to working as one of the worker nodes.</dd>
+</dl></li>
+</ul>
+
+<p>Because you can use the data-parallel strategy regardless of the model
+structure, it is a good starting point for applying the distributed
+training method to your custom model. In data-parallel training, the
+whole model is shared with all worker nodes. Each node calculates
+gradient vectors independently from some part of the training dataset
+in the same manner as the mini-batch processing. The calculated
+gradient vectors are collected into the parameter server node, and
+model parameters are updated with the total summation of the gradient
+vectors. If you distribute 10,000 batches among 10 worker nodes, each
+node works on roughly 1,000 batches.</p>
+
+<p>Data-parallel training can be done with either synchronous or
+asynchronous updates. When using asynchronous updates, the parameter
+server applies each gradient vector independently, right after
+receiving it from one of the worker nodes, as shown in the following
+diagram.</p>
+
+<p>Data-parallel training with asynchronous updates.</p>
+
+<p>In a typical deployment, there are a few parameter server nodes, a
+single chief worker node, and several worker nodes. When you submit a
+training job through the service API, these nodes are automatically
+deployed in your project.</p>
+
+<p>The following diagram describes the architecture for running a
+distributed training job on Cloud ML Engine and using Cloud Datalab to
+execute predictions with your trained model.</p>
+
+<p>Architecture used by the tutorial.</p>
+
+<h1 id="objectives">Objectives</h1>
+
+<ul>
+<li>Run the distributed TensorFlow sample code on Cloud ML Engine.</li>
+<li>Deploy the trained model to Cloud ML Engine to create a custom API
+for predictions.</li>
+<li>Visualize the training process with TensorBoard.</li>
+</ul>
+
+<h2 id="costs">Costs</h2>
+
+<p>This tutorial uses billable components of Cloud Platform, including:</p>
+
+<ul>
+<li>Cloud ML Engine</li>
+<li>Google Cloud Storage</li>
+<li>Google Compute Engine</li>
+<li>Compute Engine Persistent Disk</li>
+</ul>
+
+<p>The estimated price to run this tutorial, assuming you use every resource for an entire day, is approximately $1.20 based on this pricing calculator.</p>
+
+<h2 id="before-you-begin">Before you begin</h2>
+
+<p>Select or create a Cloud Platform project.
+GO TO THE PROJECTS PAGE
+Enable billing for your project.
+ENABLE BILLING
+Enable the Google Compute Engine and the Cloud Machine Learning APIs.
+ENABLE THE APIS
+Verifying the Google Cloud SDK components</p>
+
+<p>Go to Cloud Shell.</p>
+
+<p>OPEN CLOUD SHELL
+List the models to verify that the command returns an empty list:</p>
+
+<p>gcloud ml-engine models list
+Verify that the command returns an empty list:</p>
+
+<p>Listed 0 items.
+If you&rsquo;ve already worked with Cloud ML Engine, you&rsquo;ll get a list of all of the models associated with your account.</p>
+
+<p>Downloading example files</p>
+
+<p>Download the example files and set your current directory.</p>
+
+<p>git clone <a href="https://github.com/GoogleCloudPlatform/cloudml-dist-mnist-example" target="_blank">https://github.com/GoogleCloudPlatform/cloudml-dist-mnist-example</a>
+cd cloudml-dist-mnist-example
+Creating a Cloud Storage bucket for MNIST files</p>
+
+<p>Create a regional Cloud Storage bucket to hold the MNIST data files
+that are used to train the model.</p>
+
+<pre><code class="language-sh">PROJECT_ID=$(gcloud config list project --format &quot;value(core.project)&quot;)
+BUCKET=&quot;${PROJECT_ID}-ml&quot;
+gsutil mb -c regional -l us-central1 gs://${BUCKET}
+</code></pre>
+
+<p>Note: This tutorial puts resources in the us-central1 region. If you
+choose to use a different region, be sure to change this value
+everywhere to maintain performance.  Use the following script to
+download the MNIST data files and copy them to the bucket.</p>
+
+<pre><code class="language-sh">./scripts/create_records.py
+gsutil cp /tmp/data/train.tfrecords gs://${BUCKET}/data/
+gsutil cp /tmp/data/test.tfrecords gs://${BUCKET}/data/
+</code></pre>
+
+<p>Training the model on Cloud Machine Learning Engine</p>
+
+<p>Submit a training job to Cloud ML Engine.</p>
+
+<pre><code class="language-sh">JOB_NAME=&quot;job_$(date +%Y%m%d_%H%M%S)&quot;
+gcloud ml-engine jobs submit training ${JOB_NAME} \
+    --package-path trainer \
+    --module-name trainer.task \
+    --staging-bucket gs://${BUCKET} \
+    --job-dir gs://${BUCKET}/${JOB_NAME} \
+    --runtime-version 1.2 \
+    --region us-central1 \
+    --config config/config.yaml \
+    -- \
+    --data_dir gs://${BUCKET}/data \
+    --output_dir gs://${BUCKET}/${JOB_NAME} \
+    --train_steps 10000
+</code></pre>
+
+<p>The <code>--train_steps</code> option specifies the total number of training batches.</p>
+
+<p>You can control the amount of resources allocated for the training job
+by specifying a scale tier with the configuration file
+<code>config/config.yaml</code>. When the job starts running on multiple nodes, the
+same Python code in the trainer directory that is specified with
+&ndash;package-path parameter are deployed on all nodes. The files in the
+trainer directory and their functions are listed in the table below:</p>
+
+<p>File Description
+&mdash;-+&mdash;&mdash;&mdash;&ndash;
+setup.py | Setup script to install additional modules on nodes.
+model.py | TensorFlow code to define the convolutional neural network model.
+task.py | TensorFlow code to run the training task. In this example, Experiment API is used to run the training loop in a distributed manner.
+&mdash;-+&mdash;&mdash;&mdash;&ndash;
+Open the ML Engine page in the Google Cloud Platform Console to find the running job.</p>
+
+<p>OPEN CLOUD ML ENGINE
+Click the job ID to find a link to the log viewer. The example code shows progress in logs during the training. For example, each worker node shows a training loss value, which represents the total loss value for the dataset in a single training batch, at some intervals. In addition, the chief worker node shows a loss and accuracy for the test set. At the end of the training, the final evaluation against the test set is shown. In this example, the training achieved 99.3% accuracy for the test set.</p>
+
+<p>Saving dict for global step 10008: accuracy = 0.9931, global_step = 10008, loss = 0.0315906
+After the training, the trained model is exported in the storage bucket. You can find the storage path for the directory that contains the model binary by using the following command.</p>
+
+<pre><code class="language-sh">gsutil ls gs://${BUCKET}/${JOB_NAME}/export/Servo | tail -1
+</code></pre>
+
+<p>The output should look like this:</p>
+
+<pre><code class="language-sh">gs://${BUCKET}/job_[TIMESTAMP]/export/Servo/[JOB_ID]/
+</code></pre>
+
+<h1 id="visualizing-the-training-process-with-tensorboard">Visualizing the training process with TensorBoard</h1>
+
+<p>After the training, the summary data is stored in gs://${BUCKET}/${JOB_NAME} and you can visualize them with TensorBoard.</p>
+
+<p>Run the following command in Cloud Shell to start TensorBoard.</p>
+
+<pre><code class="language-sh">tensorboard --port 8080 --logdir gs://${BUCKET}/${JOB_NAME}
+</code></pre>
+
+<p>To open a
+new browser window, select Preview on port 8080 from the Web preview
+menu in the top-left corner of the Cloud Shell toolbar.  In the new
+window, you can use TensorBoard to see the training summary and the
+visualized network graph. Press Control+C to stop TensorBoard in the
+Cloud Shell.</p>
+
+<p>TensorBoard shows training summary and network graph.
+Deploying the trained model for predictions</p>
+
+<p>You deploy the trained model for predictions using the model binary.</p>
+
+<p>Deploy the model and set the default version.</p>
+
+<pre><code class="language-sh">MODEL_NAME=MNIST
+gcloud ml-engine models create --regions us-central1 ${MODEL_NAME}
+VERSION_NAME=v1
+ORIGIN=$(gsutil ls gs://${BUCKET}/${JOB_NAME}/export/Servo | tail -1)
+gcloud ml-engine versions create \
+    --origin ${ORIGIN} \
+    --model ${MODEL_NAME} \
+    ${VERSION_NAME}
+gcloud ml-engine versions set-default --model ${MODEL_NAME} ${VERSION_NAME}
+</code></pre>
+
+<p><code>MODEL_NAME</code> and <code>VERSION_NAME</code> can be arbitrary, but you can&rsquo;t reuse the same name. The last command is not necessary for the first version because it automatically becomes the default. It&rsquo;s a good practice to set the default explicitly.</p>
+
+<p>It might take a few minutes for the deployed model to become ready. Until it becomes ready, it returns an HTTP 503 error against requests.
+Test the prediction API by using a sample request file.</p>
+
+<pre><code class="language-sh">./scripts/make_request.py
+</code></pre>
+
+<p>This script creates a JSON file, named request.json, containing 10 test images for predictions.</p>
+
+<p>Submit an online prediction request.</p>
+
+<pre><code class="language-sh">gcloud ml-engine predict --model ${MODEL_NAME} --json-instances request.json
+</code></pre>
+
+<p>You should get a response like this:</p>
+
+<pre><code class="language-sh">CLASSES  PROBABILITIES
+7        [3.437006127094938e-21, 5.562060376991084e-16, 2.5538862785511466e-19, 7.567420805782991e-17, 2.891652426709158e-16, 2.2750016241705544e-20, 1.837758172149778e-24, 1.0, 6.893573298530907e-19, 8.065571390565747e-15]
+2        [1.2471907477623206e-23, 2.291396136267388e-25, 1.0, 1.294716955176118e-32, 3.952643278911311e-25, 3.526924652059716e-36, 3.607279481567486e-25, 1.8093850397574458e-30, 7.008172489249426e-26, 2.6986217649454554e-29]
+...
+9        [5.124952379488745e-22, 1.917571388490136e-20, 2.02434602684524e-21, 2.1246177460406675e-18, 1.8790316524963657e-11, 2.7904309518969085e-14, 7.973171243464317e-26, 6.233734909559877e-14, 9.224547341257772e-12, 1.0]
+CLASSES is the most probable digit of the given image, and PROBABILITIES shows the probabilities of each digit.
+</code></pre>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/">Approaches to accessing ClinicalTrials.gov data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/post/2017/09/getting-started-with-google-cloud-datalab/">Getting Started with Google Cloud Datalab</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/post/2017/09/getting-started-with-google-cloud-datalab/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manuscripts on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/manuscripts/</link>
+    <description>Recent content in Manuscripts on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Sat, 18 Nov 2017 10:29:06 -0500</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/tags/manuscripts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>November Bioinformatics and Data Science Papers</title>
+      <link>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</link>
+      <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</guid>
+      <description>I am starting to make a short list of papers that interested me for the month. In creating this list, I make no claims about these being the “best” papers, the most interesting, or even that they are “good” papers. The list simply serves as an external brain for me and may include some papers that are of interest to others.
+Besides the usual single manuscripts, November publications included a complete issue of Cancer Research focused on computational resources.</description>
+    </item>
+    
+  </channel>
+</rss>

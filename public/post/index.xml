@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>November Bioinformatics and Data Science Papers</title>
+      <link>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</link>
+      <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/</guid>
+      <description>I am starting to make a short list of papers that interested me for the month. In creating this list, I make no claims about these being the “best” papers, the most interesting, or even that they are “good” papers. The list simply serves as an external brain for me and may include some papers that are of interest to others.
+Besides the usual single manuscripts, November publications included a complete issue of Cancer Research focused on computational resources.</description>
+    </item>
+    
+    <item>
       <title>A computable Bioconductor build report</title>
       <link>https://seandavi.github.io/post/2017/11/a-computable-bioconductor-build-report/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
@@ -38,16 +48,6 @@ The Bioconductor build reports are generally available as html pages that are na
       <guid>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
       <description>I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
 The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.</description>
-    </item>
-    
-    <item>
-      <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
-      <link>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</link>
-      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</guid>
-      <description>Introduction The NCI Genomic Data Commons (GDC) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a Bioconductor package that interfaces with the GDC API to provide search and data retrieval from within R.
-testing In the first of what will likely be a set of use cases for the GenomicDataCommons, I am going to address a question that came up on twitter from @sleight82</description>
     </item>
     
     <item>

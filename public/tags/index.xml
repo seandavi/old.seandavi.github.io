@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>Api</title>
-      <link>https://seandavi.github.io/tags/api/</link>
-      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/tags/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bioconductor</title>
       <link>https://seandavi.github.io/tags/bioconductor/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
@@ -75,11 +66,20 @@
     </item>
     
     <item>
-      <title>Genomicdatacommons</title>
-      <link>https://seandavi.github.io/tags/genomicdatacommons/</link>
-      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      <title>Lists</title>
+      <link>https://seandavi.github.io/tags/lists/</link>
+      <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
       
-      <guid>https://seandavi.github.io/tags/genomicdatacommons/</guid>
+      <guid>https://seandavi.github.io/tags/lists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manuscripts</title>
+      <link>https://seandavi.github.io/tags/manuscripts/</link>
+      <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
+      
+      <guid>https://seandavi.github.io/tags/manuscripts/</guid>
       <description></description>
     </item>
     
