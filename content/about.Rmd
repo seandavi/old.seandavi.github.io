@@ -13,4 +13,9 @@ output: html_document
 - Ph.D., University of Pittsburgh, School of Medicine
 - Bachelor of Science and Engineering, Princeton University
 
+## Curriculum Vita
+
+- [My CV]
+
+[My CV]: /CV.pdf
 
