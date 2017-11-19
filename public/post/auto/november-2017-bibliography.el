@@ -2,6 +2,7 @@
  "november-2017-bibliography"
  (lambda ()
    (LaTeX-add-bibitems
+    "Brady2017-pw"
     "Steinbaugh2017-mt"
     "Barron2017-eh"
     "Antaki2017-go"
