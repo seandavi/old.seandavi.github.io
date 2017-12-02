@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.27.1" />
+
+  <title>Protect Against Secrets in Git Repositories &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Protect Against Secrets in Git Repositories</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>02 Dec 2017</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/security">security</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/git">git</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/programming">programming</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h2 id="the-prelude">The prelude</h2>
+
+<p>I made a mistake and am going to share it here. Please be gentle when
+judging me on it&hellip;.</p>
+
+<p>I had been working on some code that I thought was
+going to be throw-away example code for loading a large dataset into
+<a href="https://elastic.co/" target="_blank">ElasticSearch</a>. That said, I have been saved often enough by using a
+version control system (now, <em>always</em> <a href="https://git-scm.com/" target="_blank">git</a>), that I use it all the
+time. &ldquo;Knowing&rdquo; that this code would never be shared, I was careless
+and included my [Amazon Web Service (AWS)] [keys] in the code while I sorted out whether
+[logstash] would pick up the keys from a central config file. At some
+point, I committed the file that included the keys to git. As these
+things go, several days passed and I found that I had a useful project
+worthy of a push to github. No keys
+present in the code, etc.&ndash;I checked.</p>
+
+<p>Within minutes (or maybe it was an hour&ndash;not sure) of when I pushed the code
+to github, I got an email from <a href="https://aws.amazon.com/" target="_blank">AWS</a> that, paraphrased, read, &ldquo;We have
+found your AWS keys in a github repository. Please fix
+the problem and <strong>DON&rsquo;T DO THAT AGAIN</strong>.&rdquo; Almost immediately after, I
+got another email from AWS thanking me for deleting my keys. AWS
+apparently scans GitHub repositories for AWS keys and has a system (I
+suspect somewhat automated) for removing the exposed keys. I deleted
+the GitHub repo and did some local checking and, in
+retrospect, realized my mistake. Git had dutifully saved the entire
+history of my project including a version of one file with AWS keys in
+it. Upon pushing to GitHub, the keys were there in the history. I
+breathed a sigh of relief that no harm had been done.</p>
+
+<p>Thankfully, I use AWS often. I logged in the next day and
+found that I had about 20 servers running that I hadn&rsquo;t
+started. In the short period of time that the keys had been exposed,
+someone had been able to create two ssh keypairs and started the
+machines. Needless to say, I spent quite a bit of time working to
+clean up any instances and to remove keys, etc. that could have been
+exposed (all of them, of course). The
+speed with which someone was able to capitalize on my mistake was
+simply astonishing to me. That said, I do want to hand it to the AWS
+folks who take a proactive role in protecting my account security.</p>
+
+<h2 id="don-t-do-that-again">Don&rsquo;t do that again</h2>
+
+<p>While I probably will not forget to check my code for &ldquo;secrets&rdquo; again
+anytime soon, I started to look into ways to systematically check and
+then preempt such occurrences. Ironically (or not), the folks at <a href="https://github.com/awslabs" target="_blank">AWS
+Labs</a> have created a nice little project called <a href="https://github.com/awslabs/git-secrets" target="_blank">git-secrets</a> that
+purports to:</p>
+
+<blockquote>
+<p>Prevent you from committing secrets and credentials into git repositories</p>
+</blockquote>
+
+<p>And in more detail:</p>
+
+<blockquote>
+<p><code>git-secrets</code> scans commits, commit messages, and <code>--no-ff</code> merges
+to prevent adding secrets into your git repositories. If a commit,
+commit message, or any commit in a <code>--no-ff</code> merge history matches
+one of your configured prohibited regular expression patterns, then
+the commit is rejected.</p>
+</blockquote>
+
+<p>In other words, <em>prevent</em> keys and secrets from <em>ever</em> entering the git history.</p>
+
+<h2 id="example-walkthrough-with-git-secrets">Example walkthrough with git-secrets</h2>
+
+<p>In this section, I just document for myself what it takes to get and
+use <code>git-secrets</code> to protect a repository from inadvertently
+committing keys to a git repository.</p>
+
+<p><a href="https://github.com/awslabs/git-secrets#installing-git-secrets" target="_blank">Installation instructions</a> include both simple <code>Makefile</code>-based installation or using <a href="https://brew.sh/" target="_blank">homebrew</a> on my Mac.</p>
+
+<pre><code class="language-sh">brew install git-secrets
+</code></pre>
+
+<p>At this point, the <code>git-secrets</code> executable should be in the
+<code>PATH</code>. In typical git style, one can use either <code>git-secrets</code> or <code>git
+secrets</code> to access functionality.</p>
+
+<p>To play, I create a simple git repo and &ldquo;install&rdquo; the <code>git-secrets</code>
+<a href="https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks" target="_blank">git hooks</a>. Before any commit can succeed, these hook
+scripts must exit successfully.</p>
+
+<pre><code class="language-sh"># create an example git repo
+mkdir secrets_example
+cd secrets_example
+git init
+# now &quot;install&quot; the git-secrets hook
+git secrets --install
+</code></pre>
+
+<p>And the result:</p>
+
+<pre><code class="language-sh">Installed commit-msg hook to .git/hooks/commit-msg
+Installed pre-commmit hook to .git/hooks/pre-commit
+Installed prepare-commit-msg hook to .git/hooks/prepare-commit-msg
+</code></pre>
+
+<p>At this point, the <code>secrets_example</code> git repository has been created
+and the <code>git-secrets</code> pre-commit hook added. However, <code>git-secrets</code>
+needs to be told about what secrets to look for. We can check what
+<code>git-secrets</code> thinks is a secret.</p>
+
+<pre><code class="language-sh">git secrets --list
+</code></pre>
+
+<p>This will return &ldquo;nothing&rdquo; at this poing. In my case, I want to
+have <code>git-secrets</code> check for AWS keys. <code>git-secrets</code> has a special
+function for doing just that</p>
+
+<pre><code class="language-sh">git secrets --register-aws
+git secrets --list
+</code></pre>
+
+<p>And now the result:</p>
+
+<pre><code class="language-sh">secrets.providers git secrets --aws-provider
+secrets.patterns [A-Z0-9]{20}
+secrets.patterns (&quot;|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(&quot;|')?\s*(:|=&gt;|=)\s*(&quot;|')?[A-Za-z0-9/\+=]{40}(&quot;|')?
+secrets.patterns (&quot;|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(&quot;|')?\s*(:|=&gt;|=)\s*(&quot;|')?[0-9]{4}\-?[0-9]{4}\-?[0-9]{4}(&quot;|')?
+secrets.allowed AKIAIOSFODNN7EXAMPLE
+secrets.allowed wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+</code></pre>
+
+<p><code>git-secrets</code> has added a set of patterns (regular expressions) that
+will be matched against text before a commit can succeed. Adding a
+specific pattern for another password is also straightford.</p>
+
+<pre><code class="language-sh">git secrets --add 'MyPASSWORD[0-9]+'
+</code></pre>
+
+<p>Trying to commit a file with <code>MyPASSWORD123</code> fails.</p>
+
+<pre><code class="language-sh">echo 'MyPASSWORD123' &gt;&gt; test.file
+git add test.file
+git commit -m 'test file with password'
+</code></pre>
+
+<p>And the output</p>
+
+<pre><code class="language-sh">test.file:1:MyPASSWORD123
+
+[ERROR] Matched one or more prohibited patterns
+
+Possible mitigations:
+- Mark false positives as allowed using: git config --add secrets.allowed ...
+- Mark false positives as allowed by adding regular expressions to .gitallowed at repository's root directory
+- List your configured patterns: git config --get-all secrets.patterns
+- List your configured allowed patterns: git config --get-all secrets.allowed
+- List your configured allowed patterns in .gitallowed at repository's root directory
+- Use --no-verify if this is a one-time false positive
+</code></pre>
+
+<p><code>git-secrets</code> has a number of other <a href="https://github.com/awslabs/git-secrets#options" target="_blank">features and functions</a>, but the
+walkthrough above is enought to get me started.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://seandavi.github.io/post/2017/11/november-bioinformatics-and-data-science-papers/">November Bioinformatics and Data Science Papers</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://seandavi.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
