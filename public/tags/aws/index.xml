@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cloud on seandavi(s12)</title>
-    <link>https://seandavi.github.io/tags/cloud/</link>
-    <description>Recent content in Cloud on seandavi(s12)</description>
+    <title>Aws on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/aws/</link>
+    <description>Recent content in Aws on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Sat, 02 Dec 2017 07:50:15 -0500</lastBuildDate>
     
-	<atom:link href="https://seandavi.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seandavi.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
