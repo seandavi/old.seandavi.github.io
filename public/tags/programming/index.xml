@@ -17,8 +17,8 @@
       <pubDate>Sat, 02 Dec 2017 07:50:15 -0500</pubDate>
       
       <guid>https://seandavi.github.io/post/2017/12/protect-against-secrets-in-git-repositories/</guid>
-      <description>The prelude I made a mistake and am going to share it here. Please be gentle when judging me on it&amp;hellip;.
-I had been working on some code that I thought was going to be throw-away example code for loading a large dataset into ElasticSearch. That said, I have been saved often enough by using a version control system (now, always git), that I use it all the time. &amp;ldquo;Knowing&amp;rdquo; that this code would never be shared, I was careless and included my [Amazon Web Service (AWS)] [keys] in the code while I sorted out whether [logstash] would pick up the keys from a central config file.</description>
+      <description>I made a mistake and am going to share it here. Please be gentle when judging me. As penance, I spent some time to learn how to systematically avoid making the same mistake and share that solution here.
+The prelude I had been working on some code that I thought was going to be throw-away example code for loading a large dataset into ElasticSearch. That said, I have been saved often enough by using a version control system (now, always git), that I use it all the time.</description>
     </item>
     
   </channel>
