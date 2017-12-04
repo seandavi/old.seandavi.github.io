@@ -84,6 +84,24 @@
     </item>
     
     <item>
+      <title>Bioconductor: software for orchestrating high-throughput genomics data analysis</title>
+      <link>https://seandavi.github.io/biocshorttalk/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/biocshorttalk/</guid>
+      <description>h1.title { text-align: left; font-style: italic; } .reveal .author,.reveal .date { text-align: left; text-size: 0.8em; margin-left: 100px; } p { text-align: left; } .reveal ul, ol { display: block; padding-left: 30px; } .reveal img { display: block; align: center; } blockquote p { text-align: center; } #left { left:-8.33%; text-align: left; float: left; width:50%; z-index:-10; } #wrap { width: 1000px; height: 600px; padding: 0; overflow: hidden; } #frame { width: 1000px; height: 600px; border: 1px solid black; } #right { left:31.</description>
+    </item>
+    
+    <item>
+      <title>Bioconductor: software for orchestrating high-throughput genomics data analysis</title>
+      <link>https://seandavi.github.io/talk/2018/12/04/bioconductor-software-for-orchestrating-high-throughput-genomics-data-analysis/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/12/04/bioconductor-software-for-orchestrating-high-throughput-genomics-data-analysis/</guid>
+      <description>h1.title { text-align: left; font-style: italic; } .reveal .author,.reveal .date { text-align: left; text-size: 0.8em; margin-left: 100px; } p { text-align: left; } .reveal ul, ol { display: block; padding-left: 30px; } .reveal img { display: block; align: center; } blockquote p { text-align: center; } #left { left:-8.33%; text-align: left; float: left; width:50%; z-index:-10; } #wrap { width: 1000px; height: 600px; padding: 0; overflow: hidden; } #frame { width: 1000px; height: 600px; border: 1px solid black; } #right { left:31.</description>
+    </item>
+    
+    <item>
       <title>Protect Against Secrets in Git Repositories</title>
       <link>https://seandavi.github.io/post/2017/12/protect-against-secrets-in-git-repositories/</link>
       <pubDate>Sat, 02 Dec 2017 07:50:15 -0500</pubDate>
