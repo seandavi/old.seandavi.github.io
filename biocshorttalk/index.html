@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.27.1" />
+
+  <title>Bioconductor: software for orchestrating high-throughput genomics data analysis &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Bioconductor: software for orchestrating high-throughput genomics data analysis</h1>
+  <h2></h2>
+</div>
+<div class="content">
+  <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="/rmarkdown-libs/vis/vis.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/vis/vis.min.js"></script>
+<script src="/rmarkdown-libs/visNetwork-binding/visNetwork.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<script src="/rmarkdown-libs/datatables-binding/datatables.js"></script>
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js"></script>
+<link href="/rmarkdown-libs/dt-ext-scroller/css/scroller.dataTables.min.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/dt-ext-scroller/js/dataTables.scroller.min.js"></script>
+
+
+<style type="text/css">
+  h1.title {
+    text-align: left;
+    font-style: italic;
+  }
+  .reveal .author,.reveal .date {
+    text-align: left;
+    text-size: 0.8em;
+    margin-left: 100px;
+  }
+  p {
+    text-align: left;
+  }
+  .reveal ul, ol {
+    display: block;
+    padding-left: 30px;
+  }
+  .reveal img {
+     display: block;
+     align: center;
+  }
+  blockquote p {
+    text-align: center;
+  }
+  #left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+    #wrap { width: 1000px; height: 600px; padding: 0; overflow: hidden; }
+    #frame { width: 1000px; height: 600px; border: 1px solid black; }
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+</style>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>Background and introduction</p>
+<p>Two example workflows</p>
+<ul>
+<li>Principle components analysis of public gene expression data</li>
+<li>Somatic variant analysis of TCGA melanoma data</li>
+</ul>
+<p>Additional functionality</p>
+<p><br/> <br/></p>
+<blockquote>
+<p>These slides were written in R and all plots and results are generated from code in the slides–reproducible research in action!</p>
+</blockquote>
+<p><a href="https://github.com/seandavi/Talks" class="uri">https://github.com/seandavi/Talks</a></p>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<div id="left">
+<p><img src="http://bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg" alt="img" /> <img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/data-science-efficiency-neo4j-and-r.png" /></p>
+</div>
+<div id="right">
+<p>Analysis and comprehension of high-throughput biological data</p>
+<ul>
+<li>Started in 2002</li>
+<li>Builds on <a href="https://cran.r-project.org/">R</a>, which includes 14,376 “contributed” software packages and more than 2 million users worldwide</li>
+</ul>
+<p>Bioconductor is well-used and well-respected</p>
+<ul>
+<li>More than 50,000 unique downloads per month</li>
+<li>Approximately 21,700 PubmedCentral citations</li>
+</ul>
+</div>
+</div>
+<div id="but-what-is-bioconductor" class="section level2">
+<h2>But what <em>is</em> Bioconductor?</h2>
+<blockquote>
+<p>Bioconductor is a Toolkit for high-throughput biological data science built with reproducible computational research as a <em>core value</em>.</p>
+</blockquote>
+<p>Bioconductor software supports all aspects the biological data science workflow.</p>
+<ul>
+<li>Data import and export</li>
+<li>Data management and accessibility</li>
+<li>Data integration, including with public data</li>
+<li>Analysis and statistics</li>
+<li>High-level visualization</li>
+<li>Efficiency and reproducibility, even at scale</li>
+</ul>
+</div>
+<div id="bioconductor-packages" class="section level2">
+<h2>Bioconductor Packages</h2>
+<p><img src="/BiocShortTalk_files/figure-html/biocpkgplot-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-bioconductor-ecosystem" class="section level2">
+<h2>The Bioconductor Ecosystem</h2>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="visNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"nodes":{"label":["Build System","Website","AnnotationHub","ExperimentHub","ExperimentData","AnnotationData","AnnotationHub","Support Site","Email List","Version Control","Packages","Community","Reproducibility","Science","IT"],"group":["Component","Component","Component","Component","Component","Component","Component","Component","Component","Component","Component","System","System","System","System"],"size":[20,20,20,20,20,20,20,20,20,20,20,40,40,40,40],"id":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]},"edges":{"from":[1,1,2,2,3,3,3,4,4,4,5,5,6,6,7,7,7,8,8,9,9,10,10,10,11,11,11,11],"to":[15,14,15,12,15,14,13,15,14,13,14,13,14,13,15,14,13,15,12,15,12,12,13,14,12,13,14,15],"length":[500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500,500]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","labelHighlightBold":true,"font":{"size":28,"color":"white"}},"manipulation":{"enabled":false},"edges":{"selectionWidth":10,"arrows":{"to":{"enabled":false,"scaleFactor":2}},"shadow":true}},"groups":["Component","System"],"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)"},"main":null,"submain":null,"footer":null,"highlight":{"enabled":true,"hoverNearest":false,"degree":1,"algorithm":"all","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":false,"fit":false,"resetHighlight":true,"clusterOptions":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="bioconductor-education-training-and-community" class="section level2">
+<h2>Bioconductor: Education, Training, and Community</h2>
+<div id="wrap">
+<iframe id="frame" src="https://bioconductor.org/">
+</iframe>
+</div>
+</div>
+<div id="summarizedexperiment" class="section level2">
+<h2>SummarizedExperiment</h2>
+<div style="width:80%; display: block; margin: 0 auto;">
+<div class="figure">
+<img src="https://images.nature.com/full/nature-assets/nmeth/journal/v12/n2/images/nmeth.3252-F2.jpg" />
+
+</div>
+</div>
+</div>
+<div id="example-1-build-a-pca-plot-from-public-data" class="section level2">
+<h2>Example 1: Build a PCA plot from Public Data</h2>
+<p>Use the <a href="https://bioconductor.org/packages/GEOquery">GEOquery</a> package to fetch data about <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103512">GSE103512</a>.</p>
+<pre class="r"><code>library(GEOquery)
+gse = getGEO(&quot;GSE103512&quot;, destdir=&#39;/tmp&#39;)[[1]]
+gse</code></pre>
+<pre><code>## ExpressionSet (storageMode: lockedEnvironment)
+## assayData: 54715 features, 280 samples 
+##   element names: exprs 
+## protocolData: none
+## phenoData
+##   sampleNames: GSM2772660 GSM2772661 ... GSM2772939 (280 total)
+##   varLabels: title geo_accession ... weight:ch1 (73 total)
+##   varMetadata: labelDescription
+## featureData
+##   featureNames: 1007_PM_s_at 1053_PM_at ... AFFX-TrpnX-M_at (54715
+##     total)
+##   fvarLabels: ID GB_ACC ... Gene Ontology Molecular Function (16
+##     total)
+##   fvarMetadata: Column Description labelDescription
+## experimentData: use &#39;experimentData(object)&#39;
+## Annotation: GPL13158</code></pre>
+</div>
+<div id="example-1-build-a-pca-plot-from-public-data-1" class="section level2">
+<h2>Example 1: Build a PCA plot from Public Data</h2>
+<p>Examine two variables of interest, cancer type and tumor/normal status.</p>
+<pre class="r"><code>library(xtable)
+print(xtable(with(pData(gse),table(`cancer type:ch1`,`normal:ch1`))),type=&#39;html&#39;)</code></pre>
+<!-- html table generated in R 3.5.0 by xtable 1.8-2 package -->
+<!-- Mon Dec  4 02:10:51 2017 -->
+<table border="1">
+<tr>
+<th>
+</th>
+<th>
+no
+</th>
+<th>
+yes
+</th>
+</tr>
+<tr>
+<td align="right">
+BC
+</td>
+<td align="right">
+65
+</td>
+<td align="right">
+10
+</td>
+</tr>
+<tr>
+<td align="right">
+CRC
+</td>
+<td align="right">
+57
+</td>
+<td align="right">
+12
+</td>
+</tr>
+<tr>
+<td align="right">
+NSCLC
+</td>
+<td align="right">
+60
+</td>
+<td align="right">
+9
+</td>
+</tr>
+<tr>
+<td align="right">
+PCA
+</td>
+<td align="right">
+60
+</td>
+<td align="right">
+7
+</td>
+</tr>
+</table>
+</div>
+<div id="example-1-build-a-pca-plot-from-public-data-2" class="section level2">
+<h2>Example 1: Build a PCA plot from Public Data</h2>
+<p>Information about features measured are also included.</p>
+<div id="htmlwidget-2" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"filter":"none","extensions":["Scroller"],"data":[["1007_PM_s_at","1053_PM_at","117_PM_at","121_PM_at","1255_PM_g_at","1294_PM_at","1316_PM_at","1320_PM_at","1405_PM_i_at","1431_PM_at","1438_PM_at","1487_PM_at","1494_PM_f_at","1552256_PM_a_at","1552257_PM_a_at","1552258_PM_at","1552261_PM_at","1552263_PM_at","1552264_PM_a_at","1552266_PM_at","1552269_PM_at","1552271_PM_at","1552272_PM_a_at","1552274_PM_at","1552275_PM_s_at","1552276_PM_a_at","1552277_PM_a_at","1552278_PM_a_at","1552279_PM_a_at","1552280_PM_at","1552281_PM_at","1552283_PM_s_at","1552286_PM_at","1552287_PM_s_at","1552288_PM_at","1552289_PM_a_at","1552291_PM_at","1552293_PM_at","1552295_PM_a_at","1552296_PM_at","1552299_PM_at","1552301_PM_a_at","1552302_PM_at","1552303_PM_a_at","1552304_PM_at","1552306_PM_at","1552307_PM_a_at","1552309_PM_a_at","1552310_PM_at","1552311_PM_a_at","1552312_PM_a_at","1552314_PM_a_at","1552315_PM_at","1552316_PM_a_at","1552318_PM_at","1552319_PM_a_at","1552320_PM_a_at","1552321_PM_a_at","1552322_PM_at","1552323_PM_s_at","1552325_PM_at","1552326_PM_a_at","1552327_PM_at","1552329_PM_at","1552330_PM_at","1552332_PM_at","1552334_PM_at","1552335_PM_at","1552337_PM_s_at","1552338_PM_at","1552340_PM_at","1552343_PM_s_at","1552344_PM_s_at","1552347_PM_at","1552348_PM_at","1552349_PM_a_at","1552354_PM_at","1552355_PM_s_at","1552359_PM_at","1552360_PM_a_at","1552362_PM_a_at","1552364_PM_s_at","1552365_PM_at","1552367_PM_a_at","1552368_PM_at","1552370_PM_at","1552372_PM_at","1552373_PM_s_at","1552375_PM_at","1552377_PM_s_at","1552378_PM_s_at","1552379_PM_at","1552381_PM_at","1552383_PM_at","1552384_PM_a_at","1552386_PM_at","1552388_PM_at","1552389_PM_at","1552390_PM_a_at","1552391_PM_at","1552393_PM_at","1552394_PM_a_at","1552395_PM_at","1552396_PM_at","1552399_PM_a_at","1552400_PM_a_at","1552401_PM_a_at","1552402_PM_at","1552405_PM_at","1552408_PM_at","1552409_PM_a_at","1552410_PM_at","1552414_PM_at","1552415_PM_a_at","1552417_PM_a_at","1552418_PM_at","1552419_PM_s_at","1552421_PM_a_at","1552422_PM_at","1552423_PM_at","1552424_PM_at","1552425_PM_a_at","1552426_PM_a_at","1552427_PM_at","1552430_PM_at","1552432_PM_at","1552436_PM_a_at","1552438_PM_a_at","1552439_PM_s_at","1552440_PM_at","1552445_PM_a_at","1552448_PM_a_at","1552449_PM_a_at","1552450_PM_a_at","1552452_PM_at","1552453_PM_a_at","1552455_PM_at","1552456_PM_a_at","1552457_PM_a_at","1552458_PM_at","1552459_PM_a_at","1552461_PM_at","1552463_PM_at","1552466_PM_x_at","1552467_PM_at","1552468_PM_a_at","1552470_PM_a_at","1552472_PM_a_at","1552473_PM_at","1552474_PM_a_at","1552476_PM_s_at","1552477_PM_a_at","1552478_PM_a_at","1552480_PM_s_at","1552481_PM_s_at","1552482_PM_at","1552484_PM_at","1552485_PM_at","1552486_PM_s_at","1552487_PM_a_at","1552489_PM_s_at","1552490_PM_at","1552491_PM_at","1552493_PM_s_at","1552494_PM_at","1552496_PM_a_at","1552497_PM_a_at","1552498_PM_at","1552499_PM_a_at","1552501_PM_a_at","1552502_PM_s_at","1552503_PM_at","1552504_PM_a_at","1552506_PM_at","1552507_PM_at","1552508_PM_at","1552509_PM_a_at","1552510_PM_at","1552511_PM_a_at","1552514_PM_at","1552515_PM_at","1552516_PM_a_at","1552518_PM_s_at","1552519_PM_at","1552520_PM_at","1552521_PM_a_at","1552522_PM_at","1552523_PM_a_at","1552524_PM_at","1552526_PM_at","1552528_PM_at","1552531_PM_a_at","1552532_PM_a_at","1552535_PM_at","1552536_PM_at","1552538_PM_a_at","1552540_PM_s_at","1552541_PM_at","1552542_PM_s_at","1552543_PM_a_at","1552544_PM_at","1552546_PM_a_at","1552548_PM_at","1552549_PM_a_at","1552552_PM_s_at","1552553_PM_a_at","1552554_PM_a_at","1552555_PM_at","1552557_PM_a_at","1552558_PM_a_at","1552559_PM_a_at","1552562_PM_at","1552563_PM_a_at","1552564_PM_at","1552566_PM_at","1552568_PM_at","1552569_PM_a_at","1552570_PM_at","1552572_PM_a_at","1552573_PM_s_at","1552575_PM_a_at","1552576_PM_at","1552578_PM_a_at","1552579_PM_a_at","1552580_PM_at","1552582_PM_at","1552583_PM_s_at","1552584_PM_at","1552585_PM_s_at","1552586_PM_at","1552587_PM_at","1552588_PM_a_at","1552590_PM_a_at","1552592_PM_at","1552594_PM_at","1552596_PM_at","1552598_PM_at","1552599_PM_at","1552602_PM_at","1552604_PM_at","1552605_PM_s_at","1552607_PM_at","1552608_PM_at","1552610_PM_a_at","1552611_PM_a_at","1552612_PM_at","1552613_PM_s_at","1552615_PM_at","1552616_PM_a_at","1552617_PM_a_at","1552618_PM_at","1552619_PM_a_at","1552620_PM_at","1552621_PM_at","1552623_PM_at","1552625_PM_a_at","1552626_PM_a_at","1552627_PM_a_at","1552628_PM_a_at","1552629_PM_a_at","1552630_PM_a_at","1552631_PM_a_at","1552632_PM_a_at","1552633_PM_at","1552634_PM_a_at","1552637_PM_at","1552639_PM_at","1552643_PM_at","1552644_PM_a_at","1552646_PM_at","1552648_PM_a_at","1552649_PM_a_at","1552651_PM_a_at","1552652_PM_at","1552656_PM_s_at","1552657_PM_a_at","1552658_PM_a_at","1552660_PM_a_at","1552661_PM_at","1552662_PM_a_at","1552663_PM_a_at","1552664_PM_at","1552665_PM_at","1552666_PM_a_at","1552667_PM_a_at","1552669_PM_at","1552670_PM_a_at","1552671_PM_a_at","1552672_PM_a_at","1552673_PM_at","1552674_PM_at","1552675_PM_at","1552676_PM_at","1552677_PM_a_at","1552678_PM_a_at","1552680_PM_a_at","1552682_PM_a_at","1552684_PM_a_at","1552685_PM_a_at","1552686_PM_at","1552687_PM_a_at","1552689_PM_at","1552690_PM_a_at","1552691_PM_at","1552693_PM_at","1552694_PM_at","1552695_PM_a_at","1552696_PM_at","1552698_PM_at","1552701_PM_a_at","1552705_PM_at","1552708_PM_a_at","1552711_PM_a_at","1552712_PM_a_at","1552713_PM_a_at","1552714_PM_at","1552715_PM_a_at","1552716_PM_at","1552718_PM_at","1552719_PM_at","1552721_PM_a_at","1552722_PM_at","1552724_PM_at","1552725_PM_s_at","1552726_PM_at","1552727_PM_s_at","1552729_PM_at","1552730_PM_at","1552731_PM_at","1552732_PM_at","1552733_PM_at","1552734_PM_at","1552735_PM_at","1552736_PM_a_at","1552737_PM_s_at","1552738_PM_a_at","1552739_PM_s_at","1552740_PM_at","1552742_PM_at","1552743_PM_at","1552745_PM_at","1552747_PM_a_at","1552749_PM_a_at","1552750_PM_at","1552751_PM_a_at","1552752_PM_a_at","1552754_PM_a_at","1552755_PM_at","1552757_PM_s_at","1552758_PM_at","1552760_PM_at","1552761_PM_at","1552763_PM_at","1552765_PM_x_at","1552766_PM_at","1552767_PM_a_at","1552768_PM_at","1552769_PM_at","1552770_PM_s_at","1552771_PM_a_at","1552772_PM_at","1552773_PM_at","1552774_PM_a_at","1552775_PM_at","1552777_PM_a_at","1552779_PM_a_at","1552782_PM_at","1552783_PM_at","1552785_PM_at","1552787_PM_at","1552788_PM_a_at","1552789_PM_at","1552790_PM_a_at","1552791_PM_a_at","1552792_PM_at","1552793_PM_at","1552794_PM_a_at","1552796_PM_a_at","1552797_PM_s_at","1552798_PM_a_at","1552799_PM_at","1552800_PM_at","1552801_PM_at","1552803_PM_a_at","1552804_PM_a_at","1552808_PM_at","1552809_PM_at","1552811_PM_at","1552812_PM_a_at","1552813_PM_at","1552814_PM_a_at","1552816_PM_at","1552818_PM_a_at","1552819_PM_at","1552822_PM_at","1552825_PM_at","1552826_PM_at","1552827_PM_s_at","1552828_PM_at","1552829_PM_at","1552830_PM_at","1552833_PM_at","1552834_PM_at","1552835_PM_at","1552836_PM_at","1552837_PM_at","1552839_PM_at","1552841_PM_s_at","1552842_PM_at","1552843_PM_at","1552845_PM_at","1552846_PM_s_at","1552848_PM_a_at","1552849_PM_at","1552851_PM_at","1552852_PM_a_at","1552853_PM_at","1552854_PM_a_at","1552856_PM_at","1552857_PM_a_at","1552858_PM_at","1552860_PM_at","1552862_PM_at","1552863_PM_a_at","1552865_PM_a_at","1552867_PM_at","1552868_PM_at","1552870_PM_s_at","1552872_PM_at","1552873_PM_s_at","1552875_PM_a_at","1552876_PM_at","1552877_PM_s_at","1552878_PM_at","1552879_PM_a_at","1552880_PM_at","1552882_PM_a_at","1552884_PM_at","1552885_PM_a_at","1552887_PM_at","1552889_PM_a_at","1552890_PM_a_at","1552892_PM_at","1552893_PM_at","1552895_PM_a_at","1552897_PM_a_at","1552898_PM_a_at","1552899_PM_at","1552900_PM_a_at","1552902_PM_a_at","1552903_PM_at","1552904_PM_at","1552906_PM_at","1552908_PM_at","1552910_PM_at","1552911_PM_at","1552912_PM_a_at","1552913_PM_at","1552914_PM_a_at","1552915_PM_at","1552917_PM_at","1552919_PM_at","1552921_PM_a_at","1552922_PM_at","1552923_PM_a_at","1552924_PM_a_at","1552925_PM_at","1552927_PM_at","1552928_PM_s_at","1552929_PM_at","1552930_PM_at","1552931_PM_a_at","1552932_PM_at","1552933_PM_at","1552935_PM_at","1552937_PM_s_at","1552938_PM_at","1552939_PM_at","1552940_PM_at","1552942_PM_at","1552943_PM_at","1552944_PM_a_at","1552946_PM_at","1552947_PM_x_at","1552948_PM_at","1552950_PM_at","1552952_PM_at","1552953_PM_a_at","1552954_PM_at","1552955_PM_at","1552957_PM_at","1552960_PM_at","1552961_PM_at","1552964_PM_at","1552965_PM_a_at","1552967_PM_at","1552969_PM_a_at","1552970_PM_s_at","1552971_PM_at","1552972_PM_at","1552973_PM_at","1552974_PM_at","1552975_PM_x_at","1552976_PM_at","1552977_PM_a_at","1552978_PM_a_at","1552979_PM_at","1552980_PM_at","1552982_PM_a_at","1552985_PM_at","1552986_PM_at","1552987_PM_a_at","1552988_PM_at","1552990_PM_at","1552991_PM_at","1552993_PM_at","1552995_PM_at","1552997_PM_a_at","1552998_PM_at","1552999_PM_a_at","1553003_PM_at","1553004_PM_at","1553006_PM_at","1553007_PM_a_at","1553009_PM_s_at","1553011_PM_at","1553013_PM_at","1553015_PM_a_at","1553016_PM_at","1553019_PM_at","1553020_PM_at","1553021_PM_s_at","1553022_PM_at","1553023_PM_a_at","1553024_PM_at","1553025_PM_at","1553027_PM_a_at","1553028_PM_at","1553030_PM_a_at","1553031_PM_at","1553032_PM_at","1553033_PM_at","1553034_PM_at","1553036_PM_at","1553037_PM_a_at","1553039_PM_a_at","1553041_PM_at","1553042_PM_a_at","1553043_PM_a_at","1553044_PM_at","1553045_PM_at","1553046_PM_s_at","1553047_PM_at","1553048_PM_a_at","1553051_PM_s_at","1553052_PM_at","1553053_PM_at","1553055_PM_a_at","1553057_PM_at","1553058_PM_at","1553059_PM_at","1553060_PM_at","1553061_PM_at","1553062_PM_at","1553063_PM_at","1553064_PM_at","1553066_PM_at","1553067_PM_a_at","1553069_PM_at","1553070_PM_a_at","1553071_PM_a_at","1553072_PM_at","1553074_PM_at","1553075_PM_a_at","1553076_PM_at","1553077_PM_at","1553078_PM_at","1553079_PM_at","1553080_PM_at","1553081_PM_at","1553082_PM_at","1553083_PM_at","1553084_PM_at","1553086_PM_at","1553087_PM_at","1553088_PM_a_at","1553089_PM_a_at","1553093_PM_a_at","1553094_PM_at","1553096_PM_s_at","1553099_PM_at","1553101_PM_a_at","1553102_PM_a_at","1553103_PM_at","1553105_PM_s_at","1553106_PM_at","1553107_PM_s_at","1553108_PM_at","1553111_PM_a_at","1553112_PM_s_at","1553113_PM_s_at","1553114_PM_a_at","1553115_PM_at","1553117_PM_a_at","1553118_PM_at","1553120_PM_at","1553122_PM_s_at","1553123_PM_at","1553125_PM_x_at","1553126_PM_a_at","1553127_PM_a_at","1553129_PM_at","1553130_PM_at","1553131_PM_a_at","1553132_PM_a_at","1553133_PM_at","1553134_PM_s_at","1553136_PM_at","1553137_PM_s_at","1553138_PM_a_at","1553139_PM_s_at","1553140_PM_at","1553141_PM_at","1553142_PM_at","1553145_PM_at","1553146_PM_at","1553147_PM_at","1553148_PM_a_at","1553150_PM_at","1553151_PM_at","1553153_PM_at","1553155_PM_x_at","1553156_PM_at","1553157_PM_at","1553158_PM_at","1553159_PM_at","1553162_PM_x_at","1553163_PM_at","1553165_PM_at","1553166_PM_at","1553167_PM_a_at","1553168_PM_at","1553169_PM_at","1553171_PM_x_at","1553172_PM_at","1553174_PM_at","1553175_PM_s_at","1553176_PM_at","1553177_PM_at","1553178_PM_a_at","1553179_PM_at","1553180_PM_at","1553181_PM_at","1553183_PM_at","1553185_PM_at","1553186_PM_x_at","1553188_PM_s_at","1553190_PM_s_at","1553191_PM_at","1553192_PM_at","1553193_PM_at","1553194_PM_at","1553196_PM_a_at","1553197_PM_at","1553199_PM_at","1553202_PM_at","1553204_PM_at","1553205_PM_at","1553207_PM_at","1553208_PM_s_at","1553209_PM_at","1553211_PM_at","1553212_PM_at","1553213_PM_a_at","1553214_PM_a_at","1553215_PM_s_at","1553216_PM_at","1553217_PM_s_at","1553218_PM_a_at","1553219_PM_a_at","1553220_PM_at","1553221_PM_at","1553222_PM_at","1553224_PM_at","1553225_PM_s_at","1553226_PM_at","1553227_PM_s_at","1553228_PM_at","1553229_PM_at","1553232_PM_at","1553234_PM_at","1553235_PM_at","1553237_PM_x_at","1553238_PM_a_at","1553239_PM_at","1553241_PM_at","1553243_PM_at","1553244_PM_at","1553246_PM_a_at","1553247_PM_a_at","1553248_PM_at","1553249_PM_at","1553252_PM_a_at","1553253_PM_at","1553254_PM_at","1553255_PM_at","1553257_PM_at","1553258_PM_at","1553260_PM_s_at","1553261_PM_x_at","1553262_PM_a_at","1553263_PM_at","1553264_PM_a_at","1553265_PM_at","1553266_PM_at","1553267_PM_a_at","1553268_PM_at","1553269_PM_at","1553271_PM_at","1553272_PM_at","1553274_PM_a_at","1553275_PM_s_at","1553276_PM_at","1553277_PM_at","1553279_PM_at","1553280_PM_at","1553281_PM_at","1553282_PM_at","1553284_PM_s_at","1553285_PM_s_at","1553286_PM_at","1553288_PM_a_at","1553292_PM_s_at","1553293_PM_at","1553295_PM_at","1553296_PM_at","1553297_PM_a_at","1553298_PM_at","1553299_PM_at","1553300_PM_a_at","1553301_PM_a_at","1553303_PM_at","1553304_PM_at","1553306_PM_at","1553310_PM_at","1553311_PM_at","1553313_PM_s_at","1553314_PM_a_at","1553315_PM_at","1553316_PM_at","1553317_PM_s_at","1553318_PM_at","1553319_PM_at","1553320_PM_s_at","1553321_PM_a_at","1553322_PM_s_at","1553323_PM_a_at","1553325_PM_at","1553326_PM_at","1553327_PM_a_at","1553328_PM_a_at","1553329_PM_at","1553330_PM_at","1553333_PM_at","1553335_PM_x_at","1553336_PM_a_at","1553338_PM_at","1553341_PM_at","1553344_PM_at","1553346_PM_a_at","1553347_PM_s_at","1553348_PM_a_at","1553349_PM_at","1553350_PM_at","1553351_PM_at","1553352_PM_x_at","1553354_PM_a_at","1553355_PM_at","1553356_PM_at","1553357_PM_at","1553359_PM_at","1553361_PM_x_at","1553362_PM_at","1553363_PM_at","1553364_PM_at","1553365_PM_at","1553367_PM_a_at","1553369_PM_at","1553371_PM_at","1553372_PM_at","1553373_PM_at","1553374_PM_at","1553375_PM_at","1553376_PM_a_at","1553378_PM_a_at","1553380_PM_at","1553383_PM_at","1553385_PM_at","1553386_PM_at","1553387_PM_at","1553388_PM_at","1553389_PM_at","1553390_PM_at","1553391_PM_at","1553392_PM_at","1553394_PM_a_at","1553395_PM_a_at","1553396_PM_a_at","1553397_PM_at","1553398_PM_at","1553399_PM_a_at","1553400_PM_a_at","1553401_PM_at","1553402_PM_a_at","1553403_PM_at","1553405_PM_a_at","1553407_PM_at","1553409_PM_at","1553410_PM_a_at","1553411_PM_s_at","1553412_PM_at","1553413_PM_at","1553415_PM_at","1553417_PM_at","1553418_PM_a_at","1553420_PM_at","1553422_PM_s_at","1553423_PM_a_at","1553424_PM_at","1553425_PM_at","1553426_PM_at","1553427_PM_at","1553428_PM_at","1553429_PM_at","1553430_PM_a_at","1553433_PM_at","1553434_PM_at","1553435_PM_at","1553436_PM_at","1553437_PM_at","1553438_PM_at","1553439_PM_at","1553440_PM_at","1553441_PM_at","1553442_PM_a_at","1553443_PM_at","1553444_PM_a_at","1553446_PM_at","1553447_PM_at","1553448_PM_at","1553449_PM_at","1553450_PM_s_at","1553451_PM_at","1553452_PM_at","1553453_PM_at","1553454_PM_at","1553456_PM_at","1553457_PM_at","1553458_PM_at","1553459_PM_at","1553460_PM_at","1553461_PM_at","1553462_PM_at","1553464_PM_at","1553465_PM_a_at","1553466_PM_at","1553467_PM_at","1553468_PM_at","1553470_PM_at","1553471_PM_at","1553472_PM_at","1553474_PM_at","1553475_PM_at","1553478_PM_at","1553479_PM_at","1553482_PM_at","1553483_PM_at","1553484_PM_at","1553485_PM_at","1553486_PM_a_at","1553488_PM_at","1553489_PM_a_at","1553491_PM_at","1553492_PM_a_at","1553493_PM_a_at","1553494_PM_at","1553497_PM_at","1553498_PM_at","1553499_PM_s_at","1553500_PM_at","1553504_PM_at","1553505_PM_at","1553506_PM_at","1553507_PM_a_at","1553508_PM_at","1553510_PM_s_at","1553511_PM_at","1553512_PM_at","1553513_PM_at","1553514_PM_a_at","1553515_PM_at","1553517_PM_at","1553518_PM_at","1553519_PM_at","1553523_PM_at","1553524_PM_at","1553525_PM_at","1553526_PM_at","1553527_PM_at","1553528_PM_a_at","1553529_PM_at","1553530_PM_a_at","1553531_PM_at","1553532_PM_a_at","1553533_PM_at","1553534_PM_at","1553535_PM_a_at","1553536_PM_at","1553537_PM_at","1553538_PM_s_at","1553539_PM_at","1553540_PM_a_at","1553541_PM_at","1553542_PM_at","1553544_PM_at","1553545_PM_at","1553546_PM_at","1553547_PM_at","1553549_PM_at","1553550_PM_at","1553551_PM_s_at","1553552_PM_at","1553553_PM_at","1553555_PM_at","1553556_PM_at","1553558_PM_at","1553559_PM_at","1553560_PM_at","1553561_PM_at","1553564_PM_at","1553565_PM_s_at","1553566_PM_at","1553567_PM_s_at","1553568_PM_a_at","1553569_PM_at","1553570_PM_x_at","1553572_PM_a_at","1553573_PM_s_at","1553574_PM_at","1553575_PM_at","1553581_PM_s_at","1553583_PM_a_at","1553584_PM_at","1553585_PM_a_at","1553586_PM_at","1553587_PM_a_at","1553588_PM_at","1553589_PM_a_at","1553593_PM_a_at","1553599_PM_a_at","1553600_PM_at","1553601_PM_a_at","1553602_PM_at","1553603_PM_s_at","1553604_PM_at","1553605_PM_a_at","1553607_PM_at","1553608_PM_a_at","1553611_PM_s_at","1553612_PM_at","1553613_PM_s_at","1553614_PM_a_at","1553620_PM_at","1553622_PM_a_at","1553623_PM_at","1553625_PM_at","1553626_PM_a_at","1553627_PM_s_at","1553629_PM_a_at","1553630_PM_at","1553633_PM_s_at","1553634_PM_a_at","1553635_PM_s_at","1553636_PM_at","1553637_PM_s_at","1553639_PM_a_at","1553640_PM_at","1553641_PM_a_at","1553642_PM_at","1553644_PM_at","1553645_PM_at","1553646_PM_at","1553647_PM_at","1553651_PM_at","1553652_PM_a_at","1553654_PM_at","1553655_PM_at","1553656_PM_at","1553657_PM_at","1553658_PM_at"],["DDR1","RFC2","HSPA6","PAX8","GUCA1A","UBA7","THRA","PTPN21","CCL5","CYP2E1","EPHB3","ESRRA","CYP2A6","SCARB1","TTLL12","NCRNA00152","WFDC2","MAPK1","MAPK1","ADAM32","SPATA17","PRR22","PRR22","PXK","PXK","VPS18","C9orf30","SLC46A1","SLC46A1","TIMD4","SLC39A5","ZDHHC11","ATP6V1E2","AFG3L1","CILP2","CILP2","PIGX","TMEM196","SLC39A13","BEST4","AKD1","CORO6","TMEM106A","TMEM106A","ALG10","ALG10","TTC39C","NEXN","C15orf40","RAX2","MFAP3","EYA3","GIMAP1","GIMAP1","GIMAP1","KLK8","CCDC65","CCDC65","FAM122C","FAM122C","CCDC11","CCDC11","ARMCX4","RBBP6","CENPBD1","TRIOBP","TRIOBP","CATSPER1","HOXD4","GSC","SP7","PDE7A","CNOT7","CRYZL1","PRSS33","PRSS33","C19orf26","C19orf26","C8orf45","TIRAP","LEAP2","MSI2","SCIN","SCIN","CTCFL","C4orf33","C4orf33","C4orf33","ZNF333","FAM18B2","RDH10","RDH10","SFRS13B","FAM71A","FAM71A","GAPT","FLJ30901","C8orf47","C8orf47","C1orf65","ENTHD1","ENTHD1","TSSK3","WFDC6","BRF1","C15orf27","C21orf41","CALML6","NLRP5","ODF4","ODF4","CLEC4F","WFDC9","WFDC9","NEDD1","TTLL10","TTLL10","CALR3","C10orf25","ETV3","KLHL10","KLHL10","TM2D3","ZNF485","WDR17","MFSD6L","CDH23","ANKAR","MEGF11","GPR182","ESX1","C8orf12","SCGB1C1","DNAJC5G","WDR88","WDR88","PRUNE2","MBD3L2","ADAMTSL1","MBD3L1","MBD3L1","FAM46D","SERPINB11","NCRNA00161","DSCR10","DSCR10","ABHD11","ACAP2","GAMT","GAMT","PLCD3","IRF6","IRF6","PTPRC","MAN1A2","RAPH1","SMCR8","LACTB","LACTB","BNC1","MPP4","LACE1","IDI2","CYP11B1","TAF8","COBL","SLAMF6","ZSCAN20","ZSCAN20","GPBAR1","RHBDL2","FRAS1","BRSK1","CRB2","KCNE4","KCNE4","CD300LG","SLC34A3","CPA6","WBP2NL","HIPK1","HIPK1","MTBP","ACVR1C","TMEM74","TMEM74","TIGD4","TIGD4","ART5","FAM71C","C21orf67","NLRP11","ATP6V1C2","CLDN19","VTI1A","KIF6","IQCD","TAGAP","TAGAP","STON2","SERPINA12","LETM2","BSND","BSND","CLEC4C","NLRC4","NLRC4","PRSS36","ZDHHC15","RAI1","CDK15","ZNF570","","NUDT9P1","BTBD16","RTP3","RTP3","C21orf29","MIPOL1","MIPOL1","C6orf141","ALMS1P","MYO3B","ADAM21","TRIML2","ABCC13","ABCC13","IL12RB1","GTF2A1L","TRPV3","CNBD1","CNBD1","ABCC12","MMP21","TMEM190","GAS2L2","KCNG4","PXT1","CACNG5","C21orf74","C21orf74","NCRNA00204","WFDC11","JAK1","JAK1","CDC42SE2","CDC42SE2","ACACB","ACACB","RFWD2","STX6","ANLN","SPRR4","POLR2J2","HSH2D","TRNT1","TMEM163","ARHGAP5","HERPUD2","JMJD6","SRCAP","MAP3K6","ARSG","ZNF101","ZNF101","PTPN11","KLHDC7B","ZNF626","PHC3","IL11RA","TNFRSF10A","RFFL","RFFL","HPS4","UHMK1","TXNDC2","NAV3","C5orf22","PCDHGB7","PCDHGB7","ERC1","FLCN","LOC84989","LRRC7","SH2D3C","PPP1R3B","PPP1R3B","SLC9A7","IGSF3","RFX6","DIRC1","DNAJB7","UCN3","DIP2A","USP28","CASC5","CASC5","SENP8","GRHL1","C20orf152","C20orf152","CASKIN1","CACNA2D4","ARL11","ARL11","SLC2A13","SLC2A13","NIPA1","MGC16703","CARD16","DUSP19","DUSP19","CYB5D1","NMNAT2","SLC4A1","CREG2","RXFP1","SPEF2","DTD1","CASC4","FGF1","ARPP21","RHOXF1","ADAMTS17","ADAMTS17","ADAMTS17","SNHG7","DHH","ABRA","ABRA","KLHDC1","RICTOR","PCDHGA4","NETO1","WWP2","ST7L","ST7L","C2orf15","KCNH8","MCF2L","SLCO6A1","C3orf48","KLC3","CIB3","CIB3","CADM2","CADM2","C9orf66","C9orf66","HDAC9","HDAC9","SLC16A11","TMEM67","TMEM67","HS6ST2","HS6ST2","CAMKK1","ZNF625","ZNF563","LIN9","CLEC4D","CLEC4D","SLC25A27","GPRC6A","RAET1E","SLC44A5","SLC44A5","ZNF417","ZNF781","HELB","HELB","SEC62","SEC62","TRDN","SOCS4","C8orf31","ZNF547","SIM1","PROM2","TLR4","TSNARE1","ABHD11","CAPN13","STMN1","TIRAP","ADAMTSL1","RFX4","WFIKKN1","SENP1","KLF14","KLF14","NXNL2","BRS3","NCRNA00205","TMX3","ZNF396","SLC26A7","SLC26A7","SNX18","","FBXO39","B3GNT6","B3GNT6","DENND1B","ZNF619","ICK","FAM71D","BCL2L14","HS6ST3","SLC26A1","CLDN15","RAB42","PTCHD1","C2orf65","ZSCAN4","ZSCAN4","VWA5B1","VWA5B1","TMEM148","HTR6","MAGEB6","TCEB3C","C1orf104","CACNG6","IFLTD1","","C19orf23","C1orf125","NCRNA00105","NCRNA00105","CD200R1","C21orf89","C21orf89","ATOH7","ATOH7","SEC16B","FAM123B","NKX6-3","NKX6-3","C10orf27","EXOC3L2","CABP4","TNFRSF13C","CAMK2N2","C21orf99","KCNG3","KCNG3","MGC34034","MGC34034","FOXP2","B4GALNT2","NETO1","FMR1NB","C1orf150","SIGLEC11","SIGLEC11","IL23R","MAGEB18","CD276","IL28A","IL29","C4orf36","FIGNL1","RIMS1","PITPNM2","PITPNM2","PCDH10","TAB3","TAB3","GRK7","MMEL1","PDE8A","NLRP6","AKNAD1","ZCCHC5","ATRIP","ZIC5","ANGPT1","TEDDM1","FLJ30430","GABRG1","PANX2","ZNF114","ZNF114","CCDC27","C15orf26","RBMY2FP","NEUROD2","C5orf17","","DNAH6","LRRC15","","C10orf93","B3GNT7","ZNF645","ZMYM6","ZMYM6","SGCZ","","WNT9B","","","","CNPY3","SCAMP1","C2orf52","HAS3","FGF4","SLC30A8","LOC142937","MGC42157","C11orf65","FAM71E2","OR5P2","DYDC1","IL27","IQCF1","DEFB125","WFDC10B","PKHD1","PKD1L1","GPR112","ODZ1","REXO1L1","TAF1L","CNTNAP5","RECQL4","GPR113","TMC2","SMCR5","BICD2","ZIM3","NOX5","G30","GPR126","KLHL4","GPR156","SUOX","GPR115","IL31RA","SYTL5","SDCCAG8","GPR111","SYN2","ASB10","HTR3C","NFKBID","CD300LF","GJA10","WNT9A","GAL3ST2","PIP4K2B","PIP4K2B","ODF3","WFDC13","C14orf48","SLFN5","SERPINB12","GIPC3","PGLYRP3","PSKH2","OR6W1P","MOGAT1","GPR78","H1FOO","TAAR9","GNRHR2","C21orf87","MYOZ3","MYOZ3","BNIPL","ASB11","OFCC1","OFCC1","SDR9C7","OR5P3","TRIM40","CSN1S2A","WFDC12","CRYGN","","STARD6","C11orf40","C18orf12","BCL2L11","WFDC2","DEFB119","TAC4","BCL2L11","TIGD1","ALKBH5","CCDC69","NFX1","DSG2","C5orf24","C5orf24","C5orf24","KBTBD6","CDK8","CDK8","PTK6","NKD1","STK38","THEM4","CLSPN","RBAK","WDR62","WDR62","SLC39A12","RNF168","SVEP1","LOC652276","GATA4","TC2N","C9orf72","C9orf72","KCTD18","KLF11","ANKLE1","PLXNA3","PELO","C13orf31","C13orf31","FLJ39653","C3orf30","RANBP3L","SNX13","KDM1B","ATP6V0D2","ATP6V0D2","ATP6V0D2","LHX4","LHX4","C3orf34","DNAH11","C19orf55","ADPRHL1","SYNRG","CDH24","SEPSECS","GRIK5","LRRN4","LRRN4","ZNF777","JPH2","PDE5A","SH2D1B","SH2D1B","SSTR3","ADAMTS19","ADAMTS19","DDX31","UMODL1","RASEF","RASEF","PARD3B","PARD3B","DST","ZNF441","ZNF441","NEGR1","FCRL3","DCAF4L2","DCAF4L2","STOX1","C20orf200","C20orf200","ARL10","","RNFT2","ANKFN1","KRT78","KRT78","CCDC7","CCDC7","ZNF41","ZNF41","ZNF512","AMMECR1","FAM117B","ZNF583","OXER1","LUZP1","ZNF75D","NCRNA00052","BRWD1","CCDC89","ZNF572","FAM82A1","ADAMTS18","PCDHAC1","PCDHAC1","HIPK4","FAM124A","NKAIN3","ITIH5","FANCB","SGK196","ZNF709","CCDC57","SMC1B","BRWD3","ASB16","MAGEE2","HERV-V1","GAL3ST3","FLJ30679","ALS2CR11","ALS2CR11","UTS2R","USH1G","SYN1","SLC23A3","CNOT6L","CNOT6L","RHBDL3","","DIP2B","SLC36A1","SNRNP48","","ZNF560","RTTN","BTNL9","PUS10","PLCXD2","C21orf128","LMLN","RAD9B","ZNF555","C7orf51","SGK494","MRGPRX3","ABCA13","GPR128","CSF3R","C17orf77","DUSP5P","DGKH","TMEM182","C16orf46","LSM14B","CASP8","PLB1","C20orf197","SLC5A3","KIF19","SLFNL1","GPR82","GPR82","RIBC1","OXGR1","CDC14C","SULT1C4","TEAD1","CATSPER2","POU5F2","RXFP2","BEND7","SLC18A2","C7orf45","C7orf45","C1orf161","LOC285696","MIER3","C1orf55","UROC1","PCDH15","TNRC6A","KCNA6","NFX1","ARID2","FAM123C","OTUD7A","ERVWE1","FLJ31958","","","LOC158696","FBXL18","FBXL18","DNAH6","C6orf195","PNPLA1","DEPDC4","COX6B2","FAM129C","EPHA10","FLJ23865","WDR64","PRO2949","BTBD9","C1orf125","C17orf66","PARP15","ARHGAP42","LOC84931","MFSD2A","ATM","FAM26D","NPHP3","ATG9B","CXorf58","EFCAB3","TFAP2B","CD200R1","CCDC13","CCDC13","","C17orf69","C17orf69","MRGPRX1","HFE","RLN3","CSMD1","MACF1","ADAMTS20","ABCC12","SALL3","AGBL4","FLJ13744","SLC17A8","C11orf44","CNTNAP5","FLJ32063","A2BP1","SLFN13","C12orf40","WDR65","FLJ37543","ADAMTS15","LOC285780","FLJ31713","EDARADD","C9orf93","CYP4Z2P","C18orf15","MUC19","KLHDC7A","C11orf72","","C18orf16","CNTNAP4","CNTNAP4","C8orf54","C1orf127","FLJ37396","AGBL1","FLJ34503","C16orf81","C16orf81","CCDC79","MYO1H","ASB14","RPTN","","CXorf62","C10orf72","CCDC150","C2orf61","FAM9B","","FLJ40288","CES7","CXorf59","FLJ32742","HYDIN2","DNAH17","AMAC1","FLJ32955","POTED","PRO1483","PRR10","TMEM145","C15orf32","TSGA10IP","C12orf67","CCDC140","C17orf78","TEKT5","TEKT5","KSR2","PAX1","TDH","TDH","C12orf37","","SERPINA9","FBXL21","MRGPRX4","A2ML1","CPO","GPR6","MDS2","RQCD1","GJD3","HOXC12","VNN3","VNN3","MYEOV2","FERD3L","DEFT1P","C21orf94","NLRP14","DGKB","NLRP13","NLRP8","NLRP9","TAF5","TAS1R2","ITGB1","PCSK6","ZNF341","JPH1","NLRP10","RANGAP1","MBNL2","KRT73","","KRT74","SLC29A2","LMX1A","CCDC125","GPR101","ILDR1","PRO2012","","VN1R2","VN1R5","LOC100131754","TAAR8","TAS2R39","TAS2R38","TAS2R40","TAS2R41","TMEM171","VN1R4","TAS2R50","MACROD2","DDAH1","C12orf53","LOC100288418","HIST1H1T","","","CYGB","EFNA2","IFNE","","SFRS12IP1","THRSP","CXorf36","MAGEA5","NCRNA00095","POLE4","SH3KBP1","PDZK1IP1","TAL2","SYCP3","TMIE","TMIE","MUCL1","ATL2","ABCA13","ABCA13","NCRNA00189","NCRNA00189","KLHL35","ZNF354B","FOXC1","FLJ25694","TRIM42","FSIP1","MGC15705","FAM98B","C17orf57","C17orf57","FAM71B","C10orf107","NHEDC1","FLJ40852","TCTEX1D1","TMCO5A","TMCO5A","PPARGC1B","XKR6","TSGA13","C9orf163","C14orf49","CCDC141","HDX","CDYL2","C18orf54","C18orf54","SYT14","CDC20B","TECTB","VWA3A","LOC150197"],["discoidin domain receptor tyrosine kinase 1","replication factor C (activator 1) 2, 40kDa","heat shock 70kDa protein 6 (HSP70B')","paired box 8","guanylate cyclase activator 1A (retina)","ubiquitin-like modifier activating enzyme 7","thyroid hormone receptor, alpha (erythroblastic leukemia viral (v-erb-a) oncogene homolog, avian)","protein tyrosine phosphatase, non-receptor type 21","chemokine (C-C motif) ligand 5","cytochrome P450, family 2, subfamily E, polypeptide 1","EPH receptor B3","estrogen-related receptor alpha","cytochrome P450, family 2, subfamily A, polypeptide 6","scavenger receptor class B, member 1","tubulin tyrosine ligase-like family, member 12","non-protein coding RNA 152","WAP four-disulfide core domain 2","mitogen-activated protein kinase 1","mitogen-activated protein kinase 1","ADAM metallopeptidase domain 32","spermatogenesis associated 17","proline rich 22","proline rich 22","PX domain containing serine/threonine kinase","PX domain containing serine/threonine kinase","vacuolar protein sorting 18 homolog (S. cerevisiae)","chromosome 9 open reading frame 30","solute carrier family 46 (folate transporter), member 1","solute carrier family 46 (folate transporter), member 1","T-cell immunoglobulin and mucin domain containing 4","solute carrier family 39 (metal ion transporter), member 5","zinc finger, DHHC-type containing 11","ATPase, H+ transporting, lysosomal 31kDa, V1 subunit E2","AFG3 ATPase family gene 3-like 1 (S. cerevisiae)","cartilage intermediate layer protein 2","cartilage intermediate layer protein 2","phosphatidylinositol glycan anchor biosynthesis, class X","transmembrane protein 196","solute carrier family 39 (zinc transporter), member 13","bestrophin 4","adenylate kinase domain containing 1","coronin 6","transmembrane protein 106A","transmembrane protein 106A","asparagine-linked glycosylation 10, alpha-1,2-glucosyltransferase homolog (S. pombe)","asparagine-linked glycosylation 10, alpha-1,2-glucosyltransferase homolog (S. pombe)","tetratricopeptide repeat domain 39C","nexilin (F actin binding protein)","chromosome 15 open reading frame 40","retina and anterior neural fold homeobox 2","microfibrillar-associated protein 3","eyes absent homolog 3 (Drosophila)","GTPase, IMAP family member 1","GTPase, IMAP family member 1","GTPase, IMAP family member 1","kallikrein-related peptidase 8","coiled-coil domain containing 65","coiled-coil domain containing 65","family with sequence similarity 122C","family with sequence similarity 122C","coiled-coil domain containing 11","coiled-coil domain containing 11","armadillo repeat containing, X-linked 4","retinoblastoma binding protein 6","CENPB DNA-binding domains containing 1","TRIO and F-actin binding protein","TRIO and F-actin binding protein","cation channel, sperm associated 1","homeobox D4","goosecoid homeobox","Sp7 transcription factor","phosphodiesterase 7A","CCR4-NOT transcription complex, subunit 7","crystallin, zeta (quinone reductase)-like 1","protease, serine, 33","protease, serine, 33","chromosome 19 open reading frame 26","chromosome 19 open reading frame 26","chromosome 8 open reading frame 45","toll-interleukin 1 receptor (TIR) domain containing adaptor protein","liver expressed antimicrobial peptide 2","musashi homolog 2 (Drosophila)","scinderin","scinderin","CCCTC-binding factor (zinc finger protein)-like","chromosome 4 open reading frame 33","chromosome 4 open reading frame 33","chromosome 4 open reading frame 33","zinc finger protein 333","family with sequence similarity 18, member B2","retinol dehydrogenase 10 (all-trans)","retinol dehydrogenase 10 (all-trans)","splicing factor, arginine/serine-rich 13B","family with sequence similarity 71, member A","family with sequence similarity 71, member A","GRB2-binding adaptor protein, transmembrane","hypothetical protein FLJ30901","chromosome 8 open reading frame 47","chromosome 8 open reading frame 47","chromosome 1 open reading frame 65","ENTH domain containing 1","ENTH domain containing 1","testis-specific serine kinase 3","WAP four-disulfide core domain 6","BRF1 homolog, subunit of RNA polymerase III transcription initiation factor IIIB (S. cerevisiae)","chromosome 15 open reading frame 27","chromosome 21 open reading frame 41","calmodulin-like 6","NLR family, pyrin domain containing 5","outer dense fiber of sperm tails 4","outer dense fiber of sperm tails 4","C-type lectin domain family 4, member F","WAP four-disulfide core domain 9","WAP four-disulfide core domain 9","neural precursor cell expressed, developmentally down-regulated 1","tubulin tyrosine ligase-like family, member 10","tubulin tyrosine ligase-like family, member 10","calreticulin 3","chromosome 10 open reading frame 25","ets variant 3","kelch-like 10 (Drosophila)","kelch-like 10 (Drosophila)","TM2 domain containing 3","zinc finger protein 485","WD repeat domain 17","major facilitator superfamily domain containing 6-like","cadherin-related 23","ankyrin and armadillo repeat containing","multiple EGF-like-domains 11","G protein-coupled receptor 182","ESX homeobox 1","chromosome 8 open reading frame 12","secretoglobin, family 1C, member 1","DnaJ (Hsp40) homolog, subfamily C, member 5 gamma","WD repeat domain 88","WD repeat domain 88","prune homolog 2 (Drosophila)","methyl-CpG binding domain protein 3-like 2","ADAMTS-like 1","methyl-CpG binding domain protein 3-like 1","methyl-CpG binding domain protein 3-like 1","family with sequence similarity 46, member D","serpin peptidase inhibitor, clade B (ovalbumin), member 11 (gene/pseudogene)","non-protein coding RNA 161","Down syndrome critical region gene 10","Down syndrome critical region gene 10","abhydrolase domain containing 11","ArfGAP with coiled-coil, ankyrin repeat and PH domains 2","guanidinoacetate N-methyltransferase","guanidinoacetate N-methyltransferase","phospholipase C, delta 3","interferon regulatory factor 6","interferon regulatory factor 6","protein tyrosine phosphatase, receptor type, C","mannosidase, alpha, class 1A, member 2","Ras association (RalGDS/AF-6) and pleckstrin homology domains 1","Smith-Magenis syndrome chromosome region, candidate 8","lactamase, beta","lactamase, beta","basonuclin 1","membrane protein, palmitoylated 4 (MAGUK p55 subfamily member 4)","lactation elevated 1","isopentenyl-diphosphate delta isomerase 2","cytochrome P450, family 11, subfamily B, polypeptide 1","TAF8 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 43kDa","cordon-bleu homolog (mouse)","SLAM family member 6","zinc finger and SCAN domain containing 20","zinc finger and SCAN domain containing 20","G protein-coupled bile acid receptor 1","rhomboid, veinlet-like 2 (Drosophila)","Fraser syndrome 1","BR serine/threonine kinase 1","crumbs homolog 2 (Drosophila)","potassium voltage-gated channel, Isk-related family, member 4","potassium voltage-gated channel, Isk-related family, member 4","CD300 molecule-like family member g","solute carrier family 34 (sodium phosphate), member 3","carboxypeptidase A6","WBP2 N-terminal like","homeodomain interacting protein kinase 1","homeodomain interacting protein kinase 1","Mdm2, transformed 3T3 cell double minute 2, p53 binding protein (mouse) binding protein, 104kDa","activin A receptor, type IC","transmembrane protein 74","transmembrane protein 74","tigger transposable element derived 4","tigger transposable element derived 4","ADP-ribosyltransferase 5","family with sequence similarity 71, member C","chromosome 21 open reading frame 67","NLR family, pyrin domain containing 11","ATPase, H+ transporting, lysosomal 42kDa, V1 subunit C2","claudin 19","vesicle transport through interaction with t-SNAREs homolog 1A (yeast)","kinesin family member 6","IQ motif containing D","T-cell activation RhoGTPase activating protein","T-cell activation RhoGTPase activating protein","stonin 2","serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 12","leucine zipper-EF-hand containing transmembrane protein 2","Bartter syndrome, infantile, with sensorineural deafness (Barttin)","Bartter syndrome, infantile, with sensorineural deafness (Barttin)","C-type lectin domain family 4, member C","NLR family, CARD domain containing 4","NLR family, CARD domain containing 4","protease, serine, 36","zinc finger, DHHC-type containing 15","retinoic acid induced 1","cyclin-dependent kinase 15","zinc finger protein 570","","nudix (nucleoside diphosphate linked moiety X)-type motif 9 pseudogene 1","BTB (POZ) domain containing 16","receptor (chemosensory) transporter protein 3","receptor (chemosensory) transporter protein 3","chromosome 21 open reading frame 29","mirror-image polydactyly 1","mirror-image polydactyly 1","chromosome 6 open reading frame 141","Alstrom syndrome 1 pseudogene","myosin IIIB","ADAM metallopeptidase domain 21","tripartite motif family-like 2","ATP-binding cassette, sub-family C (CFTR/MRP), member 13, pseudogene","ATP-binding cassette, sub-family C (CFTR/MRP), member 13, pseudogene","interleukin 12 receptor, beta 1","general transcription factor IIA, 1-like","transient receptor potential cation channel, subfamily V, member 3","cyclic nucleotide binding domain containing 1","cyclic nucleotide binding domain containing 1","ATP-binding cassette, sub-family C (CFTR/MRP), member 12","matrix metallopeptidase 21","transmembrane protein 190","growth arrest-specific 2 like 2","potassium voltage-gated channel, subfamily G, member 4","peroxisomal, testis specific 1","calcium channel, voltage-dependent, gamma subunit 5","chromosome 21 open reading frame 74","chromosome 21 open reading frame 74","non-protein coding RNA 204","WAP four-disulfide core domain 11","Janus kinase 1","Janus kinase 1","CDC42 small effector 2","CDC42 small effector 2","acetyl-CoA carboxylase beta","acetyl-CoA carboxylase beta","ring finger and WD repeat domain 2","syntaxin 6","anillin, actin binding protein","small proline-rich protein 4","polymerase (RNA) II (DNA directed) polypeptide J2","hematopoietic SH2 domain containing","tRNA nucleotidyl transferase, CCA-adding, 1","transmembrane protein 163","Rho GTPase activating protein 5","HERPUD family member 2","jumonji domain containing 6","Snf2-related CREBBP activator protein","mitogen-activated protein kinase kinase kinase 6","arylsulfatase G","zinc finger protein 101","zinc finger protein 101","protein tyrosine phosphatase, non-receptor type 11","kelch domain containing 7B","zinc finger protein 626","polyhomeotic homolog 3 (Drosophila)","interleukin 11 receptor, alpha","tumor necrosis factor receptor superfamily, member 10a","ring finger and FYVE-like domain containing 1","ring finger and FYVE-like domain containing 1","Hermansky-Pudlak syndrome 4","U2AF homology motif (UHM) kinase 1","thioredoxin domain containing 2 (spermatozoa)","neuron navigator 3","chromosome 5 open reading frame 22","protocadherin gamma subfamily B, 7","protocadherin gamma subfamily B, 7","ELKS/RAB6-interacting/CAST family member 1","folliculin","hypothetical LOC84989","leucine rich repeat containing 7","SH2 domain containing 3C","protein phosphatase 1, regulatory (inhibitor) subunit 3B","protein phosphatase 1, regulatory (inhibitor) subunit 3B","solute carrier family 9 (sodium/hydrogen exchanger), member 7","immunoglobulin superfamily, member 3","regulatory factor X, 6","disrupted in renal carcinoma 1","DnaJ (Hsp40) homolog, subfamily B, member 7","urocortin 3 (stresscopin)","DIP2 disco-interacting protein 2 homolog A (Drosophila)","ubiquitin specific peptidase 28","cancer susceptibility candidate 5","cancer susceptibility candidate 5","SUMO/sentrin specific peptidase family member 8","grainyhead-like 1 (Drosophila)","chromosome 20 open reading frame 152","chromosome 20 open reading frame 152","CASK interacting protein 1","calcium channel, voltage-dependent, alpha 2/delta subunit 4","ADP-ribosylation factor-like 11","ADP-ribosylation factor-like 11","solute carrier family 2 (facilitated glucose transporter), member 13","solute carrier family 2 (facilitated glucose transporter), member 13","non imprinted in Prader-Willi/Angelman syndrome 1","tubulin, alpha pseudogene","caspase recruitment domain family, member 16","dual specificity phosphatase 19","dual specificity phosphatase 19","cytochrome b5 domain containing 1","nicotinamide nucleotide adenylyltransferase 2","solute carrier family 4, anion exchanger, member 1 (erythrocyte membrane protein band 3, Diego blood group)","cellular repressor of E1A-stimulated genes 2","relaxin/insulin-like family peptide receptor 1","sperm flagellar 2","D-tyrosyl-tRNA deacylase 1 homolog (S. cerevisiae)","cancer susceptibility candidate 4","fibroblast growth factor 1 (acidic)","cyclic AMP-regulated phosphoprotein, 21 kD","Rhox homeobox family, member 1","ADAM metallopeptidase with thrombospondin type 1 motif, 17","ADAM metallopeptidase with thrombospondin type 1 motif, 17","ADAM metallopeptidase with thrombospondin type 1 motif, 17","small nucleolar RNA host gene 7 (non-protein coding)","desert hedgehog homolog (Drosophila)","actin-binding Rho activating protein","actin-binding Rho activating protein","kelch domain containing 1","RPTOR independent companion of MTOR, complex 2","protocadherin gamma subfamily A, 4","neuropilin (NRP) and tolloid (TLL)-like 1","WW domain containing E3 ubiquitin protein ligase 2","suppression of tumorigenicity 7 like","suppression of tumorigenicity 7 like","chromosome 2 open reading frame 15","potassium voltage-gated channel, subfamily H (eag-related), member 8","MCF.2 cell line derived transforming sequence-like","solute carrier organic anion transporter family, member 6A1","chromosome 3 open reading frame 48","kinesin light chain 3","calcium and integrin binding family member 3","calcium and integrin binding family member 3","cell adhesion molecule 2","cell adhesion molecule 2","chromosome 9 open reading frame 66","chromosome 9 open reading frame 66","histone deacetylase 9","histone deacetylase 9","solute carrier family 16, member 11 (monocarboxylic acid transporter 11)","transmembrane protein 67","transmembrane protein 67","heparan sulfate 6-O-sulfotransferase 2","heparan sulfate 6-O-sulfotransferase 2","calcium/calmodulin-dependent protein kinase kinase 1, alpha","zinc finger protein 625","zinc finger protein 563","lin-9 homolog (C. elegans)","C-type lectin domain family 4, member D","C-type lectin domain family 4, member D","solute carrier family 25, member 27","G protein-coupled receptor, family C, group 6, member A","retinoic acid early transcript 1E","solute carrier family 44, member 5","solute carrier family 44, member 5","zinc finger protein 417","zinc finger protein 781","helicase (DNA) B","helicase (DNA) B","SEC62 homolog (S. cerevisiae)","SEC62 homolog (S. cerevisiae)","triadin","suppressor of cytokine signaling 4","chromosome 8 open reading frame 31","zinc finger protein 547","single-minded homolog 1 (Drosophila)","prominin 2","toll-like receptor 4","t-SNARE domain containing 1","abhydrolase domain containing 11","calpain 13","stathmin 1","toll-interleukin 1 receptor (TIR) domain containing adaptor protein","ADAMTS-like 1","regulatory factor X, 4 (influences HLA class II expression)","WAP, follistatin/kazal, immunoglobulin, kunitz and netrin domain containing 1","SUMO1/sentrin specific peptidase 1","Kruppel-like factor 14","Kruppel-like factor 14","nucleoredoxin-like 2","bombesin-like receptor 3","non-protein coding RNA 205","thioredoxin-related transmembrane protein 3","zinc finger protein 396","solute carrier family 26, member 7","solute carrier family 26, member 7","sorting nexin 18","","F-box protein 39","UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 6 (core 3 synthase)","UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 6 (core 3 synthase)","DENN/MADD domain containing 1B","zinc finger protein 619","intestinal cell (MAK-like) kinase","family with sequence similarity 71, member D","BCL2-like 14 (apoptosis facilitator)","heparan sulfate 6-O-sulfotransferase 3","solute carrier family 26 (sulfate transporter), member 1","claudin 15","RAB42, member RAS oncogene family","patched domain containing 1","chromosome 2 open reading frame 65","zinc finger and SCAN domain containing 4","zinc finger and SCAN domain containing 4","von Willebrand factor A domain containing 5B1","von Willebrand factor A domain containing 5B1","transmembrane protein 148","5-hydroxytryptamine (serotonin) receptor 6","melanoma antigen family B, 6","transcription elongation factor B polypeptide 3C (elongin A3)","chromosome 1 open reading frame 104","calcium channel, voltage-dependent, gamma subunit 6","intermediate filament tail domain containing 1","","chromosome 19 open reading frame 23","chromosome 1 open reading frame 125","non-protein coding RNA 105","non-protein coding RNA 105","CD200 receptor 1","chromosome 21 open reading frame 89","chromosome 21 open reading frame 89","atonal homolog 7 (Drosophila)","atonal homolog 7 (Drosophila)","SEC16 homolog B (S. cerevisiae)","family with sequence similarity 123B","NK6 homeobox 3","NK6 homeobox 3","chromosome 10 open reading frame 27","exocyst complex component 3-like 2","calcium binding protein 4","tumor necrosis factor receptor superfamily, member 13C","calcium/calmodulin-dependent protein kinase II inhibitor 2","cancer-testis SP-1","potassium voltage-gated channel, subfamily G, member 3","potassium voltage-gated channel, subfamily G, member 3","hypothetical protein MGC34034","hypothetical protein MGC34034","forkhead box P2","beta-1,4-N-acetyl-galactosaminyl transferase 2","neuropilin (NRP) and tolloid (TLL)-like 1","fragile X mental retardation 1 neighbor","chromosome 1 open reading frame 150","sialic acid binding Ig-like lectin 11","sialic acid binding Ig-like lectin 11","interleukin 23 receptor","melanoma antigen family B, 18","CD276 molecule","interleukin 28A (interferon, lambda 2)","interleukin 29 (interferon, lambda 1)","chromosome 4 open reading frame 36","fidgetin-like 1","regulating synaptic membrane exocytosis 1","phosphatidylinositol transfer protein, membrane-associated 2","phosphatidylinositol transfer protein, membrane-associated 2","protocadherin 10","TGF-beta activated kinase 1/MAP3K7 binding protein 3","TGF-beta activated kinase 1/MAP3K7 binding protein 3","G protein-coupled receptor kinase 7","membrane metallo-endopeptidase-like 1","phosphodiesterase 8A","NLR family, pyrin domain containing 6","AKNA domain containing 1","zinc finger, CCHC domain containing 5","ATR interacting protein","Zic family member 5 (odd-paired homolog, Drosophila)","angiopoietin 1","transmembrane epididymal protein 1","hypothetical protein FLJ30430","gamma-aminobutyric acid (GABA) A receptor, gamma 1","pannexin 2","zinc finger protein 114","zinc finger protein 114","coiled-coil domain containing 27","chromosome 15 open reading frame 26","RNA binding motif protein, Y-linked, family 2, member F pseudogene","neurogenic differentiation 2","chromosome 5 open reading frame 17","","dynein, axonemal, heavy chain 6","leucine rich repeat containing 15","","chromosome 10 open reading frame 93","UDP-GlcNAc:betaGal beta-1,3-N-acetylglucosaminyltransferase 7","zinc finger protein 645","zinc finger, MYM-type 6","zinc finger, MYM-type 6","sarcoglycan, zeta","","wingless-type MMTV integration site family, member 9B","","","","canopy 3 homolog (zebrafish)","secretory carrier membrane protein 1","chromosome 2 open reading frame 52","hyaluronan synthase 3","fibroblast growth factor 4","solute carrier family 30 (zinc transporter), member 8","hypothetical protein BC008131","hypothetical locus MGC42157","chromosome 11 open reading frame 65","family with sequence similarity 71, member E2","olfactory receptor, family 5, subfamily P, member 2","DPY30 domain containing 1","interleukin 27","IQ motif containing F1","defensin, beta 125","WAP four-disulfide core domain 10B","polycystic kidney and hepatic disease 1 (autosomal recessive)","polycystic kidney disease 1 like 1","G protein-coupled receptor 112","odz, odd Oz/ten-m homolog 1(Drosophila)","REX1, RNA exonuclease 1 homolog (S. cerevisiae)-like 1","TAF1 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 210kDa-like","contactin associated protein-like 5","RecQ protein-like 4","G protein-coupled receptor 113","transmembrane channel-like 2","Smith-Magenis syndrome chromosome region, candidate 5 (non-protein coding)","bicaudal D homolog 2 (Drosophila)","zinc finger, imprinted 3","NADPH oxidase, EF-hand calcium binding domain 5","protein LG30-like","G protein-coupled receptor 126","kelch-like 4 (Drosophila)","G protein-coupled receptor 156","sulfite oxidase","G protein-coupled receptor 115","interleukin 31 receptor A","synaptotagmin-like 5","serologically defined colon cancer antigen 8","G protein-coupled receptor 111","synapsin II","ankyrin repeat and SOCS box-containing 10","5-hydroxytryptamine (serotonin) receptor 3, family member C","nuclear factor of kappa light polypeptide gene enhancer in B-cells inhibitor, delta","CD300 molecule-like family member f","gap junction protein, alpha 10, 62kDa","wingless-type MMTV integration site family, member 9A","galactose-3-O-sulfotransferase 2","phosphatidylinositol-5-phosphate 4-kinase, type II, beta","phosphatidylinositol-5-phosphate 4-kinase, type II, beta","outer dense fiber of sperm tails 3","WAP four-disulfide core domain 13","chromosome 14 open reading frame 48","schlafen family member 5","serpin peptidase inhibitor, clade B (ovalbumin), member 12","GIPC PDZ domain containing family, member 3","peptidoglycan recognition protein 3","protein serine kinase H2","olfactory receptor, family 6, subfamily W, member 1 pseudogene","monoacylglycerol O-acyltransferase 1","G protein-coupled receptor 78","H1 histone family, member O, oocyte-specific","trace amine associated receptor 9 (gene/pseudogene)","gonadotropin-releasing hormone (type 2) receptor 2","chromosome 21 open reading frame 87","myozenin 3","myozenin 3","BCL2/adenovirus E1B 19kD interacting protein like","ankyrin repeat and SOCS box-containing 11","orofacial cleft 1 candidate 1","orofacial cleft 1 candidate 1","short chain dehydrogenase/reductase family 9C, member 7","olfactory receptor, family 5, subfamily P, member 3","tripartite motif-containing 40","casein alpha s2-like A","WAP four-disulfide core domain 12","crystallin, gamma N","","StAR-related lipid transfer (START) domain containing 6","chromosome 11 open reading frame 40","chromosome 18 open reading frame 12","BCL2-like 11 (apoptosis facilitator)","WAP four-disulfide core domain 2","defensin, beta 119","tachykinin 4 (hemokinin)","BCL2-like 11 (apoptosis facilitator)","tigger transposable element derived 1","alkB, alkylation repair homolog 5 (E. coli)","coiled-coil domain containing 69","nuclear transcription factor, X-box binding 1","desmoglein 2","chromosome 5 open reading frame 24","chromosome 5 open reading frame 24","chromosome 5 open reading frame 24","kelch repeat and BTB (POZ) domain containing 6","cyclin-dependent kinase 8","cyclin-dependent kinase 8","PTK6 protein tyrosine kinase 6","naked cuticle homolog 1 (Drosophila)","serine/threonine kinase 38","thioesterase superfamily member 4","claspin homolog (Xenopus laevis)","RB-associated KRAB zinc finger","WD repeat domain 62","WD repeat domain 62","solute carrier family 39 (zinc transporter), member 12","ring finger protein 168","sushi, von Willebrand factor type A, EGF and pentraxin domain containing 1","hypothetical LOC652276","GATA binding protein 4","tandem C2 domains, nuclear","chromosome 9 open reading frame 72","chromosome 9 open reading frame 72","potassium channel tetramerisation domain containing 18","Kruppel-like factor 11","ankyrin repeat and LEM domain containing 1","plexin A3","pelota homolog (Drosophila)","chromosome 13 open reading frame 31","chromosome 13 open reading frame 31","hypothetical FLJ39653","chromosome 3 open reading frame 30","RAN binding protein 3-like","sorting nexin 13","lysine (K)-specific demethylase 1B","ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2","ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2","ATPase, H+ transporting, lysosomal 38kDa, V0 subunit d2","LIM homeobox 4","LIM homeobox 4","chromosome 3 open reading frame 34","dynein, axonemal, heavy chain 11","chromosome 19 open reading frame 55","ADP-ribosylhydrolase like 1","synergin, gamma","cadherin 24, type 2","Sep (O-phosphoserine) tRNA:Sec (selenocysteine) tRNA synthase","glutamate receptor, ionotropic, kainate 5","leucine rich repeat neuronal 4","leucine rich repeat neuronal 4","zinc finger protein 777","junctophilin 2","phosphodiesterase 5A, cGMP-specific","SH2 domain containing 1B","SH2 domain containing 1B","somatostatin receptor 3","ADAM metallopeptidase with thrombospondin type 1 motif, 19","ADAM metallopeptidase with thrombospondin type 1 motif, 19","DEAD (Asp-Glu-Ala-Asp) box polypeptide 31","uromodulin-like 1","RAS and EF-hand domain containing","RAS and EF-hand domain containing","par-3 partitioning defective 3 homolog B (C. elegans)","par-3 partitioning defective 3 homolog B (C. elegans)","dystonin","zinc finger protein 441","zinc finger protein 441","neuronal growth regulator 1","Fc receptor-like 3","DDB1 and CUL4 associated factor 4-like 2","DDB1 and CUL4 associated factor 4-like 2","storkhead box 1","chromosome 20 open reading frame 200","chromosome 20 open reading frame 200","ADP-ribosylation factor-like 10","","ring finger protein, transmembrane 2","ankyrin-repeat and fibronectin type III domain containing 1","keratin 78","keratin 78","coiled-coil domain containing 7","coiled-coil domain containing 7","zinc finger protein 41","zinc finger protein 41","zinc finger protein 512","Alport syndrome, mental retardation, midface hypoplasia and elliptocytosis chromosomal region gene 1","family with sequence similarity 117, member B","zinc finger protein 583","oxoeicosanoid (OXE) receptor 1","leucine zipper protein 1","zinc finger protein 75D","non-protein coding RNA 52","bromodomain and WD repeat domain containing 1","coiled-coil domain containing 89","zinc finger protein 572","family with sequence similarity 82, member A1","ADAM metallopeptidase with thrombospondin type 1 motif, 18","protocadherin alpha subfamily C, 1","protocadherin alpha subfamily C, 1","homeodomain interacting protein kinase 4","family with sequence similarity 124A","Na+/K+ transporting ATPase interacting 3","inter-alpha (globulin) inhibitor H5","Fanconi anemia, complementation group B","protein kinase-like protein SgK196","zinc finger protein 709","coiled-coil domain containing 57","structural maintenance of chromosomes 1B","bromodomain and WD repeat domain containing 3","ankyrin repeat and SOCS box-containing 16","melanoma antigen family E, 2","hypothetical LOC147664","galactose-3-O-sulfotransferase 3","hypothetical protein FLJ30679","amyotrophic lateral sclerosis 2 (juvenile) chromosome region, candidate 11","amyotrophic lateral sclerosis 2 (juvenile) chromosome region, candidate 11","urotensin 2 receptor","Usher syndrome 1G (autosomal recessive)","synapsin I","solute carrier family 23 (nucleobase transporters), member 3","CCR4-NOT transcription complex, subunit 6-like","CCR4-NOT transcription complex, subunit 6-like","rhomboid, veinlet-like 3 (Drosophila)","","DIP2 disco-interacting protein 2 homolog B (Drosophila)","solute carrier family 36 (proton/amino acid symporter), member 1","small nuclear ribonucleoprotein 48kDa (U11/U12)","","zinc finger protein 560","rotatin","butyrophilin-like 9","pseudouridylate synthase 10","phosphatidylinositol-specific phospholipase C, X domain containing 2","chromosome 21 open reading frame 128","leishmanolysin-like (metallopeptidase M8 family)","RAD9 homolog B (S. pombe)","zinc finger protein 555","chromosome 7 open reading frame 51","uncharacterized serine/threonine-protein kinase SgK494","MAS-related GPR, member X3","ATP-binding cassette, sub-family A (ABC1), member 13","G protein-coupled receptor 128","colony stimulating factor 3 receptor (granulocyte)","chromosome 17 open reading frame 77","dual specificity phosphatase 5 pseudogene","diacylglycerol kinase, eta","transmembrane protein 182","chromosome 16 open reading frame 46","LSM14B, SCD6 homolog B (S. cerevisiae)","caspase 8, apoptosis-related cysteine peptidase","phospholipase B1","chromosome 20 open reading frame 197","solute carrier family 5 (sodium/myo-inositol cotransporter), member 3","kinesin family member 19","schlafen-like 1","G protein-coupled receptor 82","G protein-coupled receptor 82","RIB43A domain with coiled-coils 1","oxoglutarate (alpha-ketoglutarate) receptor 1","CDC14 cell division cycle 14 homolog C (S. cerevisiae)","sulfotransferase family, cytosolic, 1C, member 4","TEA domain family member 1 (SV40 transcriptional enhancer factor)","cation channel, sperm associated 2","POU domain class 5, transcription factor 2","relaxin/insulin-like family peptide receptor 2","BEN domain containing 7","solute carrier family 18 (vesicular monoamine), member 2","chromosome 7 open reading frame 45","chromosome 7 open reading frame 45","chromosome 1 open reading frame 161","hypothetical LOC285696","mesoderm induction early response 1, family member 3","chromosome 1 open reading frame 55","urocanase domain containing 1","protocadherin-related 15","trinucleotide repeat containing 6A","potassium voltage-gated channel, shaker-related subfamily, member 6","nuclear transcription factor, X-box binding 1","AT rich interactive domain 2 (ARID, RFX-like)","family with sequence similarity 123C","OTU domain containing 7A","endogenous retroviral family W, env(C7), member 1","hypothetical LOC143153","","","hypothetical LOC158696","F-box and leucine-rich repeat protein 18","F-box and leucine-rich repeat protein 18","dynein, axonemal, heavy chain 6","chromosome 6 open reading frame 195","patatin-like phospholipase domain containing 1","DEP domain containing 4","cytochrome c oxidase subunit VIb polypeptide 2 (testis)","family with sequence similarity 129, member C","EPH receptor A10","hypothetical protein FLJ23865","WD repeat domain 64","hypothetical protein PRO2949","BTB (POZ) domain containing 9","chromosome 1 open reading frame 125","chromosome 17 open reading frame 66","poly (ADP-ribose) polymerase family, member 15","Rho GTPase activating protein 42","hypothetical LOC84931","major facilitator superfamily domain containing 2A","ataxia telangiectasia mutated","family with sequence similarity 26, member D","nephronophthisis 3 (adolescent)","ATG9 autophagy related 9 homolog B (S. cerevisiae)","chromosome X open reading frame 58","EF-hand calcium binding domain 3","transcription factor AP-2 beta (activating enhancer binding protein 2 beta)","CD200 receptor 1","coiled-coil domain containing 13","coiled-coil domain containing 13","","chromosome 17 open reading frame 69","chromosome 17 open reading frame 69","MAS-related GPR, member X1","hemochromatosis","relaxin 3","CUB and Sushi multiple domains 1","microtubule-actin crosslinking factor 1","ADAM metallopeptidase with thrombospondin type 1 motif, 20","ATP-binding cassette, sub-family C (CFTR/MRP), member 12","sal-like 3 (Drosophila)","ATP/GTP binding protein-like 4","hypothetical FLJ13744","solute carrier family 17 (sodium-dependent inorganic phosphate cotransporter), member 8","chromosome 11 open reading frame 44","contactin associated protein-like 5","hypothetical LOC150538","ataxin 2-binding protein 1","schlafen family member 13","chromosome 12 open reading frame 40","WD repeat domain 65","hypothetical protein FLJ37543","ADAM metallopeptidase with thrombospondin type 1 motif, 15","hypothetical LOC285780","hypothetical protein FLJ31713","EDAR-associated death domain","chromosome 9 open reading frame 93","cytochrome P450, family 4, subfamily Z, polypeptide 2 pseudogene","chromosome 18 open reading frame 15","mucin 19, oligomeric","kelch domain containing 7A","chromosome 11 open reading frame 72","","chromosome 18 open reading frame 16","contactin associated protein-like 4","contactin associated protein-like 4","chromosome 8 open reading frame 54","chromosome 1 open reading frame 127","hypothetical protein FLJ37396","ATP/GTP binding protein-like 1","hypothetical FLJ34503","chromosome 16 open reading frame 81","chromosome 16 open reading frame 81","coiled-coil domain containing 79","myosin IH","ankyrin repeat and SOCS box-containing 14","repetin","","chromosome X open reading frame 62","chromosome 10 open reading frame 72","coiled-coil domain containing 150","chromosome 2 open reading frame 61","family with sequence similarity 9, member B","","hypothetical FLJ40288","carboxylesterase 7","chromosome X open reading frame 59","hypothetical locus FLJ32742","hydrocephalus inducing homolog 2 (mouse)","dynein, axonemal, heavy chain 17","acyl-malonyl condensing enzyme 1","hypothetical protein FLJ32955","POTE ankyrin domain family, member D","hypothetical LOC55448","proline rich 10","transmembrane protein 145","chromosome 15 open reading frame 32","testis specific, 10 interacting protein","chromosome 12 open reading frame 67","coiled-coil domain containing 140","chromosome 17 open reading frame 78","tektin 5","tektin 5","kinase suppressor of ras 2","paired box 1","L-threonine dehydrogenase","L-threonine dehydrogenase","chromosome 12 open reading frame 37","","serpin peptidase inhibitor, clade A (alpha-1 antiproteinase, antitrypsin), member 9","F-box and leucine-rich repeat protein 21 (gene/pseudogene)","MAS-related GPR, member X4","alpha-2-macroglobulin-like 1","carboxypeptidase O","G protein-coupled receptor 6","myelodysplastic syndrome 2 translocation associated","RCD1 required for cell differentiation1 homolog (S. pombe)","gap junction protein, delta 3, 31.9kDa","homeobox C12","vanin 3","vanin 3","myeloma overexpressed 2","Fer3-like (Drosophila)","defensin, theta 1 pseudogene","chromosome 21 open reading frame 94","NLR family, pyrin domain containing 14","diacylglycerol kinase, beta 90kDa","NLR family, pyrin domain containing 13","NLR family, pyrin domain containing 8","NLR family, pyrin domain containing 9","TAF5 RNA polymerase II, TATA box binding protein (TBP)-associated factor, 100kDa","taste receptor, type 1, member 2","integrin, beta 1 (fibronectin receptor, beta polypeptide, antigen CD29 includes MDF2, MSK12)","proprotein convertase subtilisin/kexin type 6","zinc finger protein 341","junctophilin 1","NLR family, pyrin domain containing 10","Ran GTPase activating protein 1","Muscleblind-like 2 (Drosophila)","keratin 73","","keratin 74","solute carrier family 29 (nucleoside transporters), member 2","LIM homeobox transcription factor 1, alpha","coiled-coil domain containing 125","G protein-coupled receptor 101","immunoglobulin-like domain containing receptor 1","hypothetical protein PRO2012","","vomeronasal 1 receptor 2","vomeronasal 1 receptor 5 (gene/pseudogene)","similar to NADH dehydrogenase subunit 2","trace amine associated receptor 8","taste receptor, type 2, member 39","taste receptor, type 2, member 38","taste receptor, type 2, member 40","taste receptor, type 2, member 41","transmembrane protein 171","vomeronasal 1 receptor 4","taste receptor, type 2, member 50","MACRO domain containing 2","dimethylarginine dimethylaminohydrolase 1","chromosome 12 open reading frame 53","similar to OK/SW-CL.16","histone cluster 1, H1t","","","cytoglobin","ephrin-A2","interferon, epsilon","","SFRS12-interacting protein 1","thyroid hormone responsive (SPOT14 homolog, rat)","chromosome X open reading frame 36","melanoma antigen family A, 5","non-protein coding RNA 95","polymerase (DNA-directed), epsilon 4 (p12 subunit)","SH3-domain kinase binding protein 1","PDZK1 interacting protein 1","T-cell acute lymphocytic leukemia 2","synaptonemal complex protein 3","transmembrane inner ear","transmembrane inner ear","mucin-like 1","atlastin GTPase 2","ATP-binding cassette, sub-family A (ABC1), member 13","ATP-binding cassette, sub-family A (ABC1), member 13","non-protein coding RNA 189","non-protein coding RNA 189","kelch-like 35 (Drosophila)","zinc finger protein 354B","forkhead box C1","hypothetical protein FLJ25694","tripartite motif-containing 42","fibrous sheath interacting protein 1","hypothetical protein MGC15705","family with sequence similarity 98, member B","chromosome 17 open reading frame 57","chromosome 17 open reading frame 57","family with sequence similarity 71, member B","chromosome 10 open reading frame 107","Na+/H+ exchanger domain containing 1","hypothetical LOC285962","Tctex1 domain containing 1","transmembrane and coiled-coil domains 5A","transmembrane and coiled-coil domains 5A","peroxisome proliferator-activated receptor gamma, coactivator 1 beta","XK, Kell blood group complex subunit-related family, member 6","testis specific, 13","chromosome 9 open reading frame 163","chromosome 14 open reading frame 49","coiled-coil domain containing 141","highly divergent homeobox","chromodomain protein, Y-like 2","chromosome 18 open reading frame 54","chromosome 18 open reading frame 54","synaptotagmin XIV","cell division cycle 20 homolog B (S. cerevisiae)","tectorin beta","von Willebrand factor A domain containing 3A","hypothetical LOC150197"],["780","5982","3310","7849","2978","7318","7067","11099","6352","1571","2049","2101","1548","949","23170","112597","10406","5594","5594","203102","128153","163154","163154","54899","54899","57617","91283","113235","113235","91937","283375","79844","90423","172","148113","148113","54965","256130","91252","266675","221264","84940","113277","113277","84920","84920","125488","91624","123207","84839","4238","2140","170575","170575","170575","11202","85478","85478","159091","159091","220136","220136","100131755","5930","92806","11078","11078","117144","3233","145258","121340","5150","29883","9946","260429","260429","255057","255057","157777","114609","116842","124540","85477","85477","140690","132321","132321","132321","84449","201158","157506","157506","135295","149647","149647","202309","150378","203111","203111","164127","150350","150350","81629","140870","2972","123591","100379661","163688","126206","146852","146852","165530","259240","259240","121441","254173","254173","125972","220979","2117","317719","317719","80213","220992","116966","162387","64072","150709","84465","11318","80712","83656","147199","285126","126248","126248","158471","125997","92949","85509","85509","169966","89778","118421","259234","259234","83451","23527","2593","2593","113026","3664","3664","5788","10905","65059","140775","114294","114294","646","58538","246269","91734","1584","129685","23242","114836","7579","7579","151306","54933","80144","84446","286204","23704","23704","146894","142680","57094","164684","204851","204851","27085","130399","157753","157753","201798","201798","116969","196472","84536","204801","245973","149461","143187","221458","115811","117289","117289","85439","145264","137994","7809","7809","170482","58484","58484","146547","158866","10743","65061","148268","","119369","118663","83597","83597","54084","145282","145282","135398","200420","140469","8747","205860","150000","150000","3594","11036","162514","168975","168975","94160","118856","147744","246176","93107","222659","27091","54143","54143","100132967","259239","3716","3716","56990","56990","32","32","64326","10228","54443","163778","246721","84941","51095","81615","394","64224","23210","10847","9064","22901","94039","94039","5781","113730","199777","80012","3590","8797","117584","117584","89781","127933","84203","89795","55322","56099","56099","23085","201163","84989","57554","10044","79660","79660","84679","3321","222546","116093","150353","114131","23181","57646","57082","57082","123228","29841","140894","140894","57524","93589","115761","115761","114134","114134","123606","113691","114769","142679","142679","124637","23057","6521","200407","59350","79925","92675","113201","2246","10777","158800","170691","170691","170691","84973","50846","137735","137735","122773","253260","56111","81832","11060","54879","54879","150590","131096","23263","133482","151649","147700","117286","117286","253559","253559","157983","157983","9734","9734","162515","91147","91147","90161","90161","84254","90589","147837","286826","338339","338339","9481","222545","135250","204962","204962","147687","163115","92797","92797","7095","7095","10345","122809","286122","284306","6492","150696","7099","203062","83451","92291","3925","114609","92949","5992","117166","29843","136259","136259","158046","680","257103","54495","252884","115111","115111","112574","","162517","192134","192134","163486","285267","22858","161142","79370","266722","10861","24146","115273","139411","130951","201516","201516","127731","127731","197196","3362","158809","162699","284618","59285","160492","","148046","126859","80161","80161","131450","114042","114042","220202","220202","89866","139285","157848","157848","219793","90332","57010","115650","94032","149992","170850","170850","154089","154089","93986","124872","81832","158521","148823","114132","114132","149233","286514","80381","282616","282618","132989","63979","22999","57605","57605","57575","257397","257397","131890","79258","5151","171389","254268","203430","84126","85416","284","127670","149373","2565","56666","163071","163071","148870","161502","159162","4761","439936","","1768","131578","","255352","93010","158506","9204","9204","137868","","7484","","","","10695","9522","151477","3038","2249","169026","142937","439933","160140","284418","120065","143241","246778","132141","245938","280664","5314","168507","139378","10178","254958","138474","129684","9401","165082","117532","140771","23299","114026","79400","282706","57211","56062","165829","6821","221393","133396","94122","10806","222611","6854","136371","170572","84807","146722","84694","7483","64090","8396","8396","113746","164237","256369","162394","89777","126326","114771","85481","89883","116255","27201","132243","134860","114814","257357","91977","91977","149428","140456","266553","266553","121214","120066","135644","286828","128488","155051","","147323","143501","84322","10018","10406","245932","255061","10018","200765","54890","26112","4799","1829","134553","134553","134553","89890","1024","1024","5753","85407","11329","117145","63967","57786","284403","284403","221074","165918","79987","652276","2626","123036","203228","203228","130535","8462","126549","55558","53918","144811","144811","202020","152405","202151","23161","221656","245972","245972","245972","89884","89884","84984","8701","148137","113622","11276","64403","51091","2901","164312","164312","27153","57158","8654","117157","117157","6753","171019","171019","64794","89766","158158","158158","117583","117583","667","126068","126068","257194","115352","138009","138009","219736","253868","253868","285598","","84900","162282","196374","196374","221016","221016","7592","7592","84450","9949","150864","147949","165140","7798","7626","145978","54014","220388","137209","151393","170692","56135","56135","147746","220108","286183","80760","2187","84197","163051","284001","27127","254065","92591","139599","147664","89792","146512","151254","151254","2837","124590","6853","151295","246175","246175","162494","","57609","206358","154007","","147741","25914","153579","150962","257068","150147","89782","144715","148254","222950","124923","117195","154664","84873","1441","146723","574029","160851","130827","123775","149986","841","151056","284756","6526","124602","200172","27197","27197","158787","27199","168448","27233","7003","117155","134187","122042","222389","6571","136263","136263","126868","285696","166968","163859","131669","65217","27327","3742","4799","196528","205147","161725","30816","143153","","","158696","80028","80028","1768","154386","285848","120863","125965","199786","284656","200317","128025","55412","114781","126859","256957","165631","143872","84931","84879","472","221301","27031","285973","254158","146779","7021","131450","152206","152206","","147081","147081","259249","3077","117579","64478","23499","80070","94160","27164","84871","80078","246213","283171","129684","150538","54715","146857","283461","149465","285668","170689","285780","158263","128178","203238","163720","147276","283463","127707","283135","","147429","85445","85445","439941","148345","285754","123624","285759","283860","283860","283847","283446","142686","126638","","439943","196740","284992","285051","171483","","286023","221223","286464","439944","100288805","8632","146861","150596","317754","55448","283165","284339","145858","254187","144360","151278","284099","146279","146279","283455","5075","157739","157739","439916","","327657","26223","117196","144568","130749","2830","259283","9125","125111","3228","55350","55350","150678","222894","170949","246705","338323","1607","126204","126205","338321","6877","80834","3688","5046","84905","56704","338322","5905","10150","319101","","121391","3177","4009","202243","83550","286676","55478","","317701","317705","100131754","83551","259285","5726","259286","259287","134285","317703","259296","140733","23576","196500","100288418","3010","","","114757","1943","338376","","285672","7069","79742","4104","283932","56655","30011","10158","6887","50511","259236","259236","118430","64225","154664","154664","193629","193629","283212","117608","2296","100128202","287015","161835","84843","283742","124989","124989","153745","219621","150159","285962","200132","145942","145942","133522","286046","114960","158055","161176","285025","139324","124359","162681","162681","255928","166979","6975","146177","150197"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Gene Symbol<\/th>\n      <th>Gene Title<\/th>\n      <th>ENTREZ_GENE_ID<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"deferRender":true,"scrollY":350,"scroller":true,"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"rowCallback":"function(row, data) {\nvar value=data[1]; if (value!==null) $(row).css({'color':'white','background':'black'});\nvar value=data[2]; if (value!==null) $(row).css({'color':'white','background':'black'});\nvar value=data[3]; if (value!==null) $(row).css({'color':'white','background':'black'});\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="example-1-build-a-pca-plot-from-public-data-3" class="section level2">
+<h2>Example 1: Build a PCA plot from Public Data</h2>
+<p>Filter gene expression by variance to find most informative genes.</p>
+<pre class="r"><code>sds = apply(exprs(gse),1,sd)
+dat = exprs(gse)[order(sds,decreasing = TRUE)[1:500],]</code></pre>
+<p>Perform <a href="https://en.wikipedia.org/wiki/Multidimensional_scaling">multidimensional scaling</a> and prepare for plotting.</p>
+<pre class="r"><code>mdsvals = cmdscale(dist(t(dat)))
+mdsvals = as.data.frame(mdsvals)
+mdsvals$Type=factor(pData(gse)[,&#39;cancer type:ch1&#39;])
+mdsvals$Normal = factor(pData(gse)[,&#39;normal:ch1&#39;])</code></pre>
+<p>And do the plot.</p>
+<pre class="r"><code>library(ggplot2)
+ggplot(mdsvals, aes(x=V1,y=V2,shape=Normal,color=Type)) + 
+    geom_point(size=4, alpha=0.6) + theme(text=element_text(size = 18))</code></pre>
+</div>
+<div id="example-1-build-a-pca-plot-from-public-data-4" class="section level2">
+<h2>Example 1: Build a PCA plot from Public Data</h2>
+<p><img src="/BiocShortTalk_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<div style="width:80%; display: block; margin: 0 auto;">
+<div class="figure">
+<img src="https://i.imgur.com/c9axxjI.png" alt="Imgur" />
+<p class="caption">Imgur</p>
+</div>
+</div>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data-1" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<p>Use the <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons</a> package to find and download variants from the TCGA cutaneous melanoma dataset.</p>
+<pre class="r"><code>library(GenomicDataCommons)
+fnames = files() %&gt;% 
+    GenomicDataCommons::filter(~ cases.project.project_id==&#39;TCGA-SKCM&#39; &amp; 
+        data_type==&#39;Masked Somatic Mutation&#39; &amp;
+        data_format==&#39;MAF&#39; &amp;
+        analysis.workflow_type==&#39;MuTect2 Variant Aggregation and Masking&#39;) %&gt;%
+    ids() %&gt;%
+    gdcdata()</code></pre>
+<p>And now take those data directly to <a href="https://bioconductor.org/package/maftools">maftools</a> for analysis and visualization.</p>
+<pre class="r"><code>library(maftools)
+melanoma = read.maf(maf = fnames[1])</code></pre>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data-2" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<p><img src="/BiocShortTalk_files/figure-html/plotmafsummary-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data-3" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<p><img src="/BiocShortTalk_files/figure-html/oncoplot-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data-4" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<pre class="r"><code>v = oncodrive(maf = melanoma, AACol = &#39;HGVSp_Short&#39;, minMut = 5, pvalMethod = &#39;zscore&#39;)
+plotOncodrive(v,labelSize=40,fdrCutOff = 0.1)</code></pre>
+<p><img src="/BiocShortTalk_files/figure-html/oncodrive-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="example-2-melanoma-variants-from-nci-genomic-data-commons-data-5" class="section level2">
+<h2>Example 2: Melanoma Variants from NCI Genomic Data Commons Data</h2>
+<p><img src="/BiocShortTalk_files/figure-html/lollipop-1.png" width="672" style="display: block; margin: auto;" /><img src="/BiocShortTalk_files/figure-html/lollipop-2.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="other-functionality-ranges" class="section level2">
+<h2>Other functionality: Ranges</h2>
+<div style="width:80%; display: block; margin: 0 auto;">
+<div class="figure">
+<img src="https://i.imgur.com/wYL8bT6.png" alt="Imgur" />
+<p class="caption">Imgur</p>
+</div>
+</div>
+</div>
+<div id="other-functionality-sequencing" class="section level2">
+<h2>Other functionality: Sequencing</h2>
+<div style="width:80%; display: block; margin: 0 auto;">
+<div class="figure">
+<img src="https://i.imgur.com/BTYXWjA.png" alt="Imgur" />
+<p class="caption">Imgur</p>
+</div>
+</div>
+</div>
+<div id="data-access-and-management" class="section level2">
+<h2>Data access and management</h2>
+<p>Hubs and data packages give users access to curated and versioned public data.</p>
+<ul>
+<li>AnnotationHub
+<ul>
+<li>Reference genomes</li>
+<li>Gene models</li>
+<li>ENCODE data</li>
+<li>UCSC Tracks</li>
+</ul></li>
+<li>ExperimentHub
+<ul>
+<li>Curated and versioned public datasets (TCGA, 1000Genomes)</li>
+<li>Searchable metadata</li>
+</ul></li>
+<li>Experiment data packages
+<ul>
+<li>Easy sharing of data within lab, institute, or internationally</li>
+</ul></li>
+</ul>
+</div>
+<div id="reproducible-research" class="section level2">
+<h2>Reproducible research</h2>
+<ul>
+<li>Everything in bioconductor is version controlled and versioned.</li>
+<li>Package build system guarantees compatibility between packages.</li>
+<li>Documentation and workflows are “literate”, so if they do not work or do not match code, Bioc build system alerts developer.</li>
+<li>Strong reliance on interoperability to reduce “reinvention” (and decrease mistakes)</li>
+</ul>
+</div>
+<div id="questions" class="section level2">
+<h2>Questions</h2>
+<ul>
+<li><a href="https://bioconductor.org" class="uri">https://bioconductor.org</a></li>
+<li><a href="https://support.bioconductor.org" class="uri">https://support.bioconductor.org</a></li>
+<li>Package documentation</li>
+<li>Package vignettes (or workflows)</li>
+<li><a href="https://f1000research.com/articles/4-217/v2" class="uri">https://f1000research.com/articles/4-217/v2</a></li>
+<li><a href="https://www.youtube.com/user/bioconductor" class="uri">https://www.youtube.com/user/bioconductor</a></li>
+</ul>
+<p>Contact me:</p>
+<ul>
+<li><a href="https://seandavi.github.io/" class="uri">https://seandavi.github.io/</a></li>
+<li><a href="https://twitter.com/seandavis12" class="uri">https://twitter.com/seandavis12</a></li>
+<li><a href="mailto:seandavi@gmail.com">mailto:seandavi@gmail.com</a> or <a href="mailto:sean.davis@nih.gov">mailto:sean.davis@nih.gov</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</div>
+<script src="https://seandavi.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
