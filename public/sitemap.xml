@@ -43,8 +43,8 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/talk/2018/12/04/bioconductor-software-for-orchestrating-high-throughput-genomics-data-analysis/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/talk/2017/12/04/bioconductor-orchestrating-high-throughput-biological-data-analysis/</loc>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -724,14 +724,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/r/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/r/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/r/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -754,14 +754,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/software/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/software/</loc>
+    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/software/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -773,7 +773,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

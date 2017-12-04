@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.27.1" />
+
+  <title>Bioconductor: orchestrating high-throughput biological data analysis &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Bioconductor: orchestrating high-throughput biological data analysis</h1>
+  <h2></h2>
+</div>
+<div class="content">
+  <iframe src="https://bit.ly/sd_ceicbg_2017" frameborder="0" width="801" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<p>Progress in biotechnology is continually leading to new types of data,
+resulting in data sets that are rapidly increasing in volume,
+resolution and diversity. The promise of unprecedented advances in our
+understanding of biological systems and in medicine is challenged by
+complexity and volume of data also challenge scientists’ ability to
+analyze them. Meeting this challenge requires continuous improvements
+in analytical methods and capable, usable software tools implementing
+them. Bioconductor is a well-established open-source, open-development
+software project for the analysis and comprehension of high-throughput
+data in genomics and molecular biology. The project aims to enable
+interdisciplinary research, collaboration and rapid development of
+scientific software. Based on the statistical programming language R,
+Bioconductor comprises 1473 interoperable packages contributed by a
+large, diverse community of scientists. These packages undergo formal
+initial review and continuous automated testing. Each package includes
+documentation and working example use cases. Bioconductor supports
+many types of high-throughput sequencing data (including DNA, RNA,
+chromatin immunoprecipitation, Hi-C, methylomes and ribosome
+profiling) and associated annotation resources; contains mature
+facilities for microarray analysis; and covers proteomic, metabolomic,
+flow cytometry, quantitative imaging, cheminformatic and other
+high-throughput data. Bioconductor package interoperability enables
+the rapid creation of workflows combining and integrating multiple
+data types and tools for statistical inference, regression, network
+analysis, machine learning and visualization at all stages of a
+project from data generation to publication. A large and growing
+community of researchers and users contribute to ongoing development,
+online support, and education. The influence of the project is
+evidenced by more than 250,000 downloads per year and tens of
+thousands of citations in the literature. I will present an overview
+of the project for prospective users and contributors.</p>
+
+</div>
+
+</div>
+</div>
+<script src="https://seandavi.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
