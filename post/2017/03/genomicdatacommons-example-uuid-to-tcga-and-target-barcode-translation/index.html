@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.27.1" />
 
-  <title>Tags &middot; seandavi(s12)</title>
+  <title>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation &middot; seandavi(s12)</title>
 
   
   
@@ -37,8 +37,6 @@
 
   
   
-  <link rel="alternate" type="application/rss+xml" title="seandavi(s12)" href="https://seandavi.github.io/tags/index.xml" />
-  
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
@@ -51,7 +49,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -118,10 +116,6 @@
     </li>
     
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://seandavi.github.io/tags/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -237,128 +231,139 @@
 
 
 <div class="header">
-  <h1>Tags</h1>
+  <h1>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</h1>
+  <h2></h2>
 </div>
 <div class="content">
-  <ul>
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>21 Mar 2017</time>
+  </div>
+
+  
+
   
   
-    <li>
-      <a href="software">software</a>
-      <span>&#40;4&#41;</span>
-    </li>
   
-    <li>
-      <a href="r">r</a>
-      <span>&#40;3&#41;</span>
-    </li>
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="/topics/genomicdatacommons">GenomicDataCommons</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-topic" href="/topics/bioconductor">Bioconductor</a>
+    
+  </div>
   
-    <li>
-      <a href="bioconductor">bioconductor</a>
-      <span>&#40;2&#41;</span>
-    </li>
   
-    <li>
-      <a href="bioinformatics">bioinformatics</a>
-      <span>&#40;2&#41;</span>
-    </li>
+
   
-    <li>
-      <a href="data-science">data-science</a>
-      <span>&#40;2&#41;</span>
-    </li>
   
-    <li>
-      <a href="open-data">open-data</a>
-      <span>&#40;2&#41;</span>
-    </li>
   
-    <li>
-      <a href="aws">aws</a>
-      <span>&#40;1&#41;</span>
-    </li>
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="/tags/cancer-informatics">cancer informatics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/bioinformatics">bioinformatics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/open-data">open data</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="/tags/tcga">TCGA</a>
+    
+  </div>
   
-    <li>
-      <a href="biocpkgtools">biocpkgtools</a>
-      <span>&#40;1&#41;</span>
-    </li>
   
-    <li>
-      <a href="cancer-informatics">cancer-informatics</a>
-      <span>&#40;1&#41;</span>
-    </li>
+
+</div>
+
+  <pre class="r"><code>library(GenomicDataCommons)</code></pre>
+<pre><code>## Loading required package: magrittr</code></pre>
+<pre><code>## 
+## Attaching package: &#39;GenomicDataCommons&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre class="r"><code>library(magrittr)
+
+TCGAtranslateID = function(file_ids) {
+    info = files() %&gt;%
+        filter( ~ file_id %in% file_ids) %&gt;%
+        select(&#39;cases.samples.submitter_id&#39;) %&gt;%
+        results_all()
+    # The mess of code below is to extract TCGA barcodes
+    # id_list will contain a list (one item for each file_id)
+    # of TCGA barcodes of the form &#39;TCGA-XX-YYYY-ZZZ&#39;
+    id_list = lapply(info$cases,function(a) {
+        a[[1]][[1]][[1]]})
+    # so we can later expand to a data.frame of the right size
+    barcodes_per_file = sapply(id_list,length)
+    # And build the data.frame
+    return(data.frame(file_id = rep(ids(info),barcodes_per_file),
+                      submitter_id = unlist(id_list)))
+    }</code></pre>
+
+
   
-    <li>
-      <a href="clinicaltrials.gov">clinicaltrials.gov</a>
-      <span>&#40;1&#41;</span>
-    </li>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="/post/2015/07/hello-r-markdown/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/2015/07/hello-r-markdown/">Hello R Markdown</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/">Approaches to accessing ClinicalTrials.gov data</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+
   
-    <li>
-      <a href="cloud">cloud</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="git">git</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="lists">lists</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="manuscripts">manuscripts</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="medical-informatics">medical-informatics</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="plot">plot</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="programming">programming</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="r-markdown">r-markdown</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="regression">regression</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="security">security</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="tcga">tcga</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-    <li>
-      <a href="workflow">workflow</a>
-      <span>&#40;1&#41;</span>
-    </li>
-  
-  </ul>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
 </div>
-<script src="https://seandavi.github.io/js/ui.js"></script>
+<script src="/js/ui.js"></script>
 
 
 <script>
@@ -376,3 +381,4 @@
 
 </body>
 </html>
+

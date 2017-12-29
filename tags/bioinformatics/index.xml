@@ -6,10 +6,19 @@
     <description>Recent content in Bioinformatics on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/tags/bioinformatics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</title>
+      <link>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</guid>
+      <description>One of the features of the NCI Genomic Data Commons is that everything has a unique identifier in the form of a UUID. However, because many legacy projects and much of the literature do not use UUIDs but instead use TCGA sample barcodes, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).</description>
+    </item>
     
     <item>
       <title>Agricultural genomics may benefit from human genomic data and software engineering</title>

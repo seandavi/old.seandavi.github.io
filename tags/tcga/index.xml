@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Open Data on seandavi(s12)</title>
-    <link>https://seandavi.github.io/tags/open-data/</link>
-    <description>Recent content in Open Data on seandavi(s12)</description>
+    <title>Tcga on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/tcga/</link>
+    <description>Recent content in Tcga on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
     <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://seandavi.github.io/tags/open-data/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seandavi.github.io/tags/tcga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</guid>
       <description>One of the features of the NCI Genomic Data Commons is that everything has a unique identifier in the form of a UUID. However, because many legacy projects and much of the literature do not use UUIDs but instead use TCGA sample barcodes, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).</description>
-    </item>
-    
-    <item>
-      <title>Approaches to accessing ClinicalTrials.gov data</title>
-      <link>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</link>
-      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</guid>
-      <description>I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
-The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.</description>
     </item>
     
   </channel>

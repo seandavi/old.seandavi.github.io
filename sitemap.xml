@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/talk/2017/12/04/bioconductor-orchestrating-high-throughput-biological-data-analysis/</loc>
     <lastmod>2017-12-04T00:00:00+00:00</lastmod>
   </url>
@@ -640,6 +645,12 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/tags/biocpkgtools/</loc>
     <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -647,7 +658,13 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/bioinformatics/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/tags/cancer-informatics/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -666,6 +683,12 @@
   <url>
     <loc>https://seandavi.github.io/tags/data-science/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -701,7 +724,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/open-data/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -778,8 +801,14 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/tags/tcga/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/topics/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
