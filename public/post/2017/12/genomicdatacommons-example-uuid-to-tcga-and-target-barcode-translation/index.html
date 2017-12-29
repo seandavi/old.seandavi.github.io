@@ -281,7 +281,7 @@
 
   <p>One of the features of the NCI Genomic Data Commons is that <em>everything</em> has a unique identifier in the form of a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>. However, because <em>many</em> legacy projects and much of the literature do not use UUIDs but instead use <a href="https://wiki.nci.nih.gov/display/TCGA/TCGA+barcode">TCGA sample barcodes</a>, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).</p>
 <p>Given a set of file ids (which I simulate here by fetching some from the GDC API), I build a small function that maps those file UUIDs back to the associated TCGA barcodes. Because the GDC also contains data from TARGET as well as Foundation Medicine, the same code will return associated legacy identifiers for those types of samples as well.</p>
-<p>Get started by loading the [GenomicDataCommons] library:</p>
+<p>Get started by loading the <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons</a> library:</p>
 <pre class="r"><code>library(GenomicDataCommons)</code></pre>
 <p>Fetch some file IDs:</p>
 <pre class="r"><code>file_uuids = files() %&gt;% results(size=15) %&gt;% ids()
