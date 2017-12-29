@@ -1,0 +1,108 @@
+---
+title: "GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation"
+author: Sean Davis
+date: '2017-12-29'
+topics:
+  - GenomicDataCommons
+  - Bioconductor
+tags:
+  - cancer informatics
+  - bioinformatics
+  - open data
+  - TCGA
+draft: false
+---
+
+One of the features of the NCI Genomic Data Commons is that
+*everything* has a unique identifier in the form of a [UUID]. However,
+because *many* legacy projects and much of the literature do not use
+UUIDs but instead use [TCGA sample barcodes], one simple use case for the
+GenomicDataCommons package is to map from the UUID for a file or a set
+of files back to the associated TCGA barcode(s).
+
+Given a set of file ids (which I simulate here by fetching some from
+the GDC API), I build a small function that maps those file UUIDs back
+to the associated TCGA barcodes. Because the GDC also contains data
+from TARGET as well as Foundation Medicine, the same code will return
+associated legacy identifiers for those types of samples as well.
+
+Get started by loading the [GenomicDataCommons] library:
+
+```{r message=FALSE, warning=FALSE}
+library(GenomicDataCommons)
+```
+
+Fetch some file IDs:
+
+```{r}
+file_uuids = files() %>% results(size=15) %>% ids()
+head(file_uuids)
+```
+
+The TCGA barcodes are nested in the file records, but we can access
+them in the `cases.samples.submitter_id`. The
+`available_fields` and `available_values` functions are useful
+GenomicDataCommons package functions for examining available fields
+and their associated values to find information of interest. Another
+common approach is to fetch all available fields and then examine the
+results using `str`.
+
+
+```{r results='hide'}
+fres = files() %>%
+    select(available_fields('files')) %>%
+    results()
+str(fres)
+```
+
+In the code below, I simply start with a `files()` query against the
+GenomicDataCommons API, filter to include only those files that match
+the supplied `file_ids`, and then gather the
+`cases.samples.submitter_id` and file UUIDs into a data frame. The
+most complicated (and fragile, since it will break if the GDC changes
+its data model) iw the lapply statement that accesses the barcodes in
+the nested results returned.
+
+```{r}
+library(GenomicDataCommons)
+library(magrittr)
+
+TCGAtranslateID = function(file_ids) {
+    info = files() %>%
+        filter( ~ file_id %in% file_ids) %>%
+        select('cases.samples.submitter_id') %>%
+        results_all()
+    # The mess of code below is to extract TCGA barcodes
+    # id_list will contain a list (one item for each file_id)
+    # of TCGA barcodes of the form 'TCGA-XX-YYYY-ZZZ'
+    id_list = lapply(info$cases,function(a) {
+        a[[1]][[1]][[1]]})
+    # so we can later expand to a data.frame of the right size
+    barcodes_per_file = sapply(id_list,length)
+    # And build the data.frame
+    return(data.frame(file_id = rep(ids(info),barcodes_per_file),
+                      submitter_id = unlist(id_list)))
+    }
+```
+
+Now, we can translate our example `file_uuids`:
+
+```{r}
+res = TCGAtranslateID(file_uuids)
+```
+
+```{r include=FALSE}
+rownames(res) = NULL
+```
+
+```{r}
+head(res)
+```
+
+This little function is a bit "niche", but it does illustrate how one
+can leverage GenomicDataCommons package functionality to create useful
+higher-level functionality like ID mapping.
+
+
+[UUID]: https://en.wikipedia.org/wiki/Universally_unique_identifier
+[TCGA sample barcodes]: https://wiki.nci.nih.gov/display/TCGA/TCGA+barcode
