@@ -6,10 +6,28 @@
     <description>Recent content in Topics on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Tue, 21 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Dec 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bioconductor</title>
+      <link>https://seandavi.github.io/topics/bioconductor/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/topics/bioconductor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Genomicdatacommons</title>
+      <link>https://seandavi.github.io/topics/genomicdatacommons/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/topics/genomicdatacommons/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>R</title>

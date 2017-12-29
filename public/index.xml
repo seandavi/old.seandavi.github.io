@@ -84,6 +84,15 @@
     </item>
     
     <item>
+      <title>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</title>
+      <link>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</link>
+      <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</guid>
+      <description>One of the features of the NCI Genomic Data Commons is that everything has a unique identifier in the form of a UUID. However, because many legacy projects and much of the literature do not use UUIDs but instead use TCGA sample barcodes, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).</description>
+    </item>
+    
+    <item>
       <title>Bioconductor: orchestrating high-throughput biological data analysis</title>
       <link>https://seandavi.github.io/talk/2017/12/04/bioconductor-orchestrating-high-throughput-biological-data-analysis/</link>
       <pubDate>Mon, 04 Dec 2017 00:00:00 +0000</pubDate>

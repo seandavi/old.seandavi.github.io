@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.27.1" />
 
-  <title>Open Data &middot; seandavi(s12)</title>
+  <title>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation &middot; seandavi(s12)</title>
 
   
   
@@ -36,8 +36,6 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  
-  <link rel="alternate" type="application/rss+xml" title="seandavi(s12)" href="https://seandavi.github.io/tags/open-data/index.xml" />
   
 
   
@@ -118,10 +116,6 @@
     </li>
     
 
-    
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://seandavi.github.io/tags/open-data/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
     
 
     
@@ -237,16 +231,12 @@
 
 
 <div class="header">
-  <h1>Open Data</h1>
+  <h1>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</h1>
+  <h2></h2>
 </div>
-
 <div class="content">
-  
-    <article>
-  <header>
-    <h2><a href="https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/">GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</a></h2>
 
-    <div class="post-meta">
+  <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
@@ -289,80 +279,104 @@
 
 </div>
 
-  </header>
+  <p>One of the features of the NCI Genomic Data Commons is that <em>everything</em> has a unique identifier in the form of a <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">UUID</a>. However, because <em>many</em> legacy projects and much of the literature do not use UUIDs but instead use <a href="https://wiki.nci.nih.gov/display/TCGA/TCGA+barcode">TCGA sample barcodes</a>, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).</p>
+<p>Given a set of file ids (which I simulate here by fetching some from the GDC API), I build a small function that maps those file UUIDs back to the associated TCGA barcodes. Because the GDC also contains data from TARGET as well as Foundation Medicine, the same code will return associated legacy identifiers for those types of samples as well.</p>
+<p>Get started by loading the [GenomicDataCommons] library:</p>
+<pre class="r"><code>library(GenomicDataCommons)</code></pre>
+<p>Fetch some file IDs:</p>
+<pre class="r"><code>file_uuids = files() %&gt;% results(size=15) %&gt;% ids()
+head(file_uuids)</code></pre>
+<pre><code>## [1] &quot;f52c587d-06e3-4d5d-951d-4a5737897749&quot;
+## [2] &quot;8df6b042-a108-4fc8-8419-084250b2418e&quot;
+## [3] &quot;0eb114f0-0572-4878-bb0f-f428006f072e&quot;
+## [4] &quot;dc569bb0-4bc4-4737-93de-1880db93892a&quot;
+## [5] &quot;29080fc1-6815-4714-a5f0-53d4b0ecd779&quot;
+## [6] &quot;6e9e2c9e-230c-439c-a9fd-3f92062f927a&quot;</code></pre>
+<p>The TCGA barcodes are nested in the file records, but we can access them in the <code>cases.samples.submitter_id</code>. The <code>available_fields</code> and <code>available_values</code> functions are useful GenomicDataCommons package functions for examining available fields and their associated values to find information of interest. Another common approach is to fetch all available fields and then examine the results using <code>str</code>.</p>
+<pre class="r"><code>fres = files() %&gt;%
+    select(available_fields(&#39;files&#39;)) %&gt;%
+    results()
+str(fres)</code></pre>
+<p>In the code below, I simply start with a <code>files()</code> query against the GenomicDataCommons API, filter to include only those files that match the supplied <code>file_ids</code>, and then gather the <code>cases.samples.submitter_id</code> and file UUIDs into a data frame. The most complicated (and fragile, since it will break if the GDC changes its data model) iw the lapply statement that accesses the barcodes in the nested results returned.</p>
+<pre class="r"><code>library(GenomicDataCommons)
+library(magrittr)
 
-  <p>
-  One of the features of the NCI Genomic Data Commons is that everything has a unique identifier in the form of a UUID. However, because many legacy projects and much of the literature do not use UUIDs but instead use TCGA sample barcodes, one simple use case for the GenomicDataCommons package is to map from the UUID for a file or a set of files back to the associated TCGA barcode(s).
-  </p>
+TCGAtranslateID = function(file_ids) {
+    info = files() %&gt;%
+        filter( ~ file_id %in% file_ids) %&gt;%
+        select(&#39;cases.samples.submitter_id&#39;) %&gt;%
+        results_all()
+    # The mess of code below is to extract TCGA barcodes
+    # id_list will contain a list (one item for each file_id)
+    # of TCGA barcodes of the form &#39;TCGA-XX-YYYY-ZZZ&#39;
+    id_list = lapply(info$cases,function(a) {
+        a[[1]][[1]][[1]]})
+    # so we can later expand to a data.frame of the right size
+    barcodes_per_file = sapply(id_list,length)
+    # And build the data.frame
+    return(data.frame(file_id = rep(ids(info),barcodes_per_file),
+                      submitter_id = unlist(id_list)))
+    }</code></pre>
+<p>Now, we can translate our example <code>file_uuids</code>:</p>
+<pre class="r"><code>res = TCGAtranslateID(file_uuids)</code></pre>
+<pre class="r"><code>head(res)</code></pre>
+<pre><code>##                                file_id     submitter_id
+## 1 f52c587d-06e3-4d5d-951d-4a5737897749 TCGA-43-A56U-10A
+## 2 f52c587d-06e3-4d5d-951d-4a5737897749 TCGA-43-A56U-01A
+## 3 8df6b042-a108-4fc8-8419-084250b2418e TCGA-FS-A1Z0-06A
+## 4 0eb114f0-0572-4878-bb0f-f428006f072e TCGA-X7-A8DC-10A
+## 5 0eb114f0-0572-4878-bb0f-f428006f072e TCGA-X7-A8DC-01A
+## 6 dc569bb0-4bc4-4737-93de-1880db93892a TCGA-NC-A5HP-01A</code></pre>
+<p>This little function is a bit “niche”, but it does illustrate how one can leverage GenomicDataCommons package functionality to create useful higher-level functionality like ID mapping.</p>
+
 
   
-  <footer>
-    <a href="/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
-    <article>
-  <header>
-    <h2><a href="https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/">Approaches to accessing ClinicalTrials.gov data</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>21 Mar 2017</time>
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://seandavi.github.io/post/2017/12/protect-against-secrets-in-git-repositories/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
-
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-folder fa-fw"></i>
+  <div class="pure-u-10-24">
     
-      <a class="post-taxonomy-topic" href="https://seandavi.github.io/topics/r">R</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-topic" href="https://seandavi.github.io/topics/software">software</a>
+    <nav class="prev">
+      <a href="https://seandavi.github.io/post/2017/12/protect-against-secrets-in-git-repositories/">Protect Against Secrets in Git Repositories</a>
+    </nav>
     
   </div>
-  
-  
-
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/clinicaltrials.gov">clinicaltrials.gov</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/medical-informatics">medical informatics</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/open-data">open data</a>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
     
   </div>
-  
-  
-
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
 </div>
 
-  </header>
 
-  <p>
-  I have been attending the biannual Clinical Informatics for Cancer Centers (CI4CC) conference and there has been a fair amount of dicussion of ClinicalTrials.gov as a resource for enhancing patient engagement, trial recruitment, and results reporting. There are a number of approaches to search and access in bulk ClinicalTrials.gov data. The ones that I address here are:
-The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Content of ClinicalTrials.
-  </p>
 
   
-  <footer>
-    <a href="/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
 
-  
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
 </div>
 
 </div>
@@ -385,3 +399,4 @@ The CTRP RESTful API. The ClinicalTrials.gov API. The Access to Aggregate Conten
 
 </body>
 </html>
+
