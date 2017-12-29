@@ -106,3 +106,4 @@ higher-level functionality like ID mapping.
 
 [UUID]: https://en.wikipedia.org/wiki/Universally_unique_identifier
 [TCGA sample barcodes]: https://wiki.nci.nih.gov/display/TCGA/TCGA+barcode
+[GenomicDataCommons]: https://bioconductor.org/packages/GenomicDataCommons
