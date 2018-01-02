@@ -301,8 +301,8 @@ str(fres)</code></pre>
 <pre class="r"><code>library(GenomicDataCommons)
 library(magrittr)
 
-TCGAtranslateID = function(file_ids) {
-    info = files() %&gt;%
+TCGAtranslateID = function(file_ids, legacy = FALSE) {
+    info = files(legacy = legacy) %&gt;%
         filter( ~ file_id %in% file_ids) %&gt;%
         select(&#39;cases.samples.submitter_id&#39;) %&gt;%
         results_all()
@@ -328,6 +328,9 @@ TCGAtranslateID = function(file_ids) {
 ## 5 0eb114f0-0572-4878-bb0f-f428006f072e TCGA-X7-A8DC-01A
 ## 6 dc569bb0-4bc4-4737-93de-1880db93892a TCGA-NC-A5HP-01A</code></pre>
 <p>This little function is a bit “niche”, but it does illustrate how one can leverage GenomicDataCommons package functionality to create useful higher-level functionality like ID mapping.</p>
+<ul>
+<li>EDIT [01-02-2018]: Added <code>legacy</code> flag to function to allow mapping of legacy file UUIDs. See comments below for rationale.</li>
+</ul>
 
 
   
