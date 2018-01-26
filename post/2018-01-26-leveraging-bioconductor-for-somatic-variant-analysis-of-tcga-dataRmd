@@ -1,0 +1,66 @@
+---
+title: Leveraging Bioconductor for somatic variant analysis of TCGA data
+author: Sean Davis
+date: '2018-01-26'
+slug: leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-dataRmd
+categories:
+  - Bioconductor
+tags:
+  - Cancer Genomics
+  - GenomicDataCommons
+  - maftools
+---
+
+The [NCI Genomic Data Commons (GDC)] now contains the authoritative
+source of data from The Cancer Genome Atlas (TCGA) as well as several
+other projects of import to the cancer research community. One of the
+available assays produces somatic variant calls, formally identified
+by comparing tumor reads and normal reads to identify variants
+relative to the human reference genome that are not present in the
+normal genome of the patient. Unfortunately, this process for
+discovering these variants is less precise relative to finding
+germline variants. Because a gold standard bioinformatics approach for
+somatic variant calling has not been identified, the GDC runs four
+separate pipelines and has two levels of data for each. This post
+demonstrates the use of the Bioconductor [GenomicDataCommons package]
+to identify and then fetch somatic variant results from the NCI GDC
+and then provide a high-level assessment of those variants using the
+[maftools package]. The workflow will be:
+
+1. Install packages if not already installed
+2. Load libraries
+3. Identify and download somatic variants for a representative TCGA
+dataset, in this case cutaneous melanoma.
+4. Use maftools to provide rich summaries of the data.
+
+
+Identifying appropriate resources at the GDC starts with a bit of
+browsing on the website or with equivalent browsing using one of the
+GenomicDataCommons introspection functions, `available_fields()` and
+`available_values()`.
+
+To work through these code examples, the maftools and
+GenomicDataCommons packages must first be installed. 
+
+```{r install, eval=FALSE}
+source("https://bioconductor.org/biocLite.R")
+biocLite(c("GenomicDataCommons", "maftools")
+```
+
+Once installed, load the packages, as usual.
+
+```{r load}
+library(GenomicDataCommons)
+library(maftools)
+```
+
+
+
+
+
+
+
+[NCI Genomic Data Commons]: https://gdc.cancer.gov
+[maftools package]: https://bioconductor.org/packages/maftools
+[GenomicDataCommons package]: https://bioconductor.org/packages/GenomicDataCommons
+
