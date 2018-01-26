@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Leveraging Bioconductor for somatic variant analysis of TCGA data</title>
+      <link>https://seandavi.github.io/post/2018/01/leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-data/</link>
+      <pubDate>Fri, 26 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2018/01/leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-data/</guid>
+      <description>The [NCI Genomic Data Commons (GDC)] now contains the authoritative source of data from The Cancer Genome Atlas (TCGA) as well as several other projects of import to the cancer research community. One of the available assays produces somatic variant calls, formally identified by comparing tumor reads and normal reads to identify variants relative to the human reference genome that are not present in the normal genome of the patient. Unfortunately, this process for discovering these variants is less precise relative to finding germline variants.</description>
+    </item>
+    
+    <item>
       <title>GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</title>
       <link>https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/</link>
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.27.1" />
+
+  <title>Leveraging Bioconductor for somatic variant analysis of TCGA data &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Leveraging Bioconductor for somatic variant analysis of TCGA data</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>26 Jan 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cancer-genomics">Cancer Genomics</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/genomicdatacommons">GenomicDataCommons</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/maftools">maftools</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>The [NCI Genomic Data Commons (GDC)] now contains the authoritative source of data from The Cancer Genome Atlas (TCGA) as well as several other projects of import to the cancer research community. One of the available assays produces somatic variant calls, formally identified by comparing tumor reads and normal reads to identify variants relative to the human reference genome that are not present in the normal genome of the patient. Unfortunately, this process for discovering these variants is less precise relative to finding germline variants. Because a gold standard bioinformatics approach for somatic variant calling has not been identified, the GDC runs four separate pipelines and has two levels of data for each. This post demonstrates the use of the Bioconductor <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons package</a> to identify and then fetch somatic variant results from the NCI GDC and then provide a high-level assessment of those variants using the <a href="https://bioconductor.org/packages/maftools">maftools package</a>. The workflow will be:</p>
+<ol style="list-style-type: decimal">
+<li>Install packages if not already installed</li>
+<li>Load libraries</li>
+<li>Identify and download somatic variants for a representative TCGA dataset, in this case cutaneous melanoma.</li>
+<li>Use maftools to provide rich summaries of the data.</li>
+</ol>
+<p>Identifying appropriate resources at the GDC starts with a bit of browsing on the website or with equivalent browsing using one of the GenomicDataCommons introspection functions, <code>available_fields()</code> and <code>available_values()</code>.</p>
+<p>To work through these code examples, the maftools and GenomicDataCommons packages must first be installed.</p>
+<pre class="r"><code>source(&quot;https://bioconductor.org/biocLite.R&quot;)
+biocLite(c(&quot;GenomicDataCommons&quot;, &quot;maftools&quot;)</code></pre>
+<p>Once installed, load the packages, as usual.</p>
+<pre class="r"><code>library(GenomicDataCommons)
+library(maftools)</code></pre>
+<p>The data model (how data are described and linked to each other) is quite complicated, but documentation is available. In general, though, linking Bioconductor tools to data involves finding files that meet some criteria. Each file in the GDC is identified by a “UUID” that carries no meaning other than it is unique. TCGA barcodes are not <em>directly</em> used for identifying files, though filtering files by TCGA barcodes is possible (and not shown here). So, the first step is to find barcodes associated with a [MAF format file] for TCGA project “TCGA-SKCM”. Searching based on <code>data_type</code>, <code>data_format</code>, and <code>analysis.workflow_type</code> will limit results to the file of interest, namely the <a href="https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&amp;id=somatic_aggregation_workflow&amp;_top=1">MuTect2 workflow</a> variant calls, converted to MAF format.</p>
+<pre class="r"><code>uuids = files() %&gt;% 
+    GenomicDataCommons::filter(~ cases.project.project_id==&#39;TCGA-SKCM&#39; &amp; 
+        data_type==&#39;Masked Somatic Mutation&#39; &amp;
+        data_format==&#39;MAF&#39; &amp;
+        analysis.workflow_type==&#39;MuTect2 Variant Aggregation and Masking&#39;) %&gt;%
+    ids()</code></pre>
+<p>Once the uuids have been identified (in this case, only 4b7a5729-b83e-4837-9b61-a6002dce1c0a), the <code>gdcdata()</code> function downloads the associated files and returns a filename for each uuid.</p>
+<pre class="r"><code>maffile = gdcdata(uuids)</code></pre>
+<p>The MAF file is now stored locally and the <a href="https://bioconductor.org/packages/maftools">maftools package</a> workflow, which starts with a MAF file, can proceed, starting with reading the melanoma MAF file.</p>
+<pre class="r"><code>melanoma_vars = read.maf(maf = maffile, verbose = FALSE)</code></pre>
+<pre><code>## 
+Read 0.0% of 392571 rows
+Read 12.7% of 392571 rows
+Read 25.5% of 392571 rows
+Read 43.3% of 392571 rows
+Read 63.7% of 392571 rows
+Read 68.8% of 392571 rows
+Read 84.1% of 392571 rows
+Read 94.3% of 392571 rows
+Read 392571 rows and 120 (of 120) columns from 0.504 GB file in 00:00:14</code></pre>
+<p>With the data available as a maftools MAF object, a lot of functionality is available with little code. While the maftools package offers quite a few functions, here are a few highlights. Cancer genomics and bioinformatics researchers will recognize these plots, most likely.</p>
+<pre class="r"><code>plotmafSummary(maf = melanoma_vars, rmOutlier = TRUE,
+               addStat = &#39;median&#39;, dashboard = TRUE,
+               titvRaw = FALSE)</code></pre>
+<p><img src="/post/2018-01-26-leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-data_files/figure-html/mafsummary-1.png" width="672" /></p>
+<pre class="r"><code># exclude a couple of &quot;noise&quot; genes--common practice, unfortunately
+oncoplot(maf = melanoma_vars, top = 15, fontSize = 12,
+         genes = getGeneSummary(melanoma_vars)$Hugo_Symbol[3:20])</code></pre>
+<p><img src="/post/2018-01-26-leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-data_files/figure-html/oncoprint-1.png" width="672" /></p>
+<pre class="r"><code>braf.lpop = lollipopPlot(maf = melanoma_vars, gene = &#39;BRAF&#39;,
+                           AACol = &#39;HGVSp_Short&#39;, showMutationRate = TRUE,
+                           domainLabelSize = 3, defaultYaxis = FALSE)</code></pre>
+<p><img src="/post/2018-01-26-leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-data_files/figure-html/lollipopPlot-1.png" width="672" /></p>
+<p>Additional functionality is available for both the GenomicDataCommons and maftools packages. This post just highlights how one can leverage two Bioconductor packages to quickly gain insight into public cancer genomics datasets.</p>
+<div id="appendix" class="section level1">
+<h1>Appendix</h1>
+<p>Examining available values in the GDC is straightforward, allowing for variations on the workflow above.</p>
+<div id="available-data_types" class="section level2">
+<h2>Available data_types:</h2>
+<pre class="r"><code>available_values(&#39;files&#39;,&#39;data_type&#39;)</code></pre>
+<pre><code>##  [1] &quot;Annotated Somatic Mutation&quot;       
+##  [2] &quot;Raw Simple Somatic Mutation&quot;      
+##  [3] &quot;Aligned Reads&quot;                    
+##  [4] &quot;Gene Expression Quantification&quot;   
+##  [5] &quot;Copy Number Segment&quot;              
+##  [6] &quot;Masked Copy Number Segment&quot;       
+##  [7] &quot;Methylation Beta Value&quot;           
+##  [8] &quot;Isoform Expression Quantification&quot;
+##  [9] &quot;miRNA Expression Quantification&quot;  
+## [10] &quot;Biospecimen Supplement&quot;           
+## [11] &quot;Clinical Supplement&quot;              
+## [12] &quot;Aggregated Somatic Mutation&quot;      
+## [13] &quot;Masked Somatic Mutation&quot;</code></pre>
+</div>
+<div id="available-data_formats" class="section level2">
+<h2>Available data_formats:</h2>
+<pre class="r"><code>available_values(&#39;files&#39;,&#39;data_format&#39;)</code></pre>
+<pre><code>## [1] &quot;VCF&quot;     &quot;TXT&quot;     &quot;BAM&quot;     &quot;TSV&quot;     &quot;BCR XML&quot; &quot;MAF&quot;     &quot;XLSX&quot;</code></pre>
+</div>
+<div id="available-analysis-workflows" class="section level2">
+<h2>Available analysis workflows:</h2>
+<pre class="r"><code>available_values(&#39;files&#39;,&#39;analysis.workflow_type&#39;)</code></pre>
+<pre><code>##  [1] &quot;DNAcopy&quot;                                      
+##  [2] &quot;BCGSC miRNA Profiling&quot;                        
+##  [3] &quot;BWA with Mark Duplicates and Cocleaning&quot;      
+##  [4] &quot;FM Simple Somatic Mutation&quot;                   
+##  [5] &quot;FoundationOne Annotation&quot;                     
+##  [6] &quot;Liftover&quot;                                     
+##  [7] &quot;STAR 2-Pass&quot;                                  
+##  [8] &quot;HTSeq - Counts&quot;                               
+##  [9] &quot;HTSeq - FPKM&quot;                                 
+## [10] &quot;HTSeq - FPKM-UQ&quot;                              
+## [11] &quot;BWA-aln&quot;                                      
+## [12] &quot;SomaticSniper&quot;                                
+## [13] &quot;SomaticSniper Annotation&quot;                     
+## [14] &quot;MuTect2&quot;                                      
+## [15] &quot;MuTect2 Annotation&quot;                           
+## [16] &quot;VarScan2&quot;                                     
+## [17] &quot;VarScan2 Annotation&quot;                          
+## [18] &quot;MuSE&quot;                                         
+## [19] &quot;MuSE Annotation&quot;                              
+## [20] &quot;MuSE Variant Aggregation and Masking&quot;         
+## [21] &quot;MuTect2 Variant Aggregation and Masking&quot;      
+## [22] &quot;SomaticSniper Variant Aggregation and Masking&quot;
+## [23] &quot;VarScan2 Variant Aggregation and Masking&quot;     
+## [24] &quot;FoundationOne Variant Aggregation and Masking&quot;
+## [25] &quot;_missing&quot;</code></pre>
+</div>
+</div>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://seandavi.github.io/post/2017/12/genomicdatacommons-example-uuid-to-tcga-and-target-barcode-translation/">GenomicDataCommons Example: UUID to TCGA and TARGET Barcode Translation</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://seandavi.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
