@@ -265,7 +265,7 @@
 
 </div>
 
-  <p>The [NCI Genomic Data Commons (GDC)] now contains the authoritative source of data from The Cancer Genome Atlas (TCGA) as well as several other projects of import to the cancer research community. One of the available assays produces somatic variant calls, formally identified by comparing tumor reads and normal reads to identify variants relative to the human reference genome that are not present in the normal genome of the patient. Unfortunately, this process for discovering these variants is less precise relative to finding germline variants. Because a gold standard bioinformatics approach for somatic variant calling has not been identified, the GDC runs four separate pipelines and has two levels of data for each. This post demonstrates the use of the Bioconductor <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons package</a> to identify and then fetch somatic variant results from the NCI GDC and then provide a high-level assessment of those variants using the <a href="https://bioconductor.org/packages/maftools">maftools package</a>. The workflow will be:</p>
+  <p>The <a href="https://gdc.cancer.gov">NCI Genomic Data Commons (GDC)</a> now contains the authoritative source of data from The Cancer Genome Atlas (TCGA) as well as several other projects of import to the cancer research community. One of the available assays produces somatic variant calls, formally identified by comparing tumor reads and normal reads to identify variants relative to the human reference genome that are not present in the normal genome of the patient. Unfortunately, this process for discovering these variants is less precise relative to finding germline variants. Because a gold standard bioinformatics approach for somatic variant calling has not been identified, the GDC runs four separate pipelines and has two levels of data for each. This post demonstrates the use of the Bioconductor <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons package</a> to identify and then fetch somatic variant results from the NCI GDC and then provide a high-level assessment of those variants using the <a href="https://bioconductor.org/packages/maftools">maftools package</a>. The workflow will be:</p>
 <ol style="list-style-type: decimal">
 <li>Install packages if not already installed</li>
 <li>Load libraries</li>
@@ -292,14 +292,13 @@ library(maftools)</code></pre>
 <pre class="r"><code>melanoma_vars = read.maf(maf = maffile, verbose = FALSE)</code></pre>
 <pre><code>## 
 Read 0.0% of 392571 rows
-Read 12.7% of 392571 rows
+Read 17.8% of 392571 rows
 Read 25.5% of 392571 rows
 Read 43.3% of 392571 rows
 Read 63.7% of 392571 rows
 Read 68.8% of 392571 rows
-Read 84.1% of 392571 rows
-Read 94.3% of 392571 rows
-Read 392571 rows and 120 (of 120) columns from 0.504 GB file in 00:00:14</code></pre>
+Read 86.6% of 392571 rows
+Read 392571 rows and 120 (of 120) columns from 0.504 GB file in 00:00:13</code></pre>
 <p>With the data available as a maftools MAF object, a lot of functionality is available with little code. While the maftools package offers quite a few functions, here are a few highlights. Cancer genomics and bioinformatics researchers will recognize these plots, most likely.</p>
 <pre class="r"><code>plotmafSummary(maf = melanoma_vars, rmOutlier = TRUE,
                addStat = &#39;median&#39;, dashboard = TRUE,
