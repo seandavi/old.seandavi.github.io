@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Big Data</title>
+      <link>https://seandavi.github.io/tags/big-data/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/tags/big-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bioconductor</title>
       <link>https://seandavi.github.io/tags/bioconductor/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
@@ -95,7 +104,7 @@
     <item>
       <title>Data Science</title>
       <link>https://seandavi.github.io/tags/data-science/</link>
-      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/tags/data-science/</guid>
       <description></description>
@@ -116,6 +125,15 @@
       <pubDate>Sat, 02 Dec 2017 07:50:15 -0500</pubDate>
       
       <guid>https://seandavi.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>It</title>
+      <link>https://seandavi.github.io/tags/it/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/tags/it/</guid>
       <description></description>
     </item>
     
@@ -224,6 +242,15 @@
       <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spark</title>
+      <link>https://seandavi.github.io/tags/spark/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/tags/spark/</guid>
       <description></description>
     </item>
     

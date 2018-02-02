@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>It on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/it/</link>
+    <description>Recent content in It on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Fri, 02 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/tags/it/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create a basic Apache Spark cluster in the cloud (in 5 minutes)</title>
+      <link>https://seandavi.github.io/post/2018/02/create-a-basic-apache-spark-cluster-in-the-cloud-in-5-minutes/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2018/02/create-a-basic-apache-spark-cluster-in-the-cloud-in-5-minutes/</guid>
+      <description>Apache Spark is a software and data science platform that is purpose-built for large- to massive-scale data processing. Spark supports processing of data in batch mode (run as a pipeline) or in interactive mode using command-line programming style or in popular notebook style of coding. While scala is the native language for Spark, language bindings exist for python, R, and Java as well.
+Spark is built around an underlying data abstraction called Resilient Distributed Dataset, or RDD.</description>
+    </item>
+    
+  </channel>
+</rss>
