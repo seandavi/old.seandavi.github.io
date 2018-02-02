@@ -267,10 +267,13 @@
 
 </div>
 
-  <p><a href="https://spark.apache.org/">Apache Spark</a> is a software and data science platform that is purpose-built for large- to massive-scale data processing. Spark supports processing of data in batch mode (run as a pipeline) or in interactive mode using command-line programming style or in popular notebook style of coding. While <a href="http://www.scala-lang.org/">scala</a> is the native language for Spark, language bindings exist for python, R, and Java as well.</p>
+  <div id="apache-spark-in-a-few-words" class="section level2">
+<h2>Apache Spark in a few words</h2>
+<p><a href="https://spark.apache.org/">Apache Spark</a> is a software and data science platform that is purpose-built for large- to massive-scale data processing. Spark supports processing of data in batch mode (run as a pipeline) or in interactive mode using command-line programming style or in popular notebook style of coding. While <a href="http://www.scala-lang.org/">scala</a> is the native language for Spark, language bindings exist for python, R, and Java as well.</p>
 <p>Spark is built around an underlying data abstraction called Resilient Distributed Dataset, or RDD. The RDD represents an immutable, distributed, and partitioned collection of elements that can be operated on in parallel. The collection of elements in the RDD need not fit into memory, though the performance is maximal when the RDD fits into the Spark “cluster” memory.</p>
 <p>Spark is capable of processing data <a href="https://spark.apache.org/faq.html">at very large scales</a>. That said, code for Spark need not be written on a large cluster. Spark can be deployed on a laptop as well, facilitating code development and testing at a small scale.</p>
 <p>I am not going to delve into working with Spark just yet. Rather, I am starting with a quick walkthrough of creating a Spark cluster on the Amazon Web Services Elastic Map Reduce service <a href="https://aws.amazon.com/emr/">AWS EMR</a>. This is not a recommendation of AWS over other potential providers and choices in the following workflow are <em>not</em> meant as best practices. This is just a documentation of the process with a little text.</p>
+</div>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
 <ul>
