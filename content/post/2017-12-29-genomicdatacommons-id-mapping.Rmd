@@ -67,8 +67,8 @@ the nested results returned.
 library(GenomicDataCommons)
 library(magrittr)
 
-TCGAtranslateID = function(file_ids) {
-    info = files() %>%
+TCGAtranslateID = function(file_ids, legacy = FALSE) {
+    info = files(legacy = legacy) %>%
         filter( ~ file_id %in% file_ids) %>%
         select('cases.samples.submitter_id') %>%
         results_all()
@@ -103,6 +103,8 @@ This little function is a bit "niche", but it does illustrate how one
 can leverage GenomicDataCommons package functionality to create useful
 higher-level functionality like ID mapping.
 
+- EDIT [01-02-2018]: Added `legacy` flag to function to allow mapping
+of legacy file UUIDs. See [comment below](http://disq.us/p/1ozinq7) for rationale.
 
 [UUID]: https://en.wikipedia.org/wiki/Universally_unique_identifier
 [TCGA sample barcodes]: https://wiki.nci.nih.gov/display/TCGA/TCGA+barcode

@@ -1,0 +1,161 @@
+---
+title: Leveraging Bioconductor for somatic variant analysis of TCGA data
+author: Sean Davis
+date: '2018-01-26'
+slug: leveraging-bioconductor-for-somatic-variant-analysis-of-tcga-dataRmd
+categories:
+  - Bioconductor
+tags:
+  - Cancer Genomics
+  - GenomicDataCommons
+  - maftools
+---
+
+The [NCI Genomic Data Commons (GDC)] now contains the authoritative
+source of data from The Cancer Genome Atlas (TCGA) as well as several
+other projects of import to the cancer research community. One of the
+available assays produces somatic variant calls, formally identified
+by comparing tumor reads and normal reads to identify variants
+relative to the human reference genome that are not present in the
+normal genome of the patient. Unfortunately, this process for
+discovering these variants is less precise relative to finding
+germline variants. Because a gold standard bioinformatics approach for
+somatic variant calling has not been identified, the GDC runs four
+separate pipelines and has two levels of data for each. This post
+demonstrates the use of the Bioconductor [GenomicDataCommons package]
+to identify and then fetch somatic variant results from the NCI GDC
+and then provide a high-level assessment of those variants using the
+[maftools package]. The workflow will be:
+
+1. Install packages if not already installed
+2. Load libraries
+3. Identify and download somatic variants for a representative TCGA
+dataset, in this case cutaneous melanoma.
+4. Use maftools to provide rich summaries of the data.
+
+
+Identifying appropriate resources at the GDC starts with a bit of
+browsing on the website or with equivalent browsing using one of the
+GenomicDataCommons introspection functions, `available_fields()` and
+`available_values()`.
+
+To work through these code examples, the maftools and
+GenomicDataCommons packages must first be installed. 
+
+```{r include=FALSE}
+library(knitr)
+opts_chunk$set(warning=FALSE, message=FALSE, cache=TRUE)
+```
+
+
+```{r install, eval=FALSE}
+source("https://bioconductor.org/biocLite.R")
+biocLite(c("GenomicDataCommons", "maftools")
+```
+
+Once installed, load the packages, as usual.
+
+```{r load}
+library(GenomicDataCommons)
+library(maftools)
+```
+
+The data model (how data are described and linked to each other) is
+quite complicated, but documentation is available. In general, though,
+linking Bioconductor tools to data involves finding files that meet
+some criteria. Each file in the GDC is identified by a "UUID" that
+carries no meaning other than it is unique. TCGA barcodes are not
+*directly* used for identifying files, though filtering files by TCGA
+barcodes is possible (and not shown here). So, the first step is to
+find barcodes associated with a [MAF format file] for TCGA project
+"TCGA-SKCM". Searching based on `data_type`, `data_format`, and
+`analysis.workflow_type` will limit results to the file of interest,
+namely the [MuTect2 workflow] variant calls, converted to MAF format.
+
+```{r filesList}
+uuids = files() %>% 
+    GenomicDataCommons::filter(~ cases.project.project_id=='TCGA-SKCM' & 
+        data_type=='Masked Somatic Mutation' &
+        data_format=='MAF' &
+        analysis.workflow_type=='MuTect2 Variant Aggregation and Masking') %>%
+    ids()
+```
+
+Once the uuids have been identified (in this case, only `r uuids`),
+the `gdcdata()` function downloads the associated files and returns a
+filename for each uuid.
+
+```{r fetchdata}
+maffile = gdcdata(uuids)
+```
+
+The MAF file is now stored locally and the [maftools package]
+workflow, which starts with a MAF file, can proceed, starting with
+reading the melanoma MAF file.
+
+```{r mafread}
+melanoma_vars = read.maf(maf = maffile, verbose = FALSE)
+```
+
+With the data available as a maftools MAF object, a lot of
+functionality is available with little code. While the maftools
+package offers quite a few functions, here are a few
+highlights. Cancer genomics and bioinformatics researchers will
+recognize these plots, most likely. 
+
+
+```{r mafsummary}
+plotmafSummary(maf = melanoma_vars, rmOutlier = TRUE,
+               addStat = 'median', dashboard = TRUE,
+               titvRaw = FALSE)
+```
+
+```{r oncoprint}
+# exclude a couple of "noise" genes--common practice, unfortunately
+oncoplot(maf = melanoma_vars, top = 15, fontSize = 12,
+         genes = getGeneSummary(melanoma_vars)$Hugo_Symbol[3:20])
+```
+
+```{r lollipopPlot}
+braf.lpop = lollipopPlot(maf = melanoma_vars, gene = 'BRAF',
+                           AACol = 'HGVSp_Short', showMutationRate = TRUE,
+                           domainLabelSize = 3, defaultYaxis = FALSE)
+```
+
+Additional functionality is available for both the GenomicDataCommons
+and maftools packages. This post just highlights how one can leverage
+two Bioconductor packages to quickly gain insight into public cancer
+genomics datasets.
+
+
+# Appendix
+
+Examining available values in the GDC is straightforward, allowing for
+variations on the workflow above.
+
+## Available data_types:
+
+```{r}
+available_values('files','data_type')
+```
+
+## Available data_formats:
+
+```{r}
+available_values('files','data_format')
+```
+
+## Available analysis workflows:
+
+```{r}
+available_values('files','analysis.workflow_type')
+```
+
+
+
+[MuTect2 workflow]: https://docs.gdc.cancer.gov/Data_Dictionary/viewer/#?view=table-definition-view&id=somatic_aggregation_workflow&_top=1
+[MAF format files]: https://docs.gdc.cancer.gov/Data/File_Formats/MAF_Format/
+[NCI Genomic Data Commons (GDC)]: https://gdc.cancer.gov
+[maftools package]: https://bioconductor.org/packages/maftools
+[maftools workflow]: https://bioconductor.org/packages/maftools
+[GenomicDataCommons package]: https://bioconductor.org/packages/GenomicDataCommons
