@@ -273,6 +273,21 @@
 <p>Spark is built around an underlying data abstraction called Resilient Distributed Dataset, or RDD. The RDD represents an immutable, distributed, and partitioned collection of elements that can be operated on in parallel. The collection of elements in the RDD need not fit into memory, though the performance is maximal when the RDD fits into the Spark “cluster” memory.</p>
 <p>Spark is capable of processing data <a href="https://spark.apache.org/faq.html">at very large scales</a>. That said, code for Spark need not be written on a large cluster. Spark can be deployed on a laptop as well, facilitating code development and testing at a small scale.</p>
 <p>I am not going to delve into working with Spark just yet. Rather, I am starting with a quick walkthrough of creating a Spark cluster on the Amazon Web Services Elastic Map Reduce service <a href="https://aws.amazon.com/emr/">AWS EMR</a>. This is not a recommendation of AWS over other potential providers and choices in the following workflow are <em>not</em> meant as best practices. This is just a documentation of the process with a little text.</p>
+<style>
+img {
+  width: 100%
+    }
+.alert {
+  background-color: #fcc2c2;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+</style>
+<div class="alert">
+<p><strong>Note:</strong> This blog post creates resources on a commercial cloud which will continue to cost money until they are terminated. In order to keep from getting charged for unused resources, be sure to clean up by terminating the resources once you are done.</p>
+</div>
 </div>
 <div id="prerequisites" class="section level2">
 <h2>Prerequisites</h2>
@@ -285,14 +300,6 @@
 <ul>
 <li>Walk through creating an Apache Spark cluster on AWS using the EMR service.</li>
 </ul>
-<style>
-img {
-  width: 100%
-    }
-</style>
-<div class="alert alert-info">
-<p><strong>Note:</strong> This is a note!</p>
-</div>
 </div>
 <div id="lets-go" class="section level2">
 <h2>Let’s go</h2>
@@ -336,7 +343,9 @@ img {
 </div>
 <div id="cleanup-very-important" class="section level2">
 <h2>Cleanup: VERY IMPORTANT</h2>
+<div class="alert">
 <p>After you have created the Spark cluster, it <strong>costs money</strong> until you destroy it. <em>Please do not forget</em> to click “Terminate” and then check back to <em>make doubly sure</em> that the cluster is terminated.</p>
+</div>
 </div>
 
 
