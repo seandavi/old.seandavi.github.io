@@ -6,10 +6,19 @@
     <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Thu, 18 Jan 2018 11:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bioconductor: A Potential Hub in the Cancer Biomarker Data Ecosystem</title>
+      <link>https://seandavi.github.io/talk/2018/02/08/bioconductor-a-potential-hub-in-the-cancer-biomarker-data-ecosystem/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/02/08/bioconductor-a-potential-hub-in-the-cancer-biomarker-data-ecosystem/</guid>
+      <description> </description>
+    </item>
     
     <item>
       <title>A quick tour of the cancer genomics landscape (in 45 minutes)</title>
