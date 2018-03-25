@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag on seandavi(s12)</title>
+    <link>/tags/tag/</link>
+    <description>Recent content in Tag on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Sun, 25 Mar 2018 11:18:36 -0400</lastBuildDate>
+    
+	<atom:link href="/tags/tag/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extracting Clinical Information Using the Genomicdatacommons Package</title>
+      <link>/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</link>
+      <pubDate>Sun, 25 Mar 2018 11:18:36 -0400</pubDate>
+      
+      <guid>/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</guid>
+      <description>The rich data model at the NCI Genomic Data Commons (GDC) includes clinical and biospecimen details. A recently added feature to the NCI GDC Data Portal is the ability to download tab-delimited files or JSON files for clinical and biospecimen details of samples. The details available in these simplified formats are also available via the GDC API.
+library(GenomicDataCommons) The clinical infomation at the GDC is encapsulated in the cases records. Here, I introduce the gdc_clinical() function that takes as input GDC case IDs and returns a set of four related data.</description>
+    </item>
+    
+  </channel>
+</rss>

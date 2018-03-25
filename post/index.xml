@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Extracting Clinical Information Using the Genomicdatacommons Package</title>
+      <link>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</link>
+      <pubDate>Sun, 25 Mar 2018 11:18:36 -0400</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</guid>
+      <description>This short post introducds the gdc_clinical() function recently added to the GenomicDataCommons package.
+The rich data model at the NCI Genomic Data Commons (GDC) includes clinical and biospecimen details. A recently added feature to the NCI GDC Data Portal is the ability to download tab-delimited files or JSON files for clinical and biospecimen details of samples. The details available in these simplified formats are also available via the GDC API.</description>
+    </item>
+    
+    <item>
       <title>Create a basic Apache Spark cluster in the cloud (in 5 minutes)</title>
       <link>https://seandavi.github.io/post/2018/02/create-a-basic-apache-spark-cluster-in-the-cloud-in-5-minutes/</link>
       <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>

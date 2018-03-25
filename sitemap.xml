@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</loc>
+    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/talk/2018/02/08/bioconductor-a-potential-hub-in-the-cancer-biomarker-data-ecosystem/</loc>
     <lastmod>2018-02-08T00:00:00+00:00</lastmod>
   </url>
@@ -690,7 +695,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/cancer-genomics/</loc>
-    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -720,7 +725,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
-    <lastmod>2018-01-26T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   

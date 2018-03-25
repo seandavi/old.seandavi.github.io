@@ -6,10 +6,20 @@
     <description>Recent content in Cancer Genomics on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Fri, 26 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Mar 2018 11:18:36 -0400</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/tags/cancer-genomics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extracting Clinical Information Using the Genomicdatacommons Package</title>
+      <link>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</link>
+      <pubDate>Sun, 25 Mar 2018 11:18:36 -0400</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</guid>
+      <description>This short post introducds the gdc_clinical() function recently added to the GenomicDataCommons package.
+The rich data model at the NCI Genomic Data Commons (GDC) includes clinical and biospecimen details. A recently added feature to the NCI GDC Data Portal is the ability to download tab-delimited files or JSON files for clinical and biospecimen details of samples. The details available in these simplified formats are also available via the GDC API.</description>
+    </item>
     
     <item>
       <title>Leveraging Bioconductor for somatic variant analysis of TCGA data</title>
