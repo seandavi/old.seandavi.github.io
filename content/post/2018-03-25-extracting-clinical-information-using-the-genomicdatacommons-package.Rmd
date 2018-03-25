@@ -1,0 +1,125 @@
+---
+title: "Extracting Clinical Information Using the Genomicdatacommons Package"
+date: 2018-03-25T11:18:36-04:00
+abstract : ""
+abstract_short : ""
+categories:
+  - Bioconductor
+tags:
+  - Cancer Genomics
+  - GenomicDataCommons
+draft: false
+---
+
+```{r include=FALSE}
+library(knitr)
+opts_chunk$set(cache = TRUE, warning = FALSE, message = FALSE)
+```
+
+This short post introducds the `gdc_clinical()` function recently
+added to the GenomicDataCommons package. 
+
+The
+[rich data model](https://gdc.cancer.gov/developers/gdc-data-model) at
+the NCI Genomic Data Commons (GDC) includes clinical and biospecimen
+details. A recently added feature to the NCI GDC Data Portal is the
+ability to download tab-delimited files or JSON files for clinical and
+biospecimen details of samples. The details available in these
+simplified formats are also available via the GDC API. 
+
+```{r libraries}
+library(GenomicDataCommons)
+```
+
+The clinical
+infomation at the GDC is encapsulated in the `cases` records. Here, I
+introduce the `gdc_clinical()` function from
+the
+[GenomicDataCommons](https://bioconductor.org/packages/GenomicDataCommons) package that
+takes as input
+GDC case IDs and returns a set of four related `data.frame`s:
+
+- main: important case metadata
+- demographics: basic demographic information
+- exposures: zero or more documented exposures
+- diagnoses: zero or more diagnoses per case
+
+As an example application, we will examine the clinical details for
+100 lung adenocarcinoma patients from TCGA ("TCGA-LUAD"). The case ids
+are available through a basic `cases()` query, `filter`ed to include
+only samples that belong to the project from `TCGA-LUAD` (stored in
+the `project.project_id` field). The query to get these case_ids,
+then, looks like:
+
+```{r }
+case_ids = cases() %>%
+    filter(~ project.project_id == 'TCGA-LUAD') %>%
+    results(size=100) %>%
+    ids()
+head(case_ids)
+```
+
+These case_ids, each representing a single case (patient) in the GDC,
+can be be fed directly to `gdc_clinical`. 
+
+```{r gdc_clinical}
+clin_res = gdc_clinical(case_ids)
+```
+
+The result is a list of data.frames:
+
+```{r clin_res}
+names(clin_res)
+```
+
+The the dimensions of these data.frames is instructive.
+
+```{r clin_res_dims}
+sapply(clin_res, dim) %>%
+    t() %>%
+    data.frame() %>%
+    set_names(c('rows','columns'))
+```
+
+And the column names for each are helpful to examine:
+
+```{r clin_res_cols}
+sapply(clin_res, colnames)
+```
+
+Note the each data.frame contains a `case_id` column by design to
+allow arbitrary joining of the tables to each other. In this case, the
+data relationships are not too complicated, but one might imagine
+situations arising that include many-to-many relationships that are
+hard to handle in a fully general way without some understanding of
+downstream use (what do we want to do with the clinical
+information?). In this relatively simple case, we can create a
+"master" data.frame by joining all the records from each data.frame.
+
+```{r clin_res_join}
+library(dplyr)
+full_clin = with(clin_res,
+     main %>%
+     left_join(demographic, by = "case_id") %>%
+     left_join(exposures, by = "case_id") %>%
+     left_join(diagnoses, by = "case_id"))
+```
+
+Above, I have used the tidyverse approach, applying `dplyr`
+`left_join()`s. Using base R `merge` would also work. 
+
+```{r fill_clin_dim}
+dim(full_clin)
+colnames(full_clin)
+```
+
+In conclusion, the `gdc_clinical` functionality from the
+GenomicDataCommons is a high-level function for capturing unified and
+harmonized clinical information for *any* case in the NCI GDC
+repository. 
+
+
+
+```{r sessioninfo}
+sessionInfo()
+```
