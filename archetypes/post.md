@@ -1,4 +1,4 @@
----
++++
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 abstract : ""
@@ -8,6 +8,4 @@ categories:
 tags:
   - tag
 draft: true
----
-
-This is some text.
++++
