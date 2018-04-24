@@ -13,6 +13,8 @@ tags:
   - security
   - git
   - programming
+  - aws
+  - cloud
 draft: false
 ---
 
@@ -185,7 +187,13 @@ Possible mitigations:
 `git-secrets` has a number of other [features and functions], but the
 walkthrough above is enought to get me started.
 
+## Additional links
 
+- [Cloudwatch alarms] can be set to alert you about spending above a
+  threshold.
+- The ironically-named [gitrob tool] can scan existing GitHub repositories
+- [AWS access keys best practices]
+- Follow the principle of [least privileges] on cloud accounts
 
 [ElasticSearch]: https://elastic.co/
 [git]: https://git-scm.com/
@@ -196,3 +204,7 @@ walkthrough above is enought to get me started.
 [Installation instructions]: https://github.com/awslabs/git-secrets#installing-git-secrets
 [git hooks]: https://git-scm.com/book/gr/v2/Customizing-Git-Git-Hooks
 [features and functions]: https://github.com/awslabs/git-secrets#options
+[Cloudwatch alarms]: https://console.aws.amazon.com/cloudwatch/home
+[gitrob tool]: https://github.com/michenriksen/gitrob
+[AWS access keys best practices]: http://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html
+[least privileges]: http://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege

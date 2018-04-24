@@ -12,6 +12,7 @@ tags:
   - Spark
 ---
 
+## Apache Spark in a few words
 
 [Apache Spark] is a software and data science platform that is
 purpose-built for large- to massive-scale data processing. Spark
@@ -19,6 +20,16 @@ supports processing of data in batch mode (run as a pipeline) or in
 interactive mode using command-line programming style or in popular
 notebook style of coding. While [scala] is the native language for
 Spark, language bindings exist for python, R, and Java as well. 
+
+<!--more-->
+
+
+
+<a href="https://spark.apache.org" >
+<img
+src="https://www.onlinebooksreview.com/uploads/blog_images/2017/11/27_file.png"
+ style="width:250px;float:left;" />
+</a>
 
 Spark is built around an underlying data abstraction called Resilient
 Distributed Dataset, or RDD. The RDD represents an immutable,
@@ -41,6 +52,30 @@ recommendation of AWS over other potential providers and choices in
 the following workflow are *not* meant as best practices. This is just
 a documentation of the process with a little text. 
 
+<style>
+img {
+  width: 100%
+    }
+.alert {
+  background-color: #fcc2c2;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+</style>
+
+<div class="alert">
+
+**Note:** This blog post creates resources on a commercial cloud which
+will continue to cost money until they are terminated. In
+order to keep from getting charged for unused resources, be sure to
+clean up by terminating the resources once you are done. 
+
+</div>
+
+
+
 ## Prerequisites
 
 - The main prerequisite is an AWS account. 
@@ -50,19 +85,6 @@ a documentation of the process with a little text.
 - Walk through creating an Apache Spark cluster on AWS using the EMR
   service.
 
-
-<style>
-img {
-  width: 100%
-    }
-</style>
-
-
-<div class="alert alert-info">
-
-**Note:** This is a note!
-
-</div>
 
 
 ## Let's go
@@ -117,17 +139,27 @@ On AWS, cluster creation takes several minutes to up to 30 minutes. My
 only other experience with cloud Spark-as-a-service is on Google Cloud
 Platform which has a much faster startup time.
 
-After a few minutes, you will have a running Apache Spark cluster that
-you can begin to experiment with (in an upcoming post). 
-
 ![](/img/spark-intro/startingup.png)
 
+After a few minutes, you will have a running Apache Spark cluster that
+you can begin to experiment with. That will need to wait for another
+post, but to gain access to the cluster, including a Zeppelin notebook
+(quite similar to Jupyter), click the "Enable Web Connection" and
+follow the instructions (a little involved, including establishing a
+proxy connection and installing a proxy plugin for your browser).
+
+![](/img/spark-intro/enablesshconn.png)
+
+
 ## Cleanup: VERY IMPORTANT
+
+<div class="alert">
 
 After you have created the Spark cluster, it **costs money** until you
 destroy it. *Please do not forget* to click "Terminate" and then check
 back to *make doubly sure* that the cluster is terminated. 
 
+</div>
 
 [Apache Spark]: https://spark.apache.org/
 [scala]: http://www.scala-lang.org/
