@@ -30,5 +30,15 @@ The rich data model at the NCI Genomic Data Commons (GDC) includes clinical and 
       <description>The NCI Genomic Data Commons (GDC) now contains the authoritative source of data from The Cancer Genome Atlas (TCGA) as well as several other projects of import to the cancer research community. One of the available assays produces somatic variant calls, formally identified by comparing tumor reads and normal reads to identify variants relative to the human reference genome that are not present in the normal genome of the patient. Unfortunately, this process for discovering these variants is less precise relative to finding germline variants.</description>
     </item>
     
+    <item>
+      <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package</title>
+      <link>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</guid>
+      <description>Introduction The NCI Genomic Data Commons (GDC) is a reboot of the approach that NCI uses to manage and expose genomic and associated clinical and experimental metadata. I have been working on a Bioconductor package that interfaces with the GDC API to provide search and data retrieval from within R.
+testing In the first of what will likely be a set of use cases for the GenomicDataCommons, I am going to address a question that came up on twitter from @sleight82</description>
+    </item>
+    
   </channel>
 </rss>

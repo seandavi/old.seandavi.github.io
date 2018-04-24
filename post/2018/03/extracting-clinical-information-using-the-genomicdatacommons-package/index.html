@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.27.1" />
+  <meta name="generator" content="Hugo 0.40" />
 
   <title>Extracting Clinical Information Using the Genomicdatacommons Package &middot; seandavi(s12)</title>
 
@@ -36,6 +36,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
   
 
   
@@ -263,17 +266,35 @@
 
 </div>
 
-  <p>This short post introducds the <code>gdc_clinical()</code> function recently added to the GenomicDataCommons package.</p>
-<p>The <a href="https://gdc.cancer.gov/developers/gdc-data-model">rich data model</a> at the NCI Genomic Data Commons (GDC) includes clinical and biospecimen details. A recently added feature to the NCI GDC Data Portal is the ability to download tab-delimited files or JSON files for clinical and biospecimen details of samples. The details available in these simplified formats are also available via the GDC API.</p>
+  <p>This short post introducds the <code>gdc_clinical()</code> function recently
+added to the GenomicDataCommons package.</p>
+<p>The
+<a href="https://gdc.cancer.gov/developers/gdc-data-model">rich data model</a> at
+the NCI Genomic Data Commons (GDC) includes clinical and biospecimen
+details. A recently added feature to the NCI GDC Data Portal is the
+ability to download tab-delimited files or JSON files for clinical and
+biospecimen details of samples. The details available in these
+simplified formats are also available via the GDC API.</p>
 <pre class="r"><code>library(GenomicDataCommons)</code></pre>
-<p>The clinical infomation at the GDC is encapsulated in the <code>cases</code> records. Here, I introduce the <code>gdc_clinical()</code> function from the <a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons</a> package that takes as input GDC case IDs and returns a set of four related <code>data.frame</code>s:</p>
+<p>The clinical
+infomation at the GDC is encapsulated in the <code>cases</code> records. Here, I
+introduce the <code>gdc_clinical()</code> function from
+the
+<a href="https://bioconductor.org/packages/GenomicDataCommons">GenomicDataCommons</a> package that
+takes as input
+GDC case IDs and returns a set of four related <code>data.frame</code>s:</p>
 <ul>
 <li>main: important case metadata</li>
 <li>demographics: basic demographic information</li>
 <li>exposures: zero or more documented exposures</li>
 <li>diagnoses: zero or more diagnoses per case</li>
 </ul>
-<p>As an example application, we will examine the clinical details for 100 lung adenocarcinoma patients from TCGA (“TCGA-LUAD”). The case ids are available through a basic <code>cases()</code> query, <code>filter</code>ed to include only samples that belong to the project from <code>TCGA-LUAD</code> (stored in the <code>project.project_id</code> field). The query to get these case_ids, then, looks like:</p>
+<p>As an example application, we will examine the clinical details for
+100 lung adenocarcinoma patients from TCGA (“TCGA-LUAD”). The case ids
+are available through a basic <code>cases()</code> query, <code>filter</code>ed to include
+only samples that belong to the project from <code>TCGA-LUAD</code> (stored in
+the <code>project.project_id</code> field). The query to get these case_ids,
+then, looks like:</p>
 <pre class="r"><code>case_ids = cases() %&gt;%
     filter(~ project.project_id == &#39;TCGA-LUAD&#39;) %&gt;%
     results(size=100) %&gt;%
@@ -285,7 +306,8 @@ head(case_ids)</code></pre>
 ## [4] &quot;77bb204d-4e68-4c93-905f-9ef4c53b1ce2&quot;
 ## [5] &quot;0d96def2-cf0a-4659-94e5-f08744c57cc6&quot;
 ## [6] &quot;9e640ff7-996e-427b-b56c-519a1e23baab&quot;</code></pre>
-<p>These case_ids, each representing a single case (patient) in the GDC, can be be fed directly to <code>gdc_clinical</code>.</p>
+<p>These case_ids, each representing a single case (patient) in the GDC,
+can be be fed directly to <code>gdc_clinical</code>.</p>
 <pre class="r"><code>clin_res = gdc_clinical(case_ids)</code></pre>
 <p>The result is a list of data.frames:</p>
 <pre class="r"><code>names(clin_res)</code></pre>
@@ -344,14 +366,22 @@ head(case_ids)</code></pre>
 ## [1] &quot;updated_datetime&quot; &quot;submitter_id&quot;     &quot;case_id&quot;         
 ## [4] &quot;id&quot;               &quot;disease_type&quot;     &quot;created_datetime&quot;
 ## [7] &quot;state&quot;            &quot;primary_site&quot;</code></pre>
-<p>Note the each data.frame contains a <code>case_id</code> column by design to allow arbitrary joining of the tables to each other. In this case, the data relationships are not too complicated, but one might imagine situations arising that include many-to-many relationships that are hard to handle in a fully general way without some understanding of downstream use (what do we want to do with the clinical information?). In this relatively simple case, we can create a “master” data.frame by joining all the records from each data.frame.</p>
+<p>Note the each data.frame contains a <code>case_id</code> column by design to
+allow arbitrary joining of the tables to each other. In this case, the
+data relationships are not too complicated, but one might imagine
+situations arising that include many-to-many relationships that are
+hard to handle in a fully general way without some understanding of
+downstream use (what do we want to do with the clinical
+information?). In this relatively simple case, we can create a
+“master” data.frame by joining all the records from each data.frame.</p>
 <pre class="r"><code>library(dplyr)
 full_clin = with(clin_res,
      main %&gt;%
      left_join(demographic, by = &quot;case_id&quot;) %&gt;%
      left_join(exposures, by = &quot;case_id&quot;) %&gt;%
      left_join(diagnoses, by = &quot;case_id&quot;))</code></pre>
-<p>Above, I have used the tidyverse approach, applying <code>dplyr</code> <code>left_join()</code>s. Using base R <code>merge</code> would also work.</p>
+<p>Above, I have used the tidyverse approach, applying <code>dplyr</code>
+<code>left_join()</code>s. Using base R <code>merge</code> would also work.</p>
 <pre class="r"><code>dim(full_clin)</code></pre>
 <pre><code>## [1] 100  52</code></pre>
 <pre class="r"><code>colnames(full_clin)</code></pre>
@@ -407,9 +437,12 @@ full_clin = with(clin_res,
 ## [50] &quot;prior_malignancy&quot;                 
 ## [51] &quot;site_of_resection_or_biopsy&quot;      
 ## [52] &quot;days_to_last_follow_up&quot;</code></pre>
-<p>In conclusion, the <code>gdc_clinical</code> functionality from the GenomicDataCommons is a high-level function for capturing unified and harmonized clinical information for <em>any</em> case in the NCI GDC repository.</p>
+<p>In conclusion, the <code>gdc_clinical</code> functionality from the
+GenomicDataCommons is a high-level function for capturing unified and
+harmonized clinical information for <em>any</em> case in the NCI GDC
+repository.</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R Under development (unstable) (2017-11-02 r73659)
+<pre><code>## R version 3.5.0 RC (2018-04-16 r74624)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
 ## Running under: macOS Sierra 10.12.6
 ## 
@@ -421,28 +454,28 @@ full_clin = with(clin_res,
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] methods   stats     graphics  grDevices utils     datasets  base     
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
 ## [1] dplyr_0.7.4              GenomicDataCommons_1.3.4
 ## [3] magrittr_1.5             knitr_1.20              
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.16           compiler_3.5.0         pillar_1.1.0          
-##  [4] GenomeInfoDb_1.15.5    XVector_0.19.8         bindr_0.1             
+##  [1] Rcpp_0.12.16           compiler_3.5.0         pillar_1.2.1          
+##  [4] GenomeInfoDb_1.15.5    XVector_0.19.9         bindr_0.1.1           
 ##  [7] bitops_1.0-6           tools_3.5.0            zlibbioc_1.25.0       
 ## [10] digest_0.6.15          jsonlite_1.5           evaluate_0.10.1       
 ## [13] tibble_1.4.2           pkgconfig_2.0.1        rlang_0.2.0           
-## [16] yaml_2.1.18            parallel_3.5.0         blogdown_0.5.12       
-## [19] xfun_0.1               bindrcpp_0.2           GenomeInfoDbData_1.1.0
-## [22] xml2_1.1.1             stringr_1.3.0          httr_1.3.1            
-## [25] hms_0.4.1              rappdirs_0.3.1         S4Vectors_0.17.33     
-## [28] IRanges_2.13.26        stats4_3.5.0           rprojroot_1.3-2       
-## [31] glue_1.2.0             R6_2.2.2               rmarkdown_1.9         
-## [34] bookdown_0.7           readr_1.1.1            backports_1.1.2       
-## [37] htmltools_0.3.6        BiocGenerics_0.25.3    GenomicRanges_1.31.22 
-## [40] assertthat_0.2.0       stringi_1.1.6          RCurl_1.95-4.8        
-## [43] lazyeval_0.2.1</code></pre>
+## [16] curl_3.2               yaml_2.1.18            parallel_3.5.0        
+## [19] blogdown_0.6           xfun_0.1               bindrcpp_0.2.2        
+## [22] GenomeInfoDbData_1.1.0 xml2_1.2.0             stringr_1.3.0         
+## [25] httr_1.3.1             hms_0.4.2              rappdirs_0.3.1        
+## [28] S4Vectors_0.17.42      IRanges_2.13.28        stats4_3.5.0          
+## [31] rprojroot_1.3-2        glue_1.2.0             R6_2.2.2              
+## [34] rmarkdown_1.9          bookdown_0.7           readr_1.1.1           
+## [37] codetools_0.2-15       backports_1.1.2        htmltools_0.3.6       
+## [40] BiocGenerics_0.25.3    GenomicRanges_1.31.23  assertthat_0.2.0      
+## [43] stringi_1.1.7          RCurl_1.95-4.10        lazyeval_0.2.1</code></pre>
 
 
   
@@ -509,6 +542,8 @@ full_clin = with(clin_res,
   ga('send', 'pageview');
 
 </script>
+
+
 
 
 

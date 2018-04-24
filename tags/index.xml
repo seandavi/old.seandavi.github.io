@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Api</title>
+      <link>https://seandavi.github.io/tags/api/</link>
+      <pubDate>Sat, 04 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Aws</title>
       <link>https://seandavi.github.io/tags/aws/</link>
       <pubDate>Sat, 02 Dec 2017 07:50:15 -0500</pubDate>
@@ -80,15 +89,6 @@
       <pubDate>Fri, 29 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/tags/cancer-informatics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Clinicaltrials.gov</title>
-      <link>https://seandavi.github.io/tags/clinicaltrials.gov/</link>
-      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/tags/clinicaltrials.gov/</guid>
       <description></description>
     </item>
     
@@ -161,15 +161,6 @@
       <pubDate>Sat, 18 Nov 2017 10:29:06 -0500</pubDate>
       
       <guid>https://seandavi.github.io/tags/manuscripts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Medical Informatics</title>
-      <link>https://seandavi.github.io/tags/medical-informatics/</link>
-      <pubDate>Tue, 21 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/tags/medical-informatics/</guid>
       <description></description>
     </item>
     

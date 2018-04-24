@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.27.1" />
+  <meta name="generator" content="Hugo 0.40" />
 
   <title>November Bioinformatics and Data Science Papers &middot; seandavi(s12)</title>
 
@@ -36,6 +36,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
   
 
   
@@ -263,8 +266,14 @@
 
 </div>
 
-  <p>I am starting to make a short list of papers that interested me for the month. In creating this list, I make no claims about these being the “best” papers, the most interesting, or even that they are “good” papers. The list simply serves as an external brain for me and may include some papers that are of interest to others.</p>
-<p>Besides the usual single manuscripts, November publications included a complete issue of <a href="http://cancerres.aacrjournals.org/CompRes">Cancer Research</a> focused on computational resources.</p>
+  <p>I am starting to make a short list of papers that interested me
+for the month. In creating this list, I make no claims about these
+being the “best” papers, the most interesting, or even that they
+are “good” papers. The list simply serves as an external brain for
+me and may include some papers that are of interest to others.</p>
+<p>Besides the usual single manuscripts, November publications included a complete issue of
+<a href="http://cancerres.aacrjournals.org/CompRes">Cancer Research</a>
+focused on computational resources.</p>
 <div id="cancer-research-computational-resources-issue" class="section level2">
 <h2><a href="http://cancerres.aacrjournals.org/CompRes">Cancer Research Computational Resources Issue</a></h2>
 <p>The overview of the article collection as given on the Cancer Research website is:</p>
@@ -282,57 +291,265 @@
 <div id="combating-subclonal-evolution-of-resistant-cancer-phenotypes" class="section level3">
 <h3><a href="http://dx.doi.org/10.1038/s41467-017-01174-3">Combating subclonal evolution of resistant cancer phenotypes</a></h3>
 <p>Samuel W Brady, Jasmine A McQuerry, Yi Qiao, Stephen R Piccolo, Gajendra Shrestha, David F Jenkins, Ryan M Layer, Brent S Pedersen, Ryan H Miller, Amanda Esch, Sara R Selitsky, Joel S Parker, Layla A Anderson, Brian K Dalley, Rachel E Factor, Chakravarthy B Reddy, Jonathan P Boltax, Dean Y Li, Philip J Moos, Joe W Gray, Laura M Heiser, Saundra S Buys, Adam L Cohen, W Evan Johnson, Aaron R Quinlan, Gabor Marth, Theresa L Werner, Andrea H Bild. Nature communications.</p>
-<p>Metastatic breast cancer remains challenging to treat, and most patients ultimately progress on therapy. This acquired drug resistance is largely due to drug-refractory sub-populations (subclones) within heterogeneous tumors. Here, we track the genetic and phenotypic subclonal evolution of four breast cancers through years of treatment to better understand how breast cancers become drug-resistant. Recurrently appearing post-chemotherapy mutations are rare. However, bulk and single-cell RNA sequencing reveal acquisition of malignant phenotypes after treatment, including enhanced mesenchymal and growth factor signaling, which may promote drug resistance, and decreased antigen presentation and TNF-<span class="math inline">\(\alpha\)</span> signaling, which may enable immune system avoidance. Some of these phenotypes pre-exist in pre-treatment subclones that become dominant after chemotherapy, indicating selection for resistance phenotypes. Post-chemotherapy cancer cells are effectively treated with drugs targeting acquired phenotypes. These findings highlight cancer’s ability to evolve phenotypically and suggest a phenotype-targeted treatment strategy that adapts to cancer as it evolves.</p>
+<p>Metastatic breast cancer remains challenging to treat, and
+most patients ultimately progress on therapy. This acquired
+drug resistance is largely due to drug-refractory
+sub-populations (subclones) within heterogeneous tumors. Here,
+we track the genetic and phenotypic subclonal evolution of
+four breast cancers through years of treatment to better
+understand how breast cancers become drug-resistant.
+Recurrently appearing post-chemotherapy mutations are rare.
+However, bulk and single-cell RNA sequencing reveal
+acquisition of malignant phenotypes after treatment, including
+enhanced mesenchymal and growth factor signaling, which may
+promote drug resistance, and decreased antigen presentation
+and TNF-<span class="math inline">\(\alpha\)</span> signaling, which may enable immune system
+avoidance. Some of these phenotypes pre-exist in pre-treatment
+subclones that become dominant after chemotherapy, indicating
+selection for resistance phenotypes. Post-chemotherapy cancer
+cells are effectively treated with drugs targeting acquired
+phenotypes. These findings highlight cancer’s ability to
+evolve phenotypically and suggest a phenotype-targeted
+treatment strategy that adapts to cancer as it evolves.</p>
 </div>
 <div id="bcbiornaseq-r-package-for-bcbio-rna-seq-analysis" class="section level3">
 <h3><a href="https://f1000research.com/articles/6-1976/v1/pdf">{bcbioRNASeq}: {R} package for bcbio {RNA-seq} analysis</a></h3>
 <p>Michael J Steinbaugh, Lorena Pantano, Rory D Kirchner, Victor Barrera, Brad A Chapman, Mary E Piper, Meeta Mistry, Radhika S Khetani, Kayleigh D Rutherford, Oliver Hofmann, John N Hutchinson, Shannan Ho Sui. F1000Research.</p>
-<p>RNA-seq analysis involves multiple steps from processing raw sequencing data to identifying, organizing, annotating, and reporting differentially expressed genes. bcbio is an open source, community-maintained framework providing automated and scalable RNA-seq methods for identifying gene abundance counts. We have developed bcbioRNASeq, a Bioconductor package that provides ready-to-render templates and wrapper functions to post-process bcbio output data. bcbioRNASeq automates the generation of high-level RNA-seq reports, including identification of differentially expressed genes, functional enrichment analysis and quality control analysis.</p>
+<p>RNA-seq analysis involves multiple steps from processing raw
+sequencing data to identifying, organizing, annotating, and
+reporting differentially expressed genes. bcbio is an open
+source, community-maintained framework providing automated and
+scalable RNA-seq methods for identifying gene abundance counts.
+We have developed bcbioRNASeq, a Bioconductor package that
+provides ready-to-render templates and wrapper functions to
+post-process bcbio output data. bcbioRNASeq automates the
+generation of high-level RNA-seq reports, including
+identification of differentially expressed genes, functional
+enrichment analysis and quality control analysis.</p>
 </div>
 <div id="a-sparse-differential-clustering-algorithm-for-tracing-cell-type-changes-via-single-cell-rna-sequencing-data" class="section level3">
-<h3><a href="http://dx.doi.org/10.1093/nar/gkx1113">A sparse differential clustering algorithm for tracing cell type changes via single-cell {RNA-sequencing} data</a></h3>
+<h3><a href="http://dx.doi.org/10.1093/nar/gkx1113">A sparse differential clustering algorithm for tracing cell
+type changes via single-cell {RNA-sequencing} data</a></h3>
 <p>Martin Barron, Siyuan Zhang, Jun Li. Nucleic acids research.</p>
-<p>Cell types in cell populations change as the condition changes: some cell types die out, new cell types may emerge and surviving cell types evolve to adapt to the new condition. Using single-cell RNA-sequencing data that measure the gene expression of cells before and after the condition change, we propose an algorithm, SparseDC, which identifies cell types, traces their changes across conditions and identifies genes which are marker genes for these changes. By solving a unified optimization problem, SparseDC completes all three tasks simultaneously. SparseDC is highly computationally efficient and demonstrates its accuracy on both simulated and real data.</p>
+<p>Cell types in cell populations change as the condition
+changes: some cell types die out, new cell types may emerge
+and surviving cell types evolve to adapt to the new condition.
+Using single-cell RNA-sequencing data that measure the gene
+expression of cells before and after the condition change, we
+propose an algorithm, SparseDC, which identifies cell types,
+traces their changes across conditions and identifies genes
+which are marker genes for these changes. By solving a unified
+optimization problem, SparseDC completes all three tasks
+simultaneously. SparseDC is highly computationally efficient
+and demonstrates its accuracy on both simulated and real data.</p>
 </div>
 <div id="sv2-accurate-structural-variation-genotyping-and-de-novo-mutation-detection" class="section level3">
-<h3><a href="https://www.biorxiv.org/content/early/2017/11/17/113498?%3Fcollection=">{SV2}: Accurate Structural Variation Genotyping and De Novo Mutation Detection</a></h3>
+<h3><a href="https://www.biorxiv.org/content/early/2017/11/17/113498?%3Fcollection=">{SV2}: Accurate Structural Variation Genotyping and De Novo
+Mutation Detection</a></h3>
 <p>Danny Antaki, William M Brandler, Jonathan Sebat. bioRxiv.</p>
-<p>Structural Variation (SV) detection from short-read whole genome sequencing is error prone, presenting significant challenges for population or family-based studies of disease. Here we describe SV2, a machine-learning algorithm for genotyping deletions and duplications from paired-end sequencing data. SV2 can rapidly integrate variant calls from multiple structural variant discovery algorithms into a unified call set with high genotyping accuracy and capability to detect de novo mutations.</p>
+<p>Structural Variation (SV) detection from short-read whole genome
+sequencing is error prone, presenting significant challenges for
+population or family-based studies of disease. Here we describe
+SV2, a machine-learning algorithm for genotyping deletions and
+duplications from paired-end sequencing data. SV2 can rapidly
+integrate variant calls from multiple structural variant
+discovery algorithms into a unified call set with high genotyping
+accuracy and capability to detect de novo mutations.</p>
 </div>
 <div id="quasar-quality-assessment-of-spatial-arrangement-reproducibility-in-hi-c-data" class="section level3">
-<h3><a href="https://www.biorxiv.org/content/early/2017/11/14/204438?%3Fcollection=">{QuASAR}: Quality Assessment of Spatial Arrangement Reproducibility in {Hi-C} Data</a></h3>
+<h3><a href="https://www.biorxiv.org/content/early/2017/11/14/204438?%3Fcollection=">{QuASAR}: Quality Assessment of Spatial Arrangement
+Reproducibility in {Hi-C} Data</a></h3>
 <p>Michael E G Sauria, James Taylor. bioRxiv.</p>
-<p>Hi-C has revolutionized global interrogation of chromosome conformation, however there are few tools to assess the reliability of individual experiments. Here we present a new approach, QuASAR, for measuring quality within and between Hi-C samples. We show that QuASAR can detect even tiny fractions of noise and estimate both return on additional sequencing and quality upper bounds. We also demonstrate QuASAR9s utility in measuring replicate agreement across feature resolutions. Finally, QuASAR can estimate resolution limits based on both internal and replicate quality scores. QuASAR provides an objective means of Hi-C sample comparison while providing context and limits to these measures.</p>
+<p>Hi-C has revolutionized global interrogation of chromosome
+conformation, however there are few tools to assess the
+reliability of individual experiments. Here we present a new
+approach, QuASAR, for measuring quality within and between Hi-C
+samples. We show that QuASAR can detect even tiny fractions of
+noise and estimate both return on additional sequencing and
+quality upper bounds. We also demonstrate QuASAR9s utility in
+measuring replicate agreement across feature resolutions.
+Finally, QuASAR can estimate resolution limits based on both
+internal and replicate quality scores. QuASAR provides an
+objective means of Hi-C sample comparison while providing context
+and limits to these measures.</p>
 </div>
 <div id="an-introduction-to-deep-learning-on-biological-sequence-data-examples-and-solutions" class="section level3">
-<h3><a href="http://dx.doi.org/10.1093/bioinformatics/btx531">An introduction to deep learning on biological sequence data: examples and solutions</a></h3>
+<h3><a href="http://dx.doi.org/10.1093/bioinformatics/btx531">An introduction to deep learning on biological sequence data:
+examples and solutions</a></h3>
 <p>Vanessa Isabell Jurtz, Alexander Rosenberg Johansen, Morten Nielsen, Jose Juan Almagro Armenteros, Henrik Nielsen, Casper Kaae Sønderby, Ole Winther, Søren Kaae Sønderby. Bioinformatics.</p>
-<p>Motivation: Deep neural network architectures such as convolutional and long short-term memory networks have become increasingly popular as machine learning tools during the recent years. The availability of greater computational resources, more data, new algorithms for training deep models and easy to use libraries for implementation and training of neural networks are the drivers of this development. The use of deep learning has been especially successful in image recognition; and the development of tools, applications and code examples are in most cases centered within this field rather than within biology. Results: Here, we aim to further the development of deep learning methods within biology by providing application examples and ready to apply and adapt code templates. Given such examples, we illustrate how architectures consisting of convolutional and long short-term memory neural networks can relatively easily be designed and trained to state-of-the-art performance on three biological sequence problems: prediction of subcellular localization, protein secondary structure and the binding of peptides to MHC Class II molecules. Availability and implementation: All implementations and datasets are available online to the scientific community at <a href="https://github.com/vanessajurtz/lasagne4bio" class="uri">https://github.com/vanessajurtz/lasagne4bio</a>. Contact: <a href="mailto:skaaesonderby@gmail.com">skaaesonderby@gmail.com</a>. Supplementary information: Supplementary data are available at Bioinformatics online.</p>
+<p>Motivation: Deep neural network architectures such as
+convolutional and long short-term memory networks have become
+increasingly popular as machine learning tools during the
+recent years. The availability of greater computational
+resources, more data, new algorithms for training deep models
+and easy to use libraries for implementation and training of
+neural networks are the drivers of this development. The use
+of deep learning has been especially successful in image
+recognition; and the development of tools, applications and
+code examples are in most cases centered within this field
+rather than within biology. Results: Here, we aim to further
+the development of deep learning methods within biology by
+providing application examples and ready to apply and adapt
+code templates. Given such examples, we illustrate how
+architectures consisting of convolutional and long short-term
+memory neural networks can relatively easily be designed and
+trained to state-of-the-art performance on three biological
+sequence problems: prediction of subcellular localization,
+protein secondary structure and the binding of peptides to MHC
+Class II molecules. Availability and implementation: All
+implementations and datasets are available online to the
+scientific community at
+<a href="https://github.com/vanessajurtz/lasagne4bio" class="uri">https://github.com/vanessajurtz/lasagne4bio</a>. Contact:
+<a href="mailto:skaaesonderby@gmail.com">skaaesonderby@gmail.com</a>. Supplementary information:
+Supplementary data are available at Bioinformatics online.</p>
 </div>
 <div id="missing-data-and-technical-variability-in-single-cell-rna-sequencing-experiments" class="section level3">
-<h3><a href="http://dx.doi.org/10.1093/biostatistics/kxx053">Missing data and technical variability in single-cell {RNA-sequencing} experiments</a></h3>
+<h3><a href="http://dx.doi.org/10.1093/biostatistics/kxx053">Missing data and technical variability in single-cell
+{RNA-sequencing} experiments</a></h3>
 <p>Stephanie C Hicks, F William Townes, Mingxiang Teng, Rafael A Irizarry. Biostatistics.</p>
-<p>Until recently, high-throughput gene expression technology, such as RNA-Sequencing (RNA-seq) required hundreds of thousands of cells to produce reliable measurements. Recent technical advances permit genome-wide gene expression measurement at the single-cell level. Single-cell RNA-Seq (scRNA-seq) is the most widely used and numerous publications are based on data produced with this technology. However, RNA-seq and scRNA-seq data are markedly different. In particular, unlike RNA-seq, the majority of reported expression levels in scRNA-seq are zeros, which could be either biologically-driven, genes not expressing RNA at the time of measurement, or technically-driven, genes expressing RNA, but not at a sufficient level to be detected by sequencing technology. Another difference is that the proportion of genes reporting the expression level to be zero varies substantially across single cells compared to RNA-seq samples. However, it remains unclear to what extent this cell-to-cell variation is being driven by technical rather than biological variation. Furthermore, while systematic errors, including batch effects, have been widely reported as a major challenge in high-throughput technologies, these issues have received minimal attention in published studies based on scRNA-seq technology. Here, we use an assessment experiment to examine data from published studies and demonstrate that systematic errors can explain a substantial percentage of observed cell-to-cell expression variability. Specifically, we present evidence that some of these reported zeros are driven by technical variation by demonstrating that scRNA-seq produces more zeros than expected and that this bias is greater for lower expressed genes. In addition, this missing data problem is exacerbated by the fact that this technical variation varies cell-to-cell. Then, we show how this technical cell-to-cell variability can be confused with novel biological results. Finally, we demonstrate and discuss how batch-effects and confounded experiments can intensify the problem.</p>
+<p>Until recently, high-throughput gene expression technology,
+such as RNA-Sequencing (RNA-seq) required hundreds of
+thousands of cells to produce reliable measurements. Recent
+technical advances permit genome-wide gene expression
+measurement at the single-cell level. Single-cell RNA-Seq
+(scRNA-seq) is the most widely used and numerous publications
+are based on data produced with this technology. However,
+RNA-seq and scRNA-seq data are markedly different. In
+particular, unlike RNA-seq, the majority of reported
+expression levels in scRNA-seq are zeros, which could be
+either biologically-driven, genes not expressing RNA at the
+time of measurement, or technically-driven, genes expressing
+RNA, but not at a sufficient level to be detected by
+sequencing technology. Another difference is that the
+proportion of genes reporting the expression level to be zero
+varies substantially across single cells compared to RNA-seq
+samples. However, it remains unclear to what extent this
+cell-to-cell variation is being driven by technical rather
+than biological variation. Furthermore, while systematic
+errors, including batch effects, have been widely reported as
+a major challenge in high-throughput technologies, these
+issues have received minimal attention in published studies
+based on scRNA-seq technology. Here, we use an assessment
+experiment to examine data from published studies and
+demonstrate that systematic errors can explain a substantial
+percentage of observed cell-to-cell expression variability.
+Specifically, we present evidence that some of these reported
+zeros are driven by technical variation by demonstrating that
+scRNA-seq produces more zeros than expected and that this bias
+is greater for lower expressed genes. In addition, this
+missing data problem is exacerbated by the fact that this
+technical variation varies cell-to-cell. Then, we show how
+this technical cell-to-cell variability can be confused with
+novel biological results. Finally, we demonstrate and discuss
+how batch-effects and confounded experiments can intensify the
+problem.</p>
 </div>
 <div id="msignaturedb-a-database-for-deciphering-mutational-signatures-in-human-cancers" class="section level3">
-<h3><a href="http://dx.doi.org/10.1093/nar/gkx1133">{mSignatureDB}: a database for deciphering mutational signatures in human cancers</a></h3>
+<h3><a href="http://dx.doi.org/10.1093/nar/gkx1133">{mSignatureDB}: a database for deciphering mutational
+signatures in human cancers</a></h3>
 <p>Po-Jung Huang, Ling-Ya Chiu, Chi-Ching Lee, Yuan-Ming Yeh, Kuo-Yang Huang, Cheng-Hsun Chiu, Petrus Tang. Nucleic acids research.</p>
-<p>Cancer is a genetic disease caused by somatic mutations; however, the understanding of the causative biological processes generating these mutations is limited. A cancer genome bears the cumulative effects of mutational processes during tumor development. Deciphering mutational signatures in cancer is a new topic in cancer research. The Wellcome Trust Sanger Institute (WTSI) has categorized 30 reference signatures in the COSMIC database based on the analyses of ∼10 000 sequencing datasets from TCGA and ICGC. Large cohorts and bioinformatics skills are required to perform the same analysis as WTSI. The quantification of known signatures in custom cohorts is not possible under the current framework of the COSMIC database, which motivates us to construct a database for mutational signatures in cancers and make such analyses more accessible to general researchers. mSignatureDB (<a href="http://tardis.cgu.edu.tw/msignaturedb" class="uri">http://tardis.cgu.edu.tw/msignaturedb</a>) integrates R packages and in-house scripts to determine the contributions of the published signatures in 15 780 individual tumors from 73 TCGA/ICGC cancer projects, making comparison of signature patterns within and between projects become possible. mSignatureDB also allows users to perform signature analysis on their own datasets, quantifying contributions of signatures at sample resolution, which is a unique feature of mSignatureDB not available in other related databases.</p>
+<p>Cancer is a genetic disease caused by somatic mutations;
+however, the understanding of the causative biological
+processes generating these mutations is limited. A cancer
+genome bears the cumulative effects of mutational processes
+during tumor development. Deciphering mutational signatures in
+cancer is a new topic in cancer research. The Wellcome Trust
+Sanger Institute (WTSI) has categorized 30 reference
+signatures in the COSMIC database based on the analyses of ∼10
+000 sequencing datasets from TCGA and ICGC. Large cohorts and
+bioinformatics skills are required to perform the same
+analysis as WTSI. The quantification of known signatures in
+custom cohorts is not possible under the current framework of
+the COSMIC database, which motivates us to construct a
+database for mutational signatures in cancers and make such
+analyses more accessible to general researchers. mSignatureDB
+(<a href="http://tardis.cgu.edu.tw/msignaturedb" class="uri">http://tardis.cgu.edu.tw/msignaturedb</a>) integrates R packages
+and in-house scripts to determine the contributions of the
+published signatures in 15 780 individual tumors from 73
+TCGA/ICGC cancer projects, making comparison of signature
+patterns within and between projects become possible.
+mSignatureDB also allows users to perform signature analysis
+on their own datasets, quantifying contributions of signatures
+at sample resolution, which is a unique feature of
+mSignatureDB not available in other related databases.</p>
 </div>
 <div id="boosting-gene-expression-clustering-with-system-wide-biological-information-a-robust-autoencoder-approach" class="section level3">
-<h3><a href="https://www.biorxiv.org/content/early/2017/11/05/214122?%3Fcollection=">Boosting Gene Expression Clustering with {System-Wide} Biological Information: A Robust Autoencoder Approach</a></h3>
+<h3><a href="https://www.biorxiv.org/content/early/2017/11/05/214122?%3Fcollection=">Boosting Gene Expression Clustering with {System-Wide} Biological
+Information: A Robust Autoencoder Approach</a></h3>
 <p>Hongzhu Cui, Chong Zhou, Xinyu Dai, Yuting Liang, Randy Paffenroth, Dmitry Korkin. bioRxiv.</p>
-<p>Gene expression analysis provides genome-wide insights into the transcriptional activity of a cell. One of the first computational steps in exploration and analysis of the gene expression data is clustering. With a number of standard clustering methods routinely used, most of the methods do not take prior biological information into account. In this paper, we propose a new approach for gene expression clustering analysis. The approach benefits from a new deep learning architecture, Robust Autoencoder, which provides a more accurate high-level representation of the feature sets, and from incorporating prior biological information into the clustering process. We tested our approach on two distinct gene expression datasets and compared the performance with two widely used clustering methods, hierarchical clustering and k-means, as well as with a recent deep learning clustering approach. As a result, our approach outperformed all other clustering methods on the labeled yeast gene expression dataset. Furthermore we showed that it is better in identifying the functionally common clusters than k-means on the unlabeled human gene expression dataset. The results demonstrate that our new deep learning architecture could generalize well the specific properties of gene expression profiles. Furthermore, the results confirm our hypothesis that the prior biological network knowledge could be helpful in the gene expression clustering task.</p>
+<p>Gene expression analysis provides genome-wide insights into the
+transcriptional activity of a cell. One of the first
+computational steps in exploration and analysis of the gene
+expression data is clustering. With a number of standard
+clustering methods routinely used, most of the methods do not
+take prior biological information into account. In this paper, we
+propose a new approach for gene expression clustering analysis.
+The approach benefits from a new deep learning architecture,
+Robust Autoencoder, which provides a more accurate high-level
+representation of the feature sets, and from incorporating prior
+biological information into the clustering process. We tested our
+approach on two distinct gene expression datasets and compared
+the performance with two widely used clustering methods,
+hierarchical clustering and k-means, as well as with a recent
+deep learning clustering approach. As a result, our approach
+outperformed all other clustering methods on the labeled yeast
+gene expression dataset. Furthermore we showed that it is better
+in identifying the functionally common clusters than k-means on
+the unlabeled human gene expression dataset. The results
+demonstrate that our new deep learning architecture could
+generalize well the specific properties of gene expression
+profiles. Furthermore, the results confirm our hypothesis that
+the prior biological network knowledge could be helpful in the
+gene expression clustering task.</p>
 </div>
 <div id="binless-normalization-of-hi-c-data-provides-significant-interaction-and-difference-detection-independently-of-resolution" class="section level3">
-<h3><a href="https://www.biorxiv.org/content/early/2017/11/05/214403?%3Fcollection=">Binless normalization of {Hi-C} data provides significant interaction and difference detection independently of resolution</a></h3>
+<h3><a href="https://www.biorxiv.org/content/early/2017/11/05/214403?%3Fcollection=">Binless normalization of {Hi-C} data provides significant
+interaction and difference detection independently of resolution</a></h3>
 <p>Yannick G Spill, David Castillo, Marc A Marti-Renom. bioRxiv.</p>
-<p>3C-like experiments, such as 4C or Hi-C, have been fundamental in understanding genome organization. Thanks to these technologies, it is now known, for example, that Topologically Associating Domains (TADs) and chromatin loops are implicated in the dynamic interplay of gene activation and repression, and their disruption can have dramatic effects on embryonic development. To make their detection easier, scientists have endeavored into deeper sequencing to mechanically increase the chances to detect weaker signals such as chromatin loops. Part of this mindset can be attributed to the limitations of existing software: the analysis of Hi-C experiments is both statistically and computationally demanding. Here, we devise a new way to represent Hi-C data, which leads to a more detailed classification of paired-end reads and, ultimately, to a new normalization and interaction detection method. Unlike any other, Binless is resolution-agnostic, and adapts to the quality and quantity of available data. We demonstrate its capacities to call interactions and differences and make the software freely available.</p>
+<p>3C-like experiments, such as 4C or Hi-C, have been fundamental in
+understanding genome organization. Thanks to these technologies,
+it is now known, for example, that Topologically Associating
+Domains (TADs) and chromatin loops are implicated in the dynamic
+interplay of gene activation and repression, and their disruption
+can have dramatic effects on embryonic development. To make their
+detection easier, scientists have endeavored into deeper
+sequencing to mechanically increase the chances to detect weaker
+signals such as chromatin loops. Part of this mindset can be
+attributed to the limitations of existing software: the analysis
+of Hi-C experiments is both statistically and computationally
+demanding. Here, we devise a new way to represent Hi-C data,
+which leads to a more detailed classification of paired-end reads
+and, ultimately, to a new normalization and interaction detection
+method. Unlike any other, Binless is resolution-agnostic, and
+adapts to the quality and quantity of available data. We
+demonstrate its capacities to call interactions and differences
+and make the software freely available.</p>
 </div>
 <div id="tumorfusions-an-integrative-resource-for-cancer-associated-transcript-fusions" class="section level3">
-<h3><a href="http://dx.doi.org/10.1093/nar/gkx1018">{TumorFusions}: an integrative resource for cancer-associated transcript fusions</a></h3>
+<h3><a href="http://dx.doi.org/10.1093/nar/gkx1018">{TumorFusions}: an integrative resource for cancer-associated
+transcript fusions</a></h3>
 <p>Xin Hu, Qianghu Wang, Ming Tang, Floris Barthel, Samirkumar Amin, Kosuke Yoshihara, Frederick M Lang, Emmanuel Martinez-Ledesma, Soo Hyun Lee, Siyuan Zheng, Roel G W Verhaak. Nucleic acids research.</p>
-<p>Gene fusion represents a class of molecular aberrations in cancer and has been exploited for therapeutic purposes. In this paper we describe TumorFusions, a data portal that catalogues 20 731 gene fusions detected in 9966 well characterized cancer samples and 648 normal specimens from The Cancer Genome Atlas (TCGA). The portal spans 33 cancer types in TCGA. Fusion transcripts were identified via a uniform pipeline, including filtering against a list of 3838 transcript fusions detected in a panel of 648 non-neoplastic samples. Fusions were mapped to somatic DNA rearrangements identified using whole genome sequencing data from 561 cancer samples as a means of validation. We observed that 65% of transcript fusions were associated with a chromosomal alteration, which is annotated in the portal. Other features of the portal include links to SNP array-based copy number levels and mutational patterns, exon and transcript level expressions of the partner genes, and a network-based centrality score for prioritizing functional fusions. Our portal aims to be a broadly applicable and user friendly resource for cancer gene annotation and is publicly available at <a href="http://www.tumorfusions.org" class="uri">http://www.tumorfusions.org</a>.</p>
+<p>Gene fusion represents a class of molecular aberrations in
+cancer and has been exploited for therapeutic purposes. In
+this paper we describe TumorFusions, a data portal that
+catalogues 20 731 gene fusions detected in 9966 well
+characterized cancer samples and 648 normal specimens from The
+Cancer Genome Atlas (TCGA). The portal spans 33 cancer types
+in TCGA. Fusion transcripts were identified via a uniform
+pipeline, including filtering against a list of 3838
+transcript fusions detected in a panel of 648 non-neoplastic
+samples. Fusions were mapped to somatic DNA rearrangements
+identified using whole genome sequencing data from 561 cancer
+samples as a means of validation. We observed that 65% of
+transcript fusions were associated with a chromosomal
+alteration, which is annotated in the portal. Other features
+of the portal include links to SNP array-based copy number
+levels and mutational patterns, exon and transcript level
+expressions of the partner genes, and a network-based
+centrality score for prioritizing functional fusions. Our
+portal aims to be a broadly applicable and user friendly
+resource for cancer gene annotation and is publicly available
+at <a href="http://www.tumorfusions.org" class="uri">http://www.tumorfusions.org</a>.</p>
 </div>
 </div>
 
@@ -407,6 +624,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
 
 
 
