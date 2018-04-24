@@ -148,13 +148,13 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/post/2017/03/approaches-to-accessing-clinicaltrials.gov-data/</loc>
+    <loc>https://seandavi.github.io/project/clinical-trials-gov/</loc>
     <lastmod>2017-03-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/project/clinical-trials-gov/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/post/2017/03/matched-tumor/normal-pairs--a-use-case-for-the-genomicdatacommons-bioconductor-package/</loc>
+    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -658,6 +658,12 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/tags/api/</loc>
+    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/tags/aws/</loc>
     <lastmod>2017-12-02T07:50:15-05:00</lastmod>
     <priority>0</priority>
@@ -702,12 +708,6 @@
   <url>
     <loc>https://seandavi.github.io/tags/cancer-informatics/</loc>
     <lastmod>2017-12-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seandavi.github.io/tags/clinicaltrials.gov/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -772,12 +772,6 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/medical-informatics/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seandavi.github.io/tags/open-data/</loc>
     <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -808,12 +802,6 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/r/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://seandavi.github.io/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
@@ -834,12 +822,6 @@
   <url>
     <loc>https://seandavi.github.io/tags/software/</loc>
     <lastmod>2017-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://seandavi.github.io/topics/software/</loc>
-    <lastmod>2017-03-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
