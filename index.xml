@@ -84,6 +84,24 @@
     </item>
     
     <item>
+      <title>Cancer Bioinformatics Primer -- Papillary Renal Cell Carcinoma Hackathon</title>
+      <link>https://seandavi.github.io/talk/2018/05/19/cancer-bioinformatics-primer----papillary-renal-cell-carcinoma-hackathon/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/05/19/cancer-bioinformatics-primer----papillary-renal-cell-carcinoma-hackathon/</guid>
+      <description>More than 150 researchers, engineers and data enthusiasts gathered at Salesforce in San Francisco for an intense weekend of exploration in computational biomedicine. Interdisciplinary teams worked to develop data products and learn from each other about this rare cancer. Datasets included publicly available datasets as well as deep whole genome sequencing of an individual patient (who attended the hackathon).</description>
+    </item>
+    
+    <item>
+      <title>The GenomicDataCommons Package: The bridge between the NCI Genomic Data Commons and Bioconductor</title>
+      <link>https://seandavi.github.io/talk/2018/04/25/the-genomicdatacommons-package-the-bridge-between-the-nci-genomic-data-commons-and-bioconductor/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/04/25/the-genomicdatacommons-package-the-bridge-between-the-nci-genomic-data-commons-and-bioconductor/</guid>
+      <description>The National Cancer Institute has established the Genomic Data Commons (GDC) to provide access to large-scale, publicly available cancer genomics datasets. Bioconductor is a large, open-source software project that provides tools for analyzing and comprehending biologic data. The GenomicDataCommons Bioconductor package is a bridge from the NCI GDC data to the cutting-edge tools available through Bioconductor.</description>
+    </item>
+    
+    <item>
       <title>Extracting Clinical Information Using the Genomicdatacommons Package</title>
       <link>https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/</link>
       <pubDate>Sun, 25 Mar 2018 11:18:36 -0400</pubDate>
