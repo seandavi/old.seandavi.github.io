@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/talk/2018/05/19/cancer-bioinformatics-primer----papillary-renal-cell-carcinoma-hackathon/</loc>
     <lastmod>2018-05-19T00:00:00+00:00</lastmod>
   </url>
@@ -668,6 +673,10 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/talk/1/01/01/</loc>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/tags/api/</loc>
     <lastmod>2017-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -849,7 +858,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/</loc>
-    <lastmod>2018-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

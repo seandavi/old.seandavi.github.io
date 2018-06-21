@@ -84,6 +84,15 @@
     </item>
     
     <item>
+      <title>Brief Introduction to Machine Learning in Biomedical Informatics</title>
+      <link>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</guid>
+      <description>  Link to GitHub with hands-on exercises  </description>
+    </item>
+    
+    <item>
       <title>Cancer Bioinformatics Primer -- Papillary Renal Cell Carcinoma Hackathon</title>
       <link>https://seandavi.github.io/talk/2018/05/19/cancer-bioinformatics-primer----papillary-renal-cell-carcinoma-hackathon/</link>
       <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
@@ -1189,6 +1198,18 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>https://seandavi.github.io/publication/8644751/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://seandavi.github.io/talk/1/01/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/1/01/01/</guid>
+      <description>OB+++ date = &amp;ldquo;2018-06-18&amp;rdquo; title = &amp;ldquo;Tutorial in using the NCI SevenBridges Cancer Genomics Cloud Resources&amp;rdquo; abstract = &amp;ldquo;&amp;rdquo; abstract_short = &amp;ldquo;&amp;rdquo; event = &amp;ldquo;Big data training for translational omics research&amp;rdquo;&amp;rdquo; event_url = &amp;ldquo;http://www.stat.purdue.edu/bigtap/bigtap_bootcamp.html&amp;quot; location = &amp;ldquo;Purdue University, West Lafayette, IN&amp;rdquo;
+selected = true math = true
+url_pdf = &amp;ldquo;&amp;rdquo; url_github = &amp;ldquo;&amp;rdquo; url_slides = &amp;ldquo;&amp;rdquo; url_video = &amp;ldquo;&amp;rdquo;
+Optional featured image (relative to static/img/ folder). [header] image = &amp;ldquo;headers/bubbles-wide.</description>
     </item>
     
   </channel>
