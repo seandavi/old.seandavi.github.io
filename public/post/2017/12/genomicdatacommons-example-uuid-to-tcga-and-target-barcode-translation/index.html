@@ -298,12 +298,12 @@ associated legacy identifiers for those types of samples as well.</p>
 <p>Fetch some file IDs:</p>
 <pre class="r"><code>file_uuids = files() %&gt;% results(size=15) %&gt;% ids()
 head(file_uuids)</code></pre>
-<pre><code>## [1] &quot;40af20ee-2aa6-4c53-beac-3e166f2dfbe4&quot;
-## [2] &quot;0934a0b3-858d-430c-a5c9-ea459104a392&quot;
-## [3] &quot;23f30088-b9d0-4657-b7d7-188e85230687&quot;
-## [4] &quot;88be35fc-3a1d-47ad-93b4-90d786341be7&quot;
-## [5] &quot;ad3dd7e9-808a-4e4b-8d43-dc3de68c8c5c&quot;
-## [6] &quot;0b1c205c-c227-43dd-a308-1a46b4f733df&quot;</code></pre>
+<pre><code>## [1] &quot;b06533f5-872a-41fb-8da0-d8d7926ae4af&quot;
+## [2] &quot;6680627c-f70b-45fd-854b-208be561a9e8&quot;
+## [3] &quot;544495c2-ec88-41ef-89aa-40d322419820&quot;
+## [4] &quot;23c50d89-efb3-4a6f-b1a4-14c045838fd3&quot;
+## [5] &quot;a3097d9c-c5ed-4d10-a00e-44fc4af13a37&quot;
+## [6] &quot;947bfbe1-d6e8-4b9e-8344-41b72e412891&quot;</code></pre>
 <p>The TCGA barcodes are nested in the file records, but we can access
 them in the <code>cases.samples.submitter_id</code>. The
 <code>available_fields</code> and <code>available_values</code> functions are useful
@@ -344,13 +344,13 @@ TCGAtranslateID = function(file_ids, legacy = FALSE) {
 <p>Now, we can translate our example <code>file_uuids</code>:</p>
 <pre class="r"><code>res = TCGAtranslateID(file_uuids)</code></pre>
 <pre class="r"><code>head(res)</code></pre>
-<pre><code>##                                file_id     submitter_id
-## 1 40af20ee-2aa6-4c53-beac-3e166f2dfbe4 TCGA-FY-A4B0-01A
-## 2 0934a0b3-858d-430c-a5c9-ea459104a392 TCGA-DX-A3U5-01A
-## 3 23f30088-b9d0-4657-b7d7-188e85230687 TCGA-UE-A6QU-01A
-## 4 88be35fc-3a1d-47ad-93b4-90d786341be7 TCGA-VM-A8CH-01A
-## 5 88be35fc-3a1d-47ad-93b4-90d786341be7 TCGA-VM-A8CH-10A
-## 6 ad3dd7e9-808a-4e4b-8d43-dc3de68c8c5c TCGA-13-0886-01A</code></pre>
+<pre><code>##                                file_id  submitter_id
+## 1 b06533f5-872a-41fb-8da0-d8d7926ae4af AD4817_sample
+## 2 6680627c-f70b-45fd-854b-208be561a9e8 AD8753_sample
+## 3 544495c2-ec88-41ef-89aa-40d322419820 AD7037_sample
+## 4 23c50d89-efb3-4a6f-b1a4-14c045838fd3 AD5387_sample
+## 5 a3097d9c-c5ed-4d10-a00e-44fc4af13a37 AD9785_sample
+## 6 947bfbe1-d6e8-4b9e-8344-41b72e412891 AD6821_sample</code></pre>
 <p>This little function is a bit “niche”, but it does illustrate how one
 can leverage GenomicDataCommons package functionality to create useful
 higher-level functionality like ID mapping.</p>
