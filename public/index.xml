@@ -84,12 +84,39 @@
     </item>
     
     <item>
+      <title>Bioconductor: software for reproducible genomic data science</title>
+      <link>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Course Materials</title>
+      <link>https://seandavi.github.io/talk/2018/07/02/course-materials/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/02/course-materials/</guid>
+      <description>Materials for the Cold Spring Harbor Lab Statistical Methods in Functional Genomics</description>
+    </item>
+    
+    <item>
       <title>Brief Introduction to Machine Learning in Biomedical Informatics</title>
       <link>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</link>
       <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</guid>
       <description>  Link to GitHub with hands-on exercises  </description>
+    </item>
+    
+    <item>
+      <title>Tutorial in using the NCI SevenBridges Cancer Genomics Cloud Resources</title>
+      <link>https://seandavi.github.io/talk/2018/06/18/tutorial-in-using-the-nci-sevenbridges-cancer-genomics-cloud-resources/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/06/18/tutorial-in-using-the-nci-sevenbridges-cancer-genomics-cloud-resources/</guid>
+      <description>  Example Data  http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_2.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_2.fastq.gz  </description>
     </item>
     
     <item>
@@ -1207,18 +1234,6 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>https://seandavi.github.io/publication/8644751/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://seandavi.github.io/talk/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://seandavi.github.io/talk/1/01/01/</guid>
-      <description>OB+++ date = &amp;ldquo;2018-06-18&amp;rdquo; title = &amp;ldquo;Tutorial in using the NCI SevenBridges Cancer Genomics Cloud Resources&amp;rdquo; abstract = &amp;ldquo;&amp;rdquo; abstract_short = &amp;ldquo;&amp;rdquo; event = &amp;ldquo;Big data training for translational omics research&amp;rdquo;&amp;rdquo; event_url = &amp;ldquo;http://www.stat.purdue.edu/bigtap/bigtap_bootcamp.html&amp;quot; location = &amp;ldquo;Purdue University, West Lafayette, IN&amp;rdquo;
-selected = true math = true
-url_pdf = &amp;ldquo;&amp;rdquo; url_github = &amp;ldquo;&amp;rdquo; url_slides = &amp;ldquo;&amp;rdquo; url_video = &amp;ldquo;&amp;rdquo;
-Optional featured image (relative to static/img/ folder). [header] image = &amp;ldquo;headers/bubbles-wide.</description>
     </item>
     
   </channel>

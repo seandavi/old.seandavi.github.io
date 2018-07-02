@@ -43,7 +43,22 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</loc>
+    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/talk/2018/07/02/course-materials/</loc>
+    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</loc>
+    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/talk/2018/06/18/tutorial-in-using-the-nci-sevenbridges-cancer-genomics-cloud-resources/</loc>
     <lastmod>2018-06-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -678,10 +693,6 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/talk/1/01/01/</loc>
-  </url>
-  
-  <url>
     <loc>https://seandavi.github.io/tags/api/</loc>
     <lastmod>2017-03-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -700,14 +711,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -748,14 +759,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
+    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
-    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
+    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -863,7 +874,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/</loc>
-    <lastmod>2018-06-18T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
