@@ -84,6 +84,17 @@
     </item>
     
     <item>
+      <title>The NCI SevenBridges Cancer Genomics Cloud Resource</title>
+      <link>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</guid>
+      <description>  Example Data RNA-seq
+ http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_2.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_2.fastq.gz  DNAse-seq
+ http://starbuck1.s3.amazonaws.com/dnase-examples/ENCFF000SWA.fastq.gz  </description>
+    </item>
+    
+    <item>
       <title>Bioconductor: software for reproducible genomic data science</title>
       <link>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</link>
       <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
