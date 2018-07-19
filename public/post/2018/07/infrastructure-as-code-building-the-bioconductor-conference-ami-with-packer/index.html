@@ -306,7 +306,8 @@ than needing to start with a generic Linux AMI as the “base” for our
 Bioconductor conference AMI, I will use
 the most recent <a href="https://bioconductor.org/help/bioconductor-cloud-ami/#ami_ids">Bioc-devel AMI</a> as the base. Packer uses a <a href="https://www.packer.io/intro/getting-started/build-image.html#the-template">json format file</a>
 to describe, <em>in code</em>, the AMI that we want to build. The file for building the image
-is listed below in its entirety.</p>
+is listed below in its entirety. The current version of the packer json file
+is available in this <a href="https://github.com/seandavi/terraform-can/tree/master/packer">github repo</a>.</p>
 <p>To build the image, first <a href="https://www.packer.io/docs/builders/amazon.html#authentication">set up AWS authentication</a> as outlined on the
 packer website. If you do not have an AWS account, you will not be able
 to actually build the AMI. Next, <a href="https://www.packer.io/intro/getting-started/install.html">install packer</a> and ensure that it is in the path.
@@ -377,6 +378,7 @@ The AMI may take a few minutes to become fully public.</p>
 <p>By maintaining the AMI description as code, we can ensure that the AMI is
 fully reproducible (no manual installations, etc.) and, therefore, highly
 reproducible and even reusable.</p>
+<p><a href="https://github.com/seandavi/terraform-can/tree/master/packer">The current version of the packer file is available on github</a>.</p>
 
 
   
