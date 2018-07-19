@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.42.2" />
 
-  <title>Cloud &middot; seandavi(s12)</title>
+  <title>seandavi(s12)</title>
 
   
   
@@ -40,7 +40,7 @@
 
  
   
-  <link rel="alternate" type="application/rss+xml" title="seandavi(s12)" href="https://seandavi.github.io/tags/cloud/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="seandavi(s12)" href="https://seandavi.github.io/index.xml" />
   
 
   
@@ -123,7 +123,7 @@
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://seandavi.github.io/tags/cloud/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="https://seandavi.github.io/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
     
 
@@ -240,20 +240,21 @@
 
 
 <div class="header">
-  <h1>Cloud</h1>
+  <h1>seandavi(s12)</h1>
+  <h2>Sean Davis @ NCI</h2>
 </div>
 
 <div class="content">
   
     <article>
   <header>
-    <h2><a href="https://seandavi.github.io/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/">Infrastructure-as-Code: Building the Bioconductor Conference Ami With Packer</a></h2>
+    <h2><a href="https://seandavi.github.io/post/2015/07/hello-r-markdown/">Hello R Markdown</a></h2>
 
     <div class="post-meta">
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>19 Jul 2018</time>
+    <time>23 Jul 2015</time>
   </div>
 
   
@@ -266,17 +267,11 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/bioconductor">Bioconductor</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/r-markdown">R Markdown</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/devops">devops</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/plot">plot</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cloud">cloud</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/it">IT</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/aws">AWS</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/packer">packer</a>
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/regression">regression</a>
     
   </div>
   
@@ -287,70 +282,35 @@
   </header>
 
   <p>
-  One of the main features of the annual [Bioconductor Conference] is the proportion of time spent working with code in the form of [workshops]. To support these workshops, we ask workshop presenters to supply Rmarkdown materials which we collate into workshop materials. Using literate programming approaches like Rmarkdown ensures that the workflows are self-consistent and work as expected.
-In addition to the Rmarkdown workshop materials, we also need a consistent computing environment that can support reasonably large computation, provide high-performance network and file system access, and is essentially unlimited in scale (we expect to have &gt;150 participants, each with his/her own machine).
+  R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.
   </p>
 
   
   <footer>
-    <a href="/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="/post/2015/07/hello-r-markdown/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
 
   
-    <article>
-  <header>
-    <h2><a href="https://seandavi.github.io/post/2017/12/protect-against-secrets-in-git-repositories/">Protect Against Secrets in Git Repositories</a></h2>
-
-    <div class="post-meta">
-
-  <div>
-    <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Dec 2017</time>
-  </div>
 
   
 
-  
 
+<nav class="pagination" role="pagination">
   
+  <a href="/"><i class="fa fa-chevron-left"></i></a>
   
+  <span>&nbsp;2 / 2&nbsp;</span>
   
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/security">security</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/git">git</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/programming">programming</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/aws">aws</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cloud">cloud</a>
-    
-  </div>
+  <i class="fa fa-chevron-right"></i>
   
-  
+</nav>
 
-</div>
 
-  </header>
 
-  <p>
-  I made a mistake and am going to share it here. Please be gentle when judging me. As penance, I spent some time to learn how to systematically avoid making the same mistake and share that solution here.
-The prelude I had been working on some code that I thought was going to be throw-away example code for loading a large dataset into ElasticSearch. That said, I have been saved often enough by using a version control system (now, always git), that I use it all the time.
-  </p>
-
-  
-  <footer>
-    <a href="/post/2017/12/protect-against-secrets-in-git-repositories/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
-  </footer>
-  
-</article>
-
-  
 </div>
 
 </div>
@@ -375,3 +335,4 @@ The prelude I had been working on some code that I thought was going to be throw
 
 </body>
 </html>
+

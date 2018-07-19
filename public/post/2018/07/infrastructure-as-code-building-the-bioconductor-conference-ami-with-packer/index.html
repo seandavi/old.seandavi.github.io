@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.42.2" />
+
+  <title>Infrastructure-as-Code: Building the Bioconductor Conference Ami With Packer &middot; seandavi(s12)</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/zenburn.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://seandavi.github.io/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="/">seandavi(s12)</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/talk/"><i class='fa fa-microphone fa-fw'></i>Talks</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/publication/"><i class='fa fa-file-text fa-fw'></i>Publications</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+      
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://scholar.google.com/citations?user=hLFc29kAAAAJ"><i class="fa fa-graduation-cap fa-fw"></i>Scholar</a>
+    </li>
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/seandavis12" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/seandavi" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://bitbucket.org/seandavi" target="_blank"><i class="fa fa-bitbucket-square fa-fw"></i>Bitbucket</a>
+    </li>
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://slideshare.net/seandavi" target="_blank"><i class="fa fa-slideshare fa-fw"></i>SlideShare</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://linkedin.com/in/seandavi" target="_blank"><i class="fa fa-linkedin-square fa-fw"></i>LinkedIn</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2017 Sean Davis</small>
+  </div>
+  <div class="small-print">
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Infrastructure-as-Code: Building the Bioconductor Conference Ami With Packer</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>19 Jul 2018</time>
+  </div>
+
+  
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/bioconductor">Bioconductor</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/devops">devops</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/cloud">cloud</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/it">IT</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/aws">AWS</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="https://seandavi.github.io/tags/packer">packer</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>One of the main features of the annual [Bioconductor Conference] is the
+proportion of time spent working with code in the form of [workshops].
+To support these workshops, we ask workshop presenters to supply <a href="https://rmarkdown.rstudio.com/">Rmarkdown</a>
+materials which we collate into workshop materials. Using literate programming
+approaches like Rmarkdown ensures that the workflows are self-consistent
+and work as expected.</p>
+<p>In addition to the Rmarkdown workshop materials, we also need a consistent
+computing environment that can support reasonably large computation, provide
+high-performance network and file system access, and is essentially unlimited
+in scale (we expect to have &gt;150 participants, each with his/her own machine).
+To do so, we use <a href="https://aws.amazon.com/ec2">Amazon Web Services EC2</a>. The EC2 system allows us to prepare
+a <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html">Amazon machine “image”</a>, or AMI, that contains the operating system, libraries,
+the newest version of R, and all packages needed for the workshops. In the past,
+creating the “image” was a manual process. This year, thanks to the work
+of the workshop organizers, we had a single DESCRIPTION file that contained
+all the necessary packages, allowing us to automate the process of building
+and keeping updated the AMI that would be used by all participants.</p>
+<p>The <a href="https://www.packer.io/">Packer project</a> is an open source tool for creating identical
+machine images for multiple platforms from a single source
+configuration. Packer is lightweight, runs on every major operating
+system, and is highly performant, creating machine images for multiple
+platforms in parallel. In this context, a machine image is a single
+static unit that contains a pre-configured operating system and
+installed software which is used to quickly create new running
+machines. Machine image formats change for each platform. Some
+examples include AMIs for EC2, VMDK/VMX files for VMware, OVF exports
+for VirtualBox, etc.</p>
+<p>Biocoductor is cloud-ready and maintains <a href="https://bioconductor.org/help/bioconductor-cloud-ami/">basic AMIs for Bioconductor</a>. Rather
+than needing to start with a generic Linux AMI as the “base” for our
+Bioconductor conference AMI, I will use
+the most recent <a href="https://bioconductor.org/help/bioconductor-cloud-ami/#ami_ids">Bioc-devel AMI</a> as the base. Packer uses a <a href="https://www.packer.io/intro/getting-started/build-image.html#the-template">json format file</a>
+to describe, <em>in code</em>, the AMI that we want to build. The file for building the image
+is listed below in its entirety.</p>
+<p>To build the image, first <a href="https://www.packer.io/docs/builders/amazon.html#authentication">set up AWS authentication</a> as outlined on the
+packer website. If you do not have an AWS account, you will not be able
+to actually build the AMI. Next, <a href="https://www.packer.io/intro/getting-started/install.html">install packer</a> and ensure that it is in the path.
+Finally, save the file below as, for example, <code>bioc_2018.json</code>. In the
+directory containing the json file, execute packer:</p>
+<pre class="sh"><code>packer build bioc_2018.json</code></pre>
+<p>This build takes quite some time (perhaps 20 minutes or so).</p>
+<p>In terms of details, briefly, the <code>instance_type</code>
+below was chosen to allow multicore installation using 16 threads. AWS [spot pricing]
+is used to minimize costs (see <code>spot_pricing</code> and <code>spot_pricing_auto_product</code> below).
+Adding the <code>ami_groups</code> set to <code>all</code> will enable public access to the AMI. The <code>source_ami_filter</code>
+section below chooses the “base” image. In this case, I used the AMI <code>name</code> and
+specified that the AMI was “owned” by the Bioconductor organization (<code>&quot;owners&quot;: [&quot;555219204010&quot;]</code>).
+I set the disk size to 128GB of SSD storage in the <code>launch_block_device_mappings</code>.</p>
+<p>The real work is done in the <code>provisioners</code> block. In this case, the provisioner
+block specifies just two shell commands that install the necessary packages. Note
+that the installation of the “Bioconductor/Biocworkshops” github package will
+install all packages in the <a href="https://github.com/Bioconductor/BiocWorkshops/blob/master/DESCRIPTION">DESCRIPTION</a> file. The final line of the packer
+output will list the AMI ID that can be shared with others (since we made it public).
+The AMI may take a few minutes to become fully public.</p>
+<pre class="js"><code>{
+    &quot;variables&quot;: {
+        &quot;profile&quot;: &quot;default&quot;,
+        &quot;region&quot;:  &quot;us-east-1&quot;
+    },
+    &quot;builders&quot;: [
+        {
+            &quot;access_key&quot;: &quot;{{user `aws_access_key`}}&quot;,
+            &quot;ami_name&quot;: &quot;Bioconductor_Conference_2018-{{timestamp}}&quot;,
+            &quot;instance_type&quot;: &quot;c5.4xlarge&quot;,
+            &quot;region&quot;: &quot;us-east-1&quot;,
+            &quot;secret_key&quot;: &quot;{{user `aws_secret_key`}}&quot;,
+            &quot;source_ami_filter&quot;: {
+                &quot;filters&quot;: {
+                    &quot;virtualization-type&quot;: &quot;hvm&quot;,
+                    &quot;name&quot;: &quot;Bioc 3.8 R 3.5.1&quot;,
+                    &quot;root-device-type&quot;: &quot;ebs&quot;
+                },
+                &quot;owners&quot;: [&quot;555219204010&quot;],
+                &quot;most_recent&quot;: true
+            },
+            &quot;ssh_username&quot;: &quot;ubuntu&quot;,
+            &quot;spot_price&quot;: &quot;auto&quot;,
+            &quot;spot_price_auto_product&quot;: &quot;Linux/UNIX&quot;,
+            &quot;type&quot;: &quot;amazon-ebs&quot;,
+            &quot;ami_groups&quot;: [&quot;all&quot;],
+            &quot;launch_block_device_mappings&quot;: [
+                {
+                    &quot;device_name&quot;: &quot;/dev/sda1&quot;,
+                    &quot;volume_size&quot;: 128,
+                    &quot;volume_type&quot;: &quot;gp2&quot;,
+                    &quot;delete_on_termination&quot;: true
+                }
+            ]
+        }
+    ],
+    &quot;provisioners&quot;: [
+        {
+            &quot;type&quot;: &quot;shell&quot;,
+            &quot;inline&quot;:[
+                &quot;Rscript -e &#39;BiocManager::install(\&quot;remotes\&quot;)&#39;&quot;,
+                &quot;Rscript -e &#39;options(Ncpus=16); BiocManager::install(\&quot;Bioconductor/BiocWorkshops\&quot;)&#39;&quot;,
+            ]
+        }
+    ]
+}
+    </code></pre>
+<p>By maintaining the AMI description as code, we can ensure that the AMI is
+fully reproducible (no manual installations, etc.) and, therefore, highly
+reproducible and even reusable.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://seandavi.github.io/post/2018/03/extracting-clinical-information-using-the-genomicdatacommons-package/">Extracting Clinical Information Using the Genomicdatacommons Package</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'seandavi-github-io';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="https://seandavi.github.io/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93043521-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</body>
+</html>
+

@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/</loc>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</loc>
     <lastmod>2018-07-07T00:00:00+00:00</lastmod>
   </url>
@@ -705,7 +710,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/aws/</loc>
-    <lastmod>2017-12-02T07:50:15-05:00</lastmod>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -716,14 +721,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
-    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -753,7 +758,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/cloud/</loc>
-    <lastmod>2017-12-02T07:50:15-05:00</lastmod>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -764,14 +769,20 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/devops/</loc>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
     <lastmod>2018-03-25T11:18:36-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -789,7 +800,7 @@
   
   <url>
     <loc>https://seandavi.github.io/tags/it/</loc>
-    <lastmod>2018-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -814,6 +825,12 @@
   <url>
     <loc>https://seandavi.github.io/tags/open-data/</loc>
     <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seandavi.github.io/tags/packer/</loc>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
