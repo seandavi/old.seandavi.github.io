@@ -40,7 +40,7 @@ A one-liner returns the build report as a `data.frame`.
 
 ```{r}
 library(BiocPkgTools)
-b_report = bioc_build_report('3.6')
+b_report = bioc_build_report('3.7')
 library(DT)
 datatable(b_report)
 ```
