@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <meta name="generator" content="Hugo 0.40" />
+  <meta name="generator" content="Hugo 0.42.2" />
 
   <title>Matched tumor/normal pairs--a use case for the GenomicDataCommons Bioconductor package &middot; seandavi(s12)</title>
 
@@ -350,12 +350,12 @@ head(matched_tn_ge_file_info)</code></pre>
 <pre><code>## # A tibble: 6 x 18
 ##   data_type  updated_datetime  file_name  submitter_id  file_id  file_size
 ##   &lt;chr&gt;      &lt;chr&gt;             &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;        &lt;int&gt;
-## 1 Gene Expr… 2017-03-04T16:39… 40633fb7-… 40633fb7-666… 74834ef…    259129
-## 2 Gene Expr… 2017-03-04T16:39… d7047346-… d7047346-49f… ec38486…    258388
-## 3 Gene Expr… 2017-03-04T16:39… 57b2e9d8-… 57b2e9d8-dda… bc68952…    253006
-## 4 Gene Expr… 2017-03-04T16:39… c1a570df-… c1a570df-7a5… f6ee2f6…    252112
-## 5 Gene Expr… 2017-03-04T16:39… f1afa28b-… f1afa28b-fac… 61da654…    259028
-## 6 Gene Expr… 2017-03-04T16:39… 6a508e94-… 6a508e94-c09… bb1c93a…    257600
+## 1 Gene Expr… 2017-03-04T16:39… f50438de-… f50438de-b31… ebd3bfb…    253804
+## 2 Gene Expr… 2017-03-04T16:39… edea4e5b-… edea4e5b-ad4… 59602a3…    259917
+## 3 Gene Expr… 2017-03-04T16:39… 60cc2580-… 60cc2580-b21… b7fda5e…    261904
+## 4 Gene Expr… 2017-03-04T16:39… b504f2d6-… b504f2d6-335… 1e97e83…    251243
+## 5 Gene Expr… 2017-03-04T16:39… 9570c964-… 9570c964-8d2… a03b240…    254621
+## 6 Gene Expr… 2017-03-04T16:39… a0c9781b-… a0c9781b-0c1… f173ccd…    252823
 ## # ... with 12 more variables: cases &lt;list&gt;, id &lt;chr&gt;,
 ## #   created_datetime &lt;chr&gt;, md5sum &lt;chr&gt;, data_format &lt;chr&gt;, acl &lt;list&gt;,
 ## #   access &lt;chr&gt;, state &lt;chr&gt;, data_category &lt;chr&gt;, type &lt;chr&gt;,
@@ -384,26 +384,38 @@ files will be used.</p>
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] dplyr_0.7.4              GenomicDataCommons_1.3.4
+## [1] dplyr_0.7.4              GenomicDataCommons_1.4.1
 ## [3] magrittr_1.5            
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.16           compiler_3.5.0         pillar_1.2.2          
-##  [4] GenomeInfoDb_1.15.5    XVector_0.19.9         bindr_0.1.1           
-##  [7] bitops_1.0-6           tools_3.5.0            zlibbioc_1.25.0       
-## [10] digest_0.6.15          jsonlite_1.5           evaluate_0.10.1       
-## [13] tibble_1.4.2           pkgconfig_2.0.1        rlang_0.2.0           
-## [16] cli_1.0.0              curl_3.2               yaml_2.1.19           
-## [19] parallel_3.5.0         blogdown_0.6           xfun_0.1              
-## [22] bindrcpp_0.2.2         GenomeInfoDbData_1.1.0 xml2_1.2.0            
-## [25] stringr_1.3.1          httr_1.3.1             knitr_1.20            
-## [28] hms_0.4.2              rappdirs_0.3.1         S4Vectors_0.17.43     
-## [31] IRanges_2.13.29        stats4_3.5.0           rprojroot_1.3-2       
-## [34] glue_1.2.0             R6_2.2.2               rmarkdown_1.9         
-## [37] bookdown_0.7           readr_1.1.1            backports_1.1.2       
-## [40] htmltools_0.3.6        BiocGenerics_0.25.3    GenomicRanges_1.31.23 
-## [43] assertthat_0.2.0       utf8_1.1.3             stringi_1.2.2         
-## [46] RCurl_1.95-4.10        lazyeval_0.2.1         crayon_1.3.4</code></pre>
+##  [1] Rcpp_0.12.17                pillar_1.2.2               
+##  [3] bindr_0.1.1                 compiler_3.5.0             
+##  [5] GenomeInfoDb_1.15.5         XVector_0.19.9             
+##  [7] bitops_1.0-6                tools_3.5.0                
+##  [9] zlibbioc_1.25.0             digest_0.6.15              
+## [11] jsonlite_1.5                tibble_1.4.2               
+## [13] evaluate_0.10.1             lattice_0.20-35            
+## [15] pkgconfig_2.0.1             rlang_0.2.1                
+## [17] Matrix_1.2-14               cli_1.0.0                  
+## [19] DelayedArray_0.5.35         curl_3.2                   
+## [21] yaml_2.1.19                 parallel_3.5.0             
+## [23] blogdown_0.6                xfun_0.1                   
+## [25] bindrcpp_0.2.2              GenomeInfoDbData_1.1.0     
+## [27] xml2_1.2.0                  httr_1.3.1                 
+## [29] stringr_1.3.1               knitr_1.20                 
+## [31] hms_0.4.2                   rappdirs_0.3.1             
+## [33] S4Vectors_0.17.43           IRanges_2.13.29            
+## [35] stats4_3.5.0                rprojroot_1.3-2            
+## [37] grid_3.5.0                  glue_1.2.0.9000            
+## [39] Biobase_2.39.2              R6_2.2.2                   
+## [41] BiocParallel_1.13.3         rmarkdown_1.10             
+## [43] bookdown_0.7                readr_1.1.1                
+## [45] backports_1.1.2             htmltools_0.3.6            
+## [47] matrixStats_0.53.1          BiocGenerics_0.25.3        
+## [49] GenomicRanges_1.31.23       assertthat_0.2.0           
+## [51] SummarizedExperiment_1.9.18 utf8_1.1.3                 
+## [53] stringi_1.2.2               lazyeval_0.2.1             
+## [55] RCurl_1.95-4.10             crayon_1.3.4</code></pre>
 </div>
 </div>
 

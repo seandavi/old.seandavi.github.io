@@ -6,10 +6,66 @@
     <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Sat, 19 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cloud Computing Approaches to Genomic Data Science</title>
+      <link>https://seandavi.github.io/talk/2018/07/31/cloud-computing-approaches-to-genomic-data-science/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/31/cloud-computing-approaches-to-genomic-data-science/</guid>
+      <description>  Link to slides  </description>
+    </item>
+    
+    <item>
+      <title>The NCI SevenBridges Cancer Genomics Cloud Resource</title>
+      <link>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</link>
+      <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</guid>
+      <description>  Example Data RNA-seq
+ http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_2.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_2.fastq.gz  DNAse-seq
+ http://starbuck1.s3.amazonaws.com/dnase-examples/ENCFF000SWA.fastq.gz  </description>
+    </item>
+    
+    <item>
+      <title>Bioconductor: software for reproducible genomic data science</title>
+      <link>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/02/bioconductor-software-for-reproducible-genomic-data-science/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>Course Materials, Statistical Methods in Functional Genomics</title>
+      <link>https://seandavi.github.io/talk/2018/07/02/course-materials-statistical-methods-in-functional-genomics/</link>
+      <pubDate>Mon, 02 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/02/course-materials-statistical-methods-in-functional-genomics/</guid>
+      <description> Materials for the Cold Spring Harbor Lab Statistical Methods in Functional Genomics </description>
+    </item>
+    
+    <item>
+      <title>Brief Introduction to Machine Learning in Biomedical Informatics</title>
+      <link>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/06/18/brief-introduction-to-machine-learning-in-biomedical-informatics/</guid>
+      <description>  Link to GitHub with hands-on exercises  </description>
+    </item>
+    
+    <item>
+      <title>Tutorial in using the NCI SevenBridges Cancer Genomics Cloud Resources</title>
+      <link>https://seandavi.github.io/talk/2018/06/18/tutorial-in-using-the-nci-sevenbridges-cancer-genomics-cloud-resources/</link>
+      <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/06/18/tutorial-in-using-the-nci-sevenbridges-cancer-genomics-cloud-resources/</guid>
+      <description>  Example Data  http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41676_pe_2.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_1.fastq.gz http://starbuck1.s3.amazonaws.com/rnaseq-examples/G41707_pe_2.fastq.gz  </description>
+    </item>
     
     <item>
       <title>Cancer Bioinformatics Primer -- Papillary Renal Cell Carcinoma Hackathon</title>
@@ -18,6 +74,15 @@
       
       <guid>https://seandavi.github.io/talk/2018/05/19/cancer-bioinformatics-primer----papillary-renal-cell-carcinoma-hackathon/</guid>
       <description>More than 150 researchers, engineers and data enthusiasts gathered at Salesforce in San Francisco for an intense weekend of exploration in computational biomedicine. Interdisciplinary teams worked to develop data products and learn from each other about this rare cancer. Datasets included publicly available datasets as well as deep whole genome sequencing of an individual patient (who attended the hackathon).</description>
+    </item>
+    
+    <item>
+      <title>Bioconductor: A Hub in the Cancer Data Ecosystem</title>
+      <link>https://seandavi.github.io/talk/2018/04/26/bioconductor-a-hub-in-the-cancer-data-ecosystem/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/04/26/bioconductor-a-hub-in-the-cancer-data-ecosystem/</guid>
+      <description> </description>
     </item>
     
     <item>
@@ -79,7 +144,7 @@
     <item>
       <title>What can I learn from my data using R?</title>
       <link>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
-      <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 -0700</pubDate>
       
       <guid>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
       <description>In this 1.5 hour session, I introduce R, basic data loading, manipulation, and plotting in an interactive, hands-on environment. There are no accompanying slides. Instead, the session was performed with live coding.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Packer on seandavi(s12)</title>
+    <link>https://seandavi.github.io/tags/packer/</link>
+    <description>Recent content in Packer on seandavi(s12)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017 Sean Davis</copyright>
+    <lastBuildDate>Thu, 19 Jul 2018 14:35:47 -0400</lastBuildDate>
+    
+	<atom:link href="https://seandavi.github.io/tags/packer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Infrastructure-as-Code: Building the Bioconductor Conference AMI With Packer</title>
+      <link>https://seandavi.github.io/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/</link>
+      <pubDate>Thu, 19 Jul 2018 14:35:47 -0400</pubDate>
+      
+      <guid>https://seandavi.github.io/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/</guid>
+      <description>One of the main features of the annual Bioconductor Conference is the proportion of time spent working with code in the form of workshops. To support these workshops, we ask workshop presenters to supply Rmarkdown materials which we collate into workshop materials. Using literate programming approaches like Rmarkdown ensures that the workflows are self-consistent and work as expected.
+In addition to the Rmarkdown workshop materials, we also need a consistent computing environment that can support reasonably large computation, provide high-performance network and file system access, and is essentially unlimited in scale (we expect to have &amp;gt;150 participants, each with his/her own machine).</description>
+    </item>
+    
+  </channel>
+</rss>
