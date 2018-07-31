@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://seandavi.github.io/talk/2018/07/31/cloud-computing-approaches-to-genomic-data-science/</loc>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://seandavi.github.io/post/2018/07/infrastructure-as-code-building-the-bioconductor-conference-ami-with-packer/</loc>
     <lastmod>2018-07-19T14:35:47-04:00</lastmod>
   </url>
@@ -159,7 +164,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</loc>
-    <lastmod>2017-08-10T00:00:00-04:00</lastmod>
+    <lastmod>2017-08-10T00:00:00-07:00</lastmod>
   </url>
   
   <url>
@@ -721,14 +726,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
-    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
+    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/bioconductor/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/bioconductor/</loc>
+    <lastmod>2018-07-19T14:35:47-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -775,14 +780,14 @@
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
-    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
+    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
+    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seandavi.github.io/topics/genomicdatacommons/</loc>
-    <lastmod>2017-12-29T00:00:00+00:00</lastmod>
+    <loc>https://seandavi.github.io/tags/genomicdatacommons/</loc>
+    <lastmod>2018-03-25T11:18:36-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -896,7 +901,7 @@
   
   <url>
     <loc>https://seandavi.github.io/talk/</loc>
-    <lastmod>2018-07-07T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

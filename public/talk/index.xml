@@ -6,10 +6,19 @@
     <description>Recent content in Talks on seandavi(s12)</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017 Sean Davis</copyright>
-    <lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://seandavi.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cloud Computing Approaches to Genomic Data Science</title>
+      <link>https://seandavi.github.io/talk/2018/07/31/cloud-computing-approaches-to-genomic-data-science/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/31/cloud-computing-approaches-to-genomic-data-science/</guid>
+      <description>  Link to slides  </description>
+    </item>
     
     <item>
       <title>The NCI SevenBridges Cancer Genomics Cloud Resource</title>
@@ -135,7 +144,7 @@
     <item>
       <title>What can I learn from my data using R?</title>
       <link>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</link>
-      <pubDate>Thu, 10 Aug 2017 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 -0700</pubDate>
       
       <guid>https://seandavi.github.io/talk/2017/08/10/what-can-i-learn-from-my-data-using-r/</guid>
       <description>In this 1.5 hour session, I introduce R, basic data loading, manipulation, and plotting in an interactive, hands-on environment. There are no accompanying slides. Instead, the session was performed with live coding.
