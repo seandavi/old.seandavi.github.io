@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Accessing and Using Public Data Resources with Bioconductor</title>
+      <link>https://seandavi.github.io/talk/2018/07/28/accessing-and-using-public-data-resources-with-bioconductor/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://seandavi.github.io/talk/2018/07/28/accessing-and-using-public-data-resources-with-bioconductor/</guid>
+      <description>See [Bioconductor workshop materials]
+Instructor names and contact information  Levi Waldron (City University of New York, New York, NY, USA) Benjamin Haibe-Kains (Princess Margaret Cancer Center, Toronto, Canada) Sean Davis (Center for Cancer Research, National Cancer Institute, National Institutes of Health, Bethesda, MD, USA)  Syllabus Workshop Description The goal of this workshop is to introduce Bioconductor packages for finding, accessing, and using large-scale public data resources including the Gene Expression Omnibus GEO, Sequence Read Archive SRA, the Genomic Data Commons GDC, and Bioconductor-hosted curated data resources for metagenomics, pharmacogenomics PharmacoDB, and The Cancer Genome Atlas.</description>
+    </item>
+    
+    <item>
       <title>The NCI SevenBridges Cancer Genomics Cloud Resource</title>
       <link>https://seandavi.github.io/talk/2018/07/07/the-nci-sevenbridges-cancer-genomics-cloud-resource/</link>
       <pubDate>Sat, 07 Jul 2018 00:00:00 +0000</pubDate>
